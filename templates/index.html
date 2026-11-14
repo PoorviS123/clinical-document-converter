@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClinicalConverter</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav class="navbar"><a class="logo" href="/">Clinical<span>Converter</span></a><div class="nav-links"><a href="#how">How it works</a><a href="#outputs">Outputs</a></div></nav>
+<main>
+<section class="hero">
+  <p class="eyebrow">CLINICAL DOCUMENT TRANSFORMATION</p>
+  <h1>From legacy documents to structured clinical data.</h1>
+  <p class="hero-copy">Transform V10 clinical documents into FHIR JSON and V11 documents designed for AI-assisted completion and human review.</p>
+  <div class="upload-box" id="drop-zone">
+    <div class="upload-icon">↑</div><h2>Upload your V10 document</h2>
+    <p>Drop a PDF or DOCX here, or browse your files.</p>
+    <label for="file-upload" class="button secondary">Browse files</label>
+    <input type="file" id="file-upload" accept=".pdf,.docx">
+    <p id="file-name" class="file-name">No file selected</p>
+    <button id="upload-button" class="button primary" disabled>Upload &amp; generate demo outputs</button>
+    <p class="fine-print">PDF or DOCX · Maximum 100 MB · Demo outputs only</p>
+    <p id="upload-status" class="status" role="status" aria-live="polite"></p>
+  </div>
+</section>
+<section id="outputs" class="section"><p class="eyebrow">THREE OUTPUTS</p><h2>One source document. Three review-ready files.</h2>
+<div class="cards">
+ <article class="card"><span class="number">01</span><h3>FHIR JSON</h3><p>Structured, machine-readable output for downstream systems.</p></article>
+ <article class="card"><span class="number">02</span><h3>AI-assisted V11</h3><p>V11 document with demo-generated placeholder text highlighted for review.</p></article>
+ <article class="card"><span class="number">03</span><h3>Human-review V11</h3><p>Matching document structure with the example gap left open for a human.</p></article>
+</div></section>
+<section id="how" class="section process"><p class="eyebrow">HOW IT WORKS</p><h2>Upload. Transform. Review.</h2><div class="steps"><div><b>01</b><h3>Upload</h3><p>Provide a V10 PDF or DOCX.</p></div><div><b>02</b><h3>Transform</h3><p>Generate three demo output files.</p></div><div><b>03</b><h3>Review</h3><p>Compare the AI-assisted and human-review documents.</p></div></div></section>
+<section class="notice"><strong>Demo mode:</strong> The current converter creates clearly labeled placeholder files. It does not perform clinical conversion or generate clinically valid data. Real conversion will be connected separately.</section>
+</main><footer>ClinicalConverter · Hack Princeton 2026</footer>
+<script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+</body></html>
