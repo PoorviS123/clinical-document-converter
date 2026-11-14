@@ -19,14 +19,58 @@ input.addEventListener('change', () => choose(input.files[0]));
 ['dragleave','drop'].forEach(type => zone.addEventListener(type, e => {e.preventDefault(); zone.classList.remove('drag-over');}));
 zone.addEventListener('drop', e => { if(e.dataTransfer.files.length) { input.files=e.dataTransfer.files; choose(input.files[0]); }});
 button.addEventListener('click', async () => {
- const file=input.files[0]; if(!file) return;
- const data=new FormData(); data.append('file',file);
- button.disabled=true; status.textContent='Uploading and generating demo outputs…';
- try {
-  const response=await fetch('/api/convert',{method:'POST',body:data});
-  const result=await response.json().catch(()=>({}));
-  if(!response.ok) throw new Error(result.error || `Request failed (${response.status}).`);
-  status.textContent='Demo outputs created. Opening results…';
-  window.location.href=result.results_url;
- } catch(error) { status.textContent=error.message; button.disabled=false; }
+  const file = input.files[0];
+  if (!file) return;
+
+  const data = new FormData();
+  data.append('file', file);
+
+  button.disabled = true;
+  status.textContent = 'Uploading your document...';
+
+  try {
+    // Step 1: Upload the file and start the background job.
+    const response = await fetch('/api/convert', {
+      method: 'POST',
+      body: data
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.error || 'Upload failed.');
+    }
+
+    const jobId = result.job_id;
+
+    // Step 2: Keep checking until conversion finishes.
+    status.textContent = 'Your document is being processed. Please wait...';
+
+    while (true) {
+      await new Promise(resolve => setTimeout(resolve, 2000));
+
+      const statusResponse = await fetch(`/api/jobs/${jobId}/status`);
+      const job = await statusResponse.json();
+
+      if (!statusResponse.ok) {
+        throw new Error(job.error || 'Could not check conversion status.');
+      }
+
+      if (job.status === 'completed') {
+        status.textContent = 'All three outputs are ready. Opening results...';
+        window.location.href = job.results_url;
+        return;
+      }
+
+      if (job.status === 'failed') {
+        throw new Error(job.message || 'Conversion failed.');
+      }
+
+      status.textContent = job.message || 'Conversion in progress...';
+    }
+
+  } catch (error) {
+    status.textContent = error.message;
+    button.disabled = false;
+  }
 });

@@ -4,6 +4,7 @@ import json
 import zipfile
 import re
 import shutil
+import threading
 
 from flask import Flask, jsonify, render_template, request, send_file, abort
 from pypdf import PdfReader
@@ -21,7 +22,55 @@ MAX_BYTES = 100 * 1024 * 1024
 ALLOWED = {".pdf", ".docx"}
 
 app = Flask(__name__)
+jobs = {}
 app.config["MAX_CONTENT_LENGTH"] = MAX_BYTES
+
+def run_conversion(job_id: str, input_path: Path, job_output_dir: Path, safe_name: str):
+    """Run conversion in the background and update the job status."""
+    try:
+        jobs[job_id]["status"] = "processing"
+        jobs[job_id]["message"] = "Generating your three output files..."
+
+        outputs = convert_document(input_path, job_output_dir)
+
+        expected = {
+            "fhir": job_output_dir / "output.fhir.json",
+            "ai_assisted": job_output_dir / "output.ai_assisted.docx",
+            "human_review": job_output_dir / "output.human_review.docx",
+        }
+
+        for key, expected_path in expected.items():
+            returned_path = Path(outputs[key]).resolve()
+            if returned_path != expected_path.resolve() or not expected_path.is_file():
+                raise RuntimeError(f"Converter did not produce the expected {key} output.")
+
+        json.loads(expected["fhir"].read_text(encoding="utf-8"))
+
+        for key in ("ai_assisted", "human_review"):
+            with zipfile.ZipFile(expected[key]) as archive:
+                if "word/document.xml" not in archive.namelist() or archive.testzip():
+                    raise RuntimeError(f"Converter produced an invalid {key} DOCX.")
+
+        manifest = {
+            "job_id": job_id,
+            "original_filename": safe_name,
+            "demo": True,
+            "outputs": {key: Path(value).name for key, value in outputs.items()}
+        }
+
+        (job_output_dir / "manifest.json").write_text(
+            json.dumps(manifest, indent=2), encoding="utf-8"
+        )
+
+        jobs[job_id]["status"] = "completed"
+        jobs[job_id]["message"] = "All three outputs are ready."
+        jobs[job_id]["results_url"] = f"/results/{job_id}"
+
+    except Exception:
+        app.logger.exception("Conversion failed for job %s", job_id)
+        shutil.rmtree(job_output_dir, ignore_errors=True)
+        jobs[job_id]["status"] = "failed"
+        jobs[job_id]["message"] = "Conversion failed. Please try another file."
 
 
 def job_folder(job_id: str) -> Path:
@@ -95,40 +144,36 @@ def upload_and_convert():
 
     try:
         validate_content(input_path, extension)
-        outputs = convert_document(input_path, job_output_dir)
-        expected = {
-            "fhir": job_output_dir / "output.fhir.json",
-            "ai_assisted": job_output_dir / "output.ai_assisted.docx",
-            "human_review": job_output_dir / "output.human_review.docx",
-        }
-        for key, expected_path in expected.items():
-            returned_path = Path(outputs[key]).resolve()
-            if returned_path != expected_path.resolve() or not expected_path.is_file():
-                raise RuntimeError(f"Converter did not produce the expected {key} output.")
-        # Ensure the JSON output is parseable before presenting a successful result.
-        json.loads(expected["fhir"].read_text(encoding="utf-8"))
-        for key in ("ai_assisted", "human_review"):
-            with zipfile.ZipFile(expected[key]) as archive:
-                if "word/document.xml" not in archive.namelist() or archive.testzip():
-                    raise RuntimeError(f"Converter produced an invalid {key} DOCX.")
-        manifest = {
-            "job_id": job_id,
-            "original_filename": safe_name,
-            "demo": True,
-            "outputs": {key: Path(value).name for key, value in outputs.items()}
-        }
-        (job_output_dir / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     except ValueError as exc:
         shutil.rmtree(job_upload_dir, ignore_errors=True)
         shutil.rmtree(job_output_dir, ignore_errors=True)
         return jsonify(error=str(exc)), 400
-    except Exception:
-        app.logger.exception("Conversion failed for job %s", job_id)
-        shutil.rmtree(job_upload_dir, ignore_errors=True)
-        shutil.rmtree(job_output_dir, ignore_errors=True)
-        return jsonify(error="The demo conversion failed. Please try another file."), 500
 
-    return jsonify(success=True, job_id=job_id, results_url=f"/results/{job_id}", demo=True), 200
+    jobs[job_id] = {
+        "status": "processing",
+        "message": "Your document is queued for conversion."
+    }
+
+    worker = threading.Thread(
+        target=run_conversion,
+        args=(job_id, input_path, job_output_dir, safe_name),
+        daemon=True
+    )
+    worker.start()
+
+    return jsonify(success=True, job_id=job_id), 202
+
+@app.route("/api/jobs/<job_id>/status")
+def job_status(job_id):
+    job_folder = jobs.get(job_id)
+
+    if job_folder is None:
+        return jsonify(error="Job not found."), 404
+
+    return jsonify(job_folder)
+
+
+
 
 
 @app.route("/results/<job_id>")

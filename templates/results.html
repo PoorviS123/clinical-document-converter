@@ -1,25 +1,104 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Results · ClinicalConverter</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head>
-<body><nav class="navbar"><a class="logo" href="/">Clinical<span>Converter</span></a><a class="text-link" href="/">Start another conversion</a></nav>
-<main class="results-main"><div class="results-heading"><p class="eyebrow">CONVERSION COMPLETE · DEMO MODE</p><h1>Your outputs are ready.</h1><p>These are placeholder files for testing the workflow, not converted clinical data.</p></div>
-<section class="download-grid">
- <article class="download-card"><span class="number">01</span><h2>FHIR JSON</h2><p>Structured JSON placeholder.</p><a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='fhir') }}">Download JSON</a><details><summary>Preview JSON</summary><pre id="json-preview">Loading…</pre></details></article>
- <article class="download-card"><span class="number">02</span><h2>AI-assisted V11</h2><p>Demo placeholder text is highlighted yellow.</p><a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">Download DOCX</a></article>
- <article class="download-card"><span class="number">03</span><h2>Human-review V11</h2><p>Matching structure with the example gap left blank.</p><a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='human_review') }}">Download DOCX</a></article>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results · ClinicalConverter</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav class="navbar">
+  <a class="logo" href="/">Clinical<span>Converter</span></a>
+  <a class="text-link" href="/">Start another conversion</a>
+</nav>
+
+<main class="results-main">
+  <div class="results-heading">
+    <p class="eyebrow">CONVERSION COMPLETE · DEMO MODE</p>
+    <h1>Your outputs are ready.</h1>
+    <p>These are placeholder files for testing the workflow, not converted clinical data.</p>
+  </div>
+
+    <section class="download-grid">
+
+  <article class="download-card">
+    <span class="number">01</span>
+    <h2>Human-review V11</h2>
+    <p>Matching structure with the example gap left blank.</p>
+    <a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='human_review') }}">Download DOCX</a>
+  </article>
+
+  <article class="download-card">
+    <span class="number">02</span>
+    <h2>AI-assisted V11</h2>
+    <p>Demo placeholder text is highlighted yellow.</p>
+    <a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">Download DOCX</a>
+  </article>
+
+  <article class="download-card">
+    <span class="number">03</span>
+    <h2>FHIR JSON</h2>
+    <p>Structured JSON placeholder.</p>
+    <a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='fhir') }}">Download JSON</a>
+  </article>
 </section>
-<section class="compare"><div><p class="eyebrow">DOCUMENT COMPARISON</p><h2>Compare both V11 versions</h2><p>Each preview scrolls independently. Yellow highlighting marks the demo-generated text.</p></div><div class="compare-grid"><article class="preview-card"><div class="preview-title"><h3>AI-assisted V11</h3><a href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">Download</a></div><div class="docx-scroll" id="ai-preview">Loading preview…</div></article><article class="preview-card"><div class="preview-title"><h3>Human-review V11</h3><a href="{{ url_for('download_output', job_id=job.job_id, kind='human_review') }}">Download</a></div><div class="docx-scroll" id="human-preview">Loading preview…</div></article></div></section>
-</main><footer>ClinicalConverter · Demo output</footer>
+
+<section class="compare">
+  <div>
+    <p class="eyebrow">DOCUMENT COMPARISON</p>
+    <h2>Compare both V11 versions</h2>
+    <p>Each preview scrolls independently. Yellow highlighting marks the demo-generated text.</p>
+  </div>
+
+  <div class="compare-grid">
+    <article class="preview-card">
+      <div class="preview-title">
+        <h3>Human-review V11</h3>
+        <a href="{{ url_for('download_output', job_id=job.job_id, kind='human_review') }}">Download</a>
+      </div>
+      <div class="docx-scroll" id="human-preview">Loading preview…</div>
+    </article>
+
+    <article class="preview-card">
+      <div class="preview-title">
+        <h3>AI-assisted V11</h3>
+        <a href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">Download</a>
+      </div>
+      <div class="docx-scroll" id="ai-preview">Loading preview…</div>
+    </article>
+  </div>
+</section>
+    
+  </section>
+
+  <section class="notice">
+    <strong>Demo mode:</strong> These outputs are placeholders. They do not represent real clinical conversion or clinically valid data.
+  </section>
+</main>
+
+<footer>ClinicalConverter · Hack Princeton 2026</footer>
+
 <script>
 const jobId = {{ job.job_id|tojson }};
-fetch(`/api/jobs/${jobId}/fhir`).then(r=>r.json()).then(data=>document.getElementById('json-preview').textContent=JSON.stringify(data,null,2)).catch(()=>document.getElementById('json-preview').textContent='Preview unavailable.');
+
 async function renderDocx(kind, targetId) {
- const target=document.getElementById(targetId);
- try {
-  const response=await fetch(`/preview/${jobId}/${kind}`);
-  if(!response.ok) throw new Error('Preview unavailable');
-  const html=await response.text();
-  if(!html.trim()) throw new Error('Empty preview response');
-  target.innerHTML=html;
- } catch(e) { target.textContent='Could not render this document. Please use the download button.'; }
+  const target = document.getElementById(targetId);
+  try {
+    const response = await fetch(`/preview/${jobId}/${kind}`);
+    if (!response.ok) throw new Error('Preview unavailable');
+    const html = await response.text();
+    if (!html.trim()) throw new Error('Empty preview response');
+    target.innerHTML = html;
+  } catch (error) {
+    target.textContent = 'Could not render this document. Please use the download button.';
+  }
 }
-renderDocx('ai_assisted','ai-preview'); renderDocx('human_review','human-preview');
-</script></body></html>
+
+
+renderDocx('human_review', 'human-preview');
+renderDocx('ai_assisted', 'ai-preview');
+
+</script>
+</body>
+</html>
