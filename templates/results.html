@@ -141,8 +141,15 @@ async function renderDocx(kind, target) {
   if(!response.ok) throw new Error('Preview unavailable');
   target.textContent='';
   await docx.renderAsync(await response.blob(), target, null, {ignoreLastRenderedPageBreak:false});
+  removeLeadingBlankPage(target);
   fitPagesToPanel(target);
  } catch(e) { target.textContent='Could not render this document. Please use the download button.'; }
+}
+// The v011 template's first heading style has "page break before". Word ignores that on the document's
+// first paragraph; docx-preview starts a new page anyway, leaving a page with only the header and footer.
+function removeLeadingBlankPage(target) {
+ const firstPage=target.querySelector('section.docx');
+ if(firstPage?.querySelector('article')?.childElementCount===0) firstPage.remove();
 }
 // Word pages are 8.5in wide, wider than the document panel, so scale them down instead of scrolling sideways.
 function fitPagesToPanel(target) {
