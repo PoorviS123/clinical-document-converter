@@ -3,6 +3,7 @@ const nameLabel = document.getElementById('file-name');
 const button = document.getElementById('upload-button');
 const status = document.getElementById('upload-status');
 const zone = document.getElementById('drop-zone');
+const originalButtonText = button.textContent;
 const maxBytes = 100 * 1024 * 1024;
 const allowed = ['.pdf', '.docx'];
 function choose(file) {
@@ -26,6 +27,7 @@ button.addEventListener('click', async () => {
   data.append('file', file);
 
   button.disabled = true;
+  button.textContent = 'Uploading…';
   status.textContent = 'Uploading your document...';
 
   try {
@@ -44,7 +46,8 @@ button.addEventListener('click', async () => {
     const jobId = result.job_id;
 
     // Step 2: Keep checking until conversion finishes.
-    status.textContent = 'Your document is being processed. Please wait...';
+    button.textContent = 'Conversion running…';
+    status.textContent = '⏳ Conversion is running. This can take a few minutes; results will open automatically when ready.';
 
     while (true) {
       await new Promise(resolve => setTimeout(resolve, 2000));
@@ -57,7 +60,7 @@ button.addEventListener('click', async () => {
       }
 
       if (job.status === 'completed') {
-        status.textContent = 'All three outputs are ready. Opening results...';
+        status.textContent = `${job.message || 'Conversion complete.'} Opening results...`;
         window.location.href = job.results_url;
         return;
       }
@@ -66,11 +69,12 @@ button.addEventListener('click', async () => {
         throw new Error(job.message || 'Conversion failed.');
       }
 
-      status.textContent = job.message || 'Conversion in progress...';
+      status.textContent = '⏳ Still working… your document is being converted. Results will open automatically when ready.';
     }
 
   } catch (error) {
     status.textContent = error.message;
+    button.textContent = originalButtonText;
     button.disabled = false;
   }
 });

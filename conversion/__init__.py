@@ -1,53 +1,73 @@
-"""Conversion integration point.
+"""Adapter from ClinicalConverter's job contract to the protocol reformatter CLI."""
+from __future__ import annotations
 
-Replace convert_document() with the teammate's real converter when its API is agreed.
-The current implementation deliberately creates DEMO placeholders only.
-"""
+import re
+import shutil
+import subprocess
+import sys
 from pathlib import Path
-import json
-from docx import Document
-from docx.enum.text import WD_COLOR_INDEX
+
+
+PROJECT_DIR = Path(__file__).resolve().parents[1]
+BACKEND_DIR = PROJECT_DIR / "protocol-reformatter"
+BACKEND_SRC = BACKEND_DIR / "src"
 
 
 def convert_document(input_path: str | Path, output_dir: str | Path) -> dict[str, str]:
-    """Create three clearly labeled demo outputs and return their paths."""
-    input_path = Path(input_path)
-    output_dir = Path(output_dir)
+    """Run the teammate CLI and return generated DOCX files for the web UI."""
+    input_path = Path(input_path).resolve()
+    output_dir = Path(output_dir).resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    fhir_path = output_dir / "output.fhir.json"
-    ai_path = output_dir / "output.ai_assisted.docx"
-    human_path = output_dir / "output.human_review.docx"
+    if not (BACKEND_SRC / "converter" / "cli.py").is_file():
+        raise RuntimeError(f"Protocol reformatter backend is missing at {BACKEND_DIR}")
 
-    demo_fhir = {
-        "resourceType": "Bundle",
-        "type": "collection",
-        "meta": {"tag": [{"system": "urn:clinicalconverter", "code": "DEMO-PLACEHOLDER"}]},
-        "identifier": {"value": "DEMO-OUTPUT-NOT-CLINICAL-DATA"},
-        "entry": [],
-        "note": "Placeholder only. This is not converted clinical data and is not clinically valid."
+    command = [
+        sys.executable,
+        "-m",
+        "converter",
+        str(input_path),
+        "--out-dir",
+        str(output_dir),
+    ]
+    ai_generation_available = shutil.which("codex") is not None
+    if ai_generation_available:
+        command.extend(["--llm", "codex"])
+    else:
+        command.append("--skip-generate")
+    result = subprocess.run(
+        command,
+        cwd=BACKEND_SRC,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        detail = result.stderr.strip() or result.stdout.strip() or "No CLI error details were provided."
+        raise RuntimeError(f"Protocol reformatter failed (exit {result.returncode}): {detail[-4000:]}")
+
+    source_stem = input_path.stem
+    if ai_generation_available:
+        report_path = output_dir / f"{source_stem}.report.txt"
+        report = report_path.read_text(encoding="utf-8") if report_path.is_file() else ""
+        generation_summary = re.search(
+            r"drafted\s+(\d+)\s+section\(s\).*?failed\s+(\d+)\s*:", report
+        )
+        if generation_summary and int(generation_summary.group(1)) == 0 and int(generation_summary.group(2)) > 0:
+            ai_generation_available = False
+
+    generated_paths = {"human_review": output_dir / f"{source_stem}.pre-llm.docx"}
+    output_paths = {
+        "human_review": output_dir / "output.human_review.docx",
     }
-    fhir_path.write_text(json.dumps(demo_fhir, indent=2), encoding="utf-8")
+    if ai_generation_available:
+        generated_paths["ai_assisted"] = output_dir / f"{source_stem}.docx"
+        output_paths["ai_assisted"] = output_dir / "output.ai_assisted.docx"
 
-    def build_docx(path: Path, ai_version: bool) -> None:
-        doc = Document()
-        doc.add_heading("V11 Clinical Document - DEMO", 0)
-        p = doc.add_paragraph()
-        p.add_run("DEMONSTRATION OUTPUT ONLY. Not a real clinical conversion. ").bold = True
-        doc.add_paragraph("Section 1. Document overview", style="Heading 1")
-        doc.add_paragraph("This placeholder demonstrates the V11 document output layout.")
-        doc.add_paragraph("Section 2. Information requiring completion", style="Heading 1")
-        p = doc.add_paragraph()
-        p.add_run("Example missing section: ")
-        if ai_version:
-            generated = p.add_run("[DEMO AI-GENERATED PLACEHOLDER TEXT FOR REVIEW]")
-            generated.font.highlight_color = WD_COLOR_INDEX.YELLOW
-        else:
-            p.add_run("[Intentionally left blank for human review]")
-        doc.add_paragraph("Section 3. Review notes", style="Heading 1")
-        doc.add_paragraph("Replace this demo converter with the team's validated conversion implementation.")
-        doc.save(path)
+    for key, generated_path in generated_paths.items():
+        if not generated_path.is_file():
+            raise RuntimeError(f"Protocol reformatter did not create its {key} DOCX: {generated_path.name}")
+        if generated_path.resolve() != output_paths[key].resolve():
+            shutil.copy2(generated_path, output_paths[key])
 
-    build_docx(ai_path, True)
-    build_docx(human_path, False)
-    return {"fhir": str(fhir_path), "ai_assisted": str(ai_path), "human_review": str(human_path)}
+    return {key: str(path) for key, path in output_paths.items()}

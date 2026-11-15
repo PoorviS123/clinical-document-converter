@@ -15,9 +15,13 @@
 
 <main class="results-main">
   <div class="results-heading">
-    <p class="eyebrow">CONVERSION COMPLETE · DEMO MODE</p>
-    <h1>Your outputs are ready.</h1>
-    <p>These are placeholder files for testing the workflow, not converted clinical data.</p>
+    <p class="eyebrow">CONVERSION COMPLETE</p>
+    <h1>Your conversion is ready.</h1>
+    {% if job.outputs.get('ai_assisted') %}
+    <p>Review the generated V11 documents before using their contents.</p>
+    {% else %}
+    <p>Review the generated human-review V11 document before using its contents.</p>
+    {% endif %}
   </div>
 
     <section class="download-grid">
@@ -32,15 +36,20 @@
   <article class="download-card">
     <span class="number">02</span>
     <h2>AI-assisted V11</h2>
-    <p>Demo placeholder text is highlighted yellow.</p>
+    {% if job.outputs.get('ai_assisted') %}
+    <p>AI-drafted sections are highlighted yellow for review.</p>
     <a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">Download DOCX</a>
+    {% else %}
+    <p>Unavailable. Check local Codex CLI sign-in and the backend report.</p>
+    <button class="button primary" type="button" disabled aria-disabled="true">Unavailable</button>
+    {% endif %}
   </article>
 
   <article class="download-card">
     <span class="number">03</span>
     <h2>FHIR JSON</h2>
-    <p>Structured JSON placeholder.</p>
-    <a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='fhir') }}">Download JSON</a>
+    <p>FHIR JSON generation is being developed separately.</p>
+    <button class="button primary" type="button" disabled aria-disabled="true">Coming soon</button>
   </article>
 </section>
 
@@ -48,7 +57,7 @@
   <div>
     <p class="eyebrow">DOCUMENT COMPARISON</p>
     <h2>Compare both V11 versions</h2>
-    <p>Each preview scrolls independently. Yellow highlighting marks the demo-generated text.</p>
+    <p>Each preview scrolls independently. Yellow highlighting marks AI-drafted text when generation is available.</p>
   </div>
 
   <div class="compare-grid">
@@ -63,9 +72,17 @@
     <article class="preview-card">
       <div class="preview-title">
         <h3>AI-assisted V11</h3>
+        {% if job.outputs.get('ai_assisted') %}
         <a href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">Download</a>
+        {% else %}
+        <span>Unavailable</span>
+        {% endif %}
       </div>
+      {% if job.outputs.get('ai_assisted') %}
       <div class="docx-scroll" id="ai-preview">Loading preview…</div>
+      {% else %}
+      <div class="docx-scroll" id="ai-preview">AI-assisted generation did not produce a DOCX. Check local Codex CLI sign-in and the backend report.</div>
+      {% endif %}
     </article>
   </div>
 </section>
@@ -73,7 +90,11 @@
   </section>
 
   <section class="notice">
-    <strong>Demo mode:</strong> These outputs are placeholders. They do not represent real clinical conversion or clinically valid data.
+    {% if job.outputs.get('ai_assisted') %}
+    <strong>Review required:</strong> AI-drafted content is highlighted for review. FHIR JSON is coming soon.
+    {% else %}
+    <strong>Review required:</strong> AI-assisted DOCX was unavailable; FHIR JSON is coming soon.
+    {% endif %}
   </section>
 </main>
 
@@ -97,7 +118,9 @@ async function renderDocx(kind, targetId) {
 
 
 renderDocx('human_review', 'human-preview');
+{% if job.outputs.get('ai_assisted') %}
 renderDocx('ai_assisted', 'ai-preview');
+{% endif %}
 
 </script>
 </body>

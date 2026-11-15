@@ -29,24 +29,27 @@ def run_conversion(job_id: str, input_path: Path, job_output_dir: Path, safe_nam
     """Run conversion in the background and update the job status."""
     try:
         jobs[job_id]["status"] = "processing"
-        jobs[job_id]["message"] = "Generating your three output files..."
+        jobs[job_id]["message"] = "Converting your document to v011..."
 
         outputs = convert_document(input_path, job_output_dir)
 
         expected = {
-            "fhir": job_output_dir / "output.fhir.json",
             "ai_assisted": job_output_dir / "output.ai_assisted.docx",
             "human_review": job_output_dir / "output.human_review.docx",
         }
 
-        for key, expected_path in expected.items():
-            returned_path = Path(outputs[key]).resolve()
+        if "human_review" not in outputs:
+            raise RuntimeError("Converter did not produce the required human-review DOCX.")
+
+        for key, returned_value in outputs.items():
+            if key not in expected:
+                raise RuntimeError(f"Converter returned an unsupported output: {key}.")
+            expected_path = expected[key]
+            returned_path = Path(returned_value).resolve()
             if returned_path != expected_path.resolve() or not expected_path.is_file():
                 raise RuntimeError(f"Converter did not produce the expected {key} output.")
 
-        json.loads(expected["fhir"].read_text(encoding="utf-8"))
-
-        for key in ("ai_assisted", "human_review"):
+        for key in outputs:
             with zipfile.ZipFile(expected[key]) as archive:
                 if "word/document.xml" not in archive.namelist() or archive.testzip():
                     raise RuntimeError(f"Converter produced an invalid {key} DOCX.")
@@ -54,7 +57,6 @@ def run_conversion(job_id: str, input_path: Path, job_output_dir: Path, safe_nam
         manifest = {
             "job_id": job_id,
             "original_filename": safe_name,
-            "demo": True,
             "outputs": {key: Path(value).name for key, value in outputs.items()}
         }
 
@@ -63,7 +65,11 @@ def run_conversion(job_id: str, input_path: Path, job_output_dir: Path, safe_nam
         )
 
         jobs[job_id]["status"] = "completed"
-        jobs[job_id]["message"] = "All three outputs are ready."
+        jobs[job_id]["message"] = (
+            "Both DOCX outputs are ready. FHIR JSON is coming soon."
+            if "ai_assisted" in outputs
+            else "Human-review DOCX is ready. AI-assisted DOCX was unavailable; check Codex CLI sign-in and the backend report."
+        )
         jobs[job_id]["results_url"] = f"/results/{job_id}"
 
     except Exception:
@@ -186,7 +192,6 @@ def results(job_id):
 @app.route("/files/<job_id>/<kind>")
 def download_output(job_id, kind):
     allowed = {
-        "fhir": ("output.fhir.json", "output.fhir.json", "application/json"),
         "ai_assisted": ("output.ai_assisted.docx", "output.ai_assisted.docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"),
         "human_review": ("output.human_review.docx", "output.human_review.docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"),
     }
@@ -214,15 +219,6 @@ def preview_docx(job_id, kind):
     except Exception:
         app.logger.exception("DOCX preview rendering failed for job %s", job_id)
         return jsonify(error="The DOCX preview could not be generated. Please download the document instead."), 500
-
-
-@app.route("/api/jobs/<job_id>/fhir")
-def fhir_preview(job_id):
-    folder = job_folder(job_id)
-    path = folder / "output.fhir.json"
-    if not path.is_file():
-        abort(404)
-    return jsonify(json.loads(path.read_text(encoding="utf-8")))
 
 
 if __name__ == "__main__":

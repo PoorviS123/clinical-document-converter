@@ -1,0 +1,128 @@
+v11_number	v11_style	v11_text	v10_mapping
+	Heading1NoTOC	Title Page	Use this tool to see where headings and content from CPT V10 was mapped into the latest ICH M11-Aligned CPT V11.
+	HeadingNoTOC	Full Title:	V10 CPT Protocol Title
+	HeadingNoTOC	[Trial Acronym]:	V10 CPT Acronym
+		Sponsor Protocol Identifier: [protocol number]	V10 CPT Protocol Number
+		[Amendment Scope]: [Amendment Scope] [Country Identifier] or [Region Identifier] or [Enter	V10 CPT Amendment Scope V10 CPT includes Country/Region Identifier as a separate heading.
+		[Investigational Product Code(s)]: [number]	V10 CPT Compound
+		[Investigational Product Name(s)]: [name]	V10 CPT - found only in the intervention section.
+	HeadingNoTOC	Trial Phase: [Trial phase]	V10 CPT Study Phase
+	CPTInstructional	[Short Title]:	V10 CPT Brief Title
+	HeadingNoTOC	Sponsor Name and Address:	V10 CPT Sponsor Name V10 CPT Legal Registered Address
+	HeadingNoTOC	[Device Manufacturer Name and Legal Address]: [insert device manufacturer and address]	V10 CPT Manufacturer
+	HeadingNoTOC	Regulatory or Clinical Trial Identifier(s):	V10 CPT Regulatory Agency Identifier Number(s)
+		Sponsor Approval:	V10 CPT Approval Date
+	HeadingNoTOC	Sponsor Signatory:	V10 CPT Sponsor Signatory
+	HeadingNoTOC	[Medical Expert Contact:] [will be provided separately OR can be found in XX]	V10 CPT Medical Monitor Name and Contact Information
+	08SubheadingBold	Amendment Details	V10 CPT Protocol Amendment Summary of Changes Table
+1	01Heading1	Protocol Summary	V10 CPT 1.0 Protocol Summary
+1.1	02Heading2	Protocol Synopsis	V10 CPT 1.1 Synopsis The text content from the CPT is NOT intended in the M11 Protocol Title, Brief title, Reg Agency Identifier, Pediatric Plan #, Rationale - are not included here in M11
+1.1.1	03Heading3	Primary and Secondary Objectives and Estimands	V10 CPT Objectives, Endpoints, Estimands from Synopsis
+1.1.2	03Heading3	Overall Design	V10 CPT Overall Design Synopsis, Brief Summary, Number of Participants, Study Arms and Duration, Data Monitoring Committee - content to be reorganized to fit this section
+	HeadingNoTOC	Duration:	V10 CPT Brief Summary content
+1.2	02Heading2	Trial Schema	V10 CPT 1.2 Schema
+1.3	02Heading2	Schedule of Activities	V10 CPT 1.3 Schedule of Activities
+2	01Heading1	Introduction	V10 CPT 2.0 Introduction
+2.1.1	03Heading3	Trial Rationale	V10 CPT 2.1 Study Rationale
+2.1.2	03Heading3	Background	V10 CPT 2.2 Background
+2.2	02Heading2	Assessment of Risks and Benefits	V10 CPT 2.3 Benefit/Risk Assessment V10 CPT 2.3.1 Risk Assessment V10 CPT 2.3.2 Benefit Assessment
+2.2.3	03Heading3	Overall Risk-Benefit Assessment	V10 CPT 2.3.3 Overall Benefit Risk Conclusion
+3	01Heading1	Trial Objectives and Associated Estimands	V10 CPT 3.0 Objectives, Endpoints, and Estimands
+3.1	02Heading2	Primary Objective(s) and Associated Estimand(s)	V10 CPT 3.0 Objectives, Endpoints and Estimands for Primary Objectives
+3.2	02Heading2	Secondary Objective(s) and Associated Estimand(s)	V10 CPT Objectives, Endpoints and Estimands for Secondary Objectives
+3.3	02Heading2	Exploratory Objective(s)	V10 CPT Objectives, Endpoints and Estimands for [Tertiary/Exploratory/Other] Objectives
+4	01Heading1	Trial Design	V10 CPT 4.0 Study Design
+4.1	02Heading2	Description of Trial Design	V10 CPT 4.1 Overall Design
+4.1.1	03Heading3	Stakeholder Input into Design	V10 CPT 4.2.1 Patient Input into Design
+4.2	02Heading2	Rationale for Trial Design	V10 CPT 4.2 Scientific Rationale for Study Design
+4.2.2	03Heading3	Rationale for Intervention Model	V10 CPT 4.3 Justification for Dose
+4.4	02Heading2	Start of Trial and End of Trial	V10 CPT 4.4 End of Study Definition V10 CPT 10.1.10 Study and Site Start and Closure
+4.5	02Heading2	Access to Trial Intervention After End of Trial	V10 CPT 6.7 Continued Access to Study Intervention after the End of Study
+5	01Heading1	Trial Population	V10 CPT 5.0 Study Population - M11 expects no content at this level, CPT has general statement about prospective waivers which is included in M11 5.1 below.
+5.2	02Heading2	Inclusion Criteria	V10 CPT 5.1 Inclusion Criteria
+5.3	02Heading2	Exclusion Criteria	V10 CPT 5.2 Exclusion Criteria
+5.4.1	03Heading3	Definitions Related to Childbearing Potential	V10 CPT 10.4.1 Contraceptive and Barrier Guidance/Definitions - Actual content is located in the Healthy Volunteer and Patient Libraries
+5.4.2	03Heading3	Contraception Requirements	V10 CPT 10.4.2 Contraceptive and Barrier Guidance/ Contraception Guidance - content located in Healthy Volunteer and Patient Libraries.
+5.5	02Heading2	Lifestyle Restrictions	V10 CPT 5.3 Lifestyle Considerations
+5.5.1	03Heading3	Meals and Dietary Restrictions	V10 CPT 5.3.1 Meals and Dietary Restrictions
+5.5.2	03Heading3	Caffeine, Alcohol, Tobacco, and Other Restrictions	V10 CPT 5.3.2 Caffeine, Alcohol, and Tobacco
+5.5.3	03Heading3	Physical Activity Restrictions	V10 CPT 5.3.3 Activity
+5.5.4	03Heading3	Other Activity Restrictions	V10 CPT 5.3.4 Other Restrictions
+5.6	02Heading2	Screen Failure and Rescreening	V10 CPT 5.4 Screen Failures
+6	01Heading1	Trial Intervention And Concomitant Therapy	V10 CPT 6.0 Study Intervention and Concomitant Therapy - content from CPT is included under M11 6.2 below.
+	CPTExample	<Start of suggested text>	V10 CPT 6.1 Study Intervention(s) Administered
+6.1	02Heading2	Description of Investigational Trial Intervention	V10 CPT 6.0 Study Intervention and Concomitant Therapy CPT 6.1.2 Medical Devices
+6.4	02Heading2	Investigational Trial Intervention Dose Modification	V10 CPT 6.6 Dose Modification V10 CPT 6.6.1 Retreatment Criteria
+6.5	02Heading2	Management of Investigational Trial Intervention Overdose	V10 CPT 6.8 Treatment of Overdose
+6.6	02Heading2	Preparation, Storage, Handling and Accountability of Investigational Trial Intervention	V10 CPT 6.2 Preparation, Handling, Storage, and Accountability - M11 does NOT expect content under this heading, but this CPT content should be included in the level 3 headings below it where appropriate
+6.7	02Heading2	Investigational Trial Intervention Assignment, Randomization and Blinding	V10 CPT 6.3 Assignment to Study Intervention V10 CPT 6.4 Blinding and Masking
+6.7.1	03Heading3	Participant Assignment to Investigational Trial Intervention	V10 CPT 6.3 Assignment to Study Intervention
+6.7.2	03Heading3	Randomization	V10 CPT 6.3 Assignment to Study Intervention
+6.7.3	03Heading3	Measures to Maintain Blinding	V10 CPT 6.4 [Blinding, Masking]
+6.8	02Heading2	Investigational Trial Intervention Adherence	V10 CPT 6.5 Study Intervention Compliance
+6.9	02Heading2	Description of Noninvestigational Trial Intervention	V10 CPT 6.1 Study Intervention Administered
+6.9.2	03Heading3	Rescue Therapy	V10 CPT 6.1.1 Rescue Medicine
+6.10	02Heading2	Concomitant Therapy	V10 CPT 6.9 Prior and Concomitant Therapy
+7.1	02Heading2	Discontinuation of Trial Intervention for Individual Participants	V10 CPT 7.1 Discontinuation of Study Intervention V10 CPT 7.1.1 Liver Event Stopping Criteria V10 CPT 7.1.2 QtC Stopping Criteria V10 CPT 10.6 Liver Safety (CPT Patient and Healthy Volunteer library liver safety content)- no text expected - suggest putting CPT text under 7.1.1 Permanent Discontinuation.
+7.1.2	03Heading3	Temporary Discontinuation of Trial Intervention	V10 CPT 7.1.3 Temporary Discontinuation
+7.1.3	03Heading3	Rechallenge	V10 CPT 7.1.4 Rechallenge V10 CPT 7.1.4.1 Study Intervention Restart or Rechallenge After Liver Stopping Criteria are Met
+7.2	02Heading2	Participant Discontinuation or Withdrawal from the Trial	V10 CPT 7.2 Participant Discontinuation/Withdrawal from the Study
+7.3	02Heading2	Management of Loss to Follow-Up	V10 CPT 7.3 Lost to Follow-Up
+8	01Heading1	Trial Assessments and Procedures	V10 CPT 8.0 Study Assessments and Procedures - put CPT content under 8.1
+8.2	02Heading2	Screening/Baseline Assessments and Procedures	V10 CPT 8.1 Administrative [and General/Baseline] Procedures
+8.3	02Heading2	Efficacy Assessments and Procedures	V10 CPT 8.2 [Efficacy and/or Immunogenicity] Assessments
+8.4	02Heading2	Safety Assessments and Procedures	V10 CPT 8.3 Safety Assessments
+8.4.1	03Heading3	Physical Examination	V10 CPT 8.3.1 Physical Examinations
+8.4.2	03Heading3	Vital Signs	V10 CPT 8.3.2 Vital Signs
+8.4.3	03Heading3	Electrocardiograms	V10 CPT 8.3.3 Electrocardiograms
+8.4.4	03Heading3	Clinical Laboratory Assessments	V10 CPT 8.3.4 Clinical Safety Laboratory Tests
+8.4.5	03Heading3	Pregnancy Testing	V10 CPT 8.3.5 Pregnancy Testing & content from Patient & Healthy Volunteer Librarie
+8.4.6	03Heading3	Suicidal Ideation and Behavior Risk Monitoring	V10 CPT 8.3.6 Suicidal Ideation and Behavior Risk Monitoring
+8.5	02Heading2	Pharmacokinetics	V10 CPT 8.5 Pharmacokinetics
+8.6	02Heading2	Biomarkers	V10 CPT 8.8 Biomarkers - but no content is intended at this M11 heading level. M11 Instructions say to include in 8.4 Safety or 8.7 Immunogenicity.
+8.6.1	03Heading3	Genetics, Genomics, Pharmacogenetics and Pharmacogenomics	V10 CPT 8.7 Genetics & 10.5 Appendix: Genetics
+8.6.2	03Heading3	Pharmacodynamic Biomarkers	V10 CPT 8.6 Pharmacodynamics
+8.7	02Heading2	Immunogenicity Assessments	V10 CPT 8.9 Immunogenicity Assessments
+8.8	02Heading2	Medical Resource Utilization and Health Economics	V10 CPT 8.10 [Health Economics OR Medical Resource Utilization and Health Economics]
+9	01Heading1	Adverse Events, Serious Adverse Events, Product Complaints, Pregnancy and Postpartum Infor	V10 CPT 8.4 Adverse Events (AEs) Serious Adverse Events (SAEs), and Other Safety Reporting V10 CPT 10.3 Appendix 10.3
+9.1.1	03Heading3	Definitions of Adverse Events	V10 CPT 10.3.1 Appendix: Definition of AE
+9.1.2	03Heading3	Definitions of Serious Adverse Events	V10 CPT 10.3.2 Appendix Definition of SAE
+9.1.4	03Heading3	Definitions of Medical Device Product Complaints	V10 CPT 10.7.1 Definition of Medical Device AE and ADE V10 CPT 10.7.2 Definition of Medical Device SAE, SADE
+9.2	02Heading2	Timing and Procedures for Collection and Reporting	V10 CPT 8.4.1 Time Period and Frequency for collecting AE and SAE information V10 CPT 8.4.9.1 Time Period for Detecting Medical Device Deficiencies
+9.2.1	03Heading3	Timing	V10 CPT 8.4.1 Time Period and Frequency for collecting AE and SAE information V10 CPT 8.4.9.1 Time Period for Detecting Medical Device Deficiencies
+9.2.2	03Heading3	Collection Procedures	V10 CPT 10.3.3 Recording and Follow-Up of AE and /or SAE V10 CPT 10.7.4 Recording and Follow-up of Medical Devise AE and/or SAE and Device Deficiencies
+	00Paragraph	Identification	V10 CPT 8.4.2 Method of Detecting AE’s and SAE’s
+	00Paragraph	Severity	V10 CPT 10.3.3 Recording and Follow-up of AEs/SAEs
+	00Paragraph	Causality	V10 CPT 8.4.3 Follow-up of AEs and SAEs V10 CPT 10.3.3 Recording and Follow -up of AEs and SAEs V10 CPT 10.7.4 CPT Recording and Follow up of Medical Device AEs and/or SAEs and Medical Device Deficiencies.
+	08SubheadingBold	Follow-up	V10 CPT 8.4.3 Follow-up of AEs and SAEs V10 CPT 10.3.3 Recording and Follow -up of AEs and SAEs V10 CPT 10.7.4 Recording and Follow up of Medical Device AEs and/or SAEs and Medical Device Deficiencies V10 CPT 8.4.9.2 Follow-up of Medical Device Deficiencies
+9.2.3	03Heading3	Reporting	V10 CPT 10.3.4 Reporting of SAEs V10 CPT 10.7.5 Reporting of Medical Device SAEs V10 CPT 8.4.9.3 Prompt Reporting of Device Deficiencies to the Sponsor
+9.2.3.1	04Heading4	Regulatory Reporting Requirements	V10 CPT 8.4.4 Regulatory Reporting Requirements for SAEs V10 CPT 8.4.9 Medical Device Deficiencies V10 CPT 8.4.9.4 Regulatory Reporting Requirements for Device Deficiencies V10 CPT 10.7.6 Reporting of SADEs
+9.2.4	03Heading3	Adverse Events of Special Interest	V10 CPT 8.4.8 Adverse Events of Special Interest
+9.2.5	03Heading3	Disease-Related Events or Outcomes Not Qualifying as AEs or SAEs	V10 CPT 8.4.7 Disease-related Events and or Disease-related Outcomes Not Qualifying as AEs or SAEs
+9.3.1	03Heading3	Participants Who Become Pregnant During the Trial	V10 CPT 8.4.5 Pregnancy
+10.1	02Heading2	General Considerations	V10 CPT 9.0 Statistical Considerations V10 CPT 9.1 General Considerations V10 CPT 9.1.1 Decision Criteria/Statistical Hypothesis V10 CPT 9.1.3 Impact of Intercurrent Events Strategies
+10.2	02Heading2	Analysis Sets	V10 CPT Analysis Sets
+10.4	02Heading2	Analyses Associated with the Primary Objective(s)	V10 CPT 9.3 Analyses Supporting Primary Objective(s) V10 CPT 9.3.1 Primary Endpoint /Estimands V10 CPT 9.3.1.1 Definition of Endpoints V10 CPT 9.3.1.2 Main Analytical Approach
+10.4.1.3	04Heading4	Handling of Missing Data in Relation to Primary Estimand(s)	V10 CPT 9.1.4 Handling of Missing Data
+10.4.1.4	04Heading4	Sensitivity Analysis	V10 CPT 9.3.1.3 Sensitivity Analysis/Analyses
+10.4.1.5	04Heading4	Supplementary Analysis	V10 CPT 9.3.1.4 Supplementary Analysis/Analyses
+10.5	02Heading2	Analysis Associated with the Secondary Objective(s)	V10 CPT 9.4 Analyses Supporting Secondary Objectives V10 CPT 9.4.1 Analyses Supporting Secondary Objective “X” - need to align appropriate content into the M11 structure level 3 headings.
+10.6	02Heading2	Analyses Associated with the Exploratory Objective(s)	V10 CPT 9.5 Analyses Supporting [Tertiary/Exploratory/Other] objectives & associated lower level content headings
+10.7	02Heading2	Safety Analyses	V10 CPT 9.6 [Other] Safety Analyses
+10.8	02Heading2	Other Analyses	V10 CPT 9.7 Other Analyses V10 CPT 9.7.1 Other Variables and/or Parameters V10 CPT 9.7.2 Subgroup Analyses
+10.9	02Heading2	Interim Analyses	V10 CPT 9.8 Interim [Analysis/Analyses]
+10.10	02Heading2	Multiplicity Adjustments	V10 CPT 9.1.2 Multiplicity Adjustment
+10.11	02Heading2	Sample Size Determination	V10 CPT 9.9 Sample Size Determination
+11	01Heading1	Trial Oversight and Other General Considerations	V10 CPT 10.0 Supporting Documentation and Operational Considerations
+11.1	02Heading2	Regulatory and Ethical Considerations	V10 CPT 10.1 Appendix 1 Regulatory, Ethical and Study Oversight Considerations V10 CPT 10.1.1 Regulatory and Ethical Considerations V10 CPT 10.1.2 Financial Disclosure
+11.3	02Heading2	Informed Consent Process	V10 CPT 10.1.3 Informed Consent Process
+11.4	02Heading2	Committees	V10 CPT 10.1.6 Committees Structure V10 CPT 10.1.6.1 [Early Safety Data Review AND/OR Committee
+11.7	02Heading2	Data Governance	V10 CPT 10.1.5 Data Protection V10 CPT 10.1.7 Dissemination of Clinical Study Data V10 CPT 10.1.11 Publication Strategy
+11.11	02Heading2	Early Site Closure	V10 CPT 10.1.10 Study and Site Start and Closure/Study-Site Termination
+11.12.1	03Heading3	Publication Policy	V10 CPT 10.1.11 Publication Policy
+12.1	02Heading2	Clinical Laboratory Tests	V10 CPT 10.2 Appendix 2: Clinical Laboratory Tests
+12.2	02Heading2	Country/Region-Specific Differences	V10 CPT 10.8 Appendix 8: Country-specific Requirements
+12.3	02Heading2	Prior Protocol Amendment(s)	V10 CPT 10.9 Appendix 9: Protocol Amendment History
+12.4	02Heading2	Liver Safety: Suggestions and Guidelines for Liver Events	V10 CPT 10.6 Liver Safety: Suggestions and Guidelines for Liver Events - content found in libraries
+13	01Heading1	Appendix: Glossary of Terms and Abbreviations	V10 CPT “List of Abbreviations [and Definitions of Terms]
+14	01Heading1	Appendix: References	V10 CPT 11.0 References

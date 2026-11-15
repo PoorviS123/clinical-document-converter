@@ -1,26 +1,34 @@
-# ClinicalConverter demo
+# ClinicalConverter
 
-## Run locally
+Flask wrapper for the protocol reformatter. The web app accepts PDF or DOCX uploads, runs conversion in a background job, and shows downloadable human-review and AI-assisted v011 DOCX files with independent previews. The FHIR card is visible but disabled while FHIR generation is developed separately.
+
+## Setup
+
+The teammate backend requires **Python 3.12** (`usdm4_protocol` does not support Python 3.13+). Install the Codex CLI and sign in with your ChatGPT account so the `codex` command works in the same shell used to start Flask. The backend uses its local `codex exec` provider; it does not require Claude CLI or an Anthropic API key.
+
+From the project directory:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-python3 -m pip install -r requirements.txt
-python3 app.py
+python3.12 -m venv .venv312
+source .venv312/bin/activate
+python -m pip install -r requirements.txt
+python app.py
 ```
 
-Open http://127.0.0.1:5001. The app accepts PDF and DOCX files up to 100 MB.
+Open http://127.0.0.1:5001. The exact app command after setup is `python app.py` with the Python 3.12 virtual environment activated (or `.venv312/bin/python app.py`). The existing `.venv` is not used or modified.
 
-## Demo behavior
+The backend is kept separately in `protocol-reformatter/`; its templates, schemas, crosswalks, and other resources remain in that folder. The Flask adapter invokes the backend's actual CLI with `--llm codex` when `codex` is available on the app's PATH. Otherwise it passes `--skip-generate`. If Codex is unavailable or every draft attempt fails, Flask serves the real human-review DOCX and marks the AI card and preview unavailable.
 
-Uploading a file validates its content and creates three **placeholder** outputs: FHIR JSON, AI-assisted V11 DOCX (with one highlighted demo passage), and human-review V11 DOCX. These are not clinical conversions and must not be used clinically.
+## Output mapping
 
-## Replace the demo converter
+- `<input-name>.pre-llm.docx` → `output.human_review.docx`
+- `<input-name>.docx` → `output.ai_assisted.docx`
 
-The integration point is `conversion/__init__.py`, function `convert_document(input_path, output_dir)`. Replace its implementation with the teammate's agreed converter. Return a dictionary containing paths for `fhir`, `ai_assisted`, and `human_review`. The files must be named `output.fhir.json`, `output.ai_assisted.docx`, and `output.human_review.docx` in the output directory, or update the download routes in `app.py` to match the agreed contract.
+The backend's JSON files are its internal protocol representation and are not FHIR. No FHIR file is generated or served by this integration.
 
 ## Notes
 
-- Uploads and generated outputs are stored locally in `uploads/` and `outputs/`.
-- This is a local hackathon demo, not a production system for protected health information.
-- DOCX browser previews use the `docx-preview` library from a CDN; downloads remain available if preview rendering is unavailable.
+- Uploads and generated files are stored locally in `uploads/` and `outputs/`.
+- Claude CLI runs locally as the current user; no API key is read or stored by this app.
+- Scanned PDF pages remain images in the backend; it does not perform OCR.
+- This local prototype is not a production system for protected health information.

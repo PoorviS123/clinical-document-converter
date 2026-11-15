@@ -1,0 +1,138 @@
+v010_number	v010_title	v011_number	also
+1	Protocol Summary	1	
+1.1	Synopsis	1.1	
+1.2	Schema	1.2	
+1.3	Schedule of Activities (SoA)	1.3	
+2	Introduction	2	
+2.1	Study Rationale	2.1.1	
+2.2	Background	2.1.2	
+2.3	Benefit/Risk Assessment	2.2	
+2.3.1	Risk Assessment	2.2.1	
+2.3.2	Benefit Assessment	2.2.2	
+2.3.3	Overall Benefit Risk Conclusion	2.2.3	
+3	Objectives, Endpoints, and Estimands	3	
+4	Study Design	4	
+4.1	Overall Design	4.1	
+4.2	Scientific Rationale for Study Design	4.2	
+4.2.1	Patient Input into Design	4.1.1	
+4.3	Justification for Dose	6.2	
+4.4	End-of-Study Definition	4.4	
+5	Study Population	5.1	
+5.1	Inclusion Criteria	5.2	
+5.2	Exclusion Criteria	5.3	
+5.3	Lifestyle Considerations	5.5	
+5.3.1	Meals and Dietary Restrictions	5.5.1	
+5.3.2	Caffeine, Alcohol, and Tobacco	5.5.2	
+5.3.3	Activity	5.5.3	
+5.3.4	Other Restrictions	5.5.4	
+5.4	Screen Failures	5.6	
+5.5	Criteria for Temporarily Delaying Enrollment/Randomization/Administration of Study Intervention	5.7	
+6	Study Intervention(s) and Concomitant Therapy	6	
+6.1	Study Intervention(s) Administered	6.1	6 6.9
+6.1.1	Rescue Medicine	6.9.2	
+6.1.2	Medical Devices	6.1.1	
+6.2	Preparation, Handling, Storage, and Accountability	6.6.2	6.6.1 6.6.3
+6.3	Assignment to Study Intervention	6.7.2	6.7.1
+6.4	Blinding, Masking	6.7.3	
+6.5	Study Intervention Compliance	6.8	
+6.6	Dose Modification	6.4	
+6.6.1	Retreatment Criteria	6.3.1	
+6.7	Continued Access to Study Intervention after the End of the Study	4.5	
+6.8	Treatment of Overdose	6.5	
+6.9	Prior and Concomitant Therapy	6.10	6.10.1 6.10.2
+7	Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal	7	
+7.1	Discontinuation of Study Intervention	7.1	
+7.1.1	Liver Event Stopping Criteria	7.1.1.1	
+7.1.2	QTc Stopping Criteria	7.1.1.2	
+7.1.3	Temporary Discontinuation	7.1.2	
+7.1.4	Rechallenge	7.1.3	
+7.1.4.1	Study Intervention Restart or Rechallenge After Liver Stopping Criteria Are Met	7.1.3.1	
+7.2	Participant Discontinuation/Withdrawal from the Study	7.2	
+7.3	Lost to Follow up	7.3	
+8	Study Assessments and Procedures	8.1	
+8.1	Administrative and General/Baseline Procedures	8.2	
+8.2	Efficacy and/or Immunogenicity Assessments	8.3	
+8.3	Safety Assessments	8.4	
+8.3.1	Physical Examinations	8.4.1	
+8.3.2	Vital Signs	8.4.2	
+8.3.3	Electrocardiograms	8.4.3	
+8.3.4	Clinical Safety Laboratory Tests	8.4.4	
+8.3.5	Pregnancy Testing	8.4.5	
+8.3.6	Suicidal Ideation and Behavior Risk Monitoring	8.4.6	
+8.4	Adverse Events (AEs) Serious Adverse Events (SAEs), and Other Safety Reporting	9	
+8.4.1	Time Period and Frequency for Collecting AE and SAE Information	9.2.1	
+8.4.2	Method of Detecting AEs and SAEs	9.2.2	
+8.4.3	Follow-up of AEs and SAEs	9.2.2	
+8.4.4	Regulatory Reporting Requirements for SAEs	9.2.3.1	
+8.4.5	Pregnancy	9.3.1	9.3.2
+8.4.6	Cardiovascular and Death Events	9.4	
+8.4.7	Disease-related Events and/or Disease-related Outcomes Not Qualifying as AEs or SAEs	9.2.5	
+8.4.8	Adverse Events of Special Interest	9.2.4	
+8.4.9	Medical Device Deficiencies	9.2.3.1	
+8.4.9.1	Time Period for Detecting Medical Device Deficiencies	9.2.1.1	
+8.4.9.2	Follow-up of Medical Device Deficiencies	9.2.2	
+8.4.9.3	Prompt Reporting of Device Deficiencies to the Sponsor	9.2.3	
+8.4.9.4	Regulatory Reporting Requirements for Device Deficiencies	9.2.3.1	
+8.5	Pharmacokinetics	8.5	
+8.6	Pharmacodynamics	8.6.2	
+8.7	Genetics	8.6.1	
+8.8	Biomarkers	8.6.3	
+8.9	Immunogenicity Assessments	8.7	
+8.10	Health Economics OR Medical Resource Utilization and Health Economics	8.8	
+9	Statistical Considerations	10.1	
+9.1	General Considerations	10.1	
+9.1.1	Decision Criteria/Statistical Hypotheses ~ Statistical Hypotheses	10.1	
+9.1.2	Multiplicity Adjustment	10.10	
+9.1.3	Impact of Intercurrent Events Strategies	10.1	
+9.1.4	Handling of Missing Data	10.4.1.3	10.5.1.3
+9.2	Analysis Sets ~ Populations for Analyses	10.2	
+9.3	Analyses Supporting Primary Objective(s)	10.4	
+9.3.1	Primary Endpoint(s)/Estimand(s)	10.4.1	
+9.3.1.1	Definition of endpoint(s)	10.4.1.1	
+9.3.1.2	Main Analytical Approach	10.4.1.1	10.4.1.2 10.4.1.3
+9.3.1.3	Sensitivity Analysis/Analyses	10.4.1.4	
+9.3.1.4	Supplementary Analysis/Analyses	10.4.1.5	
+9.4	Analyses Supporting Secondary Objective(s)	10.5.1.1	
+9.4.1	Analyses Supporting Secondary Objective [label]	10.5.1.1	
+9.5	Analyses Supporting Tertiary/Exploratory/Other Objective(s)	10.6	
+9.6	Other Safety Analyses	10.7	
+9.7	Other Analyses	10.8	
+9.7.1	Other variables and/or parameters	10.8.1	
+9.7.2	Subgroup analyses	10.8.2	
+9.8	Interim Analysis/Analyses	10.9	
+9.9	Sample Size Determination	10.11	
+10	Supporting Documentation and Operational Considerations	11	
+10.1	Regulatory, Ethical, and Study Oversight Considerations	11.1	
+10.1.1	Regulatory and Ethical Considerations	11.1	
+10.1.2	Financial Disclosure	11.1	
+10.1.3	Informed Consent Process	11.3	
+10.1.4	Recruitment strategy	5.8	
+10.1.5	Data Protection	11.8	
+10.1.6	Committees Structure	11.4	
+10.1.6.1	Early Safety Data Review AND/OR Committee	11.4	
+10.1.7	Dissemination of Clinical Study Data	11.12	
+10.1.8	Data Quality Assurance	11.9.1	
+10.1.9	Source Documents	11.9.2	
+10.1.10	Study and Site Start and Closure	11.11	4.4
+10.1.11	Publication Policy	11.12.1	
+10.2	Clinical Laboratory Tests	12.1	
+10.3	AEs and SAEs: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting	9.1	
+10.3.1	Definition of AE	9.1.1	
+10.3.2	Definition of SAE	9.1.2	
+10.3.3	Recording and Follow-Up of AE and/or SAE	9.2.2	
+10.3.4	Reporting of SAEs	9.2.3	
+10.4	Contraceptive and Barrier Guidance	5.4	
+10.4.1	Definitions	5.4.1	
+10.4.2	Contraception Guidance	5.4.2	
+10.5	Genetics	8.6.1	
+10.6	Liver Safety: Suggestions and Guidelines for Liver Events ~ Liver Safety	12.4	7.1
+10.7	Medical Device AEs, ADEs, SAEs, SADEs, USADEs and Device Deficiencies: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting in Medical Device Studies	9.1.4	
+10.7.1	Definition of Medical Device AE and ADE	9.1.4	
+10.7.2	Definition of Medical Device SAE, SADE and USADE	9.1.4	
+10.7.3	Definition of Device Deficiency	9.1.4	
+10.7.4	Recording and Follow-Up of Medical Device AE and/or SAE and Device Deficiencies	9.2.2	
+10.7.5	Reporting of Medical Device SAEs	9.2.3	
+10.7.6	Reporting of SADEs	9.2.3.1	
+10.8	Country-specific Requirements	12.2	
+10.9	Protocol Amendment History	12.3	
+11	References	14	

@@ -1,0 +1,587 @@
+Release Date	Request Code	Change Type	NCI Code	CDISC Term Type	CDISC Codelist (Short Name)	CDISC Codelist (Long Name)	Change Summary	Original	New	Change Implementation Instructions
+2025-12-19	N/A	Add	C217274	Term	Amendment Details Statement Response Terminology	Amendment Details Statement Response Terminology	Add new codelist	- - -	Amendment Details Statement Response Terminology	
+2025-12-19	N/A	Add	C218486	Term	Amendment Details Statement Response Terminology	Amendment Details Statement Response Terminology	Add new term to new codelist	- - -	This is the first protocol amendment.	
+2025-12-19	N/A	Add	C218487	Term	Amendment Details Statement Response Terminology	Amendment Details Statement Response Terminology	Add new term to new codelist	- - -	This protocol has been amended previously. Details of prior amendments are presented in Section 12.3 Prior Protocol Amendment(s).	
+2025-12-19	N/A	Add	C218488	Term	Amendment Details Statement Response Terminology	Amendment Details Statement Response Terminology	Add new term to new codelist	- - -	This protocol has been amended previously. The Protocol Amendment Summary of Changes for the current amendment is located directly before the Table of Contents. Prior amendment(s) to this protocol are listed in the table below, beginning with the most recent.	
+2025-12-19	N/A	Add	C218485	Term	Amendment Details Statement Response Terminology	Amendment Details Statement Response Terminology	Add new term to new codelist	- - -	This protocol has not been amended.	
+2025-12-19	N/A	Add	C217275	Term	Amendment Scope Enrollment Description Response Terminology	Amendment Scope Enrollment Description Response Terminology	Add new codelist	- - -	Amendment Scope Enrollment Description Response Terminology	
+2025-12-19	N/A	Add	C218489	Term	Amendment Scope Enrollment Description Response Terminology	Amendment Scope Enrollment Description Response Terminology	Add new term to new codelist	- - -	By Cohort	
+2025-12-19	N/A	Add	C68846	Term	Amendment Scope Enrollment Description Response Terminology	Amendment Scope Enrollment Description Response Terminology	Add new term to new codelist	- - -	Globally	
+2025-12-19	N/A	Add	C41065	Term	Amendment Scope Enrollment Description Response Terminology	Amendment Scope Enrollment Description Response Terminology	Add new term to new codelist	- - -	Locally	
+2025-12-19	N/A	Add	C217047	Term	Amendment Scope Response Terminology	Amendment Scope Response Terminology	Add new codelist	- - -	Amendment Scope Response Terminology	
+2025-12-19	N/A	Add	C68846	Term	Amendment Scope Response Terminology	Amendment Scope Response Terminology	Add new term to new codelist	- - -	Global	
+2025-12-19	N/A	Add	C217026	Term	Amendment Scope Response Terminology	Amendment Scope Response Terminology	Add new term to new codelist	- - -	Not Global	
+2025-12-19	N/A	Add	C217279	Term	Control Type Response Terminology	Control Type Response Terminology	Add new codelist	- - -	Control Type Response Terminology	
+2025-12-19	N/A	Add	C49649	Term	Control Type Response Terminology	Control Type Response Terminology	Add new term to new codelist	- - -	Active Comparator	
+2025-12-19	N/A	Add	C218505	Term	Control Type Response Terminology	Control Type Response Terminology	Add new term to new codelist	- - -	Different Dose or Regimen	
+2025-12-19	N/A	Add	C120841	Term	Control Type Response Terminology	Control Type Response Terminology	Add new term to new codelist	- - -	Dose Response	
+2025-12-19	N/A	Add	C218506	Term	Control Type Response Terminology	Control Type Response Terminology	Add new term to new codelist	- - -	External	
+2025-12-19	N/A	Add	C28280	Term	Control Type Response Terminology	Control Type Response Terminology	Add new term to new codelist	- - -	No Control	
+2025-12-19	N/A	Add	C49648	Term	Control Type Response Terminology	Control Type Response Terminology	Add new term to new codelist	- - -	Placebo	
+2025-12-19	N/A	Add	C184727	Term	Control Type Response Terminology	Control Type Response Terminology	Add new term to new codelist	- - -	Sham Procedure	
+2025-12-19	N/A	Add	C217342	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new codelist	- - -	ICH M11 Section 1 Terminology	
+2025-12-19	N/A	Add	C218706	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Adaptive Trial Design Indicator	
+2025-12-19	N/A	Add	C218838	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Additional Description of Duration	
+2025-12-19	N/A	Add	C218714	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Alternate Description of Planned Duration of Trial Intervention	
+2025-12-19	N/A	Add	C218717	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Alternate Description of Planned Duration of Trial Participation	
+2025-12-19	N/A	Add	C218709	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Blinded Roles	
+2025-12-19	N/A	Add	C49647	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Control Type	
+2025-12-19	N/A	Add	C218708	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Drug/Device Combination Product Indicator	
+2025-12-19	N/A	Add	C218718	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Independent Committees	
+2025-12-19	N/A	Add	C142585	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	INN	
+2025-12-19	N/A	Add	C218475	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Intervention Assignment Method	
+2025-12-19	N/A	Add	C98746	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Intervention Model	
+2025-12-19	N/A	Add	C218707	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Master Protocol Indicator	
+2025-12-19	N/A	Add	C49694	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Maximum Age	
+2025-12-19	N/A	Add	C49693	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Minimum Age	
+2025-12-19	N/A	Add	C97054	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Nonproprietary Name(s)	
+2025-12-19	N/A	Add	C98771	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Number of Arms	
+2025-12-19	N/A	Add	C49692	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Number of Participants	
+2025-12-19	N/A	Add	C218719	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Other Committees	
+2025-12-19	N/A	Add	C223138	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Other Intervention Assignment Method	
+2025-12-19	N/A	Add	C112038	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Population Diagnosis or Condition	
+2025-12-19	N/A	Add	C218703	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Population Type	
+2025-12-19	N/A	Add	C218839	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Primary and Secondary Objectives and Estimands	
+2025-12-19	N/A	Add	C223137	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Randomisation Type	
+2025-12-19	N/A	Add	C218711	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	randomly assigned to trial intervention/enrolled	
+2025-12-19	N/A	Add	C132349	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Schedule of Activities	
+2025-12-19	N/A	Add	C218720	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Schema Notes	
+2025-12-19	N/A	Add	C218704	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Site Distribution	
+2025-12-19	N/A	Add	C218705	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Site Geographic Scope	
+2025-12-19	N/A	Add	C223136	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Stratification Indicator	
+2025-12-19	N/A	Add	C218710	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Target/Maximum	
+2025-12-19	N/A	Add	C218713	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	total planned duration of trial intervention unit of time	
+2025-12-19	N/A	Add	C218712	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	total planned duration of trial intervention	
+2025-12-19	N/A	Add	C218716	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	total planned duration of trial participation unit of time	
+2025-12-19	N/A	Add	C218715	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	total planned duration of trial participation	
+2025-12-19	N/A	Add	C49658	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Trial Blind Schema	
+2025-12-19	N/A	Add	C93682	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Trial Schema	
+2025-12-19	N/A	Add	C50400	Term	ICH M11 Section 1 Terminology	ICH M11 Section 1 Terminology	Add new term to new codelist	- - -	Units of Age	
+2025-12-19	N/A	Add	C217351	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new codelist	- - -	ICH M11 Section 10 Terminology	
+2025-12-19	N/A	Add	C218807	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Analyses Associated with the Exploratory Objective(s)	
+2025-12-19	N/A	Add	C218802	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Analyses of Demographics and Other Baseline Variables	
+2025-12-19	N/A	Add	C218801	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Analysis Sets	
+2025-12-19	N/A	Add	C164387	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	General Considerations	
+2025-12-19	N/A	Add	C218803	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Handling of Data in Relation to Primary Estimand(s)	
+2025-12-19	N/A	Add	C218805	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Handling of Data in Relation to Secondary Estimand(s)	
+2025-12-19	N/A	Add	C218804	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Handling of Missing Data in Relation to Primary Estimand(s)	
+2025-12-19	N/A	Add	C218806	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Handling of Missing Data in Relation to Secondary Estimand(s)	
+2025-12-19	N/A	Add	C142582	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Interim Analyses	
+2025-12-19	N/A	Add	C218810	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Multiplicity Adjustments	
+2025-12-19	N/A	Add	C218809	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Other Analyses	
+2025-12-19	N/A	Add	C218808	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Safety Analyses	
+2025-12-19	N/A	Add	C115467	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Sample Size Determination	
+2025-12-19	N/A	Add	C218480	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Sensitivity Analysis	
+2025-12-19	N/A	Add	C218482	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Statistical Analysis Method	
+2025-12-19	N/A	Add	C218481	Term	ICH M11 Section 10 Terminology	ICH M11 Section 10 Terminology	Add new term to new codelist	- - -	Supplementary Analysis	
+2025-12-19	N/A	Add	C217352	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new codelist	- - -	ICH M11 Section 11 Terminology	
+2025-12-19	N/A	Add	C218819	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Committees	
+2025-12-19	N/A	Add	C218829	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Criteria for Early Closure	
+2025-12-19	N/A	Add	C218831	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Data Dissemination	
+2025-12-19	N/A	Add	C218822	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Data Governance	
+2025-12-19	N/A	Add	C218823	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Data Protection	
+2025-12-19	N/A	Add	C218828	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Decision Rights for Site Closure	
+2025-12-19	N/A	Add	C218815	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Description of Assent Process	
+2025-12-19	N/A	Add	C218816	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Description of Emergency Consent Process	
+2025-12-19	N/A	Add	C184390	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Description of Informed Consent Process	
+2025-12-19	N/A	Add	C222675	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Identification of Source Records	
+2025-12-19	N/A	Add	C218817	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Informed Consent for Rescreening	
+2025-12-19	N/A	Add	C218818	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Informed Consent for Use of Remaining Samples in Exploratory Research	
+2025-12-19	N/A	Add	C218820	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Insurance and Indemnity	
+2025-12-19	N/A	Add	C218825	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Investigator Expectations for Source Records	
+2025-12-19	N/A	Add	C218813	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Investigator Responsibilities	
+2025-12-19	N/A	Add	C218827	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Protocol Deviations	
+2025-12-19	N/A	Add	C218811	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Regulatory and Ethical Considerations	
+2025-12-19	N/A	Add	C218830	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Responsibilities Following Early Site Closure	
+2025-12-19	N/A	Add	C218821	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Risk-Based Quality Management	
+2025-12-19	N/A	Add	C218824	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Source Records Introduction	
+2025-12-19	N/A	Add	C218814	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Sponsor Responsibilities	
+2025-12-19	N/A	Add	C218826	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Trial Monitor Expectations for Source Records	
+2025-12-19	N/A	Add	C218812	Term	ICH M11 Section 11 Terminology	ICH M11 Section 11 Terminology	Add new term to new codelist	- - -	Trial Oversight	
+2025-12-19	N/A	Add	C217353	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new codelist	- - -	ICH M11 Section 12 Terminology	
+2025-12-19	N/A	Add	C220640	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Additional Appendices	
+2025-12-19	N/A	Add	C218477	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Amendment Identifier	
+2025-12-19	N/A	Add	C218695	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Amendment Scope Enrollment Description	
+2025-12-19	N/A	Add	C218478	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Approximately <#/%> enrolled	
+2025-12-19	N/A	Add	C181233	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Brief Rationale for Change	
+2025-12-19	N/A	Add	C25294	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Clinical Laboratory Tests	
+2025-12-19	N/A	Add	C218832	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Country/Region Identifier	
+2025-12-19	N/A	Add	C218834	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Country/Region Specific Protocol Clarifications	
+2025-12-19	N/A	Add	C218833	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Country/Region-Specific Requirements	
+2025-12-19	N/A	Add	C218483	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Description of Change	
+2025-12-19	N/A	Add	C218835	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Prior Protocol Amendment(s)	
+2025-12-19	N/A	Add	C218479	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Section # and Name	
+2025-12-19	N/A	Add	C218836	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	specify alternative location	
+2025-12-19	N/A	Add	C132352	Term	ICH M11 Section 12 Terminology	ICH M11 Section 12 Terminology	Add new term to new codelist	- - -	Sponsor Approval Date	
+2025-12-19	N/A	Add	C217354	Term	ICH M11 Section 13 Terminology	ICH M11 Section 13 Terminology	Add new codelist	- - -	ICH M11 Section 13 Terminology	
+2025-12-19	N/A	Add	C218837	Term	ICH M11 Section 13 Terminology	ICH M11 Section 13 Terminology	Add new term to new codelist	- - -	Glossary of Terms and Abbreviations	
+2025-12-19	N/A	Add	C217355	Term	ICH M11 Section 14 Terminology	ICH M11 Section 14 Terminology	Add new codelist	- - -	ICH M11 Section 14 Terminology	
+2025-12-19	N/A	Add	C184397	Term	ICH M11 Section 14 Terminology	ICH M11 Section 14 Terminology	Add new term to new codelist	- - -	References	
+2025-12-19	N/A	Add	C217343	Term	ICH M11 Section 2 Terminology	ICH M11 Section 2 Terminology	Add new codelist	- - -	ICH M11 Section 2 Terminology	
+2025-12-19	N/A	Add	C218724	Term	ICH M11 Section 2 Terminology	ICH M11 Section 2 Terminology	Add new term to new codelist	- - -	Benefit Summary	
+2025-12-19	N/A	Add	C218725	Term	ICH M11 Section 2 Terminology	ICH M11 Section 2 Terminology	Add new term to new codelist	- - -	Overall Risk-Benefit Assessment	
+2025-12-19	N/A	Add	C146997	Term	ICH M11 Section 2 Terminology	ICH M11 Section 2 Terminology	Add new term to new codelist	- - -	Purpose of Trial	
+2025-12-19	N/A	Add	C218721	Term	ICH M11 Section 2 Terminology	ICH M11 Section 2 Terminology	Add new term to new codelist	- - -	Trial-specific Intervention Risks and Mitigations	
+2025-12-19	N/A	Add	C218723	Term	ICH M11 Section 2 Terminology	ICH M11 Section 2 Terminology	Add new term to new codelist	- - -	Trial-specific Other Risks and Mitigations	
+2025-12-19	N/A	Add	C218722	Term	ICH M11 Section 2 Terminology	ICH M11 Section 2 Terminology	Add new term to new codelist	- - -	Trial-specific Procedure Risks and Mitigations	
+2025-12-19	N/A	Add	C217344	Term	ICH M11 Section 3 Terminology	ICH M11 Section 3 Terminology	Add new codelist	- - -	ICH M11 Section 3 Terminology	
+2025-12-19	N/A	Add	C188856	Term	ICH M11 Section 3 Terminology	ICH M11 Section 3 Terminology	Add new term to new codelist	- - -	Description of Intercurrent Event	
+2025-12-19	N/A	Add	C25212	Term	ICH M11 Section 3 Terminology	ICH M11 Section 3 Terminology	Add new term to new codelist	- - -	Endpoint	
+2025-12-19	N/A	Add	C163559	Term	ICH M11 Section 3 Terminology	ICH M11 Section 3 Terminology	Add new term to new codelist	- - -	Exploratory Objective	
+2025-12-19	N/A	Add	C188857	Term	ICH M11 Section 3 Terminology	ICH M11 Section 3 Terminology	Add new term to new codelist	- - -	Intercurrent Event Strategy	
+2025-12-19	N/A	Add	C70833	Term	ICH M11 Section 3 Terminology	ICH M11 Section 3 Terminology	Add new term to new codelist	- - -	Population	
+2025-12-19	N/A	Add	C188853	Term	ICH M11 Section 3 Terminology	ICH M11 Section 3 Terminology	Add new term to new codelist	- - -	Population-level Summary	
+2025-12-19	N/A	Add	C85826	Term	ICH M11 Section 3 Terminology	ICH M11 Section 3 Terminology	Add new term to new codelist	- - -	Primary Objective	
+2025-12-19	N/A	Add	C85827	Term	ICH M11 Section 3 Terminology	ICH M11 Section 3 Terminology	Add new term to new codelist	- - -	Secondary Objective	
+2025-12-19	N/A	Add	C49236	Term	ICH M11 Section 3 Terminology	ICH M11 Section 3 Terminology	Add new term to new codelist	- - -	Treatment	
+2025-12-19	N/A	Add	C217345	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new codelist	- - -	ICH M11 Section 4 Terminology	
+2025-12-19	N/A	Add	C218738	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Access to Trial Intervention After End of Trial	
+2025-12-19	N/A	Add	C218728	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Additional Description of Trial Design	
+2025-12-19	N/A	Add	C218727	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Description of Level and Method of Blinding	
+2025-12-19	N/A	Add	C219658	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Description of Method of Assignment to Trial Intervention	
+2025-12-19	N/A	Add	C218726	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Description of Trial Duration	
+2025-12-19	N/A	Add	C218737	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	End of Trial	
+2025-12-19	N/A	Add	C147139	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Overall Description of Trial Design and Description of Intervention Model	
+2025-12-19	N/A	Add	C142705	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Overall Rationale for Trial Design	
+2025-12-19	N/A	Add	C218733	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Rationale for Adaptive or Novel Trial Design	
+2025-12-19	N/A	Add	C218731	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Rationale for Control Type	
+2025-12-19	N/A	Add	C218730	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Rationale for Estimand(s)	
+2025-12-19	N/A	Add	C218734	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Rationale for Interim Analysis	
+2025-12-19	N/A	Add	C215629	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Rationale for Intervention Model	
+2025-12-19	N/A	Add	C218735	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Rationale for Other Trial Design Aspects	
+2025-12-19	N/A	Add	C218732	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Rationale for Trial Duration	
+2025-12-19	N/A	Add	C218729	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Stakeholder Input into Design	
+2025-12-19	N/A	Add	C218736	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Start of Trial	
+2025-12-19	N/A	Add	C142698	Term	ICH M11 Section 4 Terminology	ICH M11 Section 4 Terminology	Add new term to new codelist	- - -	Trial Stopping Rules	
+2025-12-19	N/A	Add	C217346	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new codelist	- - -	ICH M11 Section 5 Terminology	
+2025-12-19	N/A	Add	C218744	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Caffeine, Alcohol, Tobacco, and Other Restrictions	
+2025-12-19	N/A	Add	C218741	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Contraception Requirements	
+2025-12-19	N/A	Add	C218740	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Definitions Related to Childbearing Potential	
+2025-12-19	N/A	Add	C218739	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Description of Trial Population and Rationale	
+2025-12-19	N/A	Add	C25370	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Exclusion Criterion	
+2025-12-19	N/A	Add	C25532	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Inclusion Criterion	
+2025-12-19	N/A	Add	C218742	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Lifestyle Restrictions	
+2025-12-19	N/A	Add	C218743	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Meals and Dietary Restrictions	
+2025-12-19	N/A	Add	C218746	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Other Activity Restrictions	
+2025-12-19	N/A	Add	C218745	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Physical Activity Restrictions	
+2025-12-19	N/A	Add	C179373	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Rescreening	
+2025-12-19	N/A	Add	C49628	Term	ICH M11 Section 5 Terminology	ICH M11 Section 5 Terminology	Add new term to new codelist	- - -	Screen Failure	
+2025-12-19	N/A	Add	C217347	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new codelist	- - -	ICH M11 Section 6 Terminology	
+2025-12-19	N/A	Add	C176267	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Accountability of Investigational Trial Intervention	
+2025-12-19	N/A	Add	C93729	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Arm Name	
+2025-12-19	N/A	Add	C172457	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Arm Type	
+2025-12-19	N/A	Add	C222329	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Background Trial Intervention	
+2025-12-19	N/A	Add	C53630	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Concomitant Therapy	
+2025-12-19	N/A	Add	C218751	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Description of Investigational Trial Intervention	
+2025-12-19	N/A	Add	C218759	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Description of Noninvestigational Trial Intervention	
+2025-12-19	N/A	Add	C218747	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	description of the overview of trial interventions or a heading for the optional table	
+2025-12-19	N/A	Add	C94394	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Dosage Level(s)	
+2025-12-19	N/A	Add	C142517	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Dosage Strength(s)	
+2025-12-19	N/A	Add	C218757	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Emergency Unblinding at the Site	
+2025-12-19	N/A	Add	C218749	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	IMP or NIMP	
+2025-12-19	N/A	Add	C177930	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Intervention Name	
+2025-12-19	N/A	Add	C98747	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Intervention Type	
+2025-12-19	N/A	Add	C218758	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Investigational Trial Intervention Adherence	
+2025-12-19	N/A	Add	C218753	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Investigational Trial Intervention Administration	
+2025-12-19	N/A	Add	C218754	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Investigational Trial Intervention Dose Modification	
+2025-12-19	N/A	Add	C218755	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Management of Investigational Trial Intervention Overdose	
+2025-12-19	N/A	Add	C189349	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Measures to Maintain Blinding	
+2025-12-19	N/A	Add	C218761	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Other Noninvestigational Trial Intervention	
+2025-12-19	N/A	Add	C218756	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Participant Assignment to Investigational Trial Intervention	
+2025-12-19	N/A	Add	C218763	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Permitted Concomitant Therapy	
+2025-12-19	N/A	Add	C42636	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Pharmaceutical Dose Form	
+2025-12-19	N/A	Add	C176274	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Preparation of Investigational Trial Intervention	
+2025-12-19	N/A	Add	C218762	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Prohibited Concomitant Therapy	
+2025-12-19	N/A	Add	C25196	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Randomisation	
+2025-12-19	N/A	Add	C218752	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Rationale for Investigational Trial Intervention Dose and Regimen	
+2025-12-19	N/A	Add	C15697	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Regimen/Treatment Period/Vaccination Regimen	
+2025-12-19	N/A	Add	C222330	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Rescue Therapy	
+2025-12-19	N/A	Add	C38114	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Route of Administration	
+2025-12-19	N/A	Add	C218750	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Sourcing	
+2025-12-19	N/A	Add	C115525	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Storage and Handling of Investigational Trial Intervention	
+2025-12-19	N/A	Add	C218748	Term	ICH M11 Section 6 Terminology	ICH M11 Section 6 Terminology	Add new term to new codelist	- - -	Use	
+2025-12-19	N/A	Add	C217348	Term	ICH M11 Section 7 Terminology	ICH M11 Section 7 Terminology	Add new codelist	- - -	ICH M11 Section 7 Terminology	
+2025-12-19	N/A	Add	C218768	Term	ICH M11 Section 7 Terminology	ICH M11 Section 7 Terminology	Add new term to new codelist	- - -	Management of Loss to Follow-Up	
+2025-12-19	N/A	Add	C218767	Term	ICH M11 Section 7 Terminology	ICH M11 Section 7 Terminology	Add new term to new codelist	- - -	Participant Discontinuation or Withdrawal from Trial	
+2025-12-19	N/A	Add	C218764	Term	ICH M11 Section 7 Terminology	ICH M11 Section 7 Terminology	Add new term to new codelist	- - -	Permanent Discontinuation of Trial Intervention	
+2025-12-19	N/A	Add	C218766	Term	ICH M11 Section 7 Terminology	ICH M11 Section 7 Terminology	Add new term to new codelist	- - -	Rechallenge	
+2025-12-19	N/A	Add	C218765	Term	ICH M11 Section 7 Terminology	ICH M11 Section 7 Terminology	Add new term to new codelist	- - -	Temporary Discontinuation of Trial Intervention	
+2025-12-19	N/A	Add	C217349	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new codelist	- - -	ICH M11 Section 8 Terminology	
+2025-12-19	N/A	Add	C218771	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Baseline Assessments and Procedures	
+2025-12-19	N/A	Add	C218774	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Clinical Laboratory Assessments	
+2025-12-19	N/A	Add	C218772	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Efficacy Assessments and Procedures	
+2025-12-19	N/A	Add	C168186	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Electrocardiograms	
+2025-12-19	N/A	Add	C218777	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Genetics, Genomics, Pharmacogenetics and Pharmacogenomics	
+2025-12-19	N/A	Add	C218780	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Immunogenicity Assessments	
+2025-12-19	N/A	Add	C176849	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Medical Resource Utilisation and Health Economics	
+2025-12-19	N/A	Add	C218779	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Other Biomarkers	
+2025-12-19	N/A	Add	C218778	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Pharmacodynamic Biomarkers	
+2025-12-19	N/A	Add	C218776	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Pharmacokinetics	
+2025-12-19	N/A	Add	C20989	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Physical Examination	
+2025-12-19	N/A	Add	C92949	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Pregnancy Testing	
+2025-12-19	N/A	Add	C218773	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Safety Assessments and Procedures	
+2025-12-19	N/A	Add	C218770	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Screening Assessments and Procedures	
+2025-12-19	N/A	Add	C218775	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Suicidal Ideation and Behaviour Risk Monitoring	
+2025-12-19	N/A	Add	C218769	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Trial Assessments and Procedures Considerations	
+2025-12-19	N/A	Add	C154628	Term	ICH M11 Section 8 Terminology	ICH M11 Section 8 Terminology	Add new term to new codelist	- - -	Vital Signs	
+2025-12-19	N/A	Add	C217350	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new codelist	- - -	ICH M11 Section 9 Terminology	
+2025-12-19	N/A	Add	C217358	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Adverse Events of Special Interest	
+2025-12-19	N/A	Add	C218790	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Back-up Method for Reporting	
+2025-12-19	N/A	Add	C82552	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Causality	
+2025-12-19	N/A	Add	C218476	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Definitions of Adverse Events	
+2025-12-19	N/A	Add	C218783	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Definitions of Medical Device Product Complaints	
+2025-12-19	N/A	Add	C218782	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Definitions of Product Complaints	
+2025-12-19	N/A	Add	C218781	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Definitions of Serious Adverse Events	
+2025-12-19	N/A	Add	C218797	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Disease-related Events or Outcomes Not Qualifying as AEs or SAEs	
+2025-12-19	N/A	Add	C218791	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Event Collection and Reporting Timing	
+2025-12-19	N/A	Add	C218784	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Event Type	
+2025-12-19	N/A	Add	C218794	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Follow-up	
+2025-12-19	N/A	Add	C218792	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Identification	
+2025-12-19	N/A	Add	C218789	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Method for Reporting	
+2025-12-19	N/A	Add	C222263	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Other Event Type	
+2025-12-19	N/A	Add	C218798	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Participants Who Become Pregnant During the Trial	
+2025-12-19	N/A	Add	C218799	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Participants Whose Partners Become Pregnant During the Trial	
+2025-12-19	N/A	Add	C218793	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Recording	
+2025-12-19	N/A	Add	C218796	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Regulatory Reporting Requirements	
+2025-12-19	N/A	Add	C218787	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Reportable Period End	
+2025-12-19	N/A	Add	C218786	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Reportable Period Start	
+2025-12-19	N/A	Add	C218795	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Reporting	
+2025-12-19	N/A	Add	C25676	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Severity	
+2025-12-19	N/A	Add	C218785	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Situational Scope	
+2025-12-19	N/A	Add	C218800	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Special Safety Situations	
+2025-12-19	N/A	Add	C218788	Term	ICH M11 Section 9 Terminology	ICH M11 Section 9 Terminology	Add new term to new codelist	- - -	Timing for Reporting to Sponsor or Designee	
+2025-12-19	N/A	Add	C217357	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new codelist	- - -	ICH M11 Section Amendment Details Terminology	
+2025-12-19	N/A	Add	C218694	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Amendment Details	
+2025-12-19	N/A	Add	C218695	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Amendment Scope Enrollment Definition	
+2025-12-19	N/A	Add	C42581	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Amendment Summary	
+2025-12-19	N/A	Add	C218478	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Approximately <#/%> enrolled	
+2025-12-19	N/A	Add	C181233	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Brief Rationale for Change	
+2025-12-19	N/A	Add	C218701	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Briefly Explain Substantial Impact on Data	
+2025-12-19	N/A	Add	C218699	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Briefly Explain Substantial Impact On Safety	
+2025-12-19	N/A	Add	C218483	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Description of Change	
+2025-12-19	N/A	Add	C218700	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Is this amendment likely to have a substantial impact on the reliability and robustness of the data generated in the clinical trial?	
+2025-12-19	N/A	Add	C218698	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Is this amendment likely to have a substantial impact on the safety or rights of the participants?	
+2025-12-19	N/A	Add	C218696	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Primary Reason for Amendment	
+2025-12-19	N/A	Add	C218697	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Secondary Reason for Amendment	
+2025-12-19	N/A	Add	C218479	Term	ICH M11 Section Amendment Details Terminology	ICH M11 Section Amendment Details Terminology	Add new term to new codelist	- - -	Section # and Name	
+2025-12-19	N/A	Add	C217356	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new codelist	- - -	ICH M11 Section Title Page Terminology	
+2025-12-19	N/A	Add	C218477	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Amendment Identifier	
+2025-12-19	N/A	Add	C218673	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Amendment Scope	
+2025-12-19	N/A	Add	C132352	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Approval Date	
+2025-12-19	N/A	Add	C218679	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Co-Sponsor Legal Address	
+2025-12-19	N/A	Add	C218678	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Co-Sponsor Name	
+2025-12-19	N/A	Add	C20108	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Country Identifier	
+2025-12-19	N/A	Add	C218683	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Device Manufacturer Legal Address	
+2025-12-19	N/A	Add	C218682	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Device Manufacturer Name	
+2025-12-19	N/A	Add	C218684	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	EU CT Number	
+2025-12-19	N/A	Add	C218685	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	FDA IND Number	
+2025-12-19	N/A	Add	C132346	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Full Title	
+2025-12-19	N/A	Add	C218686	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	IDE Number	
+2025-12-19	N/A	Add	C218687	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	jRCT Number	
+2025-12-19	N/A	Add	C218681	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Local Sponsor Legal Address	
+2025-12-19	N/A	Add	C218680	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Local Sponsor Name	
+2025-12-19	N/A	Add	C218693	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Medical Expert contact information (as designated by sponsor)	
+2025-12-19	N/A	Add	C172240	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	NCT Number	
+2025-12-19	N/A	Add	C218688	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	NMPA IND Number	
+2025-12-19	N/A	Add	C97054	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Nonproprietary Name(s)	
+2025-12-19	N/A	Add	C218672	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Original Protocol Indicator	
+2025-12-19	N/A	Add	C218690	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Other Regulatory or Clinical Trial Identifier	
+2025-12-19	N/A	Add	C71898	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Proprietary Name(s)	
+2025-12-19	N/A	Add	C218674	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Region Identifier	
+2025-12-19	N/A	Add	C83081	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Site Identifier	
+2025-12-19	N/A	Add	C181236	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Sponsor Confidentiality Statement	
+2025-12-19	N/A	Add	C218677	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Sponsor Legal Address	
+2025-12-19	N/A	Add	C222495	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Sponsor Name	
+2025-12-19	N/A	Add	C132351	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Sponsor Protocol Identifier	
+2025-12-19	N/A	Add	C222014	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	sponsor signatory (e.g., name, title, signature and date)	
+2025-12-19	N/A	Add	C218675	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Sponsor's Investigational Product Code(s)	
+2025-12-19	N/A	Add	C222063	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	state location where Medical Expert contact information can be found	
+2025-12-19	N/A	Add	C218484	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	State location where sponsor approval information can be found	
+2025-12-19	N/A	Add	C222064	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	state location where sponsor signatory information can be found (e.g., electronic signature)	
+2025-12-19	N/A	Add	C94108	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Trial Acronym	
+2025-12-19	N/A	Add	C48281	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Trial Phase	
+2025-12-19	N/A	Add	C94105	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Trial Short Title	
+2025-12-19	N/A	Add	C93813	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Version Date	
+2025-12-19	N/A	Add	C181232	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	Version Number	
+2025-12-19	N/A	Add	C218689	Term	ICH M11 Section Title Page Terminology	ICH M11 Section Title Page Terminology	Add new term to new codelist	- - -	WHO/UTN Number	
+2025-12-19	N/A	Add	C217282	Term	Independent Committee Name Response Terminology	Independent Committee Name Response Terminology	Add new codelist	- - -	Independent Committee Name Response Terminology	
+2025-12-19	N/A	Add	C215671	Term	Independent Committee Name Response Terminology	Independent Committee Name Response Terminology	Add new term to new codelist	- - -	Dose Escalation Committee	
+2025-12-19	N/A	Add	C78726	Term	Independent Committee Name Response Terminology	Independent Committee Name Response Terminology	Add new term to new codelist	- - -	Endpoint Adjudication Committee	
+2025-12-19	N/A	Add	C142578	Term	Independent Committee Name Response Terminology	Independent Committee Name Response Terminology	Add new term to new codelist	- - -	Independent Data Monitoring Committee	
+2025-12-19	N/A	Add	C41132	Term	Independent Committee Name Response Terminology	Independent Committee Name Response Terminology	Add new term to new codelist	- - -	None	
+2025-12-19	N/A	Add	C17649	Term	Independent Committee Name Response Terminology	Independent Committee Name Response Terminology	Add new term to new codelist	- - -	Other	
+2025-12-19	N/A	Add	C217277	Term	Intervention Model Response Terminology	Intervention Model Response Terminology	Add new codelist	- - -	Intervention Model Response Terminology	
+2025-12-19	N/A	Add	C82637	Term	Intervention Model Response Terminology	Intervention Model Response Terminology	Add new term to new codelist	- - -	Cross-over	
+2025-12-19	N/A	Add	C82638	Term	Intervention Model Response Terminology	Intervention Model Response Terminology	Add new term to new codelist	- - -	Factorial	
+2025-12-19	N/A	Add	C17649	Term	Intervention Model Response Terminology	Intervention Model Response Terminology	Add new term to new codelist	- - -	Other	
+2025-12-19	N/A	Add	C82639	Term	Intervention Model Response Terminology	Intervention Model Response Terminology	Add new term to new codelist	- - -	Parallel Group	
+2025-12-19	N/A	Add	C142568	Term	Intervention Model Response Terminology	Intervention Model Response Terminology	Add new term to new codelist	- - -	Sequential	
+2025-12-19	N/A	Add	C82640	Term	Intervention Model Response Terminology	Intervention Model Response Terminology	Add new term to new codelist	- - -	Single Group	
+2025-12-19	N/A	Add	C217284	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new codelist	- - -	Intervention Type Response Terminology	
+2025-12-19	N/A	Add	C15184	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Behavioural	
+2025-12-19	N/A	Add	C307	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Biologic	
+2025-12-19	N/A	Add	C54696	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Combination Product	
+2025-12-19	N/A	Add	C18020	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Diagnostic	
+2025-12-19	N/A	Add	C1505	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Dietary Supplement	
+2025-12-19	N/A	Add	C1909	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Drug	
+2025-12-19	N/A	Add	C15238	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Genetic	
+2025-12-19	N/A	Add	C16830	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Medical Device	
+2025-12-19	N/A	Add	C218507	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Non-Surgical Procedure	
+2025-12-19	N/A	Add	C15313	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Radiation	
+2025-12-19	N/A	Add	C15329	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Surgery	
+2025-12-19	N/A	Add	C923	Term	Intervention Type Response Terminology	Intervention Type Response Terminology	Add new term to new codelist	- - -	Vaccine	
+2025-12-19	N/A	Add	C217285	Term	Intervention Use Response Terminology	Intervention Use Response Terminology	Add new codelist	- - -	Intervention Use Response Terminology	
+2025-12-19	N/A	Add	C207614	Term	Intervention Use Response Terminology	Intervention Use Response Terminology	Add new term to new codelist	- - -	Additional Required Treatment	
+2025-12-19	N/A	Add	C165822	Term	Intervention Use Response Terminology	Intervention Use Response Terminology	Add new term to new codelist	- - -	Background Treatment	
+2025-12-19	N/A	Add	C158128	Term	Intervention Use Response Terminology	Intervention Use Response Terminology	Add new term to new codelist	- - -	Challenge Agent	
+2025-12-19	N/A	Add	C18020	Term	Intervention Use Response Terminology	Intervention Use Response Terminology	Add new term to new codelist	- - -	Diagnostic	
+2025-12-19	N/A	Add	C41161	Term	Intervention Use Response Terminology	Intervention Use Response Terminology	Add new term to new codelist	- - -	Experimental Intervention	
+2025-12-19	N/A	Add	C753	Term	Intervention Use Response Terminology	Intervention Use Response Terminology	Add new term to new codelist	- - -	Placebo	
+2025-12-19	N/A	Add	C165835	Term	Intervention Use Response Terminology	Intervention Use Response Terminology	Add new term to new codelist	- - -	Rescue Medicine	
+2025-12-19	N/A	Add	C217052	Term	Investigational Intervention Sourcing Response Terminology	Investigational Intervention Sourcing Response Terminology	Add new codelist	- - -	Investigational Intervention Sourcing Response Terminology	
+2025-12-19	N/A	Add	C215659	Term	Investigational Intervention Sourcing Response Terminology	Investigational Intervention Sourcing Response Terminology	Add new term to new codelist	- - -	Centrally Sourced	
+2025-12-19	N/A	Add	C215660	Term	Investigational Intervention Sourcing Response Terminology	Investigational Intervention Sourcing Response Terminology	Add new term to new codelist	- - -	Locally Sourced	
+2025-12-19	N/A	Add	C217286	Term	Investigational Medicinal Product Indicator Response Terminology	Investigational Medicinal Product Indicator Response Terminology	Add new codelist	- - -	Investigational Medicinal Product Indicator Response Terminology	
+2025-12-19	N/A	Add	C202579	Term	Investigational Medicinal Product Indicator Response Terminology	Investigational Medicinal Product Indicator Response Terminology	Add new term to new codelist	- - -	IMP	
+2025-12-19	N/A	Add	C156473	Term	Investigational Medicinal Product Indicator Response Terminology	Investigational Medicinal Product Indicator Response Terminology	Add new term to new codelist	- - -	NIMP	
+2025-12-19	N/A	Add	C217046	Term	No Yes Response Terminology	No Yes Response Terminology	Add new codelist	- - -	No Yes Response Terminology	
+2025-12-19	N/A	Add	C49487	Term	No Yes Response Terminology	No Yes Response Terminology	Add new term to new codelist	- - -	No	
+2025-12-19	N/A	Add	C49488	Term	No Yes Response Terminology	No Yes Response Terminology	Add new term to new codelist	- - -	Yes	
+2025-12-19	N/A	Add	C217278	Term	Population Type Response Terminology	Population Type Response Terminology	Add new codelist	- - -	Population Type Response Terminology	
+2025-12-19	N/A	Add	C218503	Term	Population Type Response Terminology	Population Type Response Terminology	Add new term to new codelist	- - -	With Disease	
+2025-12-19	N/A	Add	C218504	Term	Population Type Response Terminology	Population Type Response Terminology	Add new term to new codelist	- - -	Without Disease	
+2025-12-19	N/A	Add	C217272	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new codelist	- - -	Protocol Section Name and Number Response Terminology	
+2025-12-19	N/A	Add	C218514	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	1 PROTOCOL SUMMARY	
+2025-12-19	N/A	Add	C218515	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	1.1 Protocol Synopsis	
+2025-12-19	N/A	Add	C218516	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	1.1.1 Primary and Secondary Objectives and Estimands	
+2025-12-19	N/A	Add	C218517	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	1.1.2 Overall Design	
+2025-12-19	N/A	Add	C218518	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	1.2 Trial Schema	
+2025-12-19	N/A	Add	C218519	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	1.3 Schedule of Activities	
+2025-12-19	N/A	Add	C218625	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10 STATISTICAL CONSIDERATIONS	
+2025-12-19	N/A	Add	C218626	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.1 General Considerations	
+2025-12-19	N/A	Add	C218647	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.10 Multiplicity Adjustments	
+2025-12-19	N/A	Add	C218648	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.11 Sample Size Determination	
+2025-12-19	N/A	Add	C218627	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.2 Analysis Sets	
+2025-12-19	N/A	Add	C218628	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.3 Analyses of Demographics and Other Baseline Variables	
+2025-12-19	N/A	Add	C218629	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.4 Analyses Associated with the Primary Objective(s)	
+2025-12-19	N/A	Add	C218630	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.4.1 Primary Objective	
+2025-12-19	N/A	Add	C218631	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.4.1.1 Statistical Analysis Method	
+2025-12-19	N/A	Add	C218632	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.4.1.2 Handling of Data in Relation to Primary Estimand(s)	
+2025-12-19	N/A	Add	C218633	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.4.1.3 Handling of Missing Data in Relation to Primary Estimand(s)	
+2025-12-19	N/A	Add	C218634	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.4.1.4 Sensitivity Analysis	
+2025-12-19	N/A	Add	C218635	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.4.1.5 Supplementary Analysis	
+2025-12-19	N/A	Add	C218636	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.5 Analyses Associated with the Secondary Objective(s)	
+2025-12-19	N/A	Add	C218637	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.5.1 Secondary Objective	
+2025-12-19	N/A	Add	C218638	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.5.1.1 Statistical Analysis Method	
+2025-12-19	N/A	Add	C218639	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.5.1.2 Handling of Data in Relation to Secondary Estimand(s)	
+2025-12-19	N/A	Add	C218640	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.5.1.3 Handling of Missing Data in Relation to Secondary Estimand(s)	
+2025-12-19	N/A	Add	C218641	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.5.1.4 Sensitivity Analysis	
+2025-12-19	N/A	Add	C218642	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.5.1.5 Supplementary Analysis	
+2025-12-19	N/A	Add	C218643	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.6 Analyses Associated with the Exploratory Objective(s)	
+2025-12-19	N/A	Add	C218644	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.7 Safety Analyses	
+2025-12-19	N/A	Add	C218645	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.8 Other Analyses	
+2025-12-19	N/A	Add	C218646	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	10.9 Interim Analyses	
+2025-12-19	N/A	Add	C218649	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11 TRIAL OVERSIGHT AND OTHER GENERAL CONSIDERATIONS	
+2025-12-19	N/A	Add	C218650	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.1 Regulatory and Ethical Considerations	
+2025-12-19	N/A	Add	C218663	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.10 Protocol Deviations	
+2025-12-19	N/A	Add	C218664	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.11 Early Site Closure	
+2025-12-19	N/A	Add	C218665	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.12 Data Dissemination	
+2025-12-19	N/A	Add	C218651	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.2 Trial Oversight	
+2025-12-19	N/A	Add	C218652	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.2.1 Investigator Responsibilities	
+2025-12-19	N/A	Add	C218653	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.2.2 Sponsor Responsibilities	
+2025-12-19	N/A	Add	C218654	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.3 Informed Consent Process	
+2025-12-19	N/A	Add	C218655	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.3.1 Informed Consent for Rescreening	
+2025-12-19	N/A	Add	C218656	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.3.2 Informed Consent for Use of Remaining Samples in Exploratory Research	
+2025-12-19	N/A	Add	C218657	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.4 Committees	
+2025-12-19	N/A	Add	C218658	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.5 Insurance and Indemnity	
+2025-12-19	N/A	Add	C218659	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.6 Risk-Based Quality Management	
+2025-12-19	N/A	Add	C218660	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.7 Data Governance	
+2025-12-19	N/A	Add	C218661	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.8 Data Protection	
+2025-12-19	N/A	Add	C218662	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	11.9 Source Records	
+2025-12-19	N/A	Add	C218666	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	12 APPENDIX: SUPPORTING DETAILS	
+2025-12-19	N/A	Add	C218667	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	12.1 Clinical Laboratory Tests	
+2025-12-19	N/A	Add	C218668	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	12.2 Country/Region-Specific Differences	
+2025-12-19	N/A	Add	C218669	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	12.3 Prior Protocol Amendment(s)	
+2025-12-19	N/A	Add	C218670	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	13 APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS	
+2025-12-19	N/A	Add	C218671	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	14 APPENDIX: REFERENCES	
+2025-12-19	N/A	Add	C218520	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	2 INTRODUCTION	
+2025-12-19	N/A	Add	C218521	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	2.1 Purpose of Trial	
+2025-12-19	N/A	Add	C218522	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	2.2 Assessment of Risks and Benefits	
+2025-12-19	N/A	Add	C218523	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	2.2.1 Risk Summary and Mitigation Strategy	
+2025-12-19	N/A	Add	C218524	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	2.2.2 Benefit Summary	
+2025-12-19	N/A	Add	C218525	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	2.2.3 Overall Risk-Benefit Assessment	
+2025-12-19	N/A	Add	C218526	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	3 TRIAL OBJECTIVES AND ASSOCIATED ESTIMANDS	
+2025-12-19	N/A	Add	C218527	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	3.1 Primary Objective(s) and Associated Estimand(s)	
+2025-12-19	N/A	Add	C218528	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	3.1.1 Primary Objective	
+2025-12-19	N/A	Add	C218529	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	3.2 Secondary Objective(s) and Associated Estimand(s)	
+2025-12-19	N/A	Add	C218530	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	3.2.1 Secondary Objective	
+2025-12-19	N/A	Add	C218531	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	3.3 Exploratory Objective(s)	
+2025-12-19	N/A	Add	C218532	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	3.3.1 Exploratory Objective	
+2025-12-19	N/A	Add	C218533	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4 TRIAL DESIGN	
+2025-12-19	N/A	Add	C218534	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.1 Description of Trial Design	
+2025-12-19	N/A	Add	C218535	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.1.1 Stakeholder Input into Design	
+2025-12-19	N/A	Add	C218536	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.2 Rationale for Trial Design	
+2025-12-19	N/A	Add	C218537	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.2.1 Rationale for Estimand(s)	
+2025-12-19	N/A	Add	C218538	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.2.2 Rationale for Intervention Model	
+2025-12-19	N/A	Add	C218539	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.2.3 Rationale for Control Type	
+2025-12-19	N/A	Add	C218540	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.2.4 Rationale for Trial Duration	
+2025-12-19	N/A	Add	C218541	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.2.5 Rationale for Adaptive or Novel Trial Design	
+2025-12-19	N/A	Add	C218542	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.2.6 Rationale for Interim Analysis	
+2025-12-19	N/A	Add	C218543	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.2.7 Rationale for Other Trial Design Aspects	
+2025-12-19	N/A	Add	C218544	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.3 Trial Stopping Rules	
+2025-12-19	N/A	Add	C218545	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.4 Start of Trial and End of Trial	
+2025-12-19	N/A	Add	C218546	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	4.5 Access to Trial Intervention After End of Trial	
+2025-12-19	N/A	Add	C218547	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5 TRIAL POPULATION	
+2025-12-19	N/A	Add	C218548	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.1 Description of Trial Population and Rationale	
+2025-12-19	N/A	Add	C218549	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.2 Inclusion Criteria	
+2025-12-19	N/A	Add	C218550	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.3 Exclusion Criteria	
+2025-12-19	N/A	Add	C218551	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.4 Contraception	
+2025-12-19	N/A	Add	C218552	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.4.1 Definitions Related to Childbearing Potential	
+2025-12-19	N/A	Add	C218553	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.4.2 Contraception Requirements	
+2025-12-19	N/A	Add	C218554	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.5 Lifestyle Restrictions	
+2025-12-19	N/A	Add	C218555	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.5.1 Meals and Dietary Restrictions	
+2025-12-19	N/A	Add	C218556	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.5.2 Caffeine, Alcohol, Tobacco, and Other Restrictions	
+2025-12-19	N/A	Add	C218557	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.5.3 Physical Activity Restrictions	
+2025-12-19	N/A	Add	C218558	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.5.4 Other Activity Restrictions	
+2025-12-19	N/A	Add	C218559	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	5.6 Screen Failure and Rescreening	
+2025-12-19	N/A	Add	C218560	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6 TRIAL INTERVENTION AND CONCOMITANT THERAPY	
+2025-12-19	N/A	Add	C218561	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.1 Description of Investigational Trial Intervention	
+2025-12-19	N/A	Add	C218580	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.10 Concomitant Therapy	
+2025-12-19	N/A	Add	C218581	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.10.1 Prohibited Concomitant Therapy	
+2025-12-19	N/A	Add	C218582	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.10.2 Permitted Concomitant Therapy	
+2025-12-19	N/A	Add	C218562	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.2 Rationale for Investigational Trial Intervention Dose and Regimen	
+2025-12-19	N/A	Add	C218563	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.3 Investigational Trial Intervention Administration	
+2025-12-19	N/A	Add	C218564	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.4 Investigational Trial Intervention Dose Modification	
+2025-12-19	N/A	Add	C218565	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.5 Management of Investigational Trial Intervention Overdose	
+2025-12-19	N/A	Add	C218566	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.6 Preparation, Storage, Handling and Accountability of Investigational Trial Intervention	
+2025-12-19	N/A	Add	C218567	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.6.1 Preparation of Investigational Trial Intervention	
+2025-12-19	N/A	Add	C218568	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.6.2 Storage and Handling of Investigational Trial Intervention	
+2025-12-19	N/A	Add	C218569	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.6.3 Accountability of Investigational Trial Intervention	
+2025-12-19	N/A	Add	C218570	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.7 Investigational Trial Intervention Assignment, Randomisation and Blinding	
+2025-12-19	N/A	Add	C218571	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.7.1 Participant Assignment to Investigational Trial Intervention	
+2025-12-19	N/A	Add	C218572	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.7.2 Randomisation	
+2025-12-19	N/A	Add	C218573	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.7.3 Measures to Maintain Blinding	
+2025-12-19	N/A	Add	C218574	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.7.4 Emergency Unblinding at the Site	
+2025-12-19	N/A	Add	C218575	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.8 Investigational Trial Intervention Adherence	
+2025-12-19	N/A	Add	C218576	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.9 Description of Noninvestigational Trial Intervention	
+2025-12-19	N/A	Add	C218577	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.9.1 Background Trial Intervention	
+2025-12-19	N/A	Add	C218578	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.9.2 Rescue Therapy	
+2025-12-19	N/A	Add	C218579	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	6.9.3 Other Noninvestigational Trial Intervention	
+2025-12-19	N/A	Add	C218583	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	7 PARTICIPANT DISCONTINUATION OF TRIAL INTERVENTION AND DISCONTINUATION OR WITHDRAWAL FROM TRIAL	
+2025-12-19	N/A	Add	C218584	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	7.1 Discontinuation of Trial Intervention for Individual Participants	
+2025-12-19	N/A	Add	C218585	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	7.1.1 Permanent Discontinuation of Trial Intervention	
+2025-12-19	N/A	Add	C218586	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	7.1.2 Temporary Discontinuation of Trial Intervention	
+2025-12-19	N/A	Add	C218587	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	7.1.3 Rechallenge	
+2025-12-19	N/A	Add	C218588	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	7.2 Participant Discontinuation or Withdrawal from the Trial	
+2025-12-19	N/A	Add	C218589	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	7.3 Management of Loss to Follow-Up	
+2025-12-19	N/A	Add	C218590	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8 TRIAL ASSESSMENTS AND PROCEDURES	
+2025-12-19	N/A	Add	C218591	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.1 Trial Assessments and Procedures Considerations	
+2025-12-19	N/A	Add	C218592	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.2 Screening/Baseline Assessments and Procedures	
+2025-12-19	N/A	Add	C218593	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.3 Efficacy Assessments and Procedures	
+2025-12-19	N/A	Add	C218594	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.4 Safety Assessments and Procedures	
+2025-12-19	N/A	Add	C218595	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.4.1 Physical Examination	
+2025-12-19	N/A	Add	C218596	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.4.2 Vital Signs	
+2025-12-19	N/A	Add	C218597	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.4.3 Electrocardiograms	
+2025-12-19	N/A	Add	C218598	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.4.4 Clinical Laboratory Assessments	
+2025-12-19	N/A	Add	C218599	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.4.5 Pregnancy Testing	
+2025-12-19	N/A	Add	C218600	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.4.6 Suicidal Ideation and Behaviour Risk Monitoring	
+2025-12-19	N/A	Add	C218601	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.5 Pharmacokinetics	
+2025-12-19	N/A	Add	C218602	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.6 Biomarkers	
+2025-12-19	N/A	Add	C218603	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.6.1 Genetics, Genomics, Pharmacogenetics and Pharmacogenomics	
+2025-12-19	N/A	Add	C218604	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.6.2 Pharmacodynamic Biomarkers	
+2025-12-19	N/A	Add	C218605	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.6.3 Other Biomarkers	
+2025-12-19	N/A	Add	C218606	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.7 Immunogenicity Assessments	
+2025-12-19	N/A	Add	C218607	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	8.8 Medical Resource Utilisation and Health Economics	
+2025-12-19	N/A	Add	C218608	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9 ADVERSE EVENTS, SERIOUS ADVERSE EVENTS, PRODUCT COMPLAINTS, PREGNANCY AND POSTPARTUM INFORMATION, AND SPECIAL SAFETY SITUATIONS	
+2025-12-19	N/A	Add	C218609	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.1 Definitions	
+2025-12-19	N/A	Add	C218610	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.1.1 Definitions of Adverse Events	
+2025-12-19	N/A	Add	C218611	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.1.2 Definitions of Serious Adverse Events	
+2025-12-19	N/A	Add	C218612	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.1.3 Definitions of Product Complaints	
+2025-12-19	N/A	Add	C218613	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.1.3.1 Definitions of Medical Device Product Complaints	
+2025-12-19	N/A	Add	C218614	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.2 Timing and Procedures for Collection and Reporting	
+2025-12-19	N/A	Add	C218615	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.2.1 Timing	
+2025-12-19	N/A	Add	C218616	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.2.2 Collection Procedures	
+2025-12-19	N/A	Add	C218617	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.2.3 Reporting	
+2025-12-19	N/A	Add	C218618	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.2.3.1 Regulatory Reporting Requirements	
+2025-12-19	N/A	Add	C218619	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.2.4 Adverse Events of Special Interest	
+2025-12-19	N/A	Add	C218620	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.2.5 Disease-related Events or Outcomes Not Qualifying as AEs or SAEs	
+2025-12-19	N/A	Add	C218621	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.3 Pregnancy and Postpartum Information	
+2025-12-19	N/A	Add	C218622	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.3.1 Participants Who Become Pregnant During the Trial	
+2025-12-19	N/A	Add	C218623	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.3.2 Participants Whose Partners Become Pregnant During the Trial	
+2025-12-19	N/A	Add	C218624	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	9.4 Special Safety Situations	
+2025-12-19	N/A	Add	C222770	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	Amendment Details	
+2025-12-19	N/A	Add	C222769	Term	Protocol Section Name and Number Response Terminology	Protocol Section Name and Number Response Terminology	Add new term to new codelist	- - -	Title Page	
+2025-12-19	N/A	Add	C217276	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new codelist	- - -	Reason for Amendment Response Terminology	
+2025-12-19	N/A	Add	C218497	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	Change In Standard Of Care	
+2025-12-19	N/A	Add	C218496	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	Change In Strategy	
+2025-12-19	N/A	Add	C218495	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	IMP Addition	
+2025-12-19	N/A	Add	C218501	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	Inconsistency And/Or Error In The Protocol	
+2025-12-19	N/A	Add	C218499	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	Investigator/Site Feedback	
+2025-12-19	N/A	Add	C218492	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	IRB/IEC Feedback	
+2025-12-19	N/A	Add	C218494	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	Manufacturing Change	
+2025-12-19	N/A	Add	C218498	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	New Data Available (Other Than Safety Data)	
+2025-12-19	N/A	Add	C218491	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	New Regulatory Guidance	
+2025-12-19	N/A	Add	C218493	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	New Safety Information Available	
+2025-12-19	N/A	Add	C48660	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	Not Applicable	
+2025-12-19	N/A	Add	C17649	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	Other	
+2025-12-19	N/A	Add	C218502	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	Protocol Design Error	
+2025-12-19	N/A	Add	C218500	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	Recruitment Difficulty	
+2025-12-19	N/A	Add	C218490	Term	Reason for Amendment Response Terminology	Reason for Amendment Response Terminology	Add new term to new codelist	- - -	Regulatory Agency Request To Amend	
+2025-12-19	N/A	Add	C217283	Term	Trial Arm Type Response Terminology	Trial Arm Type Response Terminology	Add new codelist	- - -	Trial Arm Type Response Terminology	
+2025-12-19	N/A	Add	C174267	Term	Trial Arm Type Response Terminology	Trial Arm Type Response Terminology	Add new term to new codelist	- - -	Active Comparator Arm	
+2025-12-19	N/A	Add	C174226	Term	Trial Arm Type Response Terminology	Trial Arm Type Response Terminology	Add new term to new codelist	- - -	Control Arm	
+2025-12-19	N/A	Add	C174266	Term	Trial Arm Type Response Terminology	Trial Arm Type Response Terminology	Add new term to new codelist	- - -	Experimental Arm	
+2025-12-19	N/A	Add	C174270	Term	Trial Arm Type Response Terminology	Trial Arm Type Response Terminology	Add new term to new codelist	- - -	No Intervention Arm	
+2025-12-19	N/A	Add	C174268	Term	Trial Arm Type Response Terminology	Trial Arm Type Response Terminology	Add new term to new codelist	- - -	Placebo Comparator Arm	
+2025-12-19	N/A	Add	C174269	Term	Trial Arm Type Response Terminology	Trial Arm Type Response Terminology	Add new term to new codelist	- - -	Sham Comparator Arm	
+2025-12-19	N/A	Add	C217281	Term	Trial Blinding Role Response Terminology	Trial Blinding Role Response Terminology	Add new codelist	- - -	Trial Blinding Role Response Terminology	
+2025-12-19	N/A	Add	C17445	Term	Trial Blinding Role Response Terminology	Trial Blinding Role Response Terminology	Add new term to new codelist	- - -	Care Provider	
+2025-12-19	N/A	Add	C25936	Term	Trial Blinding Role Response Terminology	Trial Blinding Role Response Terminology	Add new term to new codelist	- - -	Investigator	
+2025-12-19	N/A	Add	C48660	Term	Trial Blinding Role Response Terminology	Trial Blinding Role Response Terminology	Add new term to new codelist	- - -	Not Applicable	
+2025-12-19	N/A	Add	C207599	Term	Trial Blinding Role Response Terminology	Trial Blinding Role Response Terminology	Add new term to new codelist	- - -	Outcomes Assessor	
+2025-12-19	N/A	Add	C142710	Term	Trial Blinding Role Response Terminology	Trial Blinding Role Response Terminology	Add new term to new codelist	- - -	Participant	
+2025-12-19	N/A	Add	C70793	Term	Trial Blinding Role Response Terminology	Trial Blinding Role Response Terminology	Add new term to new codelist	- - -	Sponsor	
+2025-12-19	N/A	Add	C217051	Term	Trial Blinding Schema Response Terminology	Trial Blinding Schema Response Terminology	Add new codelist	- - -	Trial Blinding Schema Response Terminology	
+2025-12-19	N/A	Add	C15228	Term	Trial Blinding Schema Response Terminology	Trial Blinding Schema Response Terminology	Add new term to new codelist	- - -	Double Blind	
+2025-12-19	N/A	Add	C187674	Term	Trial Blinding Schema Response Terminology	Trial Blinding Schema Response Terminology	Add new term to new codelist	- - -	Observer Blind	
+2025-12-19	N/A	Add	C49659	Term	Trial Blinding Schema Response Terminology	Trial Blinding Schema Response Terminology	Add new term to new codelist	- - -	Open Label	
+2025-12-19	N/A	Add	C28233	Term	Trial Blinding Schema Response Terminology	Trial Blinding Schema Response Terminology	Add new term to new codelist	- - -	Single Blind	
+2025-12-19	N/A	Add	C217280	Term	Trial Intervention Assignment Method Response Terminology	Trial Intervention Assignment Method Response Terminology	Add new codelist	- - -	Trial Intervention Assignment Method Response Terminology	
+2025-12-19	N/A	Add	C222801	Term	Trial Intervention Assignment Method Response Terminology	Trial Intervention Assignment Method Response Terminology	Add new term to new codelist	- - -	No Intervention Assignment Method	
+2025-12-19	N/A	Add	C17649	Term	Trial Intervention Assignment Method Response Terminology	Trial Intervention Assignment Method Response Terminology	Add new term to new codelist	- - -	Other	
+2025-12-19	N/A	Add	C25196	Term	Trial Intervention Assignment Method Response Terminology	Trial Intervention Assignment Method Response Terminology	Add new term to new codelist	- - -	Randomisation	
+2025-12-19	N/A	Add	C217045	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new codelist	- - -	Trial Phase Response Terminology	
+2025-12-19	N/A	Add	C54721	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Early Phase 1	
+2025-12-19	N/A	Add	C15600	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Phase 1	
+2025-12-19	N/A	Add	C15693	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Phase 1/Phase 2	
+2025-12-19	N/A	Add	C198366	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Phase 1/Phase 2/Phase 3	
+2025-12-19	N/A	Add	C198367	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Phase 1/Phase 3	
+2025-12-19	N/A	Add	C15601	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Phase 2	
+2025-12-19	N/A	Add	C15694	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Phase 2/Phase 3	
+2025-12-19	N/A	Add	C217024	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Phase 2/Phase 3/Phase 4	
+2025-12-19	N/A	Add	C15602	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Phase 3	
+2025-12-19	N/A	Add	C217025	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Phase 3/Phase 4	
+2025-12-19	N/A	Add	C15603	Term	Trial Phase Response Terminology	Trial Phase Response Terminology	Add new term to new codelist	- - -	Phase 4	
+2025-12-19	N/A	Add	C217049	Term	Trial Site Distribution Response Terminology	Trial Site Distribution Response Terminology	Add new codelist	- - -	Trial Site Distribution Response Terminology	
+2025-12-19	N/A	Add	C217005	Term	Trial Site Distribution Response Terminology	Trial Site Distribution Response Terminology	Add new term to new codelist	- - -	Multicentre	
+2025-12-19	N/A	Add	C217004	Term	Trial Site Distribution Response Terminology	Trial Site Distribution Response Terminology	Add new term to new codelist	- - -	Single-Centre	
+2025-12-19	N/A	Add	C217050	Term	Trial Site Geographic Scope Response Terminology	Trial Site Geographic Scope Response Terminology	Add new codelist	- - -	Trial Site Geographic Scope Response Terminology	
+2025-12-19	N/A	Add	C217007	Term	Trial Site Geographic Scope Response Terminology	Trial Site Geographic Scope Response Terminology	Add new term to new codelist	- - -	Multiple Countries	
+2025-12-19	N/A	Add	C217006	Term	Trial Site Geographic Scope Response Terminology	Trial Site Geographic Scope Response Terminology	Add new term to new codelist	- - -	Single Country	
+2025-12-19	N/A	Add	C217287	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new codelist	- - -	Trial-Related Safety Event Type Response Terminology	
+2025-12-19	N/A	Add	C41331	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new term to new codelist	- - -	Adverse Event	
+2025-12-19	N/A	Add	C222331	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new term to new codelist	- - -	Drug/Device Combination Product Complaint	
+2025-12-19	N/A	Add	C218510	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new term to new codelist	- - -	Lactation Event	
+2025-12-19	N/A	Add	C218513	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new term to new codelist	- - -	Not Reportable Adverse Event of Special Interest	
+2025-12-19	N/A	Add	C17649	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new term to new codelist	- - -	Other	
+2025-12-19	N/A	Add	C218511	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new term to new codelist	- - -	Post-Partum Event	
+2025-12-19	N/A	Add	C218509	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new term to new codelist	- - -	Pregnancy Event	
+2025-12-19	N/A	Add	C218512	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new term to new codelist	- - -	Reportable Adverse Event of Special Interest	
+2025-12-19	N/A	Add	C41335	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new term to new codelist	- - -	Serious Adverse Event	
+2025-12-19	N/A	Add	C218508	Term	Trial-Related Safety Event Type Response Terminology	Trial-Related Safety Event Type Response Terminology	Add new term to new codelist	- - -	Trial Intervention Complaint	
+2025-12-19	N/A	Add	C217048	Term	Unit of Measure Terminology	Unit of Measure Terminology	Add new codelist	- - -	Unit of Measure Terminology	
+2025-12-19	N/A	Add	C25301	Term	Unit of Measure Terminology	Unit of Measure Terminology	Add new term to new codelist	- - -	Days	
+2025-12-19	N/A	Add	C25529	Term	Unit of Measure Terminology	Unit of Measure Terminology	Add new term to new codelist	- - -	Hours	
+2025-12-19	N/A	Add	C29846	Term	Unit of Measure Terminology	Unit of Measure Terminology	Add new term to new codelist	- - -	Months	
+2025-12-19	N/A	Add	C29844	Term	Unit of Measure Terminology	Unit of Measure Terminology	Add new term to new codelist	- - -	Weeks	
+2025-12-19	N/A	Add	C29848	Term	Unit of Measure Terminology	Unit of Measure Terminology	Add new term to new codelist	- - -	Years	

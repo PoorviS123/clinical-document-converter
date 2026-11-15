@@ -1,3 +1,7 @@
 Flask>=3.1,<4
 python-docx>=1.1,<2
 pypdf>=5,<7
+pymupdf
+jsonschema
+# The reformatter pins this stack to Python 3.12 (usdm4_protocol requires <3.13).
+usdm4_protocol==0.11.0

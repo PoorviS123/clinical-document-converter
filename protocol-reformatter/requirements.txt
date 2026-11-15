@@ -1,0 +1,6 @@
+pymupdf
+python-docx
+jsonschema
+# Requires Python 3.12: usdm4_protocol depends on cdisc-rules-engine, which supports only >=3.12,<3.13
+# tools/validate_m11.py's KNOWN_BROKEN_RULES is specific to this version
+usdm4_protocol==0.11.0

@@ -1,0 +1,3248 @@
+{
+ "meta": {
+  "v10_template": "resources/CPT_CoreBWE_v010.docx",
+  "v11_template": "resources/CPT_CoreBWE-v011.docx",
+  "confidence_values": [
+   "official-confirmed",
+   "official-corrected",
+   "inferred-strong",
+   "inferred-weak"
+  ],
+  "change_types": [
+   "same",
+   "rename",
+   "move",
+   "split",
+   "merge",
+   "library",
+   "drop"
+  ],
+  "notes": "v10_number uses template heading numbers; unnumbered fields use prefixes TP (title page), SYN (synopsis field), FM (front matter), 3.u (unnumbered estimand headings), and letter suffixes (a, b) for unnumbered subheadings under a numbered v10 heading. portion=part rows carry 'part' = which part. Targets with number 'title-page' are unnumbered title-page fields named by title. change_type 'drop' with targets means the bulk is dropped but the listed part lands.",
+  "gotchas": [
+   "Several v11 heading texts embed their own number (eg '9.1.1 Definitions of Adverse Events', '11.2.1 Investigator Responsibilities', '10.4.1 Primary Objective [#]', '12.4 <tab> Liver Safety...'); strip before title matching.",
+   "v10 'Study' is 'Trial' in v11 throughout; normalise before comparing titles."
+  ]
+ },
+ "rows": [
+  {
+   "v10_number": "FM",
+   "v10_title": "Template front matter (About This Template, Disclaimer, Terminology, Formatting conventions, Guidance for Complex Designs)",
+   "v11_targets": [],
+   "change_type": "drop",
+   "confidence": "inferred-strong",
+   "evidence": "Template-authoring boilerplate, not protocol content; v11 has its own equivalent block ('Intended Use of Template') that is not fed from v10."
+  },
+  {
+   "v10_number": "TP.1",
+   "v10_title": "Title Page: Protocol Title (+ structured-title helper fields)",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Full Title",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'The protocol should have a descriptive title that identifies the study sufficiently' equals v11 Full Title 'identifies the scientific aspects of the trial sufficiently'; the structured-title fields (Intervention Model, Primary Purpose, Blinding, Number of Arms) now take M11 controlled terminology.",
+   "note": "Structured-title values also seed 1.1.2 table fields (Intervention Model, Trial Blind Schema, Number of Arms, Population Age); see multi_landing."
+  },
+  {
+   "v10_number": "TP.2",
+   "v10_title": "Title Page: Protocol Number",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Sponsor Protocol Identifier",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v11 'A unique alphanumeric identifier for the trial, designated by the sponsor' is the M11 name for the v10 Protocol Number."
+  },
+  {
+   "v10_number": "TP.3",
+   "v10_title": "Title Page: Amendment Number",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "[Amendment Identifier]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "inferred-strong",
+   "evidence": "v11 '[Amendment Identifier]: Enter the amendment identifier (eg, amendment number). If this is the original instance of the protocol, delete this row'; the field is absent from the TransCelerate mapping.",
+   "note": "v11 also has 'Original Protocol: [yes/no]' (no v10 field; derive yes when v10 Amendment Number is empty) and [Version Number]/[Version Date] (sponsor discretion, no v10 field)."
+  },
+  {
+   "v10_number": "TP.4",
+   "v10_title": "Title Page: Amendment Scope",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "[Amendment Scope] (+ Country/Region/Site Identifier)",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 '[Amendment Scope: Global/Country-specific/Regional]' becomes v11 '[Amendment Scope]: Global / Not Global' (M11 CT)."
+  },
+  {
+   "v10_number": "TP.5",
+   "v10_title": "Title Page: Country/Region Identifier",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "[Amendment Scope] (+ Country/Region/Site Identifier)",
+     "portion": "all"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "v10 '[Country/Region Identifier: ISO-3166 country identifier]' is folded into the v11 Amendment Scope line '[Country Identifier] or [Region Identifier] or [Site Identifier]'."
+  },
+  {
+   "v10_number": "TP.6",
+   "v10_title": "Title Page: Compound",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "[Investigational Product Code(s)]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Compound: [number or name]' -> v11 'Enter the sponsor's unique identifier for investigational product(s)'; a v10 name value should go to Investigational Product Name(s) ('Must include either Product Code or Name')."
+  },
+  {
+   "v10_number": "TP.6b",
+   "v10_title": "(no v10 title-page heading) Investigational Product Name(s) source",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "[Investigational Product Name(s)]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 'V10 CPT - found only in the intervention section' (6.1 Table 1 'Intervention Name' column).",
+   "note": "Reverse entry: the v11 field is fed from v10 6.1 Table 1, not from a v10 title-page heading."
+  },
+  {
+   "v10_number": "TP.7",
+   "v10_title": "Title Page: Brief Title",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "[Short Title]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Short title should be sufficiently detailed to make clear to a lay reader' is the same instruction as v11 'Short title should convey in plain language what the trial is about'."
+  },
+  {
+   "v10_number": "TP.8",
+   "v10_title": "Title Page: Study Phase",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Trial Phase",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Please select one of the values for this field' (phase list) -> v11 'See ICH M11 Controlled Terminology' for Trial Phase."
+  },
+  {
+   "v10_number": "TP.9",
+   "v10_title": "Title Page: Acronym",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "[Trial Acronym]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "Both: 'Acronym or abbreviation used publicly to identify the clinical study/trial... Limit: 14 characters. Delete if not applicable.'"
+  },
+  {
+   "v10_number": "TP.10",
+   "v10_title": "Title Page: Sponsor Name",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Sponsor Name and Address",
+     "portion": "part",
+     "part": "name"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "v11 Sponsor Name and Address holds [Sponsor/Co-sponsor Name]; v10 'For complex trials there may be more than 1 identified sponsor' is repeated verbatim."
+  },
+  {
+   "v10_number": "TP.11",
+   "v10_title": "Title Page: Legal Registered Address",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Sponsor Name and Address",
+     "portion": "part",
+     "part": "legal address"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "v11 [Sponsor/Co-sponsor Legal Address]; the v10 local-affiliate sponsor instruction becomes the separate v11 [Local Sponsor Name]/[Local Sponsor Legal Address] fields."
+  },
+  {
+   "v10_number": "TP.12",
+   "v10_title": "Title Page: Manufacturer",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "[Device Manufacturer Name and Legal Address]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Manufacturer is required for device protocols... If the manufacturer is other than the sponsor, add manufacturer's address' matches the v11 device-manufacturer instruction."
+  },
+  {
+   "v10_number": "TP.13",
+   "v10_title": "Title Page: Regulatory Agency Identifier Number(s)",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Regulatory or Clinical Trial Identifier(s)",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "Same IND/WHO UTN/EudraCT/ClinicalTrials.gov instruction and the same Registry/ID table (v11 relabelled 'Label | ID')."
+  },
+  {
+   "v10_number": "TP.14",
+   "v10_title": "Title Page: Pediatric Investigational Plan Number",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Regulatory or Clinical Trial Identifier(s)",
+     "portion": "part",
+     "part": "PIP row"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "inferred-strong",
+   "evidence": "v11 table instruction: 'Add fields for \"other\" as needed (For example, to capture the Pediatric Investigational Plan Number as applicable)'; no TransCelerate comment for this field."
+  },
+  {
+   "v10_number": "TP.15",
+   "v10_title": "Title Page: Approval Date",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Sponsor Approval",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v11 'Sponsor Approval: ... Enter approval date or state where sponsor approval information can be found.'"
+  },
+  {
+   "v10_number": "TP.16",
+   "v10_title": "Title Page: Sponsor Signatory",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Sponsor Signatory",
+     "portion": "all"
+    }
+   ],
+   "change_type": "same",
+   "confidence": "official-confirmed",
+   "evidence": "Same [Name]/[Title]/signature/[Date] table; v11 adds 'or state location where sponsor signatory information can be found'."
+  },
+  {
+   "v10_number": "TP.17",
+   "v10_title": "Title Page: Medical Monitor Name and Contact Information",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "[Medical Expert Contact]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v11 'Enter contact information for Medical Expert (as designated by sponsor) or state location' replaces the v10 Medical Monitor line; '[will be provided separately OR can be found in XX]' is unchanged."
+  },
+  {
+   "v10_number": "TP.18",
+   "v10_title": "Protocol Amendment Summary of Changes Table (heading and general/naming/numbering instructions)",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Amendment Details",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Protocols should not be developed with the intent to amend; however, if an amendment is required, the following process and template is recommended' is verbatim under v11 Amendment Details."
+  },
+  {
+   "v10_number": "TP.18a",
+   "v10_title": "Protocol Amendment Summary: DOCUMENT HISTORY table",
+   "v11_targets": [
+    {
+     "number": "12.3",
+     "title": "Document History table",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "inferred-strong",
+   "evidence": "v11 12.3: 'The Document History table should contain the document number and date for each amendment' (v10 placed it at the front of each amendment); v11 adds an enrolment column."
+  },
+  {
+   "v10_number": "TP.18b",
+   "v10_title": "Protocol Amendment Summary: 'Amendment [X] (Day-Month-Year)' heading and EU substantial/nonsubstantial statement",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Current Amendment",
+     "portion": "part",
+     "part": "identifier/date; substantial-impact questions"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "inferred-weak",
+   "evidence": "v10 'This amendment is considered to be [substantial] [nonsubstantial]' maps loosely to the v11 Current Amendment questions on substantial impact on safety/rights and data reliability; no verbatim match."
+  },
+  {
+   "v10_number": "TP.18c",
+   "v10_title": "Protocol Amendment Summary: 'Overall Rationale for the Amendment'",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Current Amendment",
+     "portion": "part",
+     "part": "Reason(s) for Amendment; Amendment Summary"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "inferred-strong",
+   "evidence": "v10 'The overall rationale (one primary driver) for the changes... high-level description of the change(s)' = v11 Current Amendment 'Reason(s) for Amendment: Primary/Secondary' + 'Amendment Summary: Briefly describe key changes'."
+  },
+  {
+   "v10_number": "TP.18d",
+   "v10_title": "Protocol Amendment Summary: change table (Section # and Name | Description of Change | Brief Rationale)",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Overview of Changes in the Current Amendment",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "inferred-strong",
+   "evidence": "Same three columns, reordered in v11 to 'Description of Change | Brief Rationale for Change | Section # and Name'."
+  },
+  {
+   "v10_number": "TP.19",
+   "v10_title": "Table of Contents",
+   "v11_targets": [
+    {
+     "number": "title-page",
+     "title": "Table of Contents",
+     "portion": "all"
+    }
+   ],
+   "change_type": "same",
+   "confidence": "inferred-strong",
+   "evidence": "Generated field; regenerate rather than copy."
+  },
+  {
+   "v10_number": "TP.20",
+   "v10_title": "List of Abbreviations [and Definitions of terms]",
+   "v11_targets": [
+    {
+     "number": "13",
+     "title": "Appendix: Glossary of Terms and Abbreviations",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'A list of the abbreviations and, if applicable, the definitions of specialized or unusual terms should be provided' is verbatim in v11 13."
+  },
+  {
+   "v10_number": "1",
+   "v10_title": "Protocol Summary",
+   "v11_targets": [
+    {
+     "number": "1",
+     "title": "Protocol Summary",
+     "portion": "all"
+    }
+   ],
+   "change_type": "same",
+   "confidence": "official-confirmed",
+   "evidence": "v10 1 has no text; v11 1 'No text is intended here (heading only)'."
+  },
+  {
+   "v10_number": "1.1",
+   "v10_title": "Synopsis",
+   "v11_targets": [
+    {
+     "number": "1.1",
+     "title": "Protocol Synopsis",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'short (1 to 2 pages) summary of the key points of the protocol' = v11 'short summary of the key points of the trial'; v11 body text moves into 1.1.1/1.1.2."
+  },
+  {
+   "v10_number": "SYN.1",
+   "v10_title": "1.1 Synopsis field: Protocol Title",
+   "v11_targets": [],
+   "change_type": "drop",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 'Protocol Title... are not included here in M11'; v10 text was only 'Ensure wording here matches the title page' and v11 1.1 says 'No text is intended here'."
+  },
+  {
+   "v10_number": "SYN.2",
+   "v10_title": "1.1 Synopsis field: Brief Title",
+   "v11_targets": [],
+   "change_type": "drop",
+   "confidence": "official-confirmed",
+   "evidence": "As SYN.1: duplicate of the title page; value lives in v11 Short Title."
+  },
+  {
+   "v10_number": "SYN.3",
+   "v10_title": "1.1 Synopsis field: Regulatory Agency Identifier Number(s)",
+   "v11_targets": [],
+   "change_type": "drop",
+   "confidence": "official-confirmed",
+   "evidence": "As SYN.1: v10 'it should be consistent between the Title Page and the Synopsis'; v11 holds identifiers only on the title page."
+  },
+  {
+   "v10_number": "SYN.4",
+   "v10_title": "1.1 Synopsis field: [Pediatric Investigational Plan Number]",
+   "v11_targets": [],
+   "change_type": "drop",
+   "confidence": "official-confirmed",
+   "evidence": "As SYN.3; PIP number now only in the title-page identifier table."
+  },
+  {
+   "v10_number": "SYN.5",
+   "v10_title": "1.1 Synopsis field: Rationale",
+   "v11_targets": [],
+   "change_type": "drop",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 'Rationale... are not included here in M11'; v10 'The synopsis text should be taken from the main text' (source stays 2.1.1 Trial Rationale)."
+  },
+  {
+   "v10_number": "SYN.6",
+   "v10_title": "1.1 Synopsis field: Objectives, Endpoints, and Estimands",
+   "v11_targets": [
+    {
+     "number": "1.1.1",
+     "title": "Primary and Secondary Objectives and Estimands",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'State the primary and secondary objectives and associated endpoints... high-level description' -> v11 1.1.1 'Summarize the primary and secondary objectives and any associated estimands in natural, nontechnical language'; Objectives|Endpoints table becomes Objective|Estimand table."
+  },
+  {
+   "v10_number": "SYN.7",
+   "v10_title": "1.1 Synopsis field: Overall Design Synopsis",
+   "v11_targets": [
+    {
+     "number": "1.1.2",
+     "title": "Overall Design",
+     "portion": "part",
+     "part": "key-aspects table + Blinded Roles"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Type of design... and control method; high-level description of the study population; level and method of blinding; assignment method' = v11 1.1.2 table rows Intervention Model, Control Type, Population Type, Intervention Assignment Method, Blinded Roles."
+  },
+  {
+   "v10_number": "SYN.8",
+   "v10_title": "1.1 Synopsis field: Brief Summary (incl. Study Duration, Treatment Duration, Visit Frequency)",
+   "v11_targets": [
+    {
+     "number": "1.1.2",
+     "title": "Overall Design",
+     "portion": "part",
+     "part": "Duration (study/treatment duration values only)"
+    }
+   ],
+   "change_type": "drop",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate maps Brief Summary wholesale to 'Duration', but Cumulative Change Summary V11 says 'Removed CPT Brief Summary structured text... to eliminate redundancy with expected ICH M11 tabular summary approach'; only the duration values fit v11 Duration ('total planned duration of trial intervention / trial participation').",
+   "note": "Lay-language purpose text and Visit Frequency have no v11 home; keep as unmapped annex or discard, do not paste into Duration."
+  },
+  {
+   "v10_number": "SYN.9",
+   "v10_title": "1.1 Synopsis field: Number of Participants",
+   "v11_targets": [
+    {
+     "number": "1.1.2",
+     "title": "Overall Design",
+     "portion": "part",
+     "part": "Number of Participants"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'State the expected number of participants to be screened, enrolled, assigned' -> v11 'State the expected number of participants to be assigned to trial intervention/enrolled. Indicate whether... target or maximum'; the 'Note: Enrolled means...' paragraph is verbatim in both.",
+   "note": "Also summarises 4.1 / 9.9 content; see multi_landing."
+  },
+  {
+   "v10_number": "SYN.10",
+   "v10_title": "1.1 Synopsis field: Study Arms and Duration",
+   "v11_targets": [
+    {
+     "number": "1.1.2",
+     "title": "Overall Design",
+     "portion": "part",
+     "part": "Duration"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "The three v10 bullets (total duration with sequence of periods; dose regimens in each period; rules for dose changes) are reproduced verbatim as the v11 Duration bullets."
+  },
+  {
+   "v10_number": "SYN.11",
+   "v10_title": "1.1 Synopsis field: Data Monitoring/Other Committee [Yes/No]",
+   "v11_targets": [
+    {
+     "number": "1.1.2",
+     "title": "Overall Design",
+     "portion": "part",
+     "part": "Committees"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Use of an independent data monitoring committee, dose-escalation committee, or similar review group' -> v11 'Committees: Indicate any committee(s)... Committees listed here should be fully described in Section 11.4'."
+  },
+  {
+   "v10_number": "1.2",
+   "v10_title": "Schema",
+   "v11_targets": [
+    {
+     "number": "1.2",
+     "title": "Trial Schema",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "Both headings carry only the schema figure (v11: 'provide a visual depiction of the trial design')."
+  },
+  {
+   "v10_number": "1.3",
+   "v10_title": "Schedule of Activities (SoA)",
+   "v11_targets": [
+    {
+     "number": "1.3",
+     "title": "Schedule of Activities",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "Both: schedule of activities table (v11 'The schedule of activities must capture the procedures that will be accomplished at each trial visit')."
+  },
+  {
+   "v10_number": "2",
+   "v10_title": "Introduction",
+   "v11_targets": [
+    {
+     "number": "2",
+     "title": "Introduction",
+     "portion": "all"
+    }
+   ],
+   "change_type": "same",
+   "confidence": "official-confirmed",
+   "evidence": "Both: 'Overall, this section should be short (recommend 2 to 3 pages) and may be started with an overview description of the investigational intervention'."
+  },
+  {
+   "v10_number": "2.1",
+   "v10_title": "Study Rationale",
+   "v11_targets": [
+    {
+     "number": "2.1.1",
+     "title": "Trial Rationale",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Present a 2- to 3-sentence, coherent, scientific description of the rationale for the study' is verbatim v11 2.1.1 (study->trial); v11 2.1 is a new container."
+  },
+  {
+   "v10_number": "2.2",
+   "v10_title": "Background",
+   "v11_targets": [
+    {
+     "number": "2.1.2",
+     "title": "Background",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'This section should be brief (1/2 to 1 page)... why the investigational intervention is being developed' is verbatim v11 2.1.2."
+  },
+  {
+   "v10_number": "2.3",
+   "v10_title": "Benefit/Risk Assessment",
+   "v11_targets": [
+    {
+     "number": "2.2",
+     "title": "Assessment of Risks and Benefits",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Provide a brief assessment of the benefits and risks of study participation' = v11 'Provide a brief assessment of the risks and benefits of trial participation'."
+  },
+  {
+   "v10_number": "2.3.1",
+   "v10_title": "Risk Assessment",
+   "v11_targets": [
+    {
+     "number": "2.2.1",
+     "title": "Risk Summary and Mitigation Strategy",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-corrected",
+   "evidence": "v10 'Investigational Intervention - Discuss risks related to the investigational intervention(s). Refer to the IB' is verbatim v11 2.2.1 (TransCelerate lists 2.3.1 only under 2.2)."
+  },
+  {
+   "v10_number": "2.3.2",
+   "v10_title": "Benefit Assessment",
+   "v11_targets": [
+    {
+     "number": "2.2.2",
+     "title": "Benefit Summary",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-corrected",
+   "evidence": "v10 'The benefit assessment should be written from the perspective of an individual participant' = v11 2.2.2 'describe any physical, psychological, social... benefits to individual participants'."
+  },
+  {
+   "v10_number": "2.3.3",
+   "v10_title": "Overall Benefit Risk Conclusion",
+   "v11_targets": [
+    {
+     "number": "2.2.3",
+     "title": "Overall Risk-Benefit Assessment",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Provide a succinct concluding statement on the perceived balance between risks...' is verbatim v11 2.2.3."
+  },
+  {
+   "v10_number": "3",
+   "v10_title": "Objectives, Endpoints, and Estimands",
+   "v11_targets": [
+    {
+     "number": "3",
+     "title": "Trial Objectives and Associated Estimands",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'List each scientific objective of the study... differentiating between primary, secondary, and tertiary' appears in the v11 3 intro as 'List each scientific objective of the trial'."
+  },
+  {
+   "v10_number": "3.u1",
+   "v10_title": "3 [unnumbered L2] Estimand(s) for Primary Objective(s)",
+   "v11_targets": [
+    {
+     "number": "3.1",
+     "title": "Primary Objective(s) and Associated Estimand(s)",
+     "portion": "all"
+    },
+    {
+     "number": "3.1.1",
+     "title": "Primary Objective [#]",
+     "portion": "part",
+     "part": "objective + estimand table"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate maps primary objectives/estimands to 3.1; v11 3.1 is a container ('No text is intended here') and the table goes in required L3 3.1.1."
+  },
+  {
+   "v10_number": "3.u2",
+   "v10_title": "3 [unnumbered] Supplementary Estimand(s) (primary)",
+   "v11_targets": [
+    {
+     "number": "3.1.1",
+     "title": "Primary Objective [#]",
+     "portion": "part",
+     "part": "supplementary estimand table"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "inferred-strong",
+   "evidence": "v11 3.1: 'If including more than one estimand for the primary objective, it should be specified which one(s) is/are primary/co-primary/multiple primary/supplementary'."
+  },
+  {
+   "v10_number": "3.u3",
+   "v10_title": "3 [unnumbered L2] Estimands for Secondary Objective(s)",
+   "v11_targets": [
+    {
+     "number": "3.2",
+     "title": "Secondary Objective(s) and Associated Estimand(s)",
+     "portion": "all"
+    },
+    {
+     "number": "3.2.1",
+     "title": "Secondary Objective [#]",
+     "portion": "part",
+     "part": "objective + estimand table"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: secondary objectives/estimands -> 3.2; v11 3.2.1 'Secondary Objective [#]' holds the table."
+  },
+  {
+   "v10_number": "3.u4",
+   "v10_title": "3 [unnumbered] Supplementary Estimand(s) (secondary)",
+   "v11_targets": [
+    {
+     "number": "3.2.1",
+     "title": "Secondary Objective [#]",
+     "portion": "part",
+     "part": "supplementary estimand table"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "inferred-strong",
+   "evidence": "v10 'Secondary and supplementary estimands should be defined for each secondary objective as relevant'; v11 3.2 'Use the same approach as above'."
+  },
+  {
+   "v10_number": "3.u5",
+   "v10_title": "3 [unnumbered L2] Estimands for [Tertiary/Exploratory/Other] Objectives",
+   "v11_targets": [
+    {
+     "number": "3.3",
+     "title": "Exploratory Objective(s)",
+     "portion": "all"
+    },
+    {
+     "number": "3.3.1",
+     "title": "Exploratory Objective [#]",
+     "portion": "part",
+     "part": "objective + estimand table"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: [Tertiary/Exploratory/Other] objectives -> 3.3 Exploratory Objective(s); v11 3.3.1 holds per-objective content."
+  },
+  {
+   "v10_number": "3.u6",
+   "v10_title": "3 [unnumbered] [Tertiary/Exploratory/Other] Estimand(s) [label] and its Supplementary Estimand(s)",
+   "v11_targets": [
+    {
+     "number": "3.3.1",
+     "title": "Exploratory Objective [#]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "inferred-strong",
+   "evidence": "v10 'Tertiary/Exploratory/Other and supplementary estimands should be defined for each... objective as relevant'; v11 3.3 'It may be helpful in some cases to describe precise estimands'."
+  },
+  {
+   "v10_number": "4",
+   "v10_title": "Study Design",
+   "v11_targets": [
+    {
+     "number": "4",
+     "title": "Trial Design",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "Both L1s state design-description principles (v11 4 intro: 'Do not include trial schema. Do not include the SoA here. Use bullets')."
+  },
+  {
+   "v10_number": "4.1",
+   "v10_title": "Overall Design",
+   "v11_targets": [
+    {
+     "number": "4.1",
+     "title": "Description of Trial Design",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Do not include study schema. Do not include the SoA here. Use bullets rather than lengthy text' appears verbatim in v11 4/4.1."
+  },
+  {
+   "v10_number": "4.2",
+   "v10_title": "Scientific Rationale for Study Design",
+   "v11_targets": [
+    {
+     "number": "4.2",
+     "title": "Rationale for Trial Design",
+     "portion": "all"
+    },
+    {
+     "number": "4.2.1",
+     "title": "Rationale for Estimand(s)",
+     "portion": "part",
+     "part": "endpoint relevance/validity text"
+    },
+    {
+     "number": "4.2.3",
+     "title": "Rationale for Control Type",
+     "portion": "part",
+     "part": "control (placebo) justification text"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate maps 4.2 -> 4.2 only; v11 4.2 'Enter Overall Rationale for Trial Design if not using below optional subheadings', and v10 'Describe why the primary endpoint is clinically relevant... reliable and valid measurement' matches v11 4.2.1 while 'justification for use of placebo control' matches 4.2.3.",
+   "note": "4.2.1/4.2.3 parts are an optional re-fit by the author; default is the whole section to 4.2."
+  },
+  {
+   "v10_number": "4.2.1",
+   "v10_title": "Patient Input into Design",
+   "v11_targets": [
+    {
+     "number": "4.1.1",
+     "title": "Stakeholder Input into Design",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Describe any patient involvement in the design of the clinical study' = v11 'describe any stakeholder (eg, patient...) involvement in the design of the trial'."
+  },
+  {
+   "v10_number": "4.3",
+   "v10_title": "Justification for Dose",
+   "v11_targets": [
+    {
+     "number": "6.2",
+     "title": "Rationale for Investigational Trial Intervention Dose and Regimen",
+     "portion": "all"
+    },
+    {
+     "number": "4.3",
+     "title": "Trial Stopping Rules",
+     "portion": "part",
+     "part": "dose-escalation halting example text"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate's comment sits on 4.2.2 Rationale for Intervention Model, but v10 'Provide justification for the selection of the doses...; first-time in human... starting dose; dose escalation, describe the maximum allowed increase' is verbatim v11 6.2, and the v10 'Dose escalation will be temporarily halted...' example is verbatim v11 4.3 Trial Stopping Rules."
+  },
+  {
+   "v10_number": "4.4",
+   "v10_title": "End-of-Study Definition",
+   "v11_targets": [
+    {
+     "number": "4.4",
+     "title": "Start of Trial and End of Trial",
+     "portion": "all"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Distinguish between the end of the study (EU definition) and study completion (US CT Registry definition)' is verbatim v11 4.4; the 'end of the study is defined as' common text is the v11 End of Trial block."
+  },
+  {
+   "v10_number": "5",
+   "v10_title": "Study Population",
+   "v11_targets": [
+    {
+     "number": "5",
+     "title": "Trial Population",
+     "portion": "all"
+    },
+    {
+     "number": "5.1",
+     "title": "Description of Trial Population and Rationale",
+     "portion": "part",
+     "part": "protocol-waiver common text"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 'CPT has general statement about prospective waivers which is included in M11 5.1'; v10 5 intro bullets ('Criteria should be numbered according to company process') remain in the v11 5 intro."
+  },
+  {
+   "v10_number": "5.1",
+   "v10_title": "Inclusion Criteria",
+   "v11_targets": [
+    {
+     "number": "5.2",
+     "title": "Inclusion Criteria",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'List the criteria necessary for participation in the study... General Points' = v11 5 intro and 5.2 'General Points'."
+  },
+  {
+   "v10_number": "5.2",
+   "v10_title": "Exclusion Criteria",
+   "v11_targets": [
+    {
+     "number": "5.3",
+     "title": "Exclusion Criteria",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Exclusion criteria: See participant and therapeutic area libraries for suggested text' is verbatim v11 5.3."
+  },
+  {
+   "v10_number": "5.3",
+   "v10_title": "Lifestyle Considerations",
+   "v11_targets": [
+    {
+     "number": "5.5",
+     "title": "Lifestyle Restrictions",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'If this section is not applicable, include a statement that no restrictions are required' = v11 5.5 'If not applicable, include a statement that no restrictions are required'."
+  },
+  {
+   "v10_number": "5.3.1",
+   "v10_title": "Meals and Dietary Restrictions",
+   "v11_targets": [
+    {
+     "number": "5.5.1",
+     "title": "Meals and Dietary Restrictions",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "'Food and drink restrictions before the start of pharmacokinetic (PK) sample collections; Timing of meals relative to dosing' appear in both."
+  },
+  {
+   "v10_number": "5.3.2",
+   "v10_title": "Caffeine, Alcohol, and Tobacco",
+   "v11_targets": [
+    {
+     "number": "5.5.2",
+     "title": "Caffeine, Alcohol, Tobacco, and Other Restrictions",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Restrictions are dependent on the known metabolism of the study intervention...' is verbatim v11 5.5.2."
+  },
+  {
+   "v10_number": "5.3.3",
+   "v10_title": "Activity",
+   "v11_targets": [
+    {
+     "number": "5.5.3",
+     "title": "Physical Activity Restrictions",
+     "portion": "all"
+    },
+    {
+     "number": "5.5.4",
+     "title": "Other Activity Restrictions",
+     "portion": "part",
+     "part": "photosensitivity (sunbeds) clause"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'remain in bed for 4 to 6 hours after dosing' = v11 5.5.3; the 'photosensitivity... sunbeds' clause appears in v11 5.5.4."
+  },
+  {
+   "v10_number": "5.3.4",
+   "v10_title": "Other Restrictions",
+   "v11_targets": [
+    {
+     "number": "5.5.4",
+     "title": "Other Activity Restrictions",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'refrain from donating blood for the duration of their study participation' is verbatim v11 5.5.4."
+  },
+  {
+   "v10_number": "5.4",
+   "v10_title": "Screen Failures",
+   "v11_targets": [
+    {
+     "number": "5.6",
+     "title": "Screen Failure and Rescreening",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'State whether rescreening is permitted. Individual inclusion/exclusion criteria may also state whether a repeat procedure is allowed' is verbatim v11 5.6."
+  },
+  {
+   "v10_number": "5.5",
+   "v10_title": "Criteria for Temporarily Delaying [Enrollment/Randomization/Administration of Study Intervention]",
+   "v11_targets": [
+    {
+     "number": "5.7",
+     "title": "Criteria for Temporarily Delaying [Enrollment/Randomization/Administration of Trial Intervention]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "inferred-strong",
+   "evidence": "Identical heading and sole instruction 'Insert suggested text from participant or therapeutic libraries if relevant' in v10 5.5 and v11 5.7; not in the TransCelerate file."
+  },
+  {
+   "v10_number": "6",
+   "v10_title": "Study Intervention(s) and Concomitant Therapy",
+   "v11_targets": [
+    {
+     "number": "6",
+     "title": "Trial Intervention And Concomitant Therapy",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Ensure study interventions and allowed or forbidden additional interventions are aligned with the treatment condition attribute of the defined estimand(s)' = v11 6 intro 'Ensure trial interventions... aligned with the treatment attribute'.",
+   "note": "TransCelerate comment says CPT 6.0 content goes 'under M11 6.2'; the text comparison shows it stays in the v11 6 intro."
+  },
+  {
+   "v10_number": "6.1",
+   "v10_title": "Study Intervention(s) Administered",
+   "v11_targets": [
+    {
+     "number": "6",
+     "title": "Trial Intervention And Concomitant Therapy",
+     "portion": "part",
+     "part": "intervention overview table + IMP/NIMP designation"
+    },
+    {
+     "number": "6.1",
+     "title": "Description of Investigational Trial Intervention",
+     "portion": "part",
+     "part": "description text"
+    },
+    {
+     "number": "6.9",
+     "title": "Description of Noninvestigational Trial Intervention",
+     "portion": "part",
+     "part": "non-investigational interventions (background/rescue/other)"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 6.1 -> 6.1 and 6.9; v10 'It is preferred that interventions are described in a table' and 'All interventions must be designated as an investigational medicinal product (IMP) or NIMP/AxMP' are verbatim in the v11 6 intro/table, and the v10 table 'Use' values Rescue Medication/Background Intervention belong to 6.9."
+  },
+  {
+   "v10_number": "6.1.1",
+   "v10_title": "Rescue Medicine",
+   "v11_targets": [
+    {
+     "number": "6.9.2",
+     "title": "Rescue Therapy",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'If rescue therapy is permitted, consider using the suggested text provided' is verbatim v11 6.9.2 Rescue Therapy."
+  },
+  {
+   "v10_number": "6.1.2",
+   "v10_title": "Medical Devices",
+   "v11_targets": [
+    {
+     "number": "6.1.1",
+     "title": "Medical Devices",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'This section is required for medical devices and can be deleted for non-device protocols' is verbatim v11 6.1.1."
+  },
+  {
+   "v10_number": "6.2",
+   "v10_title": "Preparation, Handling, Storage, and Accountability",
+   "v11_targets": [
+    {
+     "number": "6.6.1",
+     "title": "Preparation of Investigational Trial Intervention",
+     "portion": "part",
+     "part": "preparation + device materials"
+    },
+    {
+     "number": "6.6.2",
+     "title": "Storage and Handling of Investigational Trial Intervention",
+     "portion": "part",
+     "part": "storage and handling (transit conditions, secure storage items)"
+    },
+    {
+     "number": "6.6.3",
+     "title": "Accountability of Investigational Trial Intervention",
+     "portion": "part",
+     "part": "accountability (authorised staff, accountability/reconciliation, final disposition items)"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: M11 expects no text at 6.6, put the content in the L3s; the v10 common-text list items are distributed verbatim as v11 6.6.2 (transit/storage) and 6.6.3 ('responsible for trial intervention accountability, reconciliation')."
+  },
+  {
+   "v10_number": "6.3",
+   "v10_title": "Assignment to Study Intervention",
+   "v11_targets": [
+    {
+     "number": "6.7.1",
+     "title": "Participant Assignment to Investigational Trial Intervention",
+     "portion": "part",
+     "part": "participant numbering/assignment method"
+    },
+    {
+     "number": "6.7.2",
+     "title": "Randomization",
+     "portion": "part",
+     "part": "randomization procedures"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Briefly describe the randomization procedures (eg, central randomization procedures)' is verbatim v11 6.7.2; 'Describe method of assigning participants' -> 6.7.1."
+  },
+  {
+   "v10_number": "6.4",
+   "v10_title": "[Blinding, Masking]",
+   "v11_targets": [
+    {
+     "number": "6.7.3",
+     "title": "Measures to Maintain Blinding",
+     "portion": "all"
+    },
+    {
+     "number": "6.7.4",
+     "title": "Emergency Unblinding at the Site",
+     "portion": "part",
+     "part": "circumstances/procedure for breaking the blind + blind-break examples"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate maps 6.4 -> 6.7.3 only; v10 'Include the circumstances in which the blind will be broken for an individual or for all participants... the procedures' and the 'Blind break (IVRS/IWRS)' / '(envelopes)' examples now live in v11 6.7.4 Emergency Unblinding at the Site."
+  },
+  {
+   "v10_number": "6.5",
+   "v10_title": "Study Intervention Compliance",
+   "v11_targets": [
+    {
+     "number": "6.8",
+     "title": "Investigational Trial Intervention Adherence",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'measures... to ensure and document intervention compliance' = v11 'adherence'; same examples (accountability records, diary cards)."
+  },
+  {
+   "v10_number": "6.6",
+   "v10_title": "Dose Modification",
+   "v11_targets": [
+    {
+     "number": "6.4",
+     "title": "Investigational Trial Intervention Dose Modification",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Procedures to be used for selecting/modifying an individual participant's dose' = v11 6.4 'describe any dose modifications allowed'; both cross-reference the dose-rationale section."
+  },
+  {
+   "v10_number": "6.6.1",
+   "v10_title": "Retreatment Criteria",
+   "v11_targets": [
+    {
+     "number": "6.3.1",
+     "title": "Retreatment Criteria",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'This section may be required in certain types of studies, eg, medical aesthetics' is verbatim v11 6.3.1 Retreatment Criteria (TransCelerate lumps it with 6.4)."
+  },
+  {
+   "v10_number": "6.7",
+   "v10_title": "Continued Access to Study Intervention after the End of the Study",
+   "v11_targets": [
+    {
+     "number": "4.5",
+     "title": "Access to Trial Intervention After End of Trial",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Include planned extension studies or possibilities for continued access... differentiate between study-level and participant-level access' is verbatim v11 4.5."
+  },
+  {
+   "v10_number": "6.8",
+   "v10_title": "Treatment of Overdose",
+   "v11_targets": [
+    {
+     "number": "6.5",
+     "title": "Management of Investigational Trial Intervention Overdose",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Specify what is meant by study intervention overdose and any known antidote' is verbatim v11 6.5."
+  },
+  {
+   "v10_number": "6.9",
+   "v10_title": "Prior and Concomitant Therapy",
+   "v11_targets": [
+    {
+     "number": "6.10",
+     "title": "Concomitant Therapy",
+     "portion": "all"
+    },
+    {
+     "number": "6.10.1",
+     "title": "Prohibited Concomitant Therapy",
+     "portion": "part",
+     "part": "prohibited example ('Participants must abstain from taking prescription...')"
+    },
+    {
+     "number": "6.10.2",
+     "title": "Permitted Concomitant Therapy",
+     "portion": "part",
+     "part": "permitted example (paracetamol)"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Minimize use of concomitant therapies or other co-interventions that can affect critical outcome measures' is verbatim v11 6.10; the two examples are split into 6.10.1/6.10.2."
+  },
+  {
+   "v10_number": "7",
+   "v10_title": "Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal",
+   "v11_targets": [
+    {
+     "number": "7",
+     "title": "Participant Discontinuation of Trial Intervention and Discontinuation or Withdrawal From trial",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "inferred-strong",
+   "evidence": "Both L1 intros are alignment guidance only; v10 'Details on replacement of dropouts should be described' has no v11 counterpart sentence (keep at L1 or in 7.2)."
+  },
+  {
+   "v10_number": "7.1",
+   "v10_title": "Discontinuation of Study Intervention",
+   "v11_targets": [
+    {
+     "number": "7.1",
+     "title": "Discontinuation of Trial Intervention for Individual Participants",
+     "portion": "all"
+    },
+    {
+     "number": "7.1.1",
+     "title": "Permanent Discontinuation of Trial Intervention",
+     "portion": "part",
+     "part": "criteria for discontinuation of trial intervention"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate maps 7.1 -> 7.1, but v11 7.1 is heading-only ('Sections 7.1.1, 7.1.2 & 7.1.3 are required Level 3 headings'); v10 'Describe the criteria for discontinuation of the participant from study intervention' = v11 7.1.1 'the criteria for discontinuation of a participant from any trial intervention'."
+  },
+  {
+   "v10_number": "7.1.1",
+   "v10_title": "Liver Event Stopping Criteria",
+   "v11_targets": [
+    {
+     "number": "7.1.1.1",
+     "title": "Liver Event Stopping Criteria",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'Liver injury - see participant libraries for proposed algorithm and text' is verbatim v11 7.1.1.1 (now one level deeper)."
+  },
+  {
+   "v10_number": "7.1.2",
+   "v10_title": "QTc Stopping Criteria",
+   "v11_targets": [
+    {
+     "number": "7.1.1.2",
+     "title": "QTc Stopping Criteria",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'Insert appropriate text from relevant library' is verbatim v11 7.1.1.2 QTc."
+  },
+  {
+   "v10_number": "7.1.3",
+   "v10_title": "Temporary Discontinuation",
+   "v11_targets": [
+    {
+     "number": "7.1.2",
+     "title": "Temporary Discontinuation of Trial Intervention",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'criteria for interrupting study intervention, what to do if the participant needs to stop' = v11 7.1.2 'criteria for temporary discontinuation or interruption'."
+  },
+  {
+   "v10_number": "7.1.4",
+   "v10_title": "Rechallenge",
+   "v11_targets": [
+    {
+     "number": "7.1.3",
+     "title": "Rechallenge",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'specifics around rechallenge, criteria for restarting study intervention, number of rechallenges allowed' = v11 7.1.3."
+  },
+  {
+   "v10_number": "7.1.4.1",
+   "v10_title": "Study Intervention Restart or Rechallenge After Liver Stopping Criteria Are Met",
+   "v11_targets": [
+    {
+     "number": "7.1.3.1",
+     "title": "Trial Intervention Restart or Rechallenge After Liver Stopping Criteria Are Met",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Identical heading apart from study/trial and sole instruction 'This section does not apply to single-dose studies'."
+  },
+  {
+   "v10_number": "7.2",
+   "v10_title": "Participant Discontinuation/Withdrawal from the Study",
+   "v11_targets": [
+    {
+     "number": "7.2",
+     "title": "Participant Discontinuation or Withdrawal from the Trial",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Describe the criteria for withdrawal of participants from the study' = v11 'criteria for participant discontinuation or withdrawal from the trial'."
+  },
+  {
+   "v10_number": "7.3",
+   "v10_title": "Lost to Follow up",
+   "v11_targets": [
+    {
+     "number": "7.3",
+     "title": "Management of Loss to Follow-Up",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "Both: how participants lost to follow-up are defined and addressed; 'Include the final bullet of common text when follow-up status of a participant is critical' is verbatim."
+  },
+  {
+   "v10_number": "8",
+   "v10_title": "Study Assessments and Procedures",
+   "v11_targets": [
+    {
+     "number": "8.1",
+     "title": "Trial Assessments and Procedures Considerations",
+     "portion": "all"
+    },
+    {
+     "number": "8",
+     "title": "Trial Assessments and Procedures",
+     "portion": "part",
+     "part": "alignment guidance"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 'put CPT content under 8.1'; v10 'Specify how unscheduled visit(s) will be handled' and 'Study procedures and their timing are summarized in the SoA. Protocol waivers or exemptions are not allowed' are verbatim in v11 8.1."
+  },
+  {
+   "v10_number": "8.1",
+   "v10_title": "Administrative [and General/Baseline] Procedures",
+   "v11_targets": [
+    {
+     "number": "8.2",
+     "title": "Screening/Baseline Assessments and Procedures",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'List and describe administrative and general/baseline procedures outlined in the SoA that are not described in the subsequent sections (eg, medical history)' is verbatim v11 8.2."
+  },
+  {
+   "v10_number": "8.2",
+   "v10_title": "[Efficacy and/or Immunogenicity] Assessments",
+   "v11_targets": [
+    {
+     "number": "8.3",
+     "title": "Efficacy Assessments and Procedures",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Clearly list and define the specific measurements and assessments... for assessing and recording the efficacy data' is verbatim v11 8.3."
+  },
+  {
+   "v10_number": "8.3",
+   "v10_title": "Safety Assessments",
+   "v11_targets": [
+    {
+     "number": "8.4",
+     "title": "Safety Assessments and Procedures",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'For each safety assessment: Specify how to perform, collect, and record each assessment' is verbatim v11 8.4."
+  },
+  {
+   "v10_number": "8.3.1",
+   "v10_title": "Physical Examinations",
+   "v11_targets": [
+    {
+     "number": "8.4.1",
+     "title": "Physical Examination",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Same instruction text in v10 8.3.1 and v11 8.4.1 (v11 adds a leading 'Include any specific instructions for the collection and interpretation of...' line)."
+  },
+  {
+   "v10_number": "8.3.2",
+   "v10_title": "Vital Signs",
+   "v11_targets": [
+    {
+     "number": "8.4.2",
+     "title": "Vital Signs",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Same instruction text in v10 8.3.2 and v11 8.4.2 (v11 adds a leading 'Include any specific instructions for the collection and interpretation of...' line)."
+  },
+  {
+   "v10_number": "8.3.3",
+   "v10_title": "Electrocardiograms",
+   "v11_targets": [
+    {
+     "number": "8.4.3",
+     "title": "Electrocardiograms",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Same instruction text in v10 8.3.3 and v11 8.4.3 (v11 adds a leading 'Include any specific instructions for the collection and interpretation of...' line)."
+  },
+  {
+   "v10_number": "8.3.4",
+   "v10_title": "Clinical Safety Laboratory Tests",
+   "v11_targets": [
+    {
+     "number": "8.4.4",
+     "title": "Clinical Laboratory Assessments",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Same instruction text in v10 8.3.4 and v11 8.4.4 (v11 adds a leading 'Include any specific instructions for the collection and interpretation of...' line)."
+  },
+  {
+   "v10_number": "8.3.5",
+   "v10_title": "Pregnancy Testing",
+   "v11_targets": [
+    {
+     "number": "8.4.5",
+     "title": "Pregnancy Testing",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Same instruction text in v10 8.3.5 and v11 8.4.5 (v11 adds a leading 'Include any specific instructions for the collection and interpretation of...' line)."
+  },
+  {
+   "v10_number": "8.3.6",
+   "v10_title": "Suicidal Ideation and Behavior Risk Monitoring",
+   "v11_targets": [
+    {
+     "number": "8.4.6",
+     "title": "Suicidal Ideation and Behavior Risk Monitoring",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Same instruction text in v10 8.3.6 and v11 8.4.6 (v11 adds a leading 'Include any specific instructions for the collection and interpretation of...' line)."
+  },
+  {
+   "v10_number": "8.4",
+   "v10_title": "Adverse Events (AEs) Serious Adverse Events (SAEs), and Other Safety Reporting",
+   "v11_targets": [
+    {
+     "number": "9",
+     "title": "Adverse Events, Serious Adverse Events, Product Complaints, Pregnancy and Postpartum Information, And Special Safety Sit",
+     "portion": "all"
+    },
+    {
+     "number": "9.2",
+     "title": "Timing and Procedures for Collection and Reporting",
+     "portion": "part",
+     "part": "intro paragraphs (means of obtaining AE data; solicited/unsolicited; expedited-event guidance)"
+    },
+    {
+     "number": "9.2.2",
+     "title": "Collection Procedures",
+     "portion": "part",
+     "part": "investigator detect/document/record paragraph"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate: 8.4 -> 9; v10 'The means of obtaining AE data should be described (volunteered, checklist, or questioning)' is verbatim the v11 9.2 intro, and 'The investigator and any qualified designees are responsible for detecting, documenting, and recording events' is the first paragraph of v11 9.2.2."
+  },
+  {
+   "v10_number": "8.4.1",
+   "v10_title": "Time Period and Frequency for Collecting AE and SAE Information",
+   "v11_targets": [
+    {
+     "number": "9.2.1",
+     "title": "Timing",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Verbatim 'All SAEs will be collected from the [signing of the ICF] OR [start of trial intervention] until [the follow-up visit]' in v11 9.2.1."
+  },
+  {
+   "v10_number": "8.4.2",
+   "v10_title": "Method of Detecting AEs and SAEs",
+   "v11_targets": [
+    {
+     "number": "9.2.2",
+     "title": "Collection Procedures",
+     "portion": "part",
+     "part": "Identification"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Care will be taken not to introduce bias when detecting AEs and/or SAEs' is verbatim the v11 9.2.2 Identification paragraph."
+  },
+  {
+   "v10_number": "8.4.3",
+   "v10_title": "Follow-up of AEs and SAEs",
+   "v11_targets": [
+    {
+     "number": "9.2.2",
+     "title": "Collection Procedures",
+     "portion": "part",
+     "part": "Follow-up"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'After the initial AE/SAE report, the investigator is required to proactively follow each participant' is the first Follow-up bullet of v11 9.2.2 (TransCelerate also lists it under Causality, which it is not)."
+  },
+  {
+   "v10_number": "8.4.4",
+   "v10_title": "Regulatory Reporting Requirements for SAEs",
+   "v11_targets": [
+    {
+     "number": "9.2.3.1",
+     "title": "Regulatory Reporting Requirements",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Prompt notification by the investigator to the sponsor of an SAE is essential' bullets are verbatim v11 9.2.3.1."
+  },
+  {
+   "v10_number": "8.4.5",
+   "v10_title": "Pregnancy",
+   "v11_targets": [
+    {
+     "number": "9.3.1",
+     "title": "Participants Who Become Pregnant During the Trial",
+     "portion": "all"
+    },
+    {
+     "number": "9.3",
+     "title": "Pregnancy and Postpartum Information",
+     "portion": "part",
+     "part": "time-period/alignment guidance"
+    },
+    {
+     "number": "9.3.2",
+     "title": "Participants Whose Partners Become Pregnant During the Trial",
+     "portion": "part",
+     "part": "partner-pregnancy statements"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 8.4.5 -> 9.3.1; v10 'Define the time period for collecting pregnancy information for female participants or female partners' is verbatim the v11 9.3 intro, and the 'participants' partners' bullets also feed 9.3.2."
+  },
+  {
+   "v10_number": "8.4.6",
+   "v10_title": "Cardiovascular and Death Events",
+   "v11_targets": [],
+   "change_type": "drop",
+   "confidence": "inferred-weak",
+   "evidence": "v10 heading is an empty placeholder (no instruction, no example text; added v03 'to facilitate easier location'); M11 and v11 have no cardiovascular/death section. If an author filled it, default 9.2.5 because the v10 SAE note says events that are potential efficacy endpoints (eg, MACE) 'should be detailed in Section 8.4.7' (= v11 9.2.5); adjudicated CV events handled as AESI go to 9.2.4. Flag for review, do not auto-move.",
+   "note": "Open question 3."
+  },
+  {
+   "v10_number": "8.4.7",
+   "v10_title": "Disease-related Events and/or Disease-related Outcomes Not Qualifying as AEs or SAEs",
+   "v11_targets": [
+    {
+     "number": "9.2.5",
+     "title": "Disease-Related Events or Outcomes Not Qualifying as AEs or SAEs",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Specify if applicable any disease-related events (DREs)... that do not need to be reported as AEs or SAEs' = v11 9.2.5."
+  },
+  {
+   "v10_number": "8.4.8",
+   "v10_title": "Adverse Events of Special Interest",
+   "v11_targets": [
+    {
+     "number": "9.2.4",
+     "title": "Adverse Events of Special Interest",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Consult the appropriate medically qualified team member if unsure if this section is applicable' and the AESI checklist are verbatim v11 9.2.4."
+  },
+  {
+   "v10_number": "8.4.9",
+   "v10_title": "Medical Device Deficiencies",
+   "v11_targets": [
+    {
+     "number": "9.1.4",
+     "title": "Definitions of Medical Device Product Complaints",
+     "portion": "part",
+     "part": "intro paragraphs"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate maps 8.4.9 -> 9.2.3.1, but v10 'This section is required for a study in which a medical device is provided for use in the study' and 'Medical devices are being provided for use in this study... responsible for the detection and documentation of events meeting the definitions of device deficiency' are verbatim v11 9.1.4."
+  },
+  {
+   "v10_number": "8.4.9.1",
+   "v10_title": "Time Period for Detecting Medical Device Deficiencies",
+   "v11_targets": [
+    {
+     "number": "9.2.1.1",
+     "title": "Time Period for Detecting Medical Device Deficiencies",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'Medical device deficiencies that result in an incident will be detected, documented, and reported during all periods of the study' is verbatim v11 9.2.1.1 (TransCelerate: 9.2 / 9.2.1)."
+  },
+  {
+   "v10_number": "8.4.9.2",
+   "v10_title": "Follow-up of Medical Device Deficiencies",
+   "v11_targets": [
+    {
+     "number": "9.2.2",
+     "title": "Collection Procedures",
+     "portion": "part",
+     "part": "Follow-up"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Follow-up applies to all participants, including those who discontinue study intervention' is verbatim a v11 9.2.2 Follow-up bullet."
+  },
+  {
+   "v10_number": "8.4.9.3",
+   "v10_title": "Prompt Reporting of Device Deficiencies to the Sponsor",
+   "v11_targets": [
+    {
+     "number": "9.2.3",
+     "title": "Reporting",
+     "portion": "part",
+     "part": "Prompt Reporting of Device Deficiencies to the Sponsor"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Same heading text and bullets ('Device deficiencies will be reported to the sponsor within [24 hours]') under v11 9.2.3."
+  },
+  {
+   "v10_number": "8.4.9.4",
+   "v10_title": "Regulatory Reporting Requirements for Device Deficiencies",
+   "v11_targets": [
+    {
+     "number": "9.2.3.1",
+     "title": "Regulatory Reporting Requirements",
+     "portion": "part",
+     "part": "Regulatory Reporting Requirements for Device Deficiencies"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'The investigator will promptly report all device deficiencies occurring with any medical device' is verbatim the device block of v11 9.2.3.1."
+  },
+  {
+   "v10_number": "8.5",
+   "v10_title": "Pharmacokinetics",
+   "v11_targets": [
+    {
+     "number": "8.5",
+     "title": "Pharmacokinetics",
+     "portion": "all"
+    }
+   ],
+   "change_type": "same",
+   "confidence": "official-confirmed",
+   "evidence": "Same PK instruction text ('Describe any study/trial intervention concentrations to be measured')."
+  },
+  {
+   "v10_number": "8.6",
+   "v10_title": "Pharmacodynamics",
+   "v11_targets": [
+    {
+     "number": "8.6.2",
+     "title": "Pharmacodynamic Biomarkers",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 PD text ('Describe sampling time relative to ingestion of food, posture') -> v11 8.6.2 Pharmacodynamic Biomarkers (new L3 under Biomarkers)."
+  },
+  {
+   "v10_number": "8.7",
+   "v10_title": "Genetics",
+   "v11_targets": [
+    {
+     "number": "8.6.1",
+     "title": "Genetics, Genomics, Pharmacogenetics and Pharmacogenomics",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'A [X] mL [blood OR saliva] sample for DNA isolation will be collected' is verbatim v11 8.6.1."
+  },
+  {
+   "v10_number": "8.8",
+   "v10_title": "Biomarkers",
+   "v11_targets": [
+    {
+     "number": "8.6.3",
+     "title": "Other Biomarkers",
+     "portion": "all"
+    },
+    {
+     "number": "8.6",
+     "title": "Biomarkers",
+     "portion": "part",
+     "part": "heading only"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate maps 8.8 -> 8.6 'but no content is intended at this M11 heading level'; v10 'Specify the retention time for the samples... Indicate the types of biomarkers that will be studied' is the v11 8.6.3 Other Biomarkers text."
+  },
+  {
+   "v10_number": "8.9",
+   "v10_title": "Immunogenicity Assessments",
+   "v11_targets": [
+    {
+     "number": "8.7",
+     "title": "Immunogenicity Assessments",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'If immunogenicity assessments are included as an efficacy or safety objective, then cross-reference...' = v11 8.7 'cross reference that section'; same antibody example text."
+  },
+  {
+   "v10_number": "8.10",
+   "v10_title": "[Health Economics OR Medical Resource Utilization and Health Economics]",
+   "v11_targets": [
+    {
+     "number": "8.8",
+     "title": "Medical Resource Utilization and Health Economics",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Verbatim 'This section does not apply to COAs... Include this section only for any value evidence and outcomes assessment' in v11 8.8."
+  },
+  {
+   "v10_number": "9",
+   "v10_title": "Statistical Considerations",
+   "v11_targets": [
+    {
+     "number": "10",
+     "title": "Statistical Considerations",
+     "portion": "all"
+    },
+    {
+     "number": "10.1",
+     "title": "General Considerations",
+     "portion": "part",
+     "part": "timing of main analysis statement"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Provide a statement on when the main analysis and reporting will be made' = v11 10.1 'the timing of analyses (eg, \"The analysis will include all participant data at trial completion\")'."
+  },
+  {
+   "v10_number": "9.1",
+   "v10_title": "General Considerations",
+   "v11_targets": [
+    {
+     "number": "10.1",
+     "title": "General Considerations",
+     "portion": "all"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'This section should describe general methods and definitions that do not need to be repeated in the subsequent sections' is verbatim v11 10.1."
+  },
+  {
+   "v10_number": "9.1.1",
+   "v10_title": "[Decision Criteria/Statistical Hypotheses]",
+   "v11_targets": [
+    {
+     "number": "10.4.1.1",
+     "title": "Statistical Analysis Method",
+     "portion": "part",
+     "part": "decision criteria, hypotheses, NI margin"
+    },
+    {
+     "number": "10.10",
+     "title": "Multiplicity Adjustments",
+     "portion": "part",
+     "part": "hypothesis example text"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate maps 9.1.1 -> 10.1, but v11 10.4.1.1 'state the null and alternative hypotheses... For non-inferiority tests, the non-inferiority margin should be justified' and the v11 10.10 hypothesis examples are the v10 9.1.1 text (v11 10.1 has no hypothesis text)."
+  },
+  {
+   "v10_number": "9.1.2",
+   "v10_title": "Multiplicity Adjustment",
+   "v11_targets": [
+    {
+     "number": "10.10",
+     "title": "Multiplicity Adjustments",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Clearly state the (local and/or global) significance level, the family-wise error-rate and the method for controlling overall type I error' = v11 10.10; examples verbatim."
+  },
+  {
+   "v10_number": "9.1.3",
+   "v10_title": "Impact of Intercurrent Events Strategies",
+   "v11_targets": [
+    {
+     "number": "10.4.1.2",
+     "title": "Handling of Data in Relation to Primary Estimand(s)",
+     "portion": "all"
+    },
+    {
+     "number": "10.5.1.2",
+     "title": "Handling of Data in Relation to Secondary Estimand(s)",
+     "portion": "part",
+     "part": "same text for secondary estimands"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'Describe how intercurrent events will be summarized (number by treatment condition and timing)' is verbatim v11 10.4.1.2 (TransCelerate: 10.1)."
+  },
+  {
+   "v10_number": "9.1.4",
+   "v10_title": "Handling of Missing Data",
+   "v11_targets": [
+    {
+     "number": "10.4.1.3",
+     "title": "Handling of Missing Data in Relation to Primary Estimand(s)",
+     "portion": "all"
+    },
+    {
+     "number": "10.5.1.3",
+     "title": "Handling of Missing Data in Relation to Secondary Estimand(s)",
+     "portion": "part",
+     "part": "if handled per secondary estimand"
+    },
+    {
+     "number": "10.1",
+     "title": "General Considerations",
+     "portion": "part",
+     "part": "common handling of missing baseline values"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 9.1.4 -> 10.4.1.3; v10 'handling of missing data including missing baseline values if... the same way across analyses' also matches the v11 10.1 bullet 'Handling of missing baseline measurements'."
+  },
+  {
+   "v10_number": "9.2",
+   "v10_title": "Analysis Sets",
+   "v11_targets": [
+    {
+     "number": "10.2",
+     "title": "Analysis Sets",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'This CPT uses the following terminology: Participant Analysis Set / Data Points Set' is verbatim v11 10.2."
+  },
+  {
+   "v10_number": "9.3",
+   "v10_title": "Analyses Supporting Primary Objective(s)",
+   "v11_targets": [
+    {
+     "number": "10.4",
+     "title": "Analyses Associated with the Primary Objective(s)",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Add level 3 subsections for the analysis of all endpoints/estimands supporting the primary objective(s)' = v11 10.4 'Include additional level 3 headings for each primary objective'."
+  },
+  {
+   "v10_number": "9.3.1",
+   "v10_title": "Primary [Endpoint(s)/Estimand(s)]",
+   "v11_targets": [
+    {
+     "number": "10.4.1",
+     "title": "Primary Objective [#]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "inferred-strong",
+   "evidence": "v11 10.4.1 'Primary Objective [#]' is the required L3 container for v10 9.3.1 'Primary [Endpoint(s)/Estimand(s)]'."
+  },
+  {
+   "v10_number": "9.3.1.1",
+   "v10_title": "Definition of endpoint(s)",
+   "v11_targets": [
+    {
+     "number": "10.4.1.1",
+     "title": "Statistical Analysis Method",
+     "portion": "part",
+     "part": "Definition of endpoint(s)"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'State how the primary endpoint(s) will be defined/calculated/derived' is verbatim the first block of v11 10.4.1.1 (TransCelerate stops at 10.4)."
+  },
+  {
+   "v10_number": "9.3.1.2",
+   "v10_title": "Main Analytical Approach",
+   "v11_targets": [
+    {
+     "number": "10.4.1.1",
+     "title": "Statistical Analysis Method",
+     "portion": "part",
+     "part": "analytical approach"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'Refer to estimand(s) in Section 3... Refer to the analysis set to be used in the main analytical approach' -> v11 10.4.1.1 'Describe the statistical analysis methods that will be used to evaluate the primary objective(s)'."
+  },
+  {
+   "v10_number": "9.3.1.3",
+   "v10_title": "Sensitivity [Analysis/Analyses]",
+   "v11_targets": [
+    {
+     "number": "10.4.1.4",
+     "title": "Sensitivity Analysis",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Describe the planned sensitivity analyses and how the sensitivity analyses will target the assumptions' is verbatim v11 10.4.1.4."
+  },
+  {
+   "v10_number": "9.3.1.4",
+   "v10_title": "Supplementary [Analysis/Analyses]",
+   "v11_targets": [
+    {
+     "number": "10.4.1.5",
+     "title": "Supplementary Analysis",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Describe any supplementary analyses' = v11 10.4.1.5 Supplementary Analysis."
+  },
+  {
+   "v10_number": "9.4",
+   "v10_title": "Analyses Supporting Secondary Objective(s)",
+   "v11_targets": [
+    {
+     "number": "10.5",
+     "title": "Analysis Associated with the Secondary Objective(s)",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Add level 3 subsections as required according to the number of secondary objectives' = v11 10.5."
+  },
+  {
+   "v10_number": "9.4.1",
+   "v10_title": "Analyses Supporting Secondary Objective [label]",
+   "v11_targets": [
+    {
+     "number": "10.5.1",
+     "title": "Secondary Objective [#]",
+     "portion": "all"
+    },
+    {
+     "number": "10.5.1.1",
+     "title": "Statistical Analysis Method",
+     "portion": "part",
+     "part": "analysis method"
+    },
+    {
+     "number": "10.5.1.2",
+     "title": "Handling of Data in Relation to Secondary Estimand(s)",
+     "portion": "part",
+     "part": "data handling"
+    },
+    {
+     "number": "10.5.1.3",
+     "title": "Handling of Missing Data in Relation to Secondary Estimand(s)",
+     "portion": "part",
+     "part": "missing data"
+    },
+    {
+     "number": "10.5.1.4",
+     "title": "Sensitivity Analysis",
+     "portion": "part",
+     "part": "sensitivity"
+    },
+    {
+     "number": "10.5.1.5",
+     "title": "Supplementary Analysis",
+     "portion": "part",
+     "part": "supplementary"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 'need to align appropriate content into the M11 structure level 3 headings'; v10 'It is recommended to use the same structure as in Section 9.3' = v11 10.5 'Use the same section structure as Section 10.4'."
+  },
+  {
+   "v10_number": "9.5",
+   "v10_title": "Analyses Supporting [Tertiary/Exploratory/Other] Objective(s)",
+   "v11_targets": [
+    {
+     "number": "10.6",
+     "title": "Analyses Associated with the Exploratory Objective(s)",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'It is optional if a description will be provided in the protocol section or in the SAP' is verbatim v11 10.6."
+  },
+  {
+   "v10_number": "9.6",
+   "v10_title": "[Other] Safety Analyses",
+   "v11_targets": [
+    {
+     "number": "10.7",
+     "title": "Safety Analyses",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Describe at a high level how the safety data will be analyzed if not already described' = v11 10.7."
+  },
+  {
+   "v10_number": "9.7",
+   "v10_title": "Other Analyses",
+   "v11_targets": [
+    {
+     "number": "10.8",
+     "title": "Other Analyses",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Verbatim 'Analysis of other variables and/or parameters and subgroup analyses belong to this section'."
+  },
+  {
+   "v10_number": "9.7.1",
+   "v10_title": "Other variables and/or parameters",
+   "v11_targets": [
+    {
+     "number": "10.8.1",
+     "title": "Other variables and/or parameters",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Verbatim 'Other analyses may include analyses of assessments or derived parameters, which are not defined as endpoints'."
+  },
+  {
+   "v10_number": "9.7.2",
+   "v10_title": "Subgroup analyses",
+   "v11_targets": [
+    {
+     "number": "10.8.2",
+     "title": "10.8.2",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Verbatim 'Often individual standard clinical studies... are not designed to allow for statistically meaningful subgroup analyses'."
+  },
+  {
+   "v10_number": "9.8",
+   "v10_title": "Interim [Analysis/Analyses]",
+   "v11_targets": [
+    {
+     "number": "10.9",
+     "title": "Interim Analyses",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'If an interim analysis is planned, describe if any type of data monitoring committee...' = v11 10.9 'Describe any interim analyses and criteria for stopping or adapting the trial'."
+  },
+  {
+   "v10_number": "9.9",
+   "v10_title": "Sample Size Determination",
+   "v11_targets": [
+    {
+     "number": "10.11",
+     "title": "Sample Size Determination",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Provide justification of sample size in accordance with the primary...' = v11 10.11 'sample size calculation should be aligned with the primary estimand(s)'.",
+   "note": "Number of participants is also summarised in 1.1.2; see multi_landing."
+  },
+  {
+   "v10_number": "10",
+   "v10_title": "Supporting Documentation and Operational Considerations",
+   "v11_targets": [
+    {
+     "number": "11",
+     "title": "Trial Oversight and Other General Considerations",
+     "portion": "all"
+    },
+    {
+     "number": "12",
+     "title": "Appendix: Supporting Details",
+     "portion": "part",
+     "part": "appendix container"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 10.0 -> 11; v10 'Information that is too lengthy... should be included in an appendix. Modify, delete, or add sections as needed' corresponds to the v11 12 container 'Additional supporting detail appendices may be added'."
+  },
+  {
+   "v10_number": "10.1",
+   "v10_title": "Appendix 1: Regulatory, Ethical, and Study Oversight Considerations",
+   "v11_targets": [
+    {
+     "number": "11.1",
+     "title": "Regulatory and Ethical Considerations",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "official-confirmed",
+   "evidence": "v10 10.1 is a heading-only container ('Regulatory, Ethical, and Study Oversight Considerations'); its L3 children are redistributed over 11.1-11.12, 4.4 and 5.8 (see 10.1.1-10.1.11)."
+  },
+  {
+   "v10_number": "10.1.1",
+   "v10_title": "Regulatory and Ethical Considerations",
+   "v11_targets": [
+    {
+     "number": "11.1",
+     "title": "Regulatory and Ethical Considerations",
+     "portion": "part",
+     "part": "regulatory/ethical bullets"
+    },
+    {
+     "number": "11.2.1",
+     "title": "Investigator Responsibilities",
+     "portion": "part",
+     "part": "'The investigator will be responsible for the following' bullets"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-corrected",
+   "evidence": "v10 bullets up to 'Protocols and any substantial amendments... require health authority approval' are v11 11.1; the last bullet group 'The investigator will be responsible for the following: written summaries to the IRB/IEC, notifying the IRB/IEC of SAEs, oversight of conduct' is v11 11.2.1 example text."
+  },
+  {
+   "v10_number": "10.1.2",
+   "v10_title": "Financial Disclosure",
+   "v11_targets": [
+    {
+     "number": "11.2.1",
+     "title": "Investigator Responsibilities",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'Include text related to financial disclosure if not included in another document' is verbatim v11 11.2.1 (TransCelerate: 11.1)."
+  },
+  {
+   "v10_number": "10.1.3",
+   "v10_title": "Informed Consent Process",
+   "v11_targets": [
+    {
+     "number": "11.3",
+     "title": "Informed Consent Process",
+     "portion": "all"
+    },
+    {
+     "number": "11.3.1",
+     "title": "Informed Consent for Rescreening",
+     "portion": "part",
+     "part": "rescreening ICF statement"
+    },
+    {
+     "number": "11.3.2",
+     "title": "Informed Consent for Use of Remaining Samples in Exploratory Research",
+     "portion": "part",
+     "part": "remaining-samples consent statement"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 10.1.3 -> 11.3; v10 'If participants can be rescreened, add the text to state whether the participant needs to sign a new ICF' and 'optional exploratory research using the remainder of mandatory samples' are the v11 11.3.1 and 11.3.2 instructions."
+  },
+  {
+   "v10_number": "10.1.4",
+   "v10_title": "Recruitment strategy",
+   "v11_targets": [
+    {
+     "number": "5.8",
+     "title": "[Recruitment Strategy]",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "inferred-strong",
+   "evidence": "v10 'To comply with the EU-CTR, include a brief description of the recruitment strategy and the tools used (eg. newspaper advertisements)' is verbatim v11 5.8 [Recruitment Strategy]."
+  },
+  {
+   "v10_number": "10.1.5",
+   "v10_title": "Data Protection",
+   "v11_targets": [
+    {
+     "number": "11.8",
+     "title": "Data Protection",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'Include all measures to be taken to comply with the applicable rules on protection of personal data... data security breach' and the unique-identifier common text are verbatim v11 11.8 Data Protection (TransCelerate: 11.7; M11 11.7 is Data Governance)."
+  },
+  {
+   "v10_number": "10.1.6",
+   "v10_title": "Committees Structure",
+   "v11_targets": [
+    {
+     "number": "11.4",
+     "title": "Committees",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Briefly describe the administrative structure... data monitoring committee or data safety monitoring board' = v11 11.4 Committees."
+  },
+  {
+   "v10_number": "10.1.6.1",
+   "v10_title": "[Early Safety Data Review AND/OR Committee]",
+   "v11_targets": [
+    {
+     "number": "11.4",
+     "title": "Committees",
+     "portion": "part",
+     "part": "early safety data review example text"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate maps 10.1.6.1 to 11.4; v11 has no L3 there and carries the 'early aggregated safety data review' examples in the 11.4 body."
+  },
+  {
+   "v10_number": "10.1.7",
+   "v10_title": "Dissemination of Clinical Study Data",
+   "v11_targets": [
+    {
+     "number": "11.12",
+     "title": "Data Dissemination",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "v10 'Describe company-specific policy on provision of study results... Disclosure of CSRs... posting on clinicaltrials.gov... Publication planning' is verbatim v11 11.12 Data Dissemination (TransCelerate: 11.7 Data Governance)."
+  },
+  {
+   "v10_number": "10.1.8",
+   "v10_title": "Data Quality Assurance",
+   "v11_targets": [
+    {
+     "number": "11.9.1",
+     "title": "Data Quality Assurance",
+     "portion": "all"
+    },
+    {
+     "number": "11.7",
+     "title": "Data Governance",
+     "portion": "part",
+     "part": "record-retention bullet"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "inferred-strong",
+   "evidence": "v10 Data Quality Assurance common text is verbatim v11 11.9.1 except 'Records and documents, including signed ICFs... must be retained by the investigator for [X] years', which v11 places under 11.7 Data Governance."
+  },
+  {
+   "v10_number": "10.1.9",
+   "v10_title": "Source Documents",
+   "v11_targets": [
+    {
+     "number": "11.9.2",
+     "title": "Source Documents",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "inferred-strong",
+   "evidence": "v10 'Describe procedures for the identification of data to be recorded directly on the CRF considered as source data' is verbatim v11 11.9.2."
+  },
+  {
+   "v10_number": "10.1.10",
+   "v10_title": "Study and Site Start and Closure",
+   "v11_targets": [
+    {
+     "number": "4.4",
+     "title": "Start of Trial and End of Trial",
+     "portion": "part",
+     "part": "Start of trial (first act of recruitment)"
+    },
+    {
+     "number": "11.11",
+     "title": "Early Site Closure",
+     "portion": "part",
+     "part": "study/site termination"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "TransCelerate: 10.1.10 -> 4.4 and 11.11; 'The study start date is the date on which the clinical study will be open for recruitment' = v11 4.4 Start of Trial, and 'The sponsor or designee reserves the right to close the study site' = v11 11.11."
+  },
+  {
+   "v10_number": "10.1.11",
+   "v10_title": "Publication Policy",
+   "v11_targets": [
+    {
+     "number": "11.12.1",
+     "title": "Publication Policy",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'The following information is required by ICH to be in the protocol if not addressed in another document' is verbatim v11 11.12.1 Publication Policy.",
+   "note": "TransCelerate also lists a 'Publication Strategy' under 11.7; that wording is a bullet of 10.1.7 (-> 11.12), not a v10 heading."
+  },
+  {
+   "v10_number": "10.2",
+   "v10_title": "Appendix 2: Clinical Laboratory Tests",
+   "v11_targets": [
+    {
+     "number": "12.1",
+     "title": "Clinical Laboratory Tests",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'An example table is provided for listing laboratory tests' is verbatim v11 12.1."
+  },
+  {
+   "v10_number": "10.3",
+   "v10_title": "Appendix 3: AEs and SAEs: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting",
+   "v11_targets": [
+    {
+     "number": "9.1",
+     "title": "Definitions",
+     "portion": "part",
+     "part": "definitions container"
+    },
+    {
+     "number": "9.1.4",
+     "title": "Definitions of Medical Device Product Complaints",
+     "portion": "part",
+     "part": "medical-device cross-reference note"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate maps the whole appendix to v11 9; content is split by child (10.3.1 -> 9.1.1, 10.3.2 -> 9.1.2, 10.3.3 -> 9.2.2, 10.3.4 -> 9.2.3), and the v10 intro 'For medical device studies use ISO definitions and procedures detailed in Appendix 7' is the v11 9.1.4 device note."
+  },
+  {
+   "v10_number": "10.3.1",
+   "v10_title": "Definition of AE",
+   "v11_targets": [
+    {
+     "number": "9.1.1",
+     "title": "Definitions of Adverse Events",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Verbatim 'Add these definitions of unsolicited and solicited AEs if relevant, eg, for vaccine and pediatric studies'."
+  },
+  {
+   "v10_number": "10.3.2",
+   "v10_title": "Definition of SAE",
+   "v11_targets": [
+    {
+     "number": "9.1.2",
+     "title": "Definitions of Serious Adverse Events",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Verbatim 'Add other SAEs relevant per protocol/trial intervention. Obtain agreement with the pharmacovigilance group'."
+  },
+  {
+   "v10_number": "10.3.3",
+   "v10_title": "Recording and Follow-Up of AE and/or SAE",
+   "v11_targets": [
+    {
+     "number": "9.2.2",
+     "title": "Collection Procedures",
+     "portion": "part",
+     "part": "Recording"
+    },
+    {
+     "number": "9.2.2",
+     "title": "Collection Procedures",
+     "portion": "part",
+     "part": "Severity"
+    },
+    {
+     "number": "9.2.2",
+     "title": "Collection Procedures",
+     "portion": "part",
+     "part": "Causality"
+    },
+    {
+     "number": "9.2.2",
+     "title": "Collection Procedures",
+     "portion": "part",
+     "part": "Follow-up"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "v10 sub-blocks 'AE and SAE Recording', 'Assessment of Intensity', 'Assessment of Causality', 'Follow-up of AEs and SAEs' map one-to-one to v11 9.2.2 Recording / Severity / Causality / Follow-up (TransCelerate omits Recording)."
+  },
+  {
+   "v10_number": "10.3.4",
+   "v10_title": "Reporting of SAEs",
+   "v11_targets": [
+    {
+     "number": "9.2.3",
+     "title": "Reporting",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'SAE Reporting to [X] via an Electronic Data Collection Tool / via Paper Data Collection Tool' blocks are verbatim v11 9.2.3."
+  },
+  {
+   "v10_number": "10.4",
+   "v10_title": "Appendix 4: Contraceptive and Barrier Guidance",
+   "v11_targets": [
+    {
+     "number": "5.4",
+     "title": "Contraception",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Insert content for this appendix from the participant libraries as appropriate based upon the decision trees' = v11 5.4 'Insert content for the following subsections from the participant libraries'."
+  },
+  {
+   "v10_number": "10.4.1",
+   "v10_title": "Definitions",
+   "v11_targets": [
+    {
+     "number": "5.4.1",
+     "title": "Definitions Related to Childbearing Potential",
+     "portion": "all"
+    }
+   ],
+   "change_type": "library",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'See participant libraries for common text to include here' is verbatim v11 5.4.1 (text lives in the library; see open question 7)."
+  },
+  {
+   "v10_number": "10.4.2",
+   "v10_title": "Contraception Guidance",
+   "v11_targets": [
+    {
+     "number": "5.4.2",
+     "title": "Contraception Requirements",
+     "portion": "all"
+    }
+   ],
+   "change_type": "library",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'See participant libraries for common text to include here' is verbatim v11 5.4.2 (text lives in the library; see open question 7)."
+  },
+  {
+   "v10_number": "10.5",
+   "v10_title": "Appendix 5: Genetics",
+   "v11_targets": [
+    {
+     "number": "8.6.1",
+     "title": "Genetics, Genomics, Pharmacogenetics and Pharmacogenomics",
+     "portion": "all"
+    }
+   ],
+   "change_type": "merge",
+   "confidence": "official-confirmed",
+   "evidence": "Appendix 5 example text ('Use/Analysis of DNA... DNA samples will be used for research related to...') is verbatim the second half of the v11 8.6.1 example."
+  },
+  {
+   "v10_number": "10.6",
+   "v10_title": "Appendix 6: Liver Safety: Suggestions and Guidelines for Liver Events",
+   "v11_targets": [
+    {
+     "number": "12.4",
+     "title": "Liver Safety: Suggestions and Guidelines for Liver Events",
+     "portion": "all"
+    },
+    {
+     "number": "7.1.1.1",
+     "title": "Liver Event Stopping Criteria",
+     "portion": "part",
+     "part": "library liver stopping criteria algorithm"
+    }
+   ],
+   "change_type": "library",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'See participant libraries for suggested common text' is verbatim v11 12.4; the v11 Patient library lists 7.1.1.1 Liver Event Stopping Criteria and 12.4 as the liver content."
+  },
+  {
+   "v10_number": "10.7",
+   "v10_title": "Appendix 7: Medical Device AEs, ADEs, SAEs, SADEs, USADEs and Device Deficiencies: Definitions and Procedures for Record",
+   "v11_targets": [
+    {
+     "number": "9.1.4",
+     "title": "Definitions of Medical Device Product Complaints",
+     "portion": "all"
+    }
+   ],
+   "change_type": "split",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'This appendix is required for a study in which a sponsor medical device is provided' = v11 9.1.4 'This section is required for a trial in which a medical device is provided'; children are distributed to 9.1.4 / 9.2.2 / 9.2.3."
+  },
+  {
+   "v10_number": "10.7.1",
+   "v10_title": "Definition of Medical Device AE and ADE",
+   "v11_targets": [
+    {
+     "number": "9.1.4",
+     "title": "Definitions of Medical Device Product Complaints",
+     "portion": "part",
+     "part": "Definition of Medical Device AE and ADE"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v11 9.1.4 has the unnumbered subheading 'Definition of Medical Device AE and ADE' with the v10 text."
+  },
+  {
+   "v10_number": "10.7.1a",
+   "v10_title": "10.7.1 [unnumbered] Medical Device AE and ADE Definition",
+   "v11_targets": [
+    {
+     "number": "9.1.4",
+     "title": "Definitions of Medical Device Product Complaints",
+     "portion": "part",
+     "part": "Definition of Medical Device AE and ADE"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Same heading text retained as an unnumbered subheading in v11 9.1.4."
+  },
+  {
+   "v10_number": "10.7.2",
+   "v10_title": "Definition of Medical Device SAE, SADE and USADE",
+   "v11_targets": [
+    {
+     "number": "9.1.4",
+     "title": "Definitions of Medical Device Product Complaints",
+     "portion": "part",
+     "part": "Definition of Medical Device SAE, SADE and USADE"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v11 9.1.4 has the subheading 'Definition of Medical Device SAE, SADE and USADE' with the v10 text."
+  },
+  {
+   "v10_number": "10.7.2a",
+   "v10_title": "10.7.2 [unnumbered] SADE definition / Unanticipated SADE (USADE) definition",
+   "v11_targets": [
+    {
+     "number": "9.1.4",
+     "title": "Definitions of Medical Device Product Complaints",
+     "portion": "part",
+     "part": "SADE and USADE definitions"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "Same 'A Medical Device SADE definition' / 'An Unanticipated SADE (USADE) definition' paragraphs in v11 9.1.4."
+  },
+  {
+   "v10_number": "10.7.3",
+   "v10_title": "Definition of Device Deficiency",
+   "v11_targets": [
+    {
+     "number": "9.1.4",
+     "title": "Definitions of Medical Device Product Complaints",
+     "portion": "part",
+     "part": "Definition of Device Deficiency"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate leaves it unmapped; v11 9.1.4 contains an unnumbered subheading 'Definition of Device Deficiency' (third definition after AE/ADE and SAE/SADE/USADE)."
+  },
+  {
+   "v10_number": "10.7.4",
+   "v10_title": "Recording and Follow-Up of Medical Device AE and/or SAE and Device Deficiencies",
+   "v11_targets": [
+    {
+     "number": "9.2.2",
+     "title": "Collection Procedures",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'AE/SAE/device deficiency Recording... Assessment of Intensity/Causality... Follow-up' bullets are merged into the same v11 9.2.2 lists ('AE/SAE/device deficiency')."
+  },
+  {
+   "v10_number": "10.7.5",
+   "v10_title": "Reporting of Medical Device SAEs",
+   "v11_targets": [
+    {
+     "number": "9.2.3",
+     "title": "Reporting",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Medical Device SAE Reporting to [X]...' blocks = v11 9.2.3 'SAE/Medical Device SAE Reporting to [X]'."
+  },
+  {
+   "v10_number": "10.7.6",
+   "v10_title": "Reporting of SADEs",
+   "v11_targets": [
+    {
+     "number": "9.2.3",
+     "title": "Reporting",
+     "portion": "part",
+     "part": "SADE Reporting to [X]"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "TransCelerate: 9.2.3.1; in v11 the unnumbered 'SADE Reporting to [X]' (with the NOTE on device deficiencies potentially related to SAEs) sits in 9.2.3 before the L4 9.2.3.1."
+  },
+  {
+   "v10_number": "10.7.6a",
+   "v10_title": "10.7.6 [unnumbered] SADE Reporting to [X]",
+   "v11_targets": [
+    {
+     "number": "9.2.3",
+     "title": "Reporting",
+     "portion": "part",
+     "part": "SADE Reporting to [X]"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-corrected",
+   "evidence": "As 10.7.6: identical heading text under v11 9.2.3 Reporting, not under 9.2.3.1."
+  },
+  {
+   "v10_number": "10.8",
+   "v10_title": "Appendix 8: Country-specific Requirements",
+   "v11_targets": [
+    {
+     "number": "12.2",
+     "title": "Country/Region-Specific Differences",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'Do not use this appendix to create extensive lists of country-specific differences' is verbatim v11 12.2."
+  },
+  {
+   "v10_number": "10.9",
+   "v10_title": "Appendix 9: Protocol Amendment History",
+   "v11_targets": [
+    {
+     "number": "12.3",
+     "title": "Prior Protocol Amendment(s)",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'The Protocol Amendment Summary of Changes Table for the current amendment is located directly before the table of contents' appears in v11 12.3; v11 adds the Document History table here."
+  },
+  {
+   "v10_number": "10.9a",
+   "v10_title": "10.9 [unnumbered] Amendment [amendment number]: ([date]) (+ overall rationale and change table)",
+   "v11_targets": [
+    {
+     "number": "12.3",
+     "title": "Overview of Changes in Amendment [n] ([date])",
+     "portion": "all"
+    }
+   ],
+   "change_type": "rename",
+   "confidence": "inferred-strong",
+   "evidence": "v11 12.3 'Overview of Changes in Amendment [enter amendment number] ([enter date])' with the same Section/Description/Rationale table (columns reordered)."
+  },
+  {
+   "v10_number": "11",
+   "v10_title": "References",
+   "v11_targets": [
+    {
+     "number": "14",
+     "title": "Appendix: References",
+     "portion": "all"
+    }
+   ],
+   "change_type": "move",
+   "confidence": "official-confirmed",
+   "evidence": "v10 'See therapeutic libraries for key references to include... ICMJE 2019' is verbatim v11 14."
+  }
+ ],
+ "v11_without_v10_source": [
+  {
+   "number": "2.1",
+   "title": "Purpose of Trial",
+   "status": "container_no_text",
+   "note": "Heading-only M11 container; text comes from child 2.1.1/2.1.2."
+  },
+  {
+   "number": "4.2.2",
+   "title": "Rationale for Intervention Model",
+   "status": "no_source",
+   "note": "v10 4.3 does NOT feed it (it feeds 6.2). At most an optional weak split of v10 4.2 design-feature rationale."
+  },
+  {
+   "number": "4.2.4",
+   "title": "Rationale for Trial Duration",
+   "status": "no_source"
+  },
+  {
+   "number": "4.2.5",
+   "title": "Rationale for Adaptive or Novel Trial Design",
+   "status": "no_source"
+  },
+  {
+   "number": "4.2.6",
+   "title": "Rationale for Interim Analysis",
+   "status": "no_source"
+  },
+  {
+   "number": "4.2.7",
+   "title": "Rationale for Other Trial Design Aspects",
+   "status": "no_source"
+  },
+  {
+   "number": "5.4",
+   "title": "Contraception",
+   "status": "container_with_library_text",
+   "note": "Heading-only; children 5.4.1/5.4.2 take v10 Appendix 4 (10.4.x)."
+  },
+  {
+   "number": "6.3",
+   "title": "Investigational Trial Intervention Administration",
+   "status": "no_source",
+   "note": "Administration procedures (timing, missed doses) are new; 6.3.1 does have a source (v10 6.6.1)."
+  },
+  {
+   "number": "6.6",
+   "title": "Preparation, Storage, Handling and Accountability of Investigational Trial Intervention",
+   "status": "container",
+   "note": "Heading-only; children 6.6.1-6.6.3 take v10 6.2."
+  },
+  {
+   "number": "6.7",
+   "title": "Investigational Trial Intervention Assignment, Randomization and Blinding",
+   "status": "container",
+   "note": "Heading-only; children take v10 6.3 and 6.4."
+  },
+  {
+   "number": "6.9.1",
+   "title": "Background Trial Intervention",
+   "status": "weak_partial",
+   "note": "Only an optional split of v10 6.1 background-intervention rows."
+  },
+  {
+   "number": "6.9.3",
+   "title": "Other Noninvestigational Trial Intervention",
+   "status": "no_source"
+  },
+  {
+   "number": "9.1.3",
+   "title": "Definitions of Product Complaints",
+   "status": "no_source"
+  },
+  {
+   "number": "9.4",
+   "title": "Special Safety Situations",
+   "status": "no_source"
+  },
+  {
+   "number": "10.3",
+   "title": "Analyses of Demographics and Other Baseline Variables",
+   "status": "no_source"
+  },
+  {
+   "number": "11.2",
+   "title": "Trial Oversight",
+   "status": "container",
+   "note": "L2 text is new; 11.2.1 has sources (10.1.1, 10.1.2); 11.2.2 has none."
+  },
+  {
+   "number": "11.2.2",
+   "title": "Sponsor Responsibilities",
+   "status": "no_source"
+  },
+  {
+   "number": "11.5",
+   "title": "Insurance and Indemnity",
+   "status": "no_source"
+  },
+  {
+   "number": "11.6",
+   "title": "Risk-Based Quality Management",
+   "status": "no_source"
+  },
+  {
+   "number": "11.9",
+   "title": "Source Records",
+   "status": "container",
+   "note": "L2 text is new; children 11.9.1/11.9.2 have sources (10.1.8, 10.1.9)."
+  },
+  {
+   "number": "11.10",
+   "title": "Protocol Deviations",
+   "status": "no_source"
+  },
+  {
+   "number": "title-page",
+   "title": "[Sponsor Confidentiality Statement], [Version Number], [Version Date], Original Protocol, [Local Sponsor Name]/[Local Sponsor Legal Address], Current Amendment table cells (enrolment at approval, reason(s), substantial-impact questions)",
+   "status": "no_source",
+   "note": "New v11 title-page fields; Original Protocol can be derived from an empty v10 Amendment Number."
+  }
+ ],
+ "v11_removed_from_no_source_list_vs_md": [
+  {
+   "number": "2.2.1",
+   "title": "Risk Summary and Mitigation Strategy",
+   "why": "v10 2.3.1 Risk Assessment (verbatim)"
+  },
+  {
+   "number": "2.2.2",
+   "title": "Benefit Summary",
+   "why": "v10 2.3.2 Benefit Assessment"
+  },
+  {
+   "number": "4.2.1",
+   "title": "Rationale for Estimand(s)",
+   "why": "partial: v10 4.2 endpoint relevance/validity text"
+  },
+  {
+   "number": "4.2.3",
+   "title": "Rationale for Control Type",
+   "why": "partial (weak): v10 4.2 control/placebo justification"
+  },
+  {
+   "number": "4.3",
+   "title": "Trial Stopping Rules",
+   "why": "partial: v10 4.3 dose-escalation halting example text"
+  },
+  {
+   "number": "5.1",
+   "title": "Description of Trial Population and Rationale",
+   "why": "partial: v10 5 prospective-waiver common text"
+  },
+  {
+   "number": "6.2",
+   "title": "Rationale for Investigational Trial Intervention Dose and Regimen",
+   "why": "v10 4.3 Justification for Dose (verbatim)"
+  },
+  {
+   "number": "6.7.4",
+   "title": "Emergency Unblinding at the Site",
+   "why": "partial: v10 6.4 blind-breaking text"
+  },
+  {
+   "number": "7.1.1",
+   "title": "Permanent Discontinuation of Trial Intervention",
+   "why": "v10 7.1 body text (criteria for discontinuation)"
+  },
+  {
+   "number": "8.1",
+   "title": "Trial Assessments and Procedures Considerations",
+   "why": "v10 8 L1 intro (official)"
+  },
+  {
+   "number": "8.6.3",
+   "title": "Other Biomarkers",
+   "why": "v10 8.8 Biomarkers"
+  },
+  {
+   "number": "9.3.2",
+   "title": "Participants Whose Partners Become Pregnant During the Trial",
+   "why": "partial: partner statements from v10 8.4.5"
+  },
+  {
+   "number": "11.2.1",
+   "title": "Investigator Responsibilities",
+   "why": "v10 10.1.2 and part of 10.1.1"
+  },
+  {
+   "number": "11.3.1",
+   "title": "Informed Consent for Rescreening",
+   "why": "partial: v10 10.1.3 rescreening ICF text"
+  },
+  {
+   "number": "11.3.2",
+   "title": "Informed Consent for Use of Remaining Samples in Exploratory Research",
+   "why": "partial: v10 10.1.3 remaining-samples text"
+  },
+  {
+   "number": "11.8",
+   "title": "Data Protection",
+   "why": "v10 10.1.5 Data Protection"
+  },
+  {
+   "number": "11.12",
+   "title": "Data Dissemination",
+   "why": "v10 10.1.7 Dissemination"
+  }
+ ],
+ "multi_landing": [
+  {
+   "v10_field": "1.1 Synopsis: Number of Participants",
+   "v11_locations": [
+    "1.1.2 Overall Design: Number of Participants",
+    "4.1 Description of Trial Design (expected number of participants)",
+    "10.11 Sample Size Determination (source: v10 9.9)"
+   ],
+   "advice": "Chain-of-custody target is 1.1.2; v10 9.9 -> 10.11 is a separate mapping. v11 1.1.2 is a summary of 4.1/10.11, so treat it as derived and prefer the 10.11 value if they disagree. The 'Note: Enrolled means...' paragraph is verbatim in v10 and v11 1.1.2."
+  },
+  {
+   "v10_field": "1.1 Synopsis: Data Monitoring/Other Committee",
+   "v11_locations": [
+    "1.1.2 Committees field",
+    "11.4 Committees (from v10 10.1.6)",
+    "4.1 (planned DMC cross-reference)"
+   ],
+   "advice": "Yes/No and committee type go to 1.1.2; the full description follows 10.1.6 -> 11.4."
+  },
+  {
+   "v10_field": "1.1 Synopsis: Study Arms and Duration",
+   "v11_locations": [
+    "1.1.2 Duration",
+    "4.1 (trial duration paragraph; v10 4.1 'Total duration of study participation')"
+   ],
+   "advice": "Verbatim bullets map to 1.1.2 Duration; v10 4.1 carries the same duration sentence into v11 4.1."
+  },
+  {
+   "v10_field": "1.1 Synopsis: Brief Summary (Study Duration / Treatment Duration / Visit Frequency)",
+   "v11_locations": [
+    "1.1.2 Duration (study and treatment duration values only)"
+   ],
+   "advice": "Structured Brief Summary was removed in v11 (Cumulative Change Summary V11, section 1). Do not map wholesale."
+  },
+  {
+   "v10_field": "Title Page: Protocol Title structured fields (Intervention Model, Blinding, Number of Arms, Participant Sex/Age, Condition)",
+   "v11_locations": [
+    "Full Title",
+    "1.1.2 table: Intervention Model, Trial Blind Schema / Blinded Roles, Number of Arms, Population Age, Population Diagnosis or Condition"
+   ],
+   "advice": "Values originate in the title; v11 repeats them as coded fields in the 1.1.2 table (M11 CT values), so extract once and offer both."
+  },
+  {
+   "v10_field": "Title Page: Compound / 6.1 Intervention Name",
+   "v11_locations": [
+    "Investigational Product Code(s)",
+    "Investigational Product Name(s)",
+    "1.1.2 table Intervention row",
+    "6 intervention table"
+   ],
+   "advice": "Code and name are separate v11 fields; a single v10 'number or name' value must be classified."
+  },
+  {
+   "v10_field": "Title Page and 1.1: Regulatory Agency Identifier Number(s) / PIP Number",
+   "v11_locations": [
+    "Title page Regulatory or Clinical Trial Identifier(s) table only"
+   ],
+   "advice": "v11 removes the synopsis duplicate; merge any differing synopsis values into the single title-page table."
+  },
+  {
+   "v10_field": "Title Page: Study Phase",
+   "v11_locations": [
+    "Trial Phase",
+    "Full Title (phase inside the structured title)"
+   ],
+   "advice": "Single value, two renderings."
+  },
+  {
+   "v10_field": "Title Page: Sponsor Name + Legal Registered Address",
+   "v11_locations": [
+    "Sponsor Name and Address",
+    "[Local Sponsor Name]/[Local Sponsor Legal Address] when the v10 sponsor is a local affiliate"
+   ],
+   "advice": "Instruction text only in v10; ask author."
+  },
+  {
+   "v10_field": "Title Page: Amendment Scope + Country/Region Identifier + Amendment Number",
+   "v11_locations": [
+    "[Amendment Scope] with country/region/site identifier",
+    "[Amendment Identifier]",
+    "Original Protocol yes/no (derived)"
+   ],
+   "advice": "Three v10 fields feed four v11 fields."
+  },
+  {
+   "v10_field": "10.1.1 Regulatory and Ethical Considerations",
+   "v11_locations": [
+    "11.1",
+    "11.2.1"
+   ],
+   "advice": "Split at 'The investigator will be responsible for the following'."
+  },
+  {
+   "v10_field": "10.1.3 Informed Consent Process",
+   "v11_locations": [
+    "11.3",
+    "11.3.1",
+    "11.3.2"
+   ],
+   "advice": "Rescreening and remaining-samples bullets become sub-sections."
+  },
+  {
+   "v10_field": "10.1.8 Data Quality Assurance",
+   "v11_locations": [
+    "11.9.1",
+    "11.7 (record-retention bullet)"
+   ],
+   "advice": "One bullet moves to Data Governance."
+  },
+  {
+   "v10_field": "10.1.10 Study and Site Start and Closure",
+   "v11_locations": [
+    "4.4 (start of trial)",
+    "11.11 (site closure)"
+   ],
+   "advice": "Split at the 'Study/Site Termination' sub-heading."
+  },
+  {
+   "v10_field": "4.3 Justification for Dose",
+   "v11_locations": [
+    "6.2",
+    "4.3 (dose-escalation halting example)"
+   ],
+   "advice": "Dose rationale to 6.2; halting rules to 4.3."
+  },
+  {
+   "v10_field": "8.4.5 Pregnancy",
+   "v11_locations": [
+    "9.3",
+    "9.3.1",
+    "9.3.2"
+   ],
+   "advice": "Participant text to 9.3.1; partner bullets to 9.3.2."
+  }
+ ],
+ "corrections_vs_section_crosswalk_md": [
+  "4.3 Justification for Dose: v11 6.2 (not 4.2.2); dose-escalation halting example text -> 4.3",
+  "10.1.5 Data Protection: v11 11.8 (not 11.7)",
+  "10.1.7 Dissemination of Clinical Study Data: v11 11.12 (not 11.7)",
+  "10.1.2 Financial Disclosure: v11 11.2.1 (not 11.1)",
+  "10.1.1: investigator-responsibility bullets -> 11.2.1 in addition to 11.1",
+  "10.1.3: adds 11.3.1 and 11.3.2",
+  "10.1.8: record-retention bullet -> 11.7 in addition to 11.9.1",
+  "7.1: body text -> 7.1.1 (v11 7.1 is heading-only)",
+  "7.1.1 / 7.1.2: explicit targets 7.1.1.1 / 7.1.1.2",
+  "6.4: also feeds 6.7.4 Emergency Unblinding",
+  "6.6.1 Retreatment Criteria: 6.3.1 (not 6.4)",
+  "6 intro stays at v11 6; 6.1 table goes to the v11 6 intro table (not under 6.2)",
+  "8.8 Biomarkers: 8.6.3 (not heading-only 8.6)",
+  "8.4 intro text: 9.2 and 9.2.2 (not L1 9)",
+  "8.4.3 Follow-up: 9.2.2 Follow-up only (not Causality)",
+  "8.4.9 Medical Device Deficiencies intro: 9.1.4 (not 9.2.3.1)",
+  "8.4.9.1: 9.2.1.1 (v11 has this L4)",
+  "10.7.3 Device Deficiency definition: 9.1.4 (resolved)",
+  "10.7.6 Reporting of SADEs: 9.2.3 (not 9.2.3.1)",
+  "10.3.3: adds Recording sub-block (9.2.2 Recording)",
+  "10.3: container maps to 9.1/9.1.4, not L1 9",
+  "9.1.1 Decision Criteria/Hypotheses: 10.4.1.1 + 10.10 (not 10.1)",
+  "9.1.3 Intercurrent events: 10.4.1.2 (not 10.1)",
+  "9.1.4: adds 10.1 (baseline missing data) to 10.4.1.3/10.5.1.3",
+  "9.3.1.1 and 9.3.1.2: 10.4.1.1 (not just 10.4)",
+  "2.3.1 / 2.3.2: 2.2.1 / 2.2.2 (these v11 sections DO have a v10 source)",
+  "1.1 Brief Summary: dropped except duration values -> 1.1.2 Duration (Change Summary V11)",
+  "Title page: Amendment Number -> [Amendment Identifier]; PIP Number -> identifier table (both omitted before)",
+  "8.4.6 Cardiovascular and Death Events: drop (empty v10 placeholder)",
+  "10.1.11 'Publication Strategy' (11.7) is a bullet of 10.1.7 -> 11.12, not a separate heading"
+ ]
+}

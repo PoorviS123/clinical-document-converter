@@ -1,0 +1,3543 @@
+{
+ "source": "resources/test1_v10.docx",
+ "generated": "2026-11-14",
+ "counts": {
+  "title_page_field": 13,
+  "front_matter": 3,
+  "heading": 133,
+  "synopsis_field": 9,
+  "label_heading": 2,
+  "heading_numbering_suppressed": 2,
+  "total": 162
+ },
+ "body_children": 770,
+ "first_h1_source_index": 38,
+ "numbering_check": {
+  "cached_toc_h1_h3_entries": 127,
+  "computed_h1_h3": 126,
+  "mismatches_vs_cached_toc": []
+ },
+ "tracked_changes": "document contains tracked insertions/deletions/moves; all text read with tracked changes accepted (visible_text)",
+ "entries": [
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.protocol_title",
+   "key": "protocol_title",
+   "label": "Protocol Title:",
+   "exact_text": "Protocol Title:",
+   "style": "Heading (No TOC)",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 0,
+   "has_table": false,
+   "order": 0
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.protocol_version",
+   "key": "protocol_version",
+   "label": "Protocol Version:",
+   "exact_text": "Protocol Version: 2.0",
+   "style": "Normal",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 2,
+   "has_table": false,
+   "order": 1
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.compound",
+   "key": "compound",
+   "label": "Compound:",
+   "exact_text": "Compound: Atorvastatin",
+   "style": "Normal",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 3,
+   "has_table": false,
+   "order": 2
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.brief_title",
+   "key": "brief_title",
+   "label": "Brief Title:",
+   "exact_text": "Brief Title:",
+   "style": "Normal",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 4,
+   "has_table": false,
+   "order": 3
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.study_phase",
+   "key": "study_phase",
+   "label": "Study Phase:",
+   "exact_text": "Study Phase: IV",
+   "style": "Heading (No TOC)",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 6,
+   "has_table": false,
+   "order": 4
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.acronym",
+   "key": "acronym",
+   "label": "Acronym:",
+   "exact_text": "Acronym: REMUS",
+   "style": "Heading (No TOC)",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 7,
+   "has_table": false,
+   "order": 5
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.sponsor_name",
+   "key": "sponsor_name",
+   "label": "Sponsor Name:",
+   "exact_text": "Sponsor Name: Oslo University Hospital (org. number 993 467 049), Head of the Department of Pharmacology, Berit Muan",
+   "style": "Heading (No TOC)",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 8,
+   "has_table": false,
+   "order": 6
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.legal_registered_address",
+   "key": "legal_registered_address",
+   "label": "Legal Registered Address:",
+   "exact_text": "Legal Registered Address: Oslo University Hospital HF, Rikshospitalet, Sognsvannsveien 20, NO-0372 Oslo, Norway",
+   "style": "Heading (No TOC)",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 9,
+   "has_table": false,
+   "order": 7
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.manufacturer",
+   "key": "manufacturer",
+   "label": "Manufacturer:",
+   "exact_text": "Manufacturer: Kragerø Tablettproduksjon AS (org. number 984 857 888) will produce placebo formulations and similar-looking atorvastatin formulations. \nThe manufacturer address: Kragerø Tablettproduksj",
+   "style": "Heading (No TOC)",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 10,
+   "has_table": false,
+   "order": 8
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.regulatory_agency_identifier_numbers",
+   "key": "regulatory_agency_identifier_numbers",
+   "label": "Regulatory Agency Identifier Number(s):",
+   "exact_text": "Regulatory Agency Identifier Number(s):",
+   "style": "Heading (No TOC)",
+   "optional_bracketed": false,
+   "tables": [
+    {
+     "source_index": 13,
+     "rows": 1,
+     "header_row": [
+      "EU CT No:",
+      "2025-521589-83-00"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 12,
+   "has_table": true,
+   "order": 9
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.approval_date",
+   "key": "approval_date",
+   "label": "Approval Date:",
+   "exact_text": "Approval Date: 26-April-2026",
+   "style": "Normal",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 15,
+   "has_table": false,
+   "order": 10
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.sponsor_signatory",
+   "key": "sponsor_signatory",
+   "label": "Sponsor Signatory:",
+   "exact_text": "Sponsor Signatory:",
+   "style": "Normal",
+   "optional_bracketed": false,
+   "tables": [
+    {
+     "source_index": 19,
+     "rows": 1,
+     "header_row": [
+      "Berit Muan\nHead of the Department of Pharmacology, \nOslo University Hospital HF",
+      "",
+      "Date"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 17,
+   "has_table": true,
+   "order": 11
+  },
+  {
+   "kind": "title_page_field",
+   "id": "v10:title_page.medical_monitor_name_and_contact_information",
+   "key": "medical_monitor_name_and_contact_information",
+   "label": "Sponsor functions including Medical Monitors, Coordinating Investigator, and Principal Investigator Names and Contact Information can be found in Appendix 10",
+   "exact_text": "Sponsor functions including Medical Monitors, Coordinating Investigator, and Principal Investigator Names and Contact Information can be found in Appendix 10",
+   "style": "Heading (No TOC)",
+   "optional_bracketed": false,
+   "tables": [],
+   "source_index": 21,
+   "has_table": false,
+   "order": 12
+  },
+  {
+   "kind": "front_matter",
+   "id": "v10:front.amendment_summary",
+   "title": "Protocol Amendment Summary of Changes",
+   "style": "Heading 2 (non-numbered)",
+   "tables": [],
+   "source_index": 23,
+   "has_table": false,
+   "order": 13
+  },
+  {
+   "kind": "front_matter",
+   "id": "v10:front.table_of_contents",
+   "title": "Table of Contents",
+   "style": "Heading 3 (No TOC)",
+   "tables": [],
+   "source_index": 28,
+   "has_table": false,
+   "order": 14
+  },
+  {
+   "kind": "front_matter",
+   "id": "v10:front.list_of_abbreviations",
+   "title": "List of Abbreviations and Definitions of Terms",
+   "style": "Heading 3 (No TOC)",
+   "tables": [
+    {
+     "source_index": 34,
+     "rows": 36,
+     "header_row": [
+      "Abbreviation",
+      "Explanation"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 33,
+   "has_table": true,
+   "order": 15
+  },
+  {
+   "kind": "heading",
+   "id": "v10:1",
+   "number": "1",
+   "level": 1,
+   "title": "Protocol Summary",
+   "style": "Heading 1",
+   "tables": [],
+   "source_index": 38,
+   "has_table": false,
+   "order": 16
+  },
+  {
+   "kind": "heading",
+   "id": "v10:1.1",
+   "number": "1.1",
+   "level": 2,
+   "title": "Synopsis",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 39,
+   "has_table": false,
+   "order": 17
+  },
+  {
+   "kind": "synopsis_field",
+   "id": "v10:1.1.synopsis.protocol_title",
+   "key": "protocol_title",
+   "label": "Protocol Title:",
+   "exact_text": "Protocol Title:",
+   "style": "Heading (No TOC)",
+   "tables": [],
+   "source_index": 41,
+   "has_table": false,
+   "order": 18
+  },
+  {
+   "kind": "synopsis_field",
+   "id": "v10:1.1.synopsis.brief_title",
+   "key": "brief_title",
+   "label": "Brief Title:",
+   "exact_text": "Brief Title:",
+   "style": "Heading (No TOC)",
+   "tables": [],
+   "source_index": 44,
+   "has_table": false,
+   "order": 19
+  },
+  {
+   "kind": "synopsis_field",
+   "id": "v10:1.1.synopsis.rationale",
+   "key": "rationale",
+   "label": "Rationale:",
+   "exact_text": "Rationale: Statin-associated muscle symptoms (SAMS) are one of the principal reasons for being reluctant to use statins, and there is no objective diagnostic test for this condition. Along with the wi",
+   "style": "Heading (No TOC)",
+   "tables": [],
+   "source_index": 46,
+   "has_table": false,
+   "order": 20
+  },
+  {
+   "kind": "synopsis_field",
+   "id": "v10:1.1.synopsis.objectives_endpoints_estimands",
+   "key": "objectives_endpoints_estimands",
+   "label": "Objectives, Endpoints, Assessments:",
+   "exact_text": "Objectives, Endpoints, Assessments:",
+   "style": "Heading (No TOC)",
+   "tables": [
+    {
+     "source_index": 50,
+     "rows": 10,
+     "header_row": [
+      "Objectives",
+      "Endpoints",
+      "Assessments"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 48,
+   "has_table": true,
+   "order": 21
+  },
+  {
+   "kind": "synopsis_field",
+   "id": "v10:1.1.synopsis.overall_design_synopsis",
+   "key": "overall_design_synopsis",
+   "label": "Overall Design Synopsis:",
+   "exact_text": "Overall Design Synopsis:",
+   "style": "Heading (No TOC)",
+   "tables": [],
+   "source_index": 54,
+   "has_table": false,
+   "order": 22
+  },
+  {
+   "kind": "synopsis_field",
+   "id": "v10:1.1.synopsis.brief_summary",
+   "key": "brief_summary",
+   "label": "Brief Summary:",
+   "exact_text": "Brief Summary:",
+   "style": "Normal",
+   "tables": [],
+   "source_index": 57,
+   "has_table": false,
+   "order": 23
+  },
+  {
+   "kind": "synopsis_field",
+   "id": "v10:1.1.synopsis.number_of_participants",
+   "key": "number_of_participants",
+   "label": "Number of Participants:",
+   "exact_text": "Number of Participants: 70",
+   "style": "Heading (No TOC)",
+   "tables": [],
+   "source_index": 67,
+   "has_table": false,
+   "order": 24
+  },
+  {
+   "kind": "synopsis_field",
+   "id": "v10:1.1.synopsis.study_arms_and_duration",
+   "key": "study_arms_and_duration",
+   "label": "Study Arms/Sequences and Duration:",
+   "exact_text": "Study Arms/Sequences and Duration:\n \nEach participant will be randomized to one of the four following sequences:",
+   "style": "Heading (No TOC)",
+   "tables": [],
+   "source_index": 70,
+   "has_table": false,
+   "order": 25
+  },
+  {
+   "kind": "synopsis_field",
+   "id": "v10:1.1.synopsis.data_monitoring_committee",
+   "key": "data_monitoring_committee",
+   "label": "Data Safety Monitoring Committee",
+   "exact_text": "Data Safety Monitoring Committee",
+   "style": "Heading (No TOC)",
+   "tables": [],
+   "source_index": 76,
+   "has_table": false,
+   "order": 26
+  },
+  {
+   "kind": "heading",
+   "id": "v10:1.2",
+   "number": "1.2",
+   "level": 2,
+   "title": "Schema",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 81,
+   "has_table": false,
+   "order": 27
+  },
+  {
+   "kind": "heading",
+   "id": "v10:1.3",
+   "number": "1.3",
+   "level": 2,
+   "title": "Schedule of Activities (SoA)",
+   "style": "Heading 2",
+   "tables": [
+    {
+     "source_index": 89,
+     "rows": 28,
+     "header_row": [
+      "Procedure",
+      "Screening \n(up to 30 days before intervention)",
+      "Baseline\n(up to 7 days before inter-vention)",
+      "Intervention Period [Days]",
+      "E/D",
+      "Follow-up 2 weeks after inter-vention period",
+      "Follow-up 54 weeks after inter-vention period",
+      "Notes\nE/D = Early Discontinuation\nDay 1 is the first day in the intervention period"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 87,
+   "has_table": true,
+   "order": 28
+  },
+  {
+   "kind": "heading",
+   "id": "v10:2",
+   "number": "2",
+   "level": 1,
+   "title": "Introduction",
+   "style": "Heading 1",
+   "tables": [],
+   "source_index": 94,
+   "has_table": false,
+   "order": 29
+  },
+  {
+   "kind": "heading",
+   "id": "v10:2.1",
+   "number": "2.1",
+   "level": 2,
+   "title": "Study Rationale",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 98,
+   "has_table": false,
+   "order": 30
+  },
+  {
+   "kind": "label_heading",
+   "id": "v10:2.1.label.knowledge_about_the_proportions_having_statin_de",
+   "number": null,
+   "parent_number": "2.1",
+   "title": "Knowledge about the proportions having statin-dependent muscle symptoms (SDMS) to atorvastatin in a population with FH and self-perceived SAMS, as well as proportions with nocebo and misattributed muscle symptoms, can be used in the current patient follow-up to allow informative communication and potential improvement of the individual cholesterol-lowering treatment as well as improved follow-up of misattributed muscle symptoms. The use of treatment periods both with placebo and atorvastatin, as well as periods with no treatment, are essential to identify different mechanisms for muscular symptoms. Patients can use non-statin lipid-lowering treatment throughout the trial, and those who do not will be offered such treatment. The establishment of an objective biomarker that can distinguish between SDMS and nocebo/misattributed muscle symptoms would be highly valuable for assessment of muscular side effects and shared decision-making regarding the cholesterol-lowering treatment at the individual level.",
+   "style": "Heading (No TOC)",
+   "tables": [],
+   "source_index": 99,
+   "has_table": false,
+   "order": 31
+  },
+  {
+   "kind": "heading",
+   "id": "v10:2.2",
+   "number": "2.2",
+   "level": 2,
+   "title": "Background",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 101,
+   "has_table": false,
+   "order": 32
+  },
+  {
+   "kind": "heading",
+   "id": "v10:2.3",
+   "number": "2.3",
+   "level": 2,
+   "title": "Benefit/Risk Assessment",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 109,
+   "has_table": false,
+   "order": 33
+  },
+  {
+   "kind": "heading",
+   "id": "v10:2.3.1",
+   "number": "2.3.1",
+   "level": 3,
+   "title": "Risk Assessment",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 111,
+   "has_table": false,
+   "order": 34
+  },
+  {
+   "kind": "heading",
+   "id": "v10:2.3.2",
+   "number": "2.3.2",
+   "level": 3,
+   "title": "Benefit Assessment",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 120,
+   "has_table": false,
+   "order": 35
+  },
+  {
+   "kind": "heading",
+   "id": "v10:2.3.3",
+   "number": "2.3.3",
+   "level": 3,
+   "title": "Overall Benefit Risk Conclusion",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 124,
+   "has_table": false,
+   "order": 36
+  },
+  {
+   "kind": "heading",
+   "id": "v10:3",
+   "number": "3",
+   "level": 1,
+   "title": "Objectives, Endpoints, and Estimands",
+   "style": "Heading 1",
+   "tables": [
+    {
+     "source_index": 128,
+     "rows": 20,
+     "header_row": [
+      "Objectives",
+      "Endpoints",
+      "Assessments"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 126,
+   "has_table": true,
+   "order": 37
+  },
+  {
+   "kind": "heading",
+   "id": "v10:4",
+   "number": "4",
+   "level": 1,
+   "title": "Study Design",
+   "style": "Heading 1",
+   "tables": [],
+   "source_index": 144,
+   "has_table": false,
+   "order": 38
+  },
+  {
+   "kind": "heading",
+   "id": "v10:4.1",
+   "number": "4.1",
+   "level": 2,
+   "title": "Overall Design",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 146,
+   "has_table": false,
+   "order": 39
+  },
+  {
+   "kind": "heading",
+   "id": "v10:4.2",
+   "number": "4.2",
+   "level": 2,
+   "title": "Scientific Rationale for Study Design",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 154,
+   "has_table": false,
+   "order": 40
+  },
+  {
+   "kind": "heading",
+   "id": "v10:4.2.1",
+   "number": "4.2.1",
+   "level": 3,
+   "title": "Patient Input into Design",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 161,
+   "has_table": false,
+   "order": 41
+  },
+  {
+   "kind": "heading",
+   "id": "v10:4.3",
+   "number": "4.3",
+   "level": 2,
+   "title": "Justification for Dose",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 169,
+   "has_table": false,
+   "order": 42
+  },
+  {
+   "kind": "heading",
+   "id": "v10:4.4",
+   "number": "4.4",
+   "level": 2,
+   "title": "End-of-Study Definition",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 173,
+   "has_table": false,
+   "order": 43
+  },
+  {
+   "kind": "heading",
+   "id": "v10:5",
+   "number": "5",
+   "level": 1,
+   "title": "Study Population",
+   "style": "Heading 1",
+   "tables": [],
+   "source_index": 176,
+   "has_table": false,
+   "order": 44
+  },
+  {
+   "kind": "heading",
+   "id": "v10:5.1",
+   "number": "5.1",
+   "level": 2,
+   "title": "Inclusion Criteria",
+   "style": "Heading 2",
+   "tables": [
+    {
+     "source_index": 180,
+     "rows": 1,
+     "header_row": [
+      "Participant must be ≥18 years of age at the time of signing the informed consent.\nParticipant having genetically verified diagnosis of HeFH or clinical diagnosis of FH with Dutch Lipid Clinic Network Score ≥9.\nParticipant with a history of self-perceived SAMS (i.e. muscle symptoms subjectively associated with statin treatment) on at least two different types of statins.\nParticipant having discontinued statin treatment due to associated muscle symptoms (must have been off statin treatment for at least 2 weeks prior to first assessment for study inclusion).\nIf woman of childbearing potential (defined as all premenopausal female that are not permanently sterile); participant must take a pregnancy test with negative result and express willingness to highly effective contraceptive use or adequate sexual abstinence during the study intervention (until the end of intervention).\nParticipant expected to be compliant with the requirements and restrictions listed in the informed consent form (ICF) and in this protocol.\nParticipant having access to a smartphone, tablet or personal computer throughout the study.\nParticipant capable of giving signed informed consent as described in Appendix 1."
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 178,
+   "has_table": true,
+   "order": 45
+  },
+  {
+   "kind": "heading",
+   "id": "v10:5.2",
+   "number": "5.2",
+   "level": 2,
+   "title": "Exclusion Criteria",
+   "style": "Heading 2",
+   "tables": [
+    {
+     "source_index": 184,
+     "rows": 2,
+     "header_row": [
+      "Medical Conditions"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 182,
+   "has_table": true,
+   "order": 46
+  },
+  {
+   "kind": "heading",
+   "id": "v10:5.3",
+   "number": "5.3",
+   "level": 2,
+   "title": "Lifestyle Considerations",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 187,
+   "has_table": false,
+   "order": 47
+  },
+  {
+   "kind": "heading",
+   "id": "v10:5.3.1",
+   "number": "5.3.1",
+   "level": 3,
+   "title": "Meals and Dietary Restrictions",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 189,
+   "has_table": false,
+   "order": 48
+  },
+  {
+   "kind": "heading",
+   "id": "v10:5.3.2",
+   "number": "5.3.2",
+   "level": 3,
+   "title": "Caffeine, Alcohol, and Tobacco",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 196,
+   "has_table": false,
+   "order": 49
+  },
+  {
+   "kind": "heading",
+   "id": "v10:5.3.3",
+   "number": "5.3.3",
+   "level": 3,
+   "title": "Activity",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 199,
+   "has_table": false,
+   "order": 50
+  },
+  {
+   "kind": "heading",
+   "id": "v10:5.3.4",
+   "number": "5.3.4",
+   "level": 3,
+   "title": "Other Restrictions",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 201,
+   "has_table": false,
+   "order": 51
+  },
+  {
+   "kind": "heading",
+   "id": "v10:5.4",
+   "number": "5.4",
+   "level": 2,
+   "title": "Screen Failures",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 203,
+   "has_table": false,
+   "order": 52
+  },
+  {
+   "kind": "heading",
+   "id": "v10:5.5",
+   "number": "5.5",
+   "level": 2,
+   "title": "Criteria for Temporarily Delaying",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 206,
+   "has_table": false,
+   "order": 53
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6",
+   "number": "6",
+   "level": 1,
+   "title": "Study Intervention(s) and Concomitant Therapy",
+   "style": "Heading 1",
+   "tables": [],
+   "source_index": 208,
+   "has_table": false,
+   "order": 54
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.1",
+   "number": "6.1",
+   "level": 2,
+   "title": "Study Intervention(s) Administered",
+   "style": "Heading 2",
+   "tables": [
+    {
+     "source_index": 212,
+     "rows": 13,
+     "header_row": [
+      "Intervention Label",
+      "",
+      ""
+     ],
+     "caption": "Table 1.  Study Intervention(s) Administered"
+    },
+    {
+     "source_index": 215,
+     "rows": 5,
+     "header_row": [
+      "Study Period Title",
+      "Atorvastatin",
+      "Placebo",
+      "No treatment"
+     ],
+     "caption": "Table 2a.  Study Periods"
+    },
+    {
+     "source_index": 218,
+     "rows": 5,
+     "header_row": [
+      "Study Arm Title",
+      "I",
+      "II",
+      "III",
+      "IV"
+     ],
+     "caption": "Table 2b.  Study Arms/Sequences"
+    }
+   ],
+   "source_index": 210,
+   "has_table": true,
+   "order": 55
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.1.1",
+   "number": "6.1.1",
+   "level": 3,
+   "title": "Medical Devices",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 221,
+   "has_table": false,
+   "order": 56
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.2",
+   "number": "6.2",
+   "level": 2,
+   "title": "Preparation, Handling, Storage, and Accountability",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 223,
+   "has_table": false,
+   "order": 57
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.3",
+   "number": "6.3",
+   "level": 2,
+   "title": "Assignment to Study Intervention",
+   "style": "Heading 2",
+   "tables": [
+    {
+     "source_index": 232,
+     "rows": 2,
+     "header_row": [
+      "Type of Study",
+      "n-of-1 randomized, double-blinded crossover study"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 230,
+   "has_table": true,
+   "order": 58
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.4",
+   "number": "6.4",
+   "level": 2,
+   "title": "Blinding",
+   "style": "Heading 2",
+   "tables": [
+    {
+     "source_index": 235,
+     "rows": 2,
+     "header_row": [
+      "Type of Study",
+      "n-of-1 randomized, double-blinded crossover study"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 233,
+   "has_table": true,
+   "order": 59
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.5",
+   "number": "6.5",
+   "level": 2,
+   "title": "Study Intervention Adherence",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 237,
+   "has_table": false,
+   "order": 60
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.6",
+   "number": "6.6",
+   "level": 2,
+   "title": "Dose Modification",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 240,
+   "has_table": false,
+   "order": 61
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.6.1",
+   "number": "6.6.1",
+   "level": 3,
+   "title": "Retreatment Criteria",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 242,
+   "has_table": false,
+   "order": 62
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.7",
+   "number": "6.7",
+   "level": 2,
+   "title": "Continued Access to Study Intervention after the End of the Study",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 244,
+   "has_table": false,
+   "order": 63
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.8",
+   "number": "6.8",
+   "level": 2,
+   "title": "Treatment of Overdose",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 251,
+   "has_table": false,
+   "order": 64
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.9",
+   "number": "6.9",
+   "level": 2,
+   "title": "Prior and Concomitant Therapy",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 259,
+   "has_table": false,
+   "order": 65
+  },
+  {
+   "kind": "heading",
+   "id": "v10:6.9.1",
+   "number": "6.9.1",
+   "level": 3,
+   "title": "Rescue Medicine",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 266,
+   "has_table": false,
+   "order": 66
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7",
+   "number": "7",
+   "level": 1,
+   "title": "Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal",
+   "style": "Heading 1",
+   "tables": [],
+   "source_index": 268,
+   "has_table": false,
+   "order": 67
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.1",
+   "number": "7.1",
+   "level": 2,
+   "title": "Discontinuation of Study Intervention",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 270,
+   "has_table": false,
+   "order": 68
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.1.1",
+   "number": "7.1.1",
+   "level": 3,
+   "title": "Liver Chemistry Stopping Criteria",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 281,
+   "has_table": false,
+   "order": 69
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.1.2",
+   "number": "7.1.2",
+   "level": 3,
+   "title": "Muscle Chemistry Stopping Criteria",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 283,
+   "has_table": false,
+   "order": 70
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.1.3",
+   "number": "7.1.3",
+   "level": 3,
+   "title": "QTc Stopping Criteria",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 286,
+   "has_table": false,
+   "order": 71
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.1.4",
+   "number": "7.1.4",
+   "level": 3,
+   "title": "Concomitant Medication Stopping Criteria",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 288,
+   "has_table": false,
+   "order": 72
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.1.5",
+   "number": "7.1.5",
+   "level": 3,
+   "title": "Pregnancy Stopping Criteria",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 290,
+   "has_table": false,
+   "order": 73
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.1.6",
+   "number": "7.1.6",
+   "level": 3,
+   "title": "Temporary Discontinuation",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 292,
+   "has_table": false,
+   "order": 74
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.1.7",
+   "number": "7.1.7",
+   "level": 3,
+   "title": "Rechallenge",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 296,
+   "has_table": false,
+   "order": 75
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.1.7.1",
+   "number": "7.1.7.1",
+   "level": 4,
+   "title": "Study Intervention Restart or Rechallenge After Liver Stopping Criteria Are Met",
+   "style": "Heading 4",
+   "tables": [],
+   "source_index": 300,
+   "has_table": false,
+   "order": 76
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.1.7.2",
+   "number": "7.1.7.2",
+   "level": 4,
+   "title": "Study Intervention Restart or Rechallenge After Muscle Stopping Criteria Are Met",
+   "style": "Heading 4",
+   "tables": [],
+   "source_index": 302,
+   "has_table": false,
+   "order": 77
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.2",
+   "number": "7.2",
+   "level": 2,
+   "title": "Participant Discontinuation/Withdrawal from the Study",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 304,
+   "has_table": false,
+   "order": 78
+  },
+  {
+   "kind": "heading",
+   "id": "v10:7.3",
+   "number": "7.3",
+   "level": 2,
+   "title": "Lost to Follow up",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 311,
+   "has_table": false,
+   "order": 79
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8",
+   "number": "8",
+   "level": 1,
+   "title": "Study Assessments and Procedures",
+   "style": "Heading 1",
+   "tables": [],
+   "source_index": 317,
+   "has_table": false,
+   "order": 80
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.1",
+   "number": "8.1",
+   "level": 2,
+   "title": "Administrative and Baseline Procedures",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 326,
+   "has_table": false,
+   "order": 81
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.2",
+   "number": "8.2",
+   "level": 2,
+   "title": "Endpoint Assessments",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 328,
+   "has_table": false,
+   "order": 82
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.3",
+   "number": "8.3",
+   "level": 2,
+   "title": "Safety Assessments",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 342,
+   "has_table": false,
+   "order": 83
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.3.1",
+   "number": "8.3.1",
+   "level": 3,
+   "title": "Physical Examinations",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 347,
+   "has_table": false,
+   "order": 84
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.3.2",
+   "number": "8.3.2",
+   "level": 3,
+   "title": "Vital Signs",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 350,
+   "has_table": false,
+   "order": 85
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.3.3",
+   "number": "8.3.3",
+   "level": 3,
+   "title": "Electrocardiograms",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 353,
+   "has_table": false,
+   "order": 86
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.3.4",
+   "number": "8.3.4",
+   "level": 3,
+   "title": "Clinical Safety Laboratory Tests",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 355,
+   "has_table": false,
+   "order": 87
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.3.5",
+   "number": "8.3.5",
+   "level": 3,
+   "title": "Pregnancy Testing",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 363,
+   "has_table": false,
+   "order": 88
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.3.6",
+   "number": "8.3.6",
+   "level": 3,
+   "title": "Suicidal Ideation and Behavior Risk Monitoring",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 366,
+   "has_table": false,
+   "order": 89
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.4",
+   "number": "8.4",
+   "level": 2,
+   "title": "Adverse Events (AEs) Serious Adverse Events (SAEs), and Other Safety Reporting",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 369,
+   "has_table": false,
+   "order": 90
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.4.1",
+   "number": "8.4.1",
+   "level": 3,
+   "title": "Time Period and Frequency for Collecting AE and SAE Information",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 374,
+   "has_table": false,
+   "order": 91
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.4.2",
+   "number": "8.4.2",
+   "level": 3,
+   "title": "Method of Detecting AEs and SAEs",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 381,
+   "has_table": false,
+   "order": 92
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.4.3",
+   "number": "8.4.3",
+   "level": 3,
+   "title": "Follow-up of AEs and SAEs",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 383,
+   "has_table": false,
+   "order": 93
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.4.4",
+   "number": "8.4.4",
+   "level": 3,
+   "title": "Regulatory Reporting Requirements for SAEs",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 385,
+   "has_table": false,
+   "order": 94
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.4.5",
+   "number": "8.4.5",
+   "level": 3,
+   "title": "Pregnancy",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 390,
+   "has_table": false,
+   "order": 95
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.4.6",
+   "number": "8.4.6",
+   "level": 3,
+   "title": "Cardiovascular and Death Events",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 398,
+   "has_table": false,
+   "order": 96
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.4.7",
+   "number": "8.4.7",
+   "level": 3,
+   "title": "Disease-related Events and/or Disease-related Outcomes Not Qualifying as AEs or SAEs",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 402,
+   "has_table": false,
+   "order": 97
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.4.8",
+   "number": "8.4.8",
+   "level": 3,
+   "title": "Adverse Events of Special Interest",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 410,
+   "has_table": false,
+   "order": 98
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.4.9",
+   "number": "8.4.9",
+   "level": 3,
+   "title": "Medical Device Deficiencies",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 415,
+   "has_table": false,
+   "order": 99
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.5",
+   "number": "8.5",
+   "level": 2,
+   "title": "Pharmacokinetics",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 417,
+   "has_table": false,
+   "order": 100
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.6",
+   "number": "8.6",
+   "level": 2,
+   "title": "Pharmacodynamics",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 424,
+   "has_table": false,
+   "order": 101
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.7",
+   "number": "8.7",
+   "level": 2,
+   "title": "Genetics",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 426,
+   "has_table": false,
+   "order": 102
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.8",
+   "number": "8.8",
+   "level": 2,
+   "title": "Biomarkers",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 430,
+   "has_table": false,
+   "order": 103
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.9",
+   "number": "8.9",
+   "level": 2,
+   "title": "Immunogenicity Assessments",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 433,
+   "has_table": false,
+   "order": 104
+  },
+  {
+   "kind": "heading",
+   "id": "v10:8.10",
+   "number": "8.10",
+   "level": 2,
+   "title": "Health Economics OR Medical Resource Utilization and Health Economics",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 435,
+   "has_table": false,
+   "order": 105
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9",
+   "number": "9",
+   "level": 1,
+   "title": "Statistical Considerations",
+   "style": "Heading 1",
+   "tables": [],
+   "source_index": 438,
+   "has_table": false,
+   "order": 106
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.1",
+   "number": "9.1",
+   "level": 2,
+   "title": "Statistical Hypotheses",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 441,
+   "has_table": false,
+   "order": 107
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.1.1",
+   "number": "9.1.1",
+   "level": 3,
+   "title": "Multiplicity Adjustment",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 445,
+   "has_table": false,
+   "order": 108
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.2",
+   "number": "9.2",
+   "level": 2,
+   "title": "Analysis Sets",
+   "style": "Heading 2",
+   "tables": [
+    {
+     "source_index": 449,
+     "rows": 3,
+     "header_row": [
+      "Participant Analysis Set",
+      "Description"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 447,
+   "has_table": true,
+   "order": 109
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3",
+   "number": "9.3",
+   "level": 2,
+   "title": "Statistical Analyses",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 451,
+   "has_table": false,
+   "order": 110
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3.1",
+   "number": "9.3.1",
+   "level": 3,
+   "title": "General Considerations",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 452,
+   "has_table": false,
+   "order": 111
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3.2",
+   "number": "9.3.2",
+   "level": 3,
+   "title": "Primary Endpoint Analysis",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 457,
+   "has_table": false,
+   "order": 112
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3.2.1",
+   "number": "9.3.2.1",
+   "level": 4,
+   "title": "Definition of endpoint(s)",
+   "style": "Heading 4",
+   "tables": [],
+   "source_index": 458,
+   "has_table": false,
+   "order": 113
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3.2.2",
+   "number": "9.3.2.2",
+   "level": 4,
+   "title": "Main Analytical Approach",
+   "style": "Heading 4",
+   "tables": [],
+   "source_index": 460,
+   "has_table": false,
+   "order": 114
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3.2.3",
+   "number": "9.3.2.3",
+   "level": 4,
+   "title": "Sensitivity Analyses",
+   "style": "Heading 4",
+   "tables": [],
+   "source_index": 463,
+   "has_table": false,
+   "order": 115
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3.2.4",
+   "number": "9.3.2.4",
+   "level": 4,
+   "title": "Supplementary Analyses",
+   "style": "Heading 4",
+   "tables": [],
+   "source_index": 466,
+   "has_table": false,
+   "order": 116
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3.3",
+   "number": "9.3.3",
+   "level": 3,
+   "title": "Secondary Endpoint Analysis",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 468,
+   "has_table": false,
+   "order": 117
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3.4",
+   "number": "9.3.4",
+   "level": 3,
+   "title": "Exploratory Endpoints Analyses",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 470,
+   "has_table": false,
+   "order": 118
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3.5",
+   "number": "9.3.5",
+   "level": 3,
+   "title": "Safety Analyses",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 472,
+   "has_table": false,
+   "order": 119
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.3.6",
+   "number": "9.3.6",
+   "level": 3,
+   "title": "Other Analyses",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 474,
+   "has_table": false,
+   "order": 120
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.4",
+   "number": "9.4",
+   "level": 2,
+   "title": "Interim Analysis",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 478,
+   "has_table": false,
+   "order": 121
+  },
+  {
+   "kind": "heading",
+   "id": "v10:9.5",
+   "number": "9.5",
+   "level": 2,
+   "title": "Sample Size Determination",
+   "style": "Heading 2",
+   "tables": [],
+   "source_index": 480,
+   "has_table": false,
+   "order": 122
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10",
+   "number": "10",
+   "level": 1,
+   "title": "Supporting Documentation and Operational Considerations",
+   "style": "Heading 1",
+   "tables": [],
+   "source_index": 483,
+   "has_table": false,
+   "order": 123
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1",
+   "number": "10.1",
+   "level": 2,
+   "title": "Appendix 1: Regulatory, Ethical, and Study Oversight Considerations",
+   "style": "Heading 2",
+   "tables": [],
+   "appendix_label": "Appendix 1",
+   "source_index": 484,
+   "has_table": false,
+   "order": 124
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.1",
+   "number": "10.1.1",
+   "level": 3,
+   "title": "Regulatory and Ethical Considerations",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 485,
+   "has_table": false,
+   "order": 125
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.2",
+   "number": "10.1.2",
+   "level": 3,
+   "title": "Informed Consent Process",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 497,
+   "has_table": false,
+   "order": 126
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.3",
+   "number": "10.1.3",
+   "level": 3,
+   "title": "Recruitment strategy",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 506,
+   "has_table": false,
+   "order": 127
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.4",
+   "number": "10.1.4",
+   "level": 3,
+   "title": "Data Protection",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 508,
+   "has_table": false,
+   "order": 128
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.5",
+   "number": "10.1.5",
+   "level": 3,
+   "title": "Committees Structure",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 515,
+   "has_table": false,
+   "order": 129
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.5.1",
+   "number": "10.1.5.1",
+   "level": 4,
+   "title": "Early Safety Data Review",
+   "style": "Heading 4",
+   "tables": [],
+   "source_index": 520,
+   "has_table": false,
+   "order": 130
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.6",
+   "number": "10.1.6",
+   "level": 3,
+   "title": "Dissemination of Clinical Study Data",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 530,
+   "has_table": false,
+   "order": 131
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.7",
+   "number": "10.1.7",
+   "level": 3,
+   "title": "Data Quality Assurance",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 532,
+   "has_table": false,
+   "order": 132
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.8",
+   "number": "10.1.8",
+   "level": 3,
+   "title": "Data governance",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 541,
+   "has_table": false,
+   "order": 133
+  },
+  {
+   "kind": "heading_numbering_suppressed",
+   "id": "v10:10.1.8.unnumbered.10_1_8_1_source_records",
+   "number": null,
+   "parent_number": "10.1.8",
+   "title": "10.1.8.1 \tSource records",
+   "style": "Heading 3",
+   "manual_number_in_text": "10.1.8.1",
+   "empty": false,
+   "tables": [
+    {
+     "source_index": 551,
+     "rows": 2,
+     "header_row": [
+      "Electronic system (include system owner)",
+      "Version number",
+      "Unique patient identifiers/Key for linkage",
+      "Integration to the eCRF (yes/no)"
+     ],
+     "caption": null
+    }
+   ],
+   "source_index": 542,
+   "has_table": true,
+   "order": 134
+  },
+  {
+   "kind": "heading_numbering_suppressed",
+   "id": "v10:10.1.8.unnumbered.empty",
+   "number": null,
+   "parent_number": "10.1.8",
+   "title": "",
+   "style": "Heading 3",
+   "manual_number_in_text": null,
+   "empty": true,
+   "tables": [],
+   "source_index": 552,
+   "has_table": false,
+   "order": 135
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.9",
+   "number": "10.1.9",
+   "level": 3,
+   "title": "Study and Site Start and Closure",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 553,
+   "has_table": false,
+   "order": 136
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.10",
+   "number": "10.1.10",
+   "level": 3,
+   "title": "Publication Policy",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 569,
+   "has_table": false,
+   "order": 137
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.1.11",
+   "number": "10.1.11",
+   "level": 3,
+   "title": "Funding",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 574,
+   "has_table": false,
+   "order": 138
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.2",
+   "number": "10.2",
+   "level": 2,
+   "title": "Appendix 2: Clinical Laboratory Tests",
+   "style": "Heading 2",
+   "tables": [
+    {
+     "source_index": 581,
+     "rows": 9,
+     "header_row": [
+      "Laboratory Tests",
+      "Parameters",
+      "Laboratory"
+     ],
+     "caption": "Table 3: Protocol-required Laboratory Tests"
+    }
+   ],
+   "appendix_label": "Appendix 2",
+   "source_index": 576,
+   "has_table": true,
+   "order": 139
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.3",
+   "number": "10.3",
+   "level": 2,
+   "title": "Appendix 3: AEs and SAEs: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting",
+   "style": "Heading 2",
+   "tables": [],
+   "appendix_label": "Appendix 3",
+   "source_index": 585,
+   "has_table": false,
+   "order": 140
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.3.1",
+   "number": "10.3.1",
+   "level": 3,
+   "title": "Definition of AE",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 586,
+   "has_table": false,
+   "order": 141
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.3.2",
+   "number": "10.3.2",
+   "level": 3,
+   "title": "Definition of SAE",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 607,
+   "has_table": false,
+   "order": 142
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.3.3",
+   "number": "10.3.3",
+   "level": 3,
+   "title": "Definition of suspected unexpected serious adverse reaction (SUSAR)",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 622,
+   "has_table": false,
+   "order": 143
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.3.4",
+   "number": "10.3.4",
+   "level": 3,
+   "title": "Recording and Follow-Up of AE and/or SAE",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 635,
+   "has_table": false,
+   "order": 144
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.3.5",
+   "number": "10.3.5",
+   "level": 3,
+   "title": "Reporting of SAEs",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 660,
+   "has_table": false,
+   "order": 145
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.3.6",
+   "number": "10.3.6",
+   "level": 3,
+   "title": "Reporting of SUSAR",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 666,
+   "has_table": false,
+   "order": 146
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.3.7",
+   "number": "10.3.7",
+   "level": 3,
+   "title": "Annual safety reporting",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 670,
+   "has_table": false,
+   "order": 147
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.3.8",
+   "number": "10.3.8",
+   "level": 3,
+   "title": "Other reporting obligations relevant for subject safety",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 672,
+   "has_table": false,
+   "order": 148
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.3.9",
+   "number": "10.3.9",
+   "level": 3,
+   "title": "Urgent safety measures",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 675,
+   "has_table": false,
+   "order": 149
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.4",
+   "number": "10.4",
+   "level": 2,
+   "title": "Appendix 4: Contraceptive and Barrier Guidance",
+   "style": "Heading 2",
+   "tables": [],
+   "appendix_label": "Appendix 4",
+   "source_index": 679,
+   "has_table": false,
+   "order": 150
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.4.1",
+   "number": "10.4.1",
+   "level": 3,
+   "title": "Definitions",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 680,
+   "has_table": false,
+   "order": 151
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.4.2",
+   "number": "10.4.2",
+   "level": 3,
+   "title": "Contraception Guidance",
+   "style": "Heading 3",
+   "tables": [],
+   "source_index": 683,
+   "has_table": false,
+   "order": 152
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.5",
+   "number": "10.5",
+   "level": 2,
+   "title": "Appendix 5: Genetics",
+   "style": "Heading 2",
+   "tables": [],
+   "appendix_label": "Appendix 5",
+   "source_index": 701,
+   "has_table": false,
+   "order": 153
+  },
+  {
+   "kind": "label_heading",
+   "id": "v10:10.5.label.analysis_of_dna",
+   "number": null,
+   "parent_number": "10.5",
+   "title": "Analysis of DNA",
+   "style": "Heading (No TOC)",
+   "tables": [],
+   "source_index": 702,
+   "has_table": false,
+   "order": 154
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.6",
+   "number": "10.6",
+   "level": 2,
+   "title": "Appendix 6: Liver and Muscle Safety: Suggested Actions and Follow-up Assessments and Study Intervention Restart/Rechallenge Guidelines",
+   "style": "Heading 2",
+   "tables": [],
+   "appendix_label": "Appendix 6",
+   "source_index": 709,
+   "has_table": false,
+   "order": 155
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.7",
+   "number": "10.7",
+   "level": 2,
+   "title": "Appendix 7: Medical Device AEs, ADEs, SAEs, SADEs, USADEs and Device Deficiencies: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting in Medical Device Studies",
+   "style": "Heading 2",
+   "tables": [],
+   "appendix_label": "Appendix 7",
+   "source_index": 719,
+   "has_table": false,
+   "order": 156
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.8",
+   "number": "10.8",
+   "level": 2,
+   "title": "Appendix 8: Country-specific Requirements",
+   "style": "Heading 2",
+   "tables": [],
+   "appendix_label": "Appendix 8",
+   "source_index": 721,
+   "has_table": false,
+   "order": 157
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.9",
+   "number": "10.9",
+   "level": 2,
+   "title": "Appendix 9: Protocol Amendment History",
+   "style": "Heading 2",
+   "tables": [
+    {
+     "source_index": 728,
+     "rows": 4,
+     "header_row": [
+      "DOCUMENT HISTORY"
+     ],
+     "caption": null
+    }
+   ],
+   "appendix_label": "Appendix 9",
+   "source_index": 725,
+   "has_table": true,
+   "order": 158
+  },
+  {
+   "kind": "heading",
+   "id": "v10:10.10",
+   "number": "10.10",
+   "level": 2,
+   "title": "Appendix 10: Contact details",
+   "style": "Heading 2",
+   "tables": [
+    {
+     "source_index": 733,
+     "rows": 9,
+     "header_row": [
+      "Sponsor:",
+      "Berit Muan\nCand. Pharm., PhD\nHead of Department\nDepartment of Pharmacology\nAddress: Oslo University Hospital HF, P.O. box 4950 Nydalen, 0424 Oslo\nTel: +47 45043260\nE-mail: bermua@ous-hf.no"
+     ],
+     "caption": null
+    }
+   ],
+   "appendix_label": "Appendix 10",
+   "source_index": 730,
+   "has_table": true,
+   "order": 159
+  },
+  {
+   "kind": "heading",
+   "id": "v10:11",
+   "number": "11",
+   "level": 1,
+   "title": "References",
+   "style": "Heading 1",
+   "tables": [],
+   "source_index": 737,
+   "has_table": false,
+   "order": 160
+  },
+  {
+   "kind": "heading",
+   "id": "v10:12",
+   "number": "12",
+   "level": 1,
+   "title": "Appendix 11: Questionnaires",
+   "style": "Heading 1",
+   "tables": [],
+   "appendix_label": "Appendix 11",
+   "source_index": 768,
+   "has_table": false,
+   "order": 161
+  }
+ ],
+ "diff_vs_template": {
+  "numbered_headings": {
+   "template_count": 137,
+   "test1_count": 133,
+   "unchanged": 81,
+   "renamed": 7,
+   "renumbered": 27,
+   "removed": 22,
+   "added": 18,
+   "detail": {
+    "unchanged": [
+     {
+      "number": "1",
+      "title": "Protocol Summary",
+      "test1_title": "Protocol Summary",
+      "test1_source_index": 38
+     },
+     {
+      "number": "1.1",
+      "title": "Synopsis",
+      "test1_title": "Synopsis",
+      "test1_source_index": 39
+     },
+     {
+      "number": "1.2",
+      "title": "Schema",
+      "test1_title": "Schema",
+      "test1_source_index": 81
+     },
+     {
+      "number": "1.3",
+      "title": "Schedule of Activities (SoA)",
+      "test1_title": "Schedule of Activities (SoA)",
+      "test1_source_index": 87
+     },
+     {
+      "number": "2",
+      "title": "Introduction",
+      "test1_title": "Introduction",
+      "test1_source_index": 94
+     },
+     {
+      "number": "2.1",
+      "title": "Study Rationale",
+      "test1_title": "Study Rationale",
+      "test1_source_index": 98
+     },
+     {
+      "number": "2.2",
+      "title": "Background",
+      "test1_title": "Background",
+      "test1_source_index": 101
+     },
+     {
+      "number": "2.3",
+      "title": "Benefit/Risk Assessment",
+      "test1_title": "Benefit/Risk Assessment",
+      "test1_source_index": 109
+     },
+     {
+      "number": "2.3.1",
+      "title": "Risk Assessment",
+      "test1_title": "Risk Assessment",
+      "test1_source_index": 111
+     },
+     {
+      "number": "2.3.2",
+      "title": "Benefit Assessment",
+      "test1_title": "Benefit Assessment",
+      "test1_source_index": 120
+     },
+     {
+      "number": "2.3.3",
+      "title": "Overall Benefit Risk Conclusion",
+      "test1_title": "Overall Benefit Risk Conclusion",
+      "test1_source_index": 124
+     },
+     {
+      "number": "3",
+      "title": "Objectives, Endpoints, and Estimands",
+      "test1_title": "Objectives, Endpoints, and Estimands",
+      "test1_source_index": 126
+     },
+     {
+      "number": "4",
+      "title": "Study Design",
+      "test1_title": "Study Design",
+      "test1_source_index": 144
+     },
+     {
+      "number": "4.1",
+      "title": "Overall Design",
+      "test1_title": "Overall Design",
+      "test1_source_index": 146
+     },
+     {
+      "number": "4.2",
+      "title": "Scientific Rationale for Study Design",
+      "test1_title": "Scientific Rationale for Study Design",
+      "test1_source_index": 154
+     },
+     {
+      "number": "4.2.1",
+      "title": "Patient Input into Design",
+      "test1_title": "Patient Input into Design",
+      "test1_source_index": 161
+     },
+     {
+      "number": "4.3",
+      "title": "Justification for Dose",
+      "test1_title": "Justification for Dose",
+      "test1_source_index": 169
+     },
+     {
+      "number": "4.4",
+      "title": "End-of-Study Definition",
+      "test1_title": "End-of-Study Definition",
+      "test1_source_index": 173
+     },
+     {
+      "number": "5",
+      "title": "Study Population",
+      "test1_title": "Study Population",
+      "test1_source_index": 176
+     },
+     {
+      "number": "5.1",
+      "title": "Inclusion Criteria",
+      "test1_title": "Inclusion Criteria",
+      "test1_source_index": 178
+     },
+     {
+      "number": "5.2",
+      "title": "Exclusion Criteria",
+      "test1_title": "Exclusion Criteria",
+      "test1_source_index": 182
+     },
+     {
+      "number": "5.3",
+      "title": "Lifestyle Considerations",
+      "test1_title": "Lifestyle Considerations",
+      "test1_source_index": 187
+     },
+     {
+      "number": "5.3.1",
+      "title": "Meals and Dietary Restrictions",
+      "test1_title": "Meals and Dietary Restrictions",
+      "test1_source_index": 189
+     },
+     {
+      "number": "5.3.2",
+      "title": "Caffeine, Alcohol, and Tobacco",
+      "test1_title": "Caffeine, Alcohol, and Tobacco",
+      "test1_source_index": 196
+     },
+     {
+      "number": "5.3.3",
+      "title": "Activity",
+      "test1_title": "Activity",
+      "test1_source_index": 199
+     },
+     {
+      "number": "5.3.4",
+      "title": "Other Restrictions",
+      "test1_title": "Other Restrictions",
+      "test1_source_index": 201
+     },
+     {
+      "number": "5.4",
+      "title": "Screen Failures",
+      "test1_title": "Screen Failures",
+      "test1_source_index": 203
+     },
+     {
+      "number": "6",
+      "title": "Study Intervention(s) and Concomitant Therapy",
+      "test1_title": "Study Intervention(s) and Concomitant Therapy",
+      "test1_source_index": 208
+     },
+     {
+      "number": "6.1",
+      "title": "Study Intervention(s) Administered",
+      "test1_title": "Study Intervention(s) Administered",
+      "test1_source_index": 210
+     },
+     {
+      "number": "6.2",
+      "title": "Preparation, Handling, Storage, and Accountability",
+      "test1_title": "Preparation, Handling, Storage, and Accountability",
+      "test1_source_index": 223
+     },
+     {
+      "number": "6.3",
+      "title": "Assignment to Study Intervention",
+      "test1_title": "Assignment to Study Intervention",
+      "test1_source_index": 230
+     },
+     {
+      "number": "6.6",
+      "title": "Dose Modification",
+      "test1_title": "Dose Modification",
+      "test1_source_index": 240
+     },
+     {
+      "number": "6.6.1",
+      "title": "Retreatment Criteria",
+      "test1_title": "Retreatment Criteria",
+      "test1_source_index": 242
+     },
+     {
+      "number": "6.7",
+      "title": "Continued Access to Study Intervention after the End of the Study",
+      "test1_title": "Continued Access to Study Intervention after the End of the Study",
+      "test1_source_index": 244
+     },
+     {
+      "number": "6.8",
+      "title": "Treatment of Overdose",
+      "test1_title": "Treatment of Overdose",
+      "test1_source_index": 251
+     },
+     {
+      "number": "6.9",
+      "title": "Prior and Concomitant Therapy",
+      "test1_title": "Prior and Concomitant Therapy",
+      "test1_source_index": 259
+     },
+     {
+      "number": "7",
+      "title": "Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal",
+      "test1_title": "Discontinuation of Study Intervention and Participant Discontinuation/Withdrawal",
+      "test1_source_index": 268
+     },
+     {
+      "number": "7.1",
+      "title": "Discontinuation of Study Intervention",
+      "test1_title": "Discontinuation of Study Intervention",
+      "test1_source_index": 270
+     },
+     {
+      "number": "7.2",
+      "title": "Participant Discontinuation/Withdrawal from the Study",
+      "test1_title": "Participant Discontinuation/Withdrawal from the Study",
+      "test1_source_index": 304
+     },
+     {
+      "number": "7.3",
+      "title": "Lost to Follow up",
+      "test1_title": "Lost to Follow up",
+      "test1_source_index": 311
+     },
+     {
+      "number": "8",
+      "title": "Study Assessments and Procedures",
+      "test1_title": "Study Assessments and Procedures",
+      "test1_source_index": 317
+     },
+     {
+      "number": "8.3",
+      "title": "Safety Assessments",
+      "test1_title": "Safety Assessments",
+      "test1_source_index": 342
+     },
+     {
+      "number": "8.3.1",
+      "title": "Physical Examinations",
+      "test1_title": "Physical Examinations",
+      "test1_source_index": 347
+     },
+     {
+      "number": "8.3.2",
+      "title": "Vital Signs",
+      "test1_title": "Vital Signs",
+      "test1_source_index": 350
+     },
+     {
+      "number": "8.3.3",
+      "title": "Electrocardiograms",
+      "test1_title": "Electrocardiograms",
+      "test1_source_index": 353
+     },
+     {
+      "number": "8.3.4",
+      "title": "Clinical Safety Laboratory Tests",
+      "test1_title": "Clinical Safety Laboratory Tests",
+      "test1_source_index": 355
+     },
+     {
+      "number": "8.3.5",
+      "title": "Pregnancy Testing",
+      "test1_title": "Pregnancy Testing",
+      "test1_source_index": 363
+     },
+     {
+      "number": "8.3.6",
+      "title": "Suicidal Ideation and Behavior Risk Monitoring",
+      "test1_title": "Suicidal Ideation and Behavior Risk Monitoring",
+      "test1_source_index": 366
+     },
+     {
+      "number": "8.4",
+      "title": "Adverse Events (AEs) Serious Adverse Events (SAEs), and Other Safety Reporting",
+      "test1_title": "Adverse Events (AEs) Serious Adverse Events (SAEs), and Other Safety Reporting",
+      "test1_source_index": 369
+     },
+     {
+      "number": "8.4.1",
+      "title": "Time Period and Frequency for Collecting AE and SAE Information",
+      "test1_title": "Time Period and Frequency for Collecting AE and SAE Information",
+      "test1_source_index": 374
+     },
+     {
+      "number": "8.4.2",
+      "title": "Method of Detecting AEs and SAEs",
+      "test1_title": "Method of Detecting AEs and SAEs",
+      "test1_source_index": 381
+     },
+     {
+      "number": "8.4.3",
+      "title": "Follow-up of AEs and SAEs",
+      "test1_title": "Follow-up of AEs and SAEs",
+      "test1_source_index": 383
+     },
+     {
+      "number": "8.4.4",
+      "title": "Regulatory Reporting Requirements for SAEs",
+      "test1_title": "Regulatory Reporting Requirements for SAEs",
+      "test1_source_index": 385
+     },
+     {
+      "number": "8.4.5",
+      "title": "Pregnancy",
+      "test1_title": "Pregnancy",
+      "test1_source_index": 390
+     },
+     {
+      "number": "8.4.6",
+      "title": "Cardiovascular and Death Events",
+      "test1_title": "Cardiovascular and Death Events",
+      "test1_source_index": 398
+     },
+     {
+      "number": "8.4.7",
+      "title": "Disease-related Events and/or Disease-related Outcomes Not Qualifying as AEs or SAEs",
+      "test1_title": "Disease-related Events and/or Disease-related Outcomes Not Qualifying as AEs or SAEs",
+      "test1_source_index": 402
+     },
+     {
+      "number": "8.4.8",
+      "title": "Adverse Events of Special Interest",
+      "test1_title": "Adverse Events of Special Interest",
+      "test1_source_index": 410
+     },
+     {
+      "number": "8.4.9",
+      "title": "Medical Device Deficiencies",
+      "test1_title": "Medical Device Deficiencies",
+      "test1_source_index": 415
+     },
+     {
+      "number": "8.5",
+      "title": "Pharmacokinetics",
+      "test1_title": "Pharmacokinetics",
+      "test1_source_index": 417
+     },
+     {
+      "number": "8.6",
+      "title": "Pharmacodynamics",
+      "test1_title": "Pharmacodynamics",
+      "test1_source_index": 424
+     },
+     {
+      "number": "8.7",
+      "title": "Genetics",
+      "test1_title": "Genetics",
+      "test1_source_index": 426
+     },
+     {
+      "number": "8.8",
+      "title": "Biomarkers",
+      "test1_title": "Biomarkers",
+      "test1_source_index": 430
+     },
+     {
+      "number": "8.9",
+      "title": "Immunogenicity Assessments",
+      "test1_title": "Immunogenicity Assessments",
+      "test1_source_index": 433
+     },
+     {
+      "number": "8.10",
+      "title": "[Health Economics OR Medical Resource Utilization and Health Economics]",
+      "test1_title": "Health Economics OR Medical Resource Utilization and Health Economics",
+      "test1_source_index": 435
+     },
+     {
+      "number": "9",
+      "title": "Statistical Considerations",
+      "test1_title": "Statistical Considerations",
+      "test1_source_index": 438
+     },
+     {
+      "number": "9.2",
+      "title": "Analysis Sets",
+      "test1_title": "Analysis Sets",
+      "test1_source_index": 447
+     },
+     {
+      "number": "10",
+      "title": "Supporting Documentation and Operational Considerations",
+      "test1_title": "Supporting Documentation and Operational Considerations",
+      "test1_source_index": 483
+     },
+     {
+      "number": "10.1",
+      "title": "Appendix 1: Regulatory, Ethical, and Study Oversight Considerations",
+      "test1_title": "Appendix 1: Regulatory, Ethical, and Study Oversight Considerations",
+      "test1_source_index": 484
+     },
+     {
+      "number": "10.1.1",
+      "title": "Regulatory and Ethical Considerations",
+      "test1_title": "Regulatory and Ethical Considerations",
+      "test1_source_index": 485
+     },
+     {
+      "number": "10.2",
+      "title": "Appendix 2: Clinical Laboratory Tests",
+      "test1_title": "Appendix 2: Clinical Laboratory Tests",
+      "test1_source_index": 576
+     },
+     {
+      "number": "10.3",
+      "title": "Appendix 3: AEs and SAEs: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting",
+      "test1_title": "Appendix 3: AEs and SAEs: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting",
+      "test1_source_index": 585
+     },
+     {
+      "number": "10.3.1",
+      "title": "Definition of AE",
+      "test1_title": "Definition of AE",
+      "test1_source_index": 586
+     },
+     {
+      "number": "10.3.2",
+      "title": "Definition of SAE",
+      "test1_title": "Definition of SAE",
+      "test1_source_index": 607
+     },
+     {
+      "number": "10.4",
+      "title": "Appendix 4: Contraceptive and Barrier Guidance",
+      "test1_title": "Appendix 4: Contraceptive and Barrier Guidance",
+      "test1_source_index": 679
+     },
+     {
+      "number": "10.4.1",
+      "title": "Definitions",
+      "test1_title": "Definitions",
+      "test1_source_index": 680
+     },
+     {
+      "number": "10.4.2",
+      "title": "Contraception Guidance",
+      "test1_title": "Contraception Guidance",
+      "test1_source_index": 683
+     },
+     {
+      "number": "10.5",
+      "title": "Appendix 5: Genetics",
+      "test1_title": "Appendix 5: Genetics",
+      "test1_source_index": 701
+     },
+     {
+      "number": "10.7",
+      "title": "Appendix 7: Medical Device AEs, ADEs, SAEs, SADEs, USADEs and Device Deficiencies: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting in Medical Device Studies",
+      "test1_title": "Appendix 7: Medical Device AEs, ADEs, SAEs, SADEs, USADEs and Device Deficiencies: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting in Medical Device Studies",
+      "test1_source_index": 719
+     },
+     {
+      "number": "10.8",
+      "title": "Appendix 8: Country-specific Requirements",
+      "test1_title": "Appendix 8: Country-specific Requirements",
+      "test1_source_index": 721
+     },
+     {
+      "number": "10.9",
+      "title": "Appendix 9: Protocol Amendment History",
+      "test1_title": "Appendix 9: Protocol Amendment History",
+      "test1_source_index": 725
+     },
+     {
+      "number": "11",
+      "title": "References",
+      "test1_title": "References",
+      "test1_source_index": 737
+     }
+    ],
+    "renamed": [
+     {
+      "template_number": "5.5",
+      "template_title": "Criteria for Temporarily Delaying [Enrollment/Randomization/Administration of Study Intervention]",
+      "test1_number": "5.5",
+      "test1_title": "Criteria for Temporarily Delaying",
+      "test1_source_index": 206,
+      "similarity": 0.52
+     },
+     {
+      "template_number": "6.4",
+      "template_title": "[Blinding, Masking]",
+      "test1_number": "6.4",
+      "test1_title": "Blinding",
+      "test1_source_index": 233,
+      "similarity": 0.67
+     },
+     {
+      "template_number": "6.5",
+      "template_title": "Study Intervention Compliance",
+      "test1_number": "6.5",
+      "test1_title": "Study Intervention Adherence",
+      "test1_source_index": 237,
+      "similarity": 0.81
+     },
+     {
+      "template_number": "7.1.1",
+      "template_title": "Liver Event Stopping Criteria",
+      "test1_number": "7.1.1",
+      "test1_title": "Liver Chemistry Stopping Criteria",
+      "test1_source_index": 281,
+      "similarity": 0.84
+     },
+     {
+      "template_number": "8.1",
+      "template_title": "Administrative [and General/Baseline] Procedures",
+      "test1_number": "8.1",
+      "test1_title": "Administrative and Baseline Procedures",
+      "test1_source_index": 326,
+      "similarity": 0.9
+     },
+     {
+      "template_number": "8.2",
+      "template_title": "[Efficacy and/or Immunogenicity] Assessments",
+      "test1_number": "8.2",
+      "test1_title": "Endpoint Assessments",
+      "test1_source_index": 328,
+      "similarity": 0.61
+     },
+     {
+      "template_number": "10.6",
+      "template_title": "Appendix 6: Liver Safety: Suggestions and Guidelines for Liver Events",
+      "test1_number": "10.6",
+      "test1_title": "Appendix 6: Liver and Muscle Safety: Suggested Actions and Follow-up Assessments and Study Intervention Restart/Rechallenge Guidelines",
+      "test1_source_index": 709,
+      "similarity": 0.5
+     }
+    ],
+    "renumbered": [
+     {
+      "template_number": "6.1.1",
+      "template_title": "Rescue Medicine",
+      "test1_number": "6.9.1",
+      "test1_title": "Rescue Medicine",
+      "test1_source_index": 266,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "6.1.2",
+      "template_title": "Medical Devices",
+      "test1_number": "6.1.1",
+      "test1_title": "Medical Devices",
+      "test1_source_index": 221,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "7.1.2",
+      "template_title": "QTc Stopping Criteria",
+      "test1_number": "7.1.3",
+      "test1_title": "QTc Stopping Criteria",
+      "test1_source_index": 286,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "7.1.3",
+      "template_title": "Temporary Discontinuation",
+      "test1_number": "7.1.6",
+      "test1_title": "Temporary Discontinuation",
+      "test1_source_index": 292,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "7.1.4",
+      "template_title": "Rechallenge",
+      "test1_number": "7.1.7",
+      "test1_title": "Rechallenge",
+      "test1_source_index": 296,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "7.1.4.1",
+      "template_title": "Study Intervention Restart or Rechallenge After Liver Stopping Criteria Are Met",
+      "test1_number": "7.1.7.1",
+      "test1_title": "Study Intervention Restart or Rechallenge After Liver Stopping Criteria Are Met",
+      "test1_source_index": 300,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "9.1",
+      "template_title": "General Considerations",
+      "test1_number": "9.3.1",
+      "test1_title": "General Considerations",
+      "test1_source_index": 452,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": true
+     },
+     {
+      "template_number": "9.1.2",
+      "template_title": "Multiplicity Adjustment",
+      "test1_number": "9.1.1",
+      "test1_title": "Multiplicity Adjustment",
+      "test1_source_index": 445,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "9.3.1",
+      "template_title": "Primary [Endpoint(s)/Estimand(s)]",
+      "test1_number": "9.3.2",
+      "test1_title": "Primary Endpoint Analysis",
+      "test1_source_index": 457,
+      "similarity": 0.74,
+      "title_also_changed": true,
+      "level_changed": false
+     },
+     {
+      "template_number": "9.3.1.1",
+      "template_title": "Definition of endpoint(s)",
+      "test1_number": "9.3.2.1",
+      "test1_title": "Definition of endpoint(s)",
+      "test1_source_index": 458,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "9.3.1.2",
+      "template_title": "Main Analytical Approach",
+      "test1_number": "9.3.2.2",
+      "test1_title": "Main Analytical Approach",
+      "test1_source_index": 460,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "9.3.1.3",
+      "template_title": "Sensitivity [Analysis/Analyses]",
+      "test1_number": "9.3.2.3",
+      "test1_title": "Sensitivity Analyses",
+      "test1_source_index": 463,
+      "similarity": 0.82,
+      "title_also_changed": true,
+      "level_changed": false
+     },
+     {
+      "template_number": "9.3.1.4",
+      "template_title": "Supplementary [Analysis/Analyses]",
+      "test1_number": "9.3.2.4",
+      "test1_title": "Supplementary Analyses",
+      "test1_source_index": 466,
+      "similarity": 0.83,
+      "title_also_changed": true,
+      "level_changed": false
+     },
+     {
+      "template_number": "9.7",
+      "template_title": "Other Analyses",
+      "test1_number": "9.3.6",
+      "test1_title": "Other Analyses",
+      "test1_source_index": 474,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": true
+     },
+     {
+      "template_number": "9.8",
+      "template_title": "Interim [Analysis/Analyses]",
+      "test1_number": "9.4",
+      "test1_title": "Interim Analysis",
+      "test1_source_index": 478,
+      "similarity": 0.78,
+      "title_also_changed": true,
+      "level_changed": false
+     },
+     {
+      "template_number": "9.9",
+      "template_title": "Sample Size Determination",
+      "test1_number": "9.5",
+      "test1_title": "Sample Size Determination",
+      "test1_source_index": 480,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.1.3",
+      "template_title": "Informed Consent Process",
+      "test1_number": "10.1.2",
+      "test1_title": "Informed Consent Process",
+      "test1_source_index": 497,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.1.4",
+      "template_title": "Recruitment strategy",
+      "test1_number": "10.1.3",
+      "test1_title": "Recruitment strategy",
+      "test1_source_index": 506,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.1.5",
+      "template_title": "Data Protection",
+      "test1_number": "10.1.4",
+      "test1_title": "Data Protection",
+      "test1_source_index": 508,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.1.6",
+      "template_title": "Committees Structure",
+      "test1_number": "10.1.5",
+      "test1_title": "Committees Structure",
+      "test1_source_index": 515,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.1.6.1",
+      "template_title": "[Early Safety Data Review AND/OR Committee]",
+      "test1_number": "10.1.5.1",
+      "test1_title": "Early Safety Data Review",
+      "test1_source_index": 520,
+      "similarity": 0.74,
+      "title_also_changed": true,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.1.7",
+      "template_title": "Dissemination of Clinical Study Data",
+      "test1_number": "10.1.6",
+      "test1_title": "Dissemination of Clinical Study Data",
+      "test1_source_index": 530,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.1.8",
+      "template_title": "Data Quality Assurance",
+      "test1_number": "10.1.7",
+      "test1_title": "Data Quality Assurance",
+      "test1_source_index": 532,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.1.10",
+      "template_title": "Study and Site Start and Closure",
+      "test1_number": "10.1.9",
+      "test1_title": "Study and Site Start and Closure",
+      "test1_source_index": 553,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.1.11",
+      "template_title": "Publication Policy",
+      "test1_number": "10.1.10",
+      "test1_title": "Publication Policy",
+      "test1_source_index": 569,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.3.3",
+      "template_title": "Recording and Follow-Up of AE and/or SAE",
+      "test1_number": "10.3.4",
+      "test1_title": "Recording and Follow-Up of AE and/or SAE",
+      "test1_source_index": 635,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     },
+     {
+      "template_number": "10.3.4",
+      "template_title": "Reporting of SAEs",
+      "test1_number": "10.3.5",
+      "test1_title": "Reporting of SAEs",
+      "test1_source_index": 660,
+      "similarity": 1.0,
+      "title_also_changed": false,
+      "level_changed": false
+     }
+    ],
+    "removed": [
+     {
+      "template_number": "8.4.9.1",
+      "template_title": "Time Period for Detecting Medical Device Deficiencies",
+      "level": 4
+     },
+     {
+      "template_number": "8.4.9.2",
+      "template_title": "Follow-up of Medical Device Deficiencies",
+      "level": 4
+     },
+     {
+      "template_number": "8.4.9.3",
+      "template_title": "Prompt Reporting of Device Deficiencies to the Sponsor",
+      "level": 4
+     },
+     {
+      "template_number": "8.4.9.4",
+      "template_title": "Regulatory Reporting Requirements for Device Deficiencies",
+      "level": 4
+     },
+     {
+      "template_number": "9.1.1",
+      "template_title": "[Decision Criteria/Statistical Hypotheses]",
+      "level": 3
+     },
+     {
+      "template_number": "9.1.3",
+      "template_title": "Impact of Intercurrent Events Strategies",
+      "level": 3
+     },
+     {
+      "template_number": "9.1.4",
+      "template_title": "Handling of Missing Data",
+      "level": 3
+     },
+     {
+      "template_number": "9.3",
+      "template_title": "Analyses Supporting Primary Objective(s)",
+      "level": 2
+     },
+     {
+      "template_number": "9.4",
+      "template_title": "Analyses Supporting Secondary Objective(s)",
+      "level": 2
+     },
+     {
+      "template_number": "9.4.1",
+      "template_title": "Analyses Supporting Secondary Objective [label]",
+      "level": 3
+     },
+     {
+      "template_number": "9.5",
+      "template_title": "Analyses Supporting [Tertiary/Exploratory/Other] Objective(s)",
+      "level": 2
+     },
+     {
+      "template_number": "9.6",
+      "template_title": "[Other] Safety Analyses",
+      "level": 2
+     },
+     {
+      "template_number": "9.7.1",
+      "template_title": "Other variables and/or parameters",
+      "level": 3
+     },
+     {
+      "template_number": "9.7.2",
+      "template_title": "Subgroup analyses",
+      "level": 3
+     },
+     {
+      "template_number": "10.1.2",
+      "template_title": "Financial Disclosure",
+      "level": 3
+     },
+     {
+      "template_number": "10.1.9",
+      "template_title": "Source Documents",
+      "level": 3
+     },
+     {
+      "template_number": "10.7.1",
+      "template_title": "Definition of Medical Device AE and ADE",
+      "level": 3
+     },
+     {
+      "template_number": "10.7.2",
+      "template_title": "Definition of Medical Device SAE, SADE and USADE",
+      "level": 3
+     },
+     {
+      "template_number": "10.7.3",
+      "template_title": "Definition of Device Deficiency",
+      "level": 3
+     },
+     {
+      "template_number": "10.7.4",
+      "template_title": "Recording and Follow-Up of Medical Device AE and/or SAE and Device Deficiencies",
+      "level": 3
+     },
+     {
+      "template_number": "10.7.5",
+      "template_title": "Reporting of Medical Device SAEs",
+      "level": 3
+     },
+     {
+      "template_number": "10.7.6",
+      "template_title": "Reporting of SADEs",
+      "level": 3
+     }
+    ],
+    "added": [
+     {
+      "test1_number": "7.1.2",
+      "test1_title": "Muscle Chemistry Stopping Criteria",
+      "level": 3,
+      "test1_source_index": 283
+     },
+     {
+      "test1_number": "7.1.4",
+      "test1_title": "Concomitant Medication Stopping Criteria",
+      "level": 3,
+      "test1_source_index": 288
+     },
+     {
+      "test1_number": "7.1.5",
+      "test1_title": "Pregnancy Stopping Criteria",
+      "level": 3,
+      "test1_source_index": 290
+     },
+     {
+      "test1_number": "7.1.7.2",
+      "test1_title": "Study Intervention Restart or Rechallenge After Muscle Stopping Criteria Are Met",
+      "level": 4,
+      "test1_source_index": 302
+     },
+     {
+      "test1_number": "9.1",
+      "test1_title": "Statistical Hypotheses",
+      "level": 2,
+      "test1_source_index": 441
+     },
+     {
+      "test1_number": "9.3",
+      "test1_title": "Statistical Analyses",
+      "level": 2,
+      "test1_source_index": 451
+     },
+     {
+      "test1_number": "9.3.3",
+      "test1_title": "Secondary Endpoint Analysis",
+      "level": 3,
+      "test1_source_index": 468
+     },
+     {
+      "test1_number": "9.3.4",
+      "test1_title": "Exploratory Endpoints Analyses",
+      "level": 3,
+      "test1_source_index": 470
+     },
+     {
+      "test1_number": "9.3.5",
+      "test1_title": "Safety Analyses",
+      "level": 3,
+      "test1_source_index": 472
+     },
+     {
+      "test1_number": "10.1.8",
+      "test1_title": "Data governance",
+      "level": 3,
+      "test1_source_index": 541
+     },
+     {
+      "test1_number": "10.1.11",
+      "test1_title": "Funding",
+      "level": 3,
+      "test1_source_index": 574
+     },
+     {
+      "test1_number": "10.3.3",
+      "test1_title": "Definition of suspected unexpected serious adverse reaction (SUSAR)",
+      "level": 3,
+      "test1_source_index": 622
+     },
+     {
+      "test1_number": "10.3.6",
+      "test1_title": "Reporting of SUSAR",
+      "level": 3,
+      "test1_source_index": 666
+     },
+     {
+      "test1_number": "10.3.7",
+      "test1_title": "Annual safety reporting",
+      "level": 3,
+      "test1_source_index": 670
+     },
+     {
+      "test1_number": "10.3.8",
+      "test1_title": "Other reporting obligations relevant for subject safety",
+      "level": 3,
+      "test1_source_index": 672
+     },
+     {
+      "test1_number": "10.3.9",
+      "test1_title": "Urgent safety measures",
+      "level": 3,
+      "test1_source_index": 675
+     },
+     {
+      "test1_number": "10.10",
+      "test1_title": "Appendix 10: Contact details",
+      "level": 2,
+      "test1_source_index": 730
+     },
+     {
+      "test1_number": "12",
+      "test1_title": "Appendix 11: Questionnaires",
+      "level": 1,
+      "test1_source_index": 768
+     }
+    ]
+   }
+  },
+  "unnumbered_and_label_headings_in_body": {
+   "matched": [],
+   "removed_from_template": [
+    {
+     "template": "Estimand(s) for Primary Objective(s)",
+     "template_parent": "3",
+     "style": "Heading 2 (non-numbered)"
+    },
+    {
+     "template": "Supplementary Estimand(s)",
+     "template_parent": "3",
+     "style": "Heading (No TOC)"
+    },
+    {
+     "template": "Estimands for Secondary Objective(s)",
+     "template_parent": "3",
+     "style": "Heading 2 (non-numbered)"
+    },
+    {
+     "template": "Supplementary Estimand(s)",
+     "template_parent": "3",
+     "style": "Heading (No TOC)"
+    },
+    {
+     "template": "Estimands for [Tertiary/Exploratory/Other] Objectives",
+     "template_parent": "3",
+     "style": "Heading 2 (non-numbered)"
+    },
+    {
+     "template": "[Tertiary/Exploratory/Other] Estimand(s) [label]",
+     "template_parent": "3",
+     "style": "Heading (No TOC)"
+    },
+    {
+     "template": "Supplementary Estimand(s)",
+     "template_parent": "3",
+     "style": "Heading (No TOC)"
+    },
+    {
+     "template": "Medical Device AE and ADE Definition",
+     "template_parent": "10.7.1",
+     "style": "Heading (No TOC)"
+    },
+    {
+     "template": "SADE definition",
+     "template_parent": "10.7.2",
+     "style": "Heading (No TOC)"
+    },
+    {
+     "template": "Unanticipated SADE (USADE) definition",
+     "template_parent": "10.7.2",
+     "style": "Heading (No TOC)"
+    },
+    {
+     "template": "SADE Reporting to [X]",
+     "template_parent": "10.7.6",
+     "style": "Heading (No TOC)"
+    },
+    {
+     "template": "Amendment [amendment number]: ([date])",
+     "template_parent": "10.9",
+     "style": "Heading (No TOC)"
+    }
+   ],
+   "added_in_test1": [
+    {
+     "test1": "Knowledge about the proportions having statin-dependent muscle symptoms (SDMS) to atorvastatin in a population with FH a",
+     "parent": "2.1",
+     "style": "Heading (No TOC)",
+     "kind": "label_heading",
+     "test1_source_index": 99,
+     "empty": false
+    },
+    {
+     "test1": "Analysis of DNA",
+     "parent": "10.5",
+     "style": "Heading (No TOC)",
+     "kind": "label_heading",
+     "test1_source_index": 702,
+     "empty": false
+    }
+   ]
+  },
+  "title_page_fields": {
+   "missing_in_test1": [
+    {
+     "key": "protocol_number",
+     "label": "Protocol Number:"
+    },
+    {
+     "key": "amendment_number",
+     "label": "Amendment Number:"
+    },
+    {
+     "key": "amendment_scope",
+     "label": "Amendment Scope:"
+    },
+    {
+     "key": "country_region_identifier",
+     "label": "Country/Region Identifier:"
+    },
+    {
+     "key": "pediatric_investigational_plan_number",
+     "label": "Pediatric Investigational Plan Number"
+    }
+   ],
+   "added_in_test1": [
+    {
+     "key": "protocol_version",
+     "label": "Protocol Version:",
+     "source_index": 2
+    }
+   ],
+   "label_text_changed": [
+    {
+     "key": "medical_monitor_name_and_contact_information",
+     "template_label": "Medical Monitor Name and Contact Information",
+     "test1_label": "Sponsor functions including Medical Monitors, Coordinating Investigator, and Principal Investigator "
+    }
+   ],
+   "style_changed": [
+    {
+     "key": "sponsor_signatory",
+     "template_style": "Heading (No TOC)",
+     "test1_style": "Normal"
+    }
+   ]
+  },
+  "synopsis_fields": {
+   "missing_in_test1": [
+    {
+     "key": "regulatory_agency_identifier_numbers",
+     "label": "Regulatory Agency Identifier Number(s):"
+    },
+    {
+     "key": "pediatric_investigational_plan_number",
+     "label": "Pediatric Investigational Plan Number:"
+    }
+   ],
+   "added_in_test1": [],
+   "label_text_changed": [
+    {
+     "key": "objectives_endpoints_estimands",
+     "template_label": "Objectives, Endpoints, and Estimands:",
+     "test1_label": "Objectives, Endpoints, Assessments:"
+    },
+    {
+     "key": "study_arms_and_duration",
+     "template_label": "Study Arms and Duration:",
+     "test1_label": "Study Arms/Sequences and Duration:"
+    },
+    {
+     "key": "data_monitoring_committee",
+     "template_label": "Data Monitoring/Other Committee:",
+     "test1_label": "Data Safety Monitoring Committee"
+    }
+   ],
+   "style_changed": []
+  },
+  "front_matter": {
+   "template": [
+    "Title Page",
+    "Protocol Amendment Summary of Changes Table",
+    "Amendment [X] (Day-Month-Year)",
+    "This amendment is considered to be [substantial] [nonsubstantial] based on the criteria set forth in Regulation (EU) No 536/2014 of the European Parliament [bec",
+    "Overall Rationale for the Amendment:",
+    "Table of Contents",
+    "List of Abbreviations [and Definitions of terms]"
+   ],
+   "test1": [
+    "Protocol Amendment Summary of Changes",
+    "Table of Contents",
+    "List of Abbreviations and Definitions of Terms"
+   ]
+  },
+  "non_heading_style_drift": {
+   "manual_numbered_text_not_heading": [
+    {
+     "source_index": 549,
+     "style": "CPT_List Bullet",
+     "text": "10.1.8.2\tData acquisition tool",
+     "parent": "10.1.8"
+    }
+   ],
+   "title_match_in_body_style": [
+    {
+     "source_index": 655,
+     "style": "Normal",
+     "text": "Follow-up of AEs and SAEs",
+     "parent": "10.3.4"
+    }
+   ],
+   "bold_short_normal_paragraphs": [
+    {
+     "source_index": 57,
+     "text": "Brief Summary:",
+     "parent": "1.1"
+    },
+    {
+     "source_index": 117,
+     "text": "Trial feasibility: Possible risks and risk mitigation",
+     "parent": "2.3.1"
+    },
+    {
+     "source_index": 130,
+     "text": "Primary estimand",
+     "parent": "3"
+    },
+    {
+     "source_index": 137,
+     "text": "Secondary estimand",
+     "parent": "3"
+    },
+    {
+     "source_index": 554,
+     "text": "First Act of Recruitment",
+     "parent": "10.1.9"
+    },
+    {
+     "source_index": 557,
+     "text": "Study/Site Termination",
+     "parent": "10.1.9"
+    },
+    {
+     "source_index": 587,
+     "text": "AE Definition",
+     "parent": "10.3.1"
+    },
+    {
+     "source_index": 595,
+     "text": "Events Meeting the AE Definition",
+     "parent": "10.3.1"
+    },
+    {
+     "source_index": 601,
+     "text": "Events not Meeting the AE Definition",
+     "parent": "10.3.1"
+    },
+    {
+     "source_index": 624,
+     "text": "SUSAR Definition",
+     "parent": "10.3.3"
+    },
+    {
+     "source_index": 636,
+     "text": "AE and SAE Recording",
+     "parent": "10.3.4"
+    },
+    {
+     "source_index": 642,
+     "text": "Assessment of Intensity",
+     "parent": "10.3.4"
+    },
+    {
+     "source_index": 647,
+     "text": "Assessment of Causality",
+     "parent": "10.3.4"
+    }
+   ],
+   "label_style_used_for_body_text": [
+    {
+     "source_index": 99,
+     "text": "Knowledge about the proportions having statin-dependent muscle symptoms (SDMS) to atorvastatin in a ",
+     "parent": "2.1"
+    },
+    {
+     "source_index": 702,
+     "text": "Analysis of DNA",
+     "parent": "10.5"
+    }
+   ],
+   "heading_numbering_suppressed": [
+    {
+     "source_index": 542,
+     "style": "Heading 3",
+     "text": "10.1.8.1 \tSource records",
+     "empty": false,
+     "parent": "10.1.8"
+    },
+    {
+     "source_index": 552,
+     "style": "Heading 3",
+     "text": "",
+     "empty": true,
+     "parent": "10.1.8"
+    }
+   ],
+   "empty_headings": [
+    {
+     "source_index": 552,
+     "number": null,
+     "kind": "heading_numbering_suppressed"
+    },
+    {
+     "source_index": 219,
+     "number": null,
+     "kind": "empty Heading (No TOC) paragraph"
+    }
+   ]
+  },
+  "styles_not_in_template": {
+   "List Paragraph": 24,
+   "list:indent bull": 1,
+   "caption:table": 1,
+   "oj-normal": 2,
+   "Default": 2,
+   "EndNote Bibliography": 29
+  }
+ }
+}
