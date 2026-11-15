@@ -143,8 +143,27 @@ async function renderDocx(kind, target) {
   target.textContent='';
   await docx.renderAsync(await response.blob(), target, null, {ignoreLastRenderedPageBreak:false});
   removeLeadingBlankPage(target);
+  replaceSymbolFontBullets(target);
   fitPagesToPanel(target);
  } catch(e) { target.textContent='Could not render this document. Please use the download button.'; }
+}
+// Word list bullets are private-use characters (U+F0B7 and so on) that Word draws through its Symbol and
+// Wingdings fonts. Browsers have no such mapping and draw an empty box, so swap in the Unicode equivalent.
+// The same code means a different glyph in each font, hence one table per font.
+const SYMBOL_FONT_GLYPHS = {
+ Symbol: {0xB7: '•', 0xA8: '♦', 0x2D: '−', 0xB0: '°', 0xB3: '≥', 0xA3: '≤'},
+ Wingdings: {0xA7: '▪', 0x77: '◆', 0xD8: '➢', 0xFC: '✓', 0x6E: '■', 0x71: '❑', 0x76: '❖', 0xA8: '◻'},
+};
+const PRIVATE_USE_SYMBOL = /[-]/g;
+const SYMBOL_FONT_RULE = /content:\s*"([^"]*)";([^}]*?)font-family:\s*(Symbol|Wingdings);/g;
+function replaceSymbolFontBullets(target) {
+ for (const style of target.querySelectorAll('style')) {
+  style.textContent = style.textContent.replace(SYMBOL_FONT_RULE, (rule, content, between, font) => {
+   const glyphs = SYMBOL_FONT_GLYPHS[font];
+   const mapped = content.replace(PRIVATE_USE_SYMBOL, char => glyphs[char.charCodeAt(0) - 0xF000] ?? '•');
+   return `content: "${mapped}";${between}`;
+  });
+ }
 }
 // The v011 template's first heading style has "page break before". Word ignores that on the document's
 // first paragraph; docx-preview starts a new page anyway, leaving a page with only the header and footer.
