@@ -9,8 +9,8 @@ from flask import Flask, jsonify, render_template, request, send_file, abort
 from pypdf import PdfReader
 from werkzeug.utils import secure_filename
 
-from conversion import convert_document
-from document_preview import render_docx_preview
+from conversion import DEMO, DEMO_INPUT, convert_document
+from verification import REPORTS, summarize_report, summarize_usdm
 
 BASE_DIR = Path(__file__).resolve().parent
 UPLOAD_DIR = BASE_DIR / "uploads"
@@ -70,16 +70,17 @@ def too_large(_error):
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    demo_file = {"name": DEMO_INPUT.name, "size_mb": DEMO_INPUT.stat().st_size / 1024 / 1024} if DEMO else None
+    return render_template("index.html", demo_file=demo_file)
 
 
 @app.route("/api/convert", methods=["POST"])
 def upload_and_convert():
-    uploaded = request.files.get("file")
-    if uploaded is None or not uploaded.filename:
+    uploaded = None if DEMO else request.files.get("file")
+    if not DEMO and (uploaded is None or not uploaded.filename):
         return jsonify(error="Choose a PDF or DOCX file first."), 400
 
-    raw_name = uploaded.filename
+    raw_name = DEMO_INPUT.name if DEMO else uploaded.filename
     extension = Path(raw_name).suffix.lower()
     if extension not in ALLOWED:
         return jsonify(error="Unsupported file type. Please upload a PDF or DOCX."), 400
@@ -91,7 +92,10 @@ def upload_and_convert():
     job_upload_dir.mkdir(parents=True, exist_ok=True)
     job_output_dir.mkdir(parents=True, exist_ok=True)
     input_path = job_upload_dir / f"source{extension}"
-    uploaded.save(input_path)
+    if DEMO:
+        shutil.copyfile(DEMO_INPUT, input_path)
+    else:
+        uploaded.save(input_path)
 
     try:
         validate_content(input_path, extension)
@@ -114,7 +118,11 @@ def upload_and_convert():
         manifest = {
             "job_id": job_id,
             "original_filename": safe_name,
-            "demo": True,
+            "demo": DEMO,
+            "verification": [
+                summarize_report(kind, job_output_dir / Path(outputs[kind]).name) for kind in REPORTS
+            ],
+            "usdm": summarize_usdm(job_output_dir / "output.usdm.json"),
             "outputs": {key: Path(value).name for key, value in outputs.items()}
         }
         (job_output_dir / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
@@ -128,7 +136,7 @@ def upload_and_convert():
         shutil.rmtree(job_output_dir, ignore_errors=True)
         return jsonify(error="The demo conversion failed. Please try another file."), 500
 
-    return jsonify(success=True, job_id=job_id, results_url=f"/results/{job_id}", demo=True), 200
+    return jsonify(success=True, job_id=job_id, results_url=f"/results/{job_id}", demo=DEMO), 200
 
 
 @app.route("/results/<job_id>")
@@ -155,20 +163,22 @@ def download_output(job_id, kind):
     return send_file(path, as_attachment=True, download_name=download_name, mimetype=mimetype)
 
 
-@app.route("/preview/<job_id>/<kind>")
-def preview_docx(job_id, kind):
-    names = {"ai_assisted": "output.ai_assisted.docx", "human_review": "output.human_review.docx"}
-    if kind not in names:
+@app.route("/api/jobs/<job_id>/verification/<kind>")
+def verification_report(job_id, kind):
+    if kind not in REPORTS:
         abort(404)
-    folder = job_folder(job_id)
-    path = folder / names[kind]
+    path = job_folder(job_id) / f"output.{kind}.txt"
     if not path.is_file():
         abort(404)
-    try:
-        return app.response_class(render_docx_preview(path), mimetype="text/html")
-    except Exception:
-        app.logger.exception("DOCX preview rendering failed for job %s", job_id)
-        return jsonify(error="The DOCX preview could not be generated. Please download the document instead."), 500
+    return app.response_class(path.read_text(encoding="utf-8", errors="replace"), mimetype="text/plain")
+
+
+@app.route("/api/jobs/<job_id>/usdm")
+def usdm_preview(job_id):
+    path = job_folder(job_id) / "output.usdm.json"
+    if not path.is_file():
+        abort(404)
+    return send_file(path, mimetype="application/json")
 
 
 @app.route("/api/jobs/<job_id>/fhir")

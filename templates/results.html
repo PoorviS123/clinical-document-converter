@@ -6,20 +6,85 @@
  <article class="download-card"><span class="number">02</span><h2>AI-assisted V11</h2><p>Demo placeholder text is highlighted yellow.</p><a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">Download DOCX</a></article>
  <article class="download-card"><span class="number">03</span><h2>Human-review V11</h2><p>Matching structure with the example gap left blank.</p><a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='human_review') }}">Download DOCX</a></article>
 </section>
+<section class="verification"><div><p class="eyebrow">VERIFICATION</p><h2>Validity of the V11 document</h2><p>Checks run on the AI-assisted V11 document.</p></div>
+<div class="verification-grid">{% for check in job.verification %}
+ <article class="verification-card" data-result="{{ check.result|lower|replace(' ', '-') }}"><div class="verification-head"><h3>{{ check.label }}</h3><span class="verdict">{{ check.result }}</span></div>
+ {% if check.errors is defined %}<p>{{ check.errors }} errors · {{ check.warnings }} warnings · {{ check.info }} info</p>{% else %}<p>The validator did not produce a result.</p>{% endif %}
+ <details data-kind="{{ check.kind }}"><summary>View full report</summary><pre>Loading…</pre></details></article>{% endfor %}
+</div>
+<article class="verification-card usdm-card"><div class="verification-head"><h3>CeSHarP data read from the document</h3></div>
+{% if job.usdm %}<p>Study {{ job.usdm.study_name }} · {{ job.usdm.interventions }} interventions · {{ job.usdm.arms }} arms · {{ job.usdm.objectives }} objectives · {{ job.usdm.sections }} narrative sections</p>
+<details id="usdm-details"><summary>Browse the USDM JSON</summary><div class="json-tree" id="usdm-tree">Loading…</div></details>
+{% else %}<p>Unavailable: the M11 importer could not read structured data from this document.</p>{% endif %}</article>
+</section>
 <section class="compare"><div><p class="eyebrow">DOCUMENT COMPARISON</p><h2>Compare both V11 versions</h2><p>Each preview scrolls independently. Yellow highlighting marks the demo-generated text.</p></div><div class="compare-grid"><article class="preview-card"><div class="preview-title"><h3>AI-assisted V11</h3><a href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">Download</a></div><div class="docx-scroll" id="ai-preview">Loading preview…</div></article><article class="preview-card"><div class="preview-title"><h3>Human-review V11</h3><a href="{{ url_for('download_output', job_id=job.job_id, kind='human_review') }}">Download</a></div><div class="docx-scroll" id="human-preview">Loading preview…</div></article></div></section>
 </main><footer>ClinicalConverter · Demo output</footer>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docx-preview@0.4.1/dist/docx-preview.min.js"></script>
 <script>
 const jobId = {{ job.job_id|tojson }};
 fetch(`/api/jobs/${jobId}/fhir`).then(r=>r.json()).then(data=>document.getElementById('json-preview').textContent=JSON.stringify(data,null,2)).catch(()=>document.getElementById('json-preview').textContent='Preview unavailable.');
 async function renderDocx(kind, targetId) {
  const target=document.getElementById(targetId);
  try {
-  const response=await fetch(`/preview/${jobId}/${kind}`);
+  const response=await fetch(`/files/${jobId}/${kind}`);
   if(!response.ok) throw new Error('Preview unavailable');
-  const html=await response.text();
-  if(!html.trim()) throw new Error('Empty preview response');
-  target.innerHTML=html;
+  target.textContent='';
+  await docx.renderAsync(await response.blob(), target, null, {ignoreLastRenderedPageBreak:false});
+  removeEmptyPages(target);
+  fitPagesToPanel(target);
  } catch(e) { target.textContent='Could not render this document. Please use the download button.'; }
 }
+// docx-preview honors a page-break-before on the first paragraph, which Word ignores, leaving a blank first page.
+function removeEmptyPages(target) {
+ target.querySelectorAll('section.docx').forEach(page=>{
+  if(!page.querySelector('article')?.hasChildNodes()) page.remove();
+ });
+}
+// Word pages are 8.5in wide, wider than each comparison panel, so scale them down instead of scrolling sideways.
+function fitPagesToPanel(target) {
+ const wrapper=target.querySelector('.docx-wrapper');
+ const page=wrapper?.querySelector('section.docx');
+ if(!page) return;
+ const panelWidth=target.clientWidth-parseFloat(getComputedStyle(target).paddingLeft)*2;
+ wrapper.style.zoom=Math.min(1, panelWidth/page.offsetWidth);
+}
+document.querySelectorAll('.verification-card details').forEach(details=>details.addEventListener('toggle',()=>{
+ const pre=details.querySelector('pre');
+ if(!details.open||pre.dataset.loaded) return;
+ fetch(`/api/jobs/${jobId}/verification/${details.dataset.kind}`).then(r=>r.text()).then(text=>{pre.textContent=text;pre.dataset.loaded='1';}).catch(()=>pre.textContent='Report unavailable.');
+}));
+const MAX_TREE_DEPTH = 12;
+function jsonTree(value, key, depth) {
+ const label = key === null ? '' : `${key}: `;
+ if (value === null || typeof value !== 'object') {
+  const leaf = document.createElement('div');
+  leaf.textContent = label + JSON.stringify(value);
+  return leaf;
+ }
+ const entries = Object.entries(value);
+ const node = document.createElement('details');
+ const summary = document.createElement('summary');
+ summary.textContent = label + (Array.isArray(value) ? `[${entries.length}]` : `{${entries.length}}`);
+ node.append(summary);
+ // Children render on first open, so the 700 KB document isn't turned into DOM all at once.
+ node.addEventListener('toggle', () => {
+  if (!node.open || node.dataset.loaded) return;
+  node.dataset.loaded = '1';
+  if (depth >= MAX_TREE_DEPTH) { node.append(jsonTree(JSON.stringify(value), null, depth)); return; }
+  for (const [childKey, child] of entries) node.append(jsonTree(child, childKey, depth + 1));
+ });
+ return node;
+}
+document.getElementById('usdm-details')?.addEventListener('toggle', event => {
+ const tree = document.getElementById('usdm-tree');
+ if (!event.target.open || tree.dataset.loaded) return;
+ fetch(`/api/jobs/${jobId}/usdm`).then(r => { if (!r.ok) throw new Error(); return r.json(); }).then(data => {
+  const root = jsonTree(data, null, 0);
+  root.open = true;
+  tree.replaceChildren(root);
+  tree.dataset.loaded = '1';
+ }).catch(() => tree.textContent = 'USDM data unavailable.');
+});
 renderDocx('ai_assisted','ai-preview'); renderDocx('human_review','human-preview');
 </script></body></html>

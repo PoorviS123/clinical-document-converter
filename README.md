@@ -15,9 +15,20 @@ Open http://127.0.0.1:5001. The app accepts PDF and DOCX files up to 100 MB.
 
 Uploading a file validates its content and creates three **placeholder** outputs: FHIR JSON, AI-assisted V11 DOCX (with one highlighted demo passage), and human-review V11 DOCX. These are not clinical conversions and must not be used clinically.
 
-## Replace the demo converter
+## Backend
 
-The integration point is `conversion/__init__.py`, function `convert_document(input_path, output_dir)`. Replace its implementation with the teammate's agreed converter. Return a dictionary containing paths for `fhir`, `ai_assisted`, and `human_review`. The files must be named `output.fhir.json`, `output.ai_assisted.docx`, and `output.human_review.docx` in the output directory, or update the download routes in `app.py` to match the agreed contract.
+`conversion/__init__.py` runs the `protocol-reformatter` repo's CLI (`python -m converter`) in a subprocess using its own `.venv`. Install it first by following that repo's README (Python 3.12, plus a signed-in `codex` or `claude` CLI for the LLM step).
+
+Demo mode is on by default (`DEMO=1`): the home page offers only the sample protocol in `conversion/demo_input/` (no upload), and the prepared outputs in `conversion/demo_outputs/` are returned without calling the backend. Set `DEMO=0` to run the real conversion.
+
+By default the repo is expected at `../protocol-reformatter`. Settings:
+
+- `PROTOCOL_REFORMATTER_DIR`: path to the backend repo.
+- `PROTOCOL_REFORMATTER_LLM`: `cli`, `codex` or `api`. Unset uses the backend default.
+
+Output mapping: AI-assisted V11 is `<name>.docx`, human-review V11 is `<name>.pre-llm.docx`, and the "FHIR JSON" slot holds `<name>.generated.json` (the backend's protocol JSON, not FHIR). A conversion can take several minutes; the timeout is 30 minutes.
+
+The results page also shows the CeSHarP data read back from the AI-assisted V11 document: the backend's M11 importer turns the DOCX into CDISC USDM JSON (`cesharp_extract.py`), and the page shows its main counts and a browsable tree. If the importer fails, the conversion still succeeds and the section says the data is unavailable.
 
 ## Notes
 

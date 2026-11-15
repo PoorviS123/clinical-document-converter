@@ -5,6 +5,8 @@ const status = document.getElementById('upload-status');
 const zone = document.getElementById('drop-zone');
 const maxBytes = 100 * 1024 * 1024;
 const allowed = ['.pdf', '.docx'];
+// Demo mode has no file input: the server converts its fixed sample document.
+const demoMode = !input;
 function choose(file) {
   if (!file) { nameLabel.textContent = 'No file selected'; button.disabled = true; return; }
   const dot = file.name.lastIndexOf('.');
@@ -14,19 +16,24 @@ function choose(file) {
   nameLabel.textContent = `${file.name} · ${(file.size / 1024 / 1024).toFixed(2)} MB`;
   button.disabled = false; status.textContent = '';
 }
-input.addEventListener('change', () => choose(input.files[0]));
-['dragenter','dragover'].forEach(type => zone.addEventListener(type, e => {e.preventDefault(); zone.classList.add('drag-over');}));
-['dragleave','drop'].forEach(type => zone.addEventListener(type, e => {e.preventDefault(); zone.classList.remove('drag-over');}));
-zone.addEventListener('drop', e => { if(e.dataTransfer.files.length) { input.files=e.dataTransfer.files; choose(input.files[0]); }});
+if (!demoMode) {
+  input.addEventListener('change', () => choose(input.files[0]));
+  ['dragenter','dragover'].forEach(type => zone.addEventListener(type, e => {e.preventDefault(); zone.classList.add('drag-over');}));
+  ['dragleave','drop'].forEach(type => zone.addEventListener(type, e => {e.preventDefault(); zone.classList.remove('drag-over');}));
+  zone.addEventListener('drop', e => { if(e.dataTransfer.files.length) { input.files=e.dataTransfer.files; choose(input.files[0]); }});
+}
 button.addEventListener('click', async () => {
- const file=input.files[0]; if(!file) return;
- const data=new FormData(); data.append('file',file);
- button.disabled=true; status.textContent='Uploading and generating demo outputs…';
+ const data=new FormData();
+ if (!demoMode) {
+  const file=input.files[0]; if(!file) return;
+  data.append('file',file);
+ }
+ button.disabled=true; status.textContent=demoMode ? 'Generating demo outputs…' : 'Uploading and converting… This can take several minutes.';
  try {
   const response=await fetch('/api/convert',{method:'POST',body:data});
   const result=await response.json().catch(()=>({}));
   if(!response.ok) throw new Error(result.error || `Request failed (${response.status}).`);
-  status.textContent='Demo outputs created. Opening results…';
+  status.textContent='Outputs created. Opening results…';
   window.location.href=result.results_url;
  } catch(error) { status.textContent=error.message; button.disabled=false; }
 });

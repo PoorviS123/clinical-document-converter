@@ -11,14 +11,23 @@
   <p class="eyebrow">CLINICAL DOCUMENT TRANSFORMATION</p>
   <h1>From legacy documents to structured clinical data.</h1>
   <p class="hero-copy">Transform V10 clinical documents into FHIR JSON and V11 documents designed for AI-assisted completion and human review.</p>
+  {% if demo_file %}
+  <div class="upload-box">
+    <div class="upload-icon">↑</div><h2>Demo V10 document</h2>
+    <p>Demo mode converts this sample protocol. Other files can't be uploaded.</p>
+    <p class="file-name">{{ demo_file.name }} · {{ '%.2f'|format(demo_file.size_mb) }} MB</p>
+    <button id="upload-button" class="button primary">Generate demo outputs</button>
+    <p class="fine-print">Demo outputs only</p>
+  {% else %}
   <div class="upload-box" id="drop-zone">
     <div class="upload-icon">↑</div><h2>Upload your V10 document</h2>
     <p>Drop a PDF or DOCX here, or browse your files.</p>
     <label for="file-upload" class="button secondary">Browse files</label>
     <input type="file" id="file-upload" accept=".pdf,.docx">
     <p id="file-name" class="file-name">No file selected</p>
-    <button id="upload-button" class="button primary" disabled>Upload &amp; generate demo outputs</button>
-    <p class="fine-print">PDF or DOCX · Maximum 100 MB · Demo outputs only</p>
+    <button id="upload-button" class="button primary" disabled>Upload &amp; convert</button>
+    <p class="fine-print">PDF or DOCX · Maximum 100 MB</p>
+  {% endif %}
     <p id="upload-status" class="status" role="status" aria-live="polite"></p>
   </div>
 </section>

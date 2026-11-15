@@ -1,53 +1,93 @@
-"""Conversion integration point.
-
-Replace convert_document() with the teammate's real converter when its API is agreed.
-The current implementation deliberately creates DEMO placeholders only.
-"""
+"""Runs the protocol-reformatter backend (a separate repo) on an uploaded protocol."""
 from pathlib import Path
-import json
-from docx import Document
-from docx.enum.text import WD_COLOR_INDEX
+import os
+import shutil
+import subprocess
+
+DEFAULT_BACKEND_DIR = Path(__file__).resolve().parents[2] / "protocol-reformatter"
+BACKEND_DIR = Path(os.environ.get("PROTOCOL_REFORMATTER_DIR", DEFAULT_BACKEND_DIR)).resolve()
+BACKEND_PYTHON = BACKEND_DIR / ".venv" / "bin" / "python"
+LLM_BACKEND = os.environ.get("PROTOCOL_REFORMATTER_LLM")  # cli, codex or api; unset uses the backend default
+CONVERSION_TIMEOUT_SECONDS = 30 * 60
+ERROR_TAIL_CHARS = 2000
+DEMO = os.environ.get("DEMO", "1").lower() not in ("0", "false", "no")
+DEMO_OUTPUTS_DIR = Path(__file__).resolve().parent / "demo_outputs"
+DEMO_INPUT = Path(__file__).resolve().parent / "demo_input" / "Demo-01234_Protocol_CPT-v010-3-1.docx"
+OUTPUT_FILENAMES = {
+    "fhir": "output.fhir.json",
+    "ai_assisted": "output.ai_assisted.docx",
+    "human_review": "output.human_review.docx",
+    "m11": "output.m11.txt",
+    "cesharp": "output.cesharp.txt",
+    "usdm": "output.usdm.json",
+}
+EXTRACT_SCRIPT = Path(__file__).resolve().parents[1] / "cesharp_extract.py"
+EXTRACT_TIMEOUT_SECONDS = 10 * 60
 
 
 def convert_document(input_path: str | Path, output_dir: str | Path) -> dict[str, str]:
-    """Create three clearly labeled demo outputs and return their paths."""
-    input_path = Path(input_path)
-    output_dir = Path(output_dir)
+    """Return the paths of the three outputs and two validation reports the web app serves, from the backend or the demo files."""
+    if DEMO:
+        return copy_demo_outputs(Path(output_dir))
+    return run_backend(Path(input_path), Path(output_dir))
+
+
+def copy_demo_outputs(output_dir: Path) -> dict[str, str]:
+    """Copy the prepared sample outputs without calling the backend. The uploaded file is ignored."""
     output_dir.mkdir(parents=True, exist_ok=True)
+    outputs = {}
+    for key, filename in OUTPUT_FILENAMES.items():
+        shutil.copyfile(DEMO_OUTPUTS_DIR / filename, output_dir / filename)
+        outputs[key] = str(output_dir / filename)
+    return outputs
 
-    fhir_path = output_dir / "output.fhir.json"
-    ai_path = output_dir / "output.ai_assisted.docx"
-    human_path = output_dir / "output.human_review.docx"
 
-    demo_fhir = {
-        "resourceType": "Bundle",
-        "type": "collection",
-        "meta": {"tag": [{"system": "urn:clinicalconverter", "code": "DEMO-PLACEHOLDER"}]},
-        "identifier": {"value": "DEMO-OUTPUT-NOT-CLINICAL-DATA"},
-        "entry": [],
-        "note": "Placeholder only. This is not converted clinical data and is not clinically valid."
+def run_backend(input_path: Path, output_dir: Path) -> dict[str, str]:
+    """Convert a v010 protocol with protocol-reformatter."""
+    input_path = input_path.resolve()
+    output_dir = output_dir.resolve()
+    if not BACKEND_PYTHON.is_file():
+        raise RuntimeError(f"protocol-reformatter venv not found at {BACKEND_PYTHON}. See its README to install.")
+
+    # The backend names every file after the input's stem, so the stem is "source" here.
+    stem = input_path.stem
+    command = [str(BACKEND_PYTHON), "-m", "converter", str(input_path), "--out-dir", str(output_dir),
+               "--validate-m11", "--validate-cesharp"]
+    if LLM_BACKEND:
+        command += ["--llm", LLM_BACKEND]
+    completed = subprocess.run(
+        command, cwd=BACKEND_DIR / "src", capture_output=True, text=True,
+        encoding="utf-8", timeout=CONVERSION_TIMEOUT_SECONDS,
+    )
+    if completed.returncode != 0:
+        raise RuntimeError(f"protocol-reformatter failed:\n{completed.stderr[-ERROR_TAIL_CHARS:]}")
+
+    # The backend writes protocol JSON, not FHIR. It fills the "fhir" slot until a FHIR export exists.
+    outputs = {
+        "fhir": (output_dir / f"{stem}.generated.json", output_dir / OUTPUT_FILENAMES["fhir"]),
+        "ai_assisted": (output_dir / f"{stem}.docx", output_dir / OUTPUT_FILENAMES["ai_assisted"]),
+        "human_review": (output_dir / f"{stem}.pre-llm.docx", output_dir / OUTPUT_FILENAMES["human_review"]),
+        "m11": (output_dir / f"{stem}.m11.txt", output_dir / OUTPUT_FILENAMES["m11"]),
+        "cesharp": (output_dir / f"{stem}.cesharp.txt", output_dir / OUTPUT_FILENAMES["cesharp"]),
     }
-    fhir_path.write_text(json.dumps(demo_fhir, indent=2), encoding="utf-8")
+    for produced, expected in outputs.values():
+        if not produced.is_file():
+            raise RuntimeError(f"protocol-reformatter did not produce {produced.name}.")
+        shutil.copyfile(produced, expected)
+    result = {key: str(expected) for key, (_, expected) in outputs.items()}
+    usdm_path = extract_usdm(output_dir / OUTPUT_FILENAMES["ai_assisted"], output_dir / OUTPUT_FILENAMES["usdm"])
+    if usdm_path:
+        result["usdm"] = str(usdm_path)
+    return result
 
-    def build_docx(path: Path, ai_version: bool) -> None:
-        doc = Document()
-        doc.add_heading("V11 Clinical Document - DEMO", 0)
-        p = doc.add_paragraph()
-        p.add_run("DEMONSTRATION OUTPUT ONLY. Not a real clinical conversion. ").bold = True
-        doc.add_paragraph("Section 1. Document overview", style="Heading 1")
-        doc.add_paragraph("This placeholder demonstrates the V11 document output layout.")
-        doc.add_paragraph("Section 2. Information requiring completion", style="Heading 1")
-        p = doc.add_paragraph()
-        p.add_run("Example missing section: ")
-        if ai_version:
-            generated = p.add_run("[DEMO AI-GENERATED PLACEHOLDER TEXT FOR REVIEW]")
-            generated.font.highlight_color = WD_COLOR_INDEX.YELLOW
-        else:
-            p.add_run("[Intentionally left blank for human review]")
-        doc.add_paragraph("Section 3. Review notes", style="Heading 1")
-        doc.add_paragraph("Replace this demo converter with the team's validated conversion implementation.")
-        doc.save(path)
 
-    build_docx(ai_path, True)
-    build_docx(human_path, False)
-    return {"fhir": str(fhir_path), "ai_assisted": str(ai_path), "human_review": str(human_path)}
+def extract_usdm(docx_path: Path, usdm_path: Path) -> Path | None:
+    """Read the docx's CeSHarP data into USDM JSON. Optional: returns None when extraction fails."""
+    try:
+        completed = subprocess.run(
+            [str(BACKEND_PYTHON), "-X", "utf8", str(EXTRACT_SCRIPT), str(docx_path), str(usdm_path)],
+            capture_output=True, text=True, encoding="utf-8", timeout=EXTRACT_TIMEOUT_SECONDS,
+        )
+    except subprocess.TimeoutExpired:
+        return None
+    return usdm_path if completed.returncode == 0 and usdm_path.is_file() else None
