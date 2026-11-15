@@ -2,43 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClinicalConverter</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <title>ClinicalConverter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
-<nav class="navbar"><a class="logo" href="/">Clinical<span>Converter</span></a><div class="nav-links"><a href="#how">How it works</a><a href="#outputs">Outputs</a></div></nav>
-<main>
-<section class="hero">
-  <p class="eyebrow">CLINICAL DOCUMENT TRANSFORMATION</p>
-  <h1>From legacy documents to structured clinical data.</h1>
-  <p class="hero-copy">Transform V10 clinical documents into FHIR JSON and V11 documents designed for AI-assisted completion and human review.</p>
+<body class="desk-page">
+<header class="desk-bar">
+ <a class="logo" href="/">Clinical<span>Converter</span></a>
+ {% if demo_file %}<span class="demo-badge">Demo mode</span>{% endif %}
+</header>
+
+<main class="desk-narrow upload-layout">
+<section class="upload-main">
+ <h1 class="desk-title">Convert a CPT v010 protocol to v011</h1>
+ <p class="upload-lead">You'll land in a review desk with the v011 draft, every AI-drafted section marked, and a queue of what needs a person.</p>
+
+ <div class="panel upload-panel">
   {% if demo_file %}
-  <div class="upload-box">
-    <div class="upload-icon">↑</div><h2>Demo V10 document</h2>
-    <p>Demo mode converts this sample protocol. Other files can't be uploaded.</p>
-    <p class="file-name">{{ demo_file.name }} · {{ '%.2f'|format(demo_file.size_mb) }} MB</p>
-    <button id="upload-button" class="button primary">Generate demo outputs</button>
-    <p class="fine-print">Demo outputs only</p>
-  {% else %}
-  <div class="upload-box" id="drop-zone">
-    <div class="upload-icon">↑</div><h2>Upload your V10 document</h2>
-    <p>Drop a PDF or DOCX here, or browse your files.</p>
-    <label for="file-upload" class="button secondary">Browse files</label>
-    <input type="file" id="file-upload" accept=".pdf,.docx">
-    <p id="file-name" class="file-name">No file selected</p>
-    <button id="upload-button" class="button primary" disabled>Upload &amp; convert</button>
-    <p class="fine-print">PDF or DOCX · Maximum 100 MB</p>
-  {% endif %}
-    <p id="upload-status" class="status" role="status" aria-live="polite"></p>
+  <div class="file-card">
+   <span class="file-icon" aria-hidden="true">DOCX</span>
+   <div><b>{{ demo_file.name }}</b><p>{{ '%.2f'|format(demo_file.size_mb) }} MB · sample protocol. Uploads are off in demo mode.</p></div>
   </div>
+  {% else %}
+  <div class="file-card drop-zone" id="drop-zone">
+   <span class="file-icon" aria-hidden="true">↑</span>
+   <div><b id="file-name">Drop a PDF or DOCX here</b><p>Up to 100 MB</p></div>
+   <label for="file-upload" class="button secondary">Browse files</label>
+   <input type="file" id="file-upload" accept=".pdf,.docx">
+  </div>
+  {% endif %}
+  <div class="upload-actions">
+   <button id="upload-button" class="button primary" {% if not demo_file %}disabled{% endif %}>Start conversion</button>
+   <p id="upload-status" class="status" role="status" aria-live="polite"></p>
+  </div>
+ </div>
+ <p class="fine-print">Local demo, not for protected health information. AI-drafted content must be reviewed before any clinical use.</p>
 </section>
-<section id="outputs" class="section"><p class="eyebrow">THREE OUTPUTS</p><h2>One source document. Three review-ready files.</h2>
-<div class="cards">
- <article class="card"><span class="number">01</span><h3>FHIR JSON</h3><p>Structured, machine-readable output for downstream systems.</p></article>
- <article class="card"><span class="number">02</span><h3>AI-assisted V11</h3><p>V11 document with demo-generated placeholder text highlighted for review.</p></article>
- <article class="card"><span class="number">03</span><h3>Human-review V11</h3><p>Matching document structure with the example gap left open for a human.</p></article>
-</div></section>
-<section id="how" class="section process"><p class="eyebrow">HOW IT WORKS</p><h2>Upload. Transform. Review.</h2><div class="steps"><div><b>01</b><h3>Upload</h3><p>Provide a V10 PDF or DOCX.</p></div><div><b>02</b><h3>Transform</h3><p>Generate three demo output files.</p></div><div><b>03</b><h3>Review</h3><p>Compare the AI-assisted and human-review documents.</p></div></div></section>
-<section class="notice"><strong>Demo mode:</strong> The current converter creates clearly labeled placeholder files. It does not perform clinical conversion or generate clinically valid data. Real conversion will be connected separately.</section>
-</main><footer>ClinicalConverter · Hack Princeton 2026</footer>
+
+<aside class="panel upload-aside" aria-labelledby="how-heading">
+ <h2 id="how-heading">How a run works</h2>
+ <ol class="pipeline">
+  <li><span class="pipe-tag">No AI</span><b>Extract and place</b><p>Text, tables and figures go into the v011 structure. Each value keeps track of its source. Gaps stay as placeholders.</p></li>
+  <li><span class="pipe-tag pipe-ai">AI</span><b>AI drafting</b><p>An LLM drafts the sections v011 needs from the protocol's own text. Drafted text is highlighted.</p></li>
+  <li><span class="pipe-tag">No AI</span><b>Outputs</b><p>The v011 Word document, a FHIR bundle built by rules, and a report of what was mapped, drafted or left out.</p></li>
+  <li><span class="pipe-tag">Checks</span><b>Validate and review</b><p>ICH M11 and CeSHarP checks run, then you review on the desk.</p></li>
+ </ol>
+</aside>
+</main>
 <script src="{{ url_for('static', filename='js/upload.js') }}"></script>
 </body></html>
