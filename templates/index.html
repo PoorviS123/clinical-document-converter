@@ -12,7 +12,7 @@
  {% if demo_file %}<span class="demo-badge">Demo mode</span>{% endif %}
 </header>
 
-<main class="desk-narrow upload-layout">
+<main class="desk-narrow">
 <section class="upload-main">
  <h1 class="desk-title">Convert a CPT v010 protocol to v011</h1>
  <p class="upload-lead">You'll land in a review desk with the v011 draft, every AI-drafted section marked, and a queue of what needs a person.</p>
@@ -39,15 +39,43 @@
  <p class="fine-print">Local demo, not for protected health information. AI-drafted content must be reviewed before any clinical use.</p>
 </section>
 
-<aside class="panel upload-aside" aria-labelledby="how-heading">
- <h2 id="how-heading">How a run works</h2>
- <ol class="pipeline">
-  <li><span class="pipe-tag">No AI</span><b>Extract and place</b><p>Text, tables and figures go into the v011 structure. Each value keeps track of its source. Gaps stay as placeholders.</p></li>
-  <li><span class="pipe-tag pipe-ai">AI</span><b>AI drafting</b><p>An LLM drafts the sections v011 needs from the protocol's own text. Drafted text is highlighted.</p></li>
-  <li><span class="pipe-tag">No AI</span><b>Outputs</b><p>The v011 Word document, a FHIR bundle built by rules, and a report of what was mapped, drafted or left out.</p></li>
-  <li><span class="pipe-tag">Checks</span><b>Validate and review</b><p>ICH M11 and CeSHarP checks run, then you review on the desk.</p></li>
+<section class="flow" aria-labelledby="flow-heading">
+ <h2 id="flow-heading">How a run works</h2>
+ <p class="flow-lead">Only step 2 uses AI. Everything else follows rules, and every value keeps track of where it came from.</p>
+ <ol class="flow-stages">
+  <li class="stage stage-input">
+   <h3>Input</h3>
+   <div class="node">TransCelerate v010 protocol<small>PDF or Word .docx</small></div>
+  </li>
+  <li class="stage stage-rules stage-sequence">
+   <h3>Step 1 · Deterministic <em>No AI</em></h3>
+   <div class="node">Extract<small>text · tables · figures</small></div>
+   <div class="node">Place into the v011 structure</div>
+   <div class="node node-data">Protocol JSON<small>each value tracks its source</small></div>
+   <div class="node">v011 draft .docx<small>gaps stay placeholders</small></div>
+  </li>
+  <li class="stage stage-ai stage-sequence">
+   <h3>Step 2 · AI drafting <em>AI</em></h3>
+   <div class="node">Section prompts<small>with ICH M11 guidance</small></div>
+   <div class="node">LLM<small>codex · claude · api</small></div>
+   <div class="node node-data">Updated JSON<small>drafts marked ai_generated</small></div>
+  </li>
+  <li class="stage stage-out">
+   <h3>Step 3 · Outputs</h3>
+   <div class="node">v011 protocol .docx<small>AI text highlighted</small></div>
+   <div class="node">FHIR bundle<small>rule-based, no AI</small></div>
+   <div class="node">Report<small>mapped · drafted · left out</small></div>
+  </li>
+  <li class="stage stage-check">
+   <h3>Checks</h3>
+   <div class="node">JSON Schema</div>
+   <div class="node">ICH M11 validator</div>
+   <div class="node">CeSHarP structure</div>
+   <div class="node node-person">Human review<small>on the review desk</small></div>
+  </li>
  </ol>
-</aside>
+ <div class="flow-refs"><b>Reference material</b><span>Crosswalk mapping</span><span>ICH M11 template and spec</span><span>Terminology: NCIt · CDISC</span><span>HL7 FHIR IG: M11 → FHIR</span></div>
+</section>
 </main>
 <script src="{{ url_for('static', filename='js/upload.js') }}"></script>
 </body></html>
