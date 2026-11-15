@@ -1,0 +1,86 @@
+Demo-01234_Protocol_CPT-v010-3-1: placed 642 blocks
+1.3.1 Screening and Treatment Period -> 1.3.1 (no crosswalk row, kept under matched parent)
+1.3.2 Safety, Efficacy, and Survival Follow-up -> 1.3.2 (no crosswalk row, kept under matched parent)
+1.3.3 Pharmacokinetic, Immunogenicity, and Biomarker Sampling -> 1.3.3 (no crosswalk row, kept under matched parent)
+2.2.1 First-line Treatment of PD-L1-positive Non-small Cell Lung Cancer -> 2.1.2.1 (no crosswalk row, kept under matched parent)
+2.2.2 Rationale for a Superiority Comparison With Drug B -> 2.1.2.2 (no crosswalk row, kept under matched parent)
+2.2.3 Nonclinical and Clinical Experience With Drug A -> 2.1.2.3 (no crosswalk row, kept under matched parent)
+4.2.2 Choice of Comparator -> 4.2.1 (no crosswalk row, kept under matched parent)
+4.2.3 Choice of Primary Endpoint and Blinded Independent Central Review -> 4.2.2 (no crosswalk row, kept under matched parent)
+4.2.4 Rationale for Double-blind Design and Stratification Factors -> 4.2.3 (no crosswalk row, kept under matched parent)
+4.3.1 Drug A -> 6.2.1 (no crosswalk row, kept under matched parent)
+4.3.2 Drug B -> 6.2.2 (no crosswalk row, kept under matched parent)
+5.1.1 Age -> 5.2.1 (no crosswalk row, kept under matched parent)
+5.1.2 Type of Participant and Disease Characteristics -> 5.2.2 (no crosswalk row, kept under matched parent)
+5.1.3 PD-L1 Expression and Genomic Alteration Status -> 5.2.3 (no crosswalk row, kept under matched parent)
+5.1.4 Performance Status and Organ Function -> 5.2.4 (no crosswalk row, kept under matched parent)
+5.1.5 Sex and Contraceptive/Barrier Requirements -> 5.2.5 (no crosswalk row, kept under matched parent)
+5.1.6 Informed Consent -> 5.2.6 (no crosswalk row, kept under matched parent)
+5.2.1 Medical Conditions -> 5.3.1 (no crosswalk row, kept under matched parent)
+5.2.2 Liver Safety and Hepatitis B Virus Infection -> 5.3.2 (no crosswalk row, kept under matched parent)
+5.2.3 Angiogenesis Inhibitor-related Risks (Hemorrhage, Thromboembolism, Hypertension) -> 5.3.3 (no crosswalk row, kept under matched parent)
+5.2.4 Prior/Concomitant Therapy -> 5.3.4 (no crosswalk row, kept under matched parent)
+5.2.5 Prior/Concurrent Clinical Study Experience -> 5.3.5 (no crosswalk row, kept under matched parent)
+5.2.6 Diagnostic Assessments -> 5.3.6 (no crosswalk row, kept under matched parent)
+6.1.3 Drug A -> 6.1.2 (no crosswalk row, kept under matched parent)
+6.1.4 Drug B -> 6.1.3 (no crosswalk row, kept under matched parent)
+6.1.5 Hepatitis B Antiviral Prophylaxis -> 6.1.4 (no crosswalk row, kept under matched parent)
+6.4.1 Unblinded Pharmacy Personnel -> 6.7.3.1 (no crosswalk row, kept under matched parent)
+6.6.2 Dose Delays and Interruptions -> 6.4.1 (no crosswalk row, kept under matched parent)
+6.6.3 Management of Immune-mediated Adverse Events -> 6.4.2 (no crosswalk row, kept under matched parent)
+6.6.4 Management of Anti-angiogenic Class Adverse Events -> 6.4.3 (no crosswalk row, kept under matched parent)
+6.6.5 Management of Infusion-related Reactions -> 6.4.4 (no crosswalk row, kept under matched parent)
+6.9.3 Palliative Radiotherapy -> 6.10.3 (no crosswalk row, kept under matched parent)
+6.9.4 Subsequent Anticancer Therapy -> 6.10.4 (no crosswalk row, kept under matched parent)
+7.1.5 Treatment Beyond Radiographic Progression -> 7.1.4 (no crosswalk row, kept under matched parent)
+8.1.1 Central PD-L1 Testing and Tumor Tissue Requirements -> 8.2.1 (no crosswalk row, kept under matched parent)
+8.1.2 Genomic Alteration Status -> 8.2.2 (no crosswalk row, kept under matched parent)
+8.1.3 Hepatitis B, Hepatitis C, and Hepatitis D Virus Screening -> 8.2.3 (no crosswalk row, kept under matched parent)
+8.2.1 Tumor Imaging and Assessment per RECIST v1.1 -> 8.3.1 (no crosswalk row, kept under matched parent)
+8.2.2 Blinded Independent Central Review -> 8.3.2 (no crosswalk row, kept under matched parent)
+8.2.3 Survival Follow-up -> 8.3.3 (no crosswalk row, kept under matched parent)
+8.2.4 Patient-reported Outcomes (EORTC QLQ-C30 and QLQ-LC13) -> 8.3.4 (no crosswalk row, kept under matched parent)
+8.3.7 Liver Chemistry Monitoring -> 8.4.7 (no crosswalk row, kept under matched parent)
+8.3.8 ECOG Performance Status -> 8.4.8 (no crosswalk row, kept under matched parent)
+8.8.1 Tumor Tissue Biomarkers -> 8.6.3.1 (no crosswalk row, kept under matched parent)
+8.8.2 Circulating Tumor DNA -> 8.6.3.2 (no crosswalk row, kept under matched parent)
+9.4.2 Analyses Supporting Secondary Objective: Objective Response Rate and Duration of Response -> 10.5.1.1.1 (no crosswalk row, kept under matched parent)
+9.4.3 Analyses Supporting Secondary Objective: PFS by Investigator Assessment and PFS2 -> 10.5.1.1.2 (no crosswalk row, kept under matched parent)
+9.4.4 Analyses Supporting Secondary Objective: Patient-reported Outcomes -> 10.5.1.1.3 (no crosswalk row, kept under matched parent)
+9.4.5 Analyses Supporting Secondary Objective: Pharmacokinetics -> 10.5.1.1.4 (no crosswalk row, kept under matched parent)
+9.4.6 Analyses Supporting Secondary Objective: Immunogenicity -> 10.5.1.1.5 (no crosswalk row, kept under matched parent)
+10.6.1 Liver Safety: Suggested Actions, Monitoring, and Follow-up to Assess Causality of Liver Event -> 12.4.1 (no crosswalk row, kept under matched parent)
+10.6.2 Liver Safety: Liver Event Increased Monitoring Criteria With Continued Study Intervention -> 12.4.2 (no crosswalk row, kept under matched parent)
+10.6.3 Liver Safety: Study Intervention Restart/Rechallenge Guidelines -> 12.4.3 (no crosswalk row, kept under matched parent)
+10.6.4 Hepatitis B Virus Screening and Management -> 12.4.4 (no crosswalk row, kept under matched parent)
+10.9 Appendix 9: Response Evaluation Criteria in Solid Tumors Version 1.1 -> 12.5 (no crosswalk row, kept under matched parent)
+10.10 Appendix 10: ECOG Performance Status -> 12.6 (no crosswalk row, kept under matched parent)
+10.11 Appendix 11: Management Guidelines for Immune-mediated and Anti-angiogenic Class Adverse Events -> 12.7 (no crosswalk row, kept under matched parent)
+6.4.2 Emergency Unblinding matched by title to template section Emergency Unblinding at the Site
+6.9.1 Permitted Medications and Supportive Care matched by title to template section Permitted Concomitant Therapy
+6.9.2 Prohibited Medications and Therapies matched by title to template section Prohibited Concomitant Therapy
+front matter 'List of Abbreviations' moved to 13
+Cross-references rewritten: 134
+Cross-reference to review: p2: 6.3 -> 6.7.2, content also belongs elsewhere: …e C1 D1 after eligibility is confirmed ([Section 6.3]).…
+Cross-reference to review: p2: 6.1 -> 6.1, content also belongs elsewhere: …um 35 cycles; dispensed in masked bags ([Section 6.1, 6.4]).…
+Cross-reference to review: p3: 8.4.5 -> 9.3.1, content also belongs elsewhere: …Pregnancy ([Section 8.4.5]).…
+Cross-reference to review: p3: 10.6 -> 12.4, content also belongs elsewhere: …Refer to [Appendix 6] Liver Safety: Suggestions and Guideline…
+Cross-reference to review: p3: 10.6 -> 12.4, content also belongs elsewhere: …ement is described in Section 6.1.5 and [Appendix 6].…
+Cross-reference to review: p3: 8.4.5 -> 9.3.1, content also belongs elsewhere: …See [Section 8.4.5] for the time period for collecting preg…
+Cross-reference to review: p3: 8.4.5 -> 9.3.1, content also belongs elsewhere: …tudy intervention will be discontinued ([Section 8.4.5]), the participant will be asked to cons…
+9.2.2 blocks sorted into M11 parts: 26 of 26
+Intervention tables moved from 6.1 to 6: 4 blocks
+docx: tracked changes: 0 insertions kept, 0 deletions dropped, 0 moved passages kept at their new position
+interventions: filled 4: interventions[0], interventions[1], interventions[2], interventions[3]; rejected 0: none
+safety_event_reporting: filled 5: safety_event_reporting[0], safety_event_reporting[1], safety_event_reporting[2], safety_event_reporting[3], safety_event_reporting[4]; rejected 0: none
+amendment_history: filled 3: amendment_statement, overview_location, original_protocol_approval_date; rejected 0: none
+country_regions: filled 0: none
+objectives: filled 3: primary[1], secondary[6], exploratory[3]
+analyses: filled 1: 10.4[1]
+titled 2 of 2 uncaptioned table(s)
+omitted 4 optional section(s): 4.2.7, 6.9.3, 9.2.1#time_period_for_detecting_medical_device_deficiencies, 9.3.2
+FHIR: NOT CONFORMANT: originalProtocol has no code (no amendment statement or original-protocol indicator); the profile requires one, so the bundle fails validation until it is entered
+FHIR: approvalDate absent (no sponsor approval date or signature location)
+FHIR: amendment scope absent
+FHIR: 13 Tasks ask for human input on low-confidence items withheld from the export
+FHIR: 59 resources, 39 AI-drafted sections with Provenance

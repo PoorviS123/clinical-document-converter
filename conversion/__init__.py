@@ -11,6 +11,10 @@ LLM_BACKEND = os.environ.get("PROTOCOL_REFORMATTER_LLM")  # cli, codex or api; u
 CONVERSION_TIMEOUT_SECONDS = 30 * 60
 ERROR_TAIL_CHARS = 2000
 DEMO = os.environ.get("DEMO", "1").lower() not in ("0", "false", "no")
+# One real backend run on DEMO_INPUT. To refresh it, copy a run's <name>.docx, .pre-llm.docx, .fhir.json,
+# .generated.json and .report.txt here under the names below, then rebuild the m11, cesharp and usdm files by
+# running tools/validate_m11.py, tools/validate_cesharp.py and cesharp_extract.py on output.ai_assisted.docx
+# with the backend's Python, so every file describes the same document.
 DEMO_OUTPUTS_DIR = Path(__file__).resolve().parent / "demo_outputs"
 DEMO_INPUT = Path(__file__).resolve().parent / "demo_input" / "Demo-01234_Protocol_CPT-v010-3-1.docx"
 OUTPUT_FILENAMES = {
