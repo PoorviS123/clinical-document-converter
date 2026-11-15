@@ -21,8 +21,10 @@ OUTPUT_FILENAMES = {
     "cesharp": "output.cesharp.txt",
     "usdm": "output.usdm.json",
 }
-# Optional: only real runs have it. The review desk reads cross-references and omitted sections from it.
+# Optional files, copied when present. The run report feeds the review desk's cross-references and
+# omitted sections; the protocol JSON (after AI drafting) is offered as a download.
 RUN_REPORT_FILENAME = "output.report.txt"
+PROTOCOL_JSON_FILENAME = "output.protocol.json"
 EXTRACT_SCRIPT = Path(__file__).resolve().parents[1] / "cesharp_extract.py"
 EXTRACT_TIMEOUT_SECONDS = 10 * 60
 # The backend prints nothing until it finishes, but writes each file as its step completes,
@@ -60,6 +62,9 @@ def copy_demo_outputs(output_dir: Path) -> dict[str, str]:
     for key, filename in OUTPUT_FILENAMES.items():
         shutil.copyfile(DEMO_OUTPUTS_DIR / filename, output_dir / filename)
         outputs[key] = str(output_dir / filename)
+    for filename in (RUN_REPORT_FILENAME, PROTOCOL_JSON_FILENAME):
+        if (DEMO_OUTPUTS_DIR / filename).is_file():
+            shutil.copyfile(DEMO_OUTPUTS_DIR / filename, output_dir / filename)
     return outputs
 
 
@@ -95,9 +100,10 @@ def run_backend(input_path: Path, output_dir: Path) -> dict[str, str]:
             raise RuntimeError(f"protocol-reformatter did not produce {produced.name}.")
         shutil.copyfile(produced, expected)
     result = {key: str(expected) for key, (_, expected) in outputs.items()}
-    run_report = output_dir / f"{stem}.report.txt"
-    if run_report.is_file():
-        shutil.copyfile(run_report, output_dir / RUN_REPORT_FILENAME)
+    optional = {f"{stem}.report.txt": RUN_REPORT_FILENAME, f"{stem}.generated.json": PROTOCOL_JSON_FILENAME}
+    for produced, served in optional.items():
+        if (output_dir / produced).is_file():
+            shutil.copyfile(output_dir / produced, output_dir / served)
     usdm_path = extract_usdm(output_dir / OUTPUT_FILENAMES["ai_assisted"], output_dir / OUTPUT_FILENAMES["usdm"])
     if usdm_path:
         result["usdm"] = str(usdm_path)

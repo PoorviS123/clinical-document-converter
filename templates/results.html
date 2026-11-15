@@ -120,6 +120,7 @@
    <li><a href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">V11, AI-assisted</a><span>DOCX</span></li>
    <li><a href="{{ url_for('download_output', job_id=job.job_id, kind='human_review') }}">V11, pre-LLM</a><span>DOCX</span></li>
    <li><a href="{{ url_for('download_output', job_id=job.job_id, kind='fhir') }}">FHIR bundle</a><span>JSON</span></li>
+   {% if has_protocol_json %}<li><a href="{{ url_for('download_output', job_id=job.job_id, kind='protocol') }}">Protocol JSON, after AI drafting</a><span>JSON</span></li>{% endif %}
   </ul>
   <details><summary>Preview FHIR JSON</summary><pre id="json-preview">Loading…</pre></details>
  </section>

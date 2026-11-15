@@ -11,7 +11,7 @@ from flask import Flask, abort, jsonify, redirect, render_template, request, sen
 from pypdf import PdfReader
 from werkzeug.utils import secure_filename
 
-from conversion import DEMO, DEMO_INPUT, RUN_REPORT_FILENAME, STEPS, completed_step_count, convert_document
+from conversion import DEMO, DEMO_INPUT, PROTOCOL_JSON_FILENAME, RUN_REPORT_FILENAME, STEPS, completed_step_count, convert_document
 from review import summarize_review
 from verification import REPORTS, summarize_report, summarize_usdm
 
@@ -212,7 +212,8 @@ def results(job_id):
     if manifest.get("status", DONE) != DONE:
         return redirect(url_for("progress", job_id=job_id))
     review = summarize_review(folder / "output.fhir.json", folder / RUN_REPORT_FILENAME)
-    return render_template("results.html", job=manifest, review=review)
+    has_protocol_json = (folder / PROTOCOL_JSON_FILENAME).is_file()
+    return render_template("results.html", job=manifest, review=review, has_protocol_json=has_protocol_json)
 
 
 @app.route("/files/<job_id>/<kind>")
@@ -221,6 +222,7 @@ def download_output(job_id, kind):
         "fhir": ("output.fhir.json", "output.fhir.json", "application/json"),
         "ai_assisted": ("output.ai_assisted.docx", "output.ai_assisted.docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"),
         "human_review": ("output.human_review.docx", "output.human_review.docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"),
+        "protocol": (PROTOCOL_JSON_FILENAME, PROTOCOL_JSON_FILENAME, "application/json"),
     }
     if kind not in allowed:
         abort(404)
