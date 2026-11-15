@@ -26,7 +26,7 @@ By default the repo is expected at `../protocol-reformatter`. Settings:
 - `PROTOCOL_REFORMATTER_DIR`: path to the backend repo.
 - `PROTOCOL_REFORMATTER_LLM`: `cli`, `codex` or `api`. Unset uses the backend default.
 
-Output mapping: AI-assisted V11 is `<name>.docx`, human-review V11 is `<name>.pre-llm.docx`, the FHIR bundle is `<name>.fhir.json`, and the run report `<name>.report.txt` is kept when present. A conversion can take several minutes; the timeout is 30 minutes.
+Output mapping: AI-assisted V11 is `<name>.docx`, human-review V11 is `<name>.pre-llm.docx`, the FHIR bundle is `<name>.fhir.json`, and the run report `<name>.report.txt` is kept when present. A conversion can take several minutes; the timeout is 30 minutes. It runs in a background thread, and `/jobs/<id>` shows its progress. The backend prints nothing until it finishes, so each step counts as done once its output file exists.
 
 The results page is a review desk. Its outline and queue come from the FHIR bundle: each Provenance marks an AI-drafted section and each Task is a value withheld for human input. Cross-references to review and omitted optional sections come from the run report, so demo jobs (which have no report) don't show them.
 

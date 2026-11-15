@@ -25,6 +25,25 @@ OUTPUT_FILENAMES = {
 RUN_REPORT_FILENAME = "output.report.txt"
 EXTRACT_SCRIPT = Path(__file__).resolve().parents[1] / "cesharp_extract.py"
 EXTRACT_TIMEOUT_SECONDS = 10 * 60
+# The backend prints nothing until it finishes, but writes each file as its step completes,
+# so a step is done once its file exists. The last step is ours and has no file of its own.
+STEPS = [
+    {"label": "Extract and place", "detail": "Read text, tables and figures and place them in the v011 structure. No AI.", "done_file": "{stem}.pre-llm.docx"},
+    {"label": "AI drafting", "detail": "Draft the sections v011 needs that v010 has no text for.", "done_file": "{stem}.docx"},
+    {"label": "FHIR bundle", "detail": "Build the bundle from the protocol JSON. Rule-based, no AI.", "done_file": "{stem}.fhir.json"},
+    {"label": "Checks", "detail": "ICH M11 conformance and CeSHarP structure.", "done_file": "{stem}.cesharp.txt"},
+    {"label": "Study data", "detail": "Read the v011 document back into USDM for the review desk.", "done_file": None},
+]
+
+
+def completed_step_count(output_dir: Path, stem: str) -> int:
+    """How many STEPS have finished, judged by the files the backend has written so far."""
+    count = 0
+    for step in STEPS:
+        if step["done_file"] is None or not (output_dir / step["done_file"].format(stem=stem)).is_file():
+            break
+        count += 1
+    return count
 
 
 def convert_document(input_path: str | Path, output_dir: str | Path) -> dict[str, str]:

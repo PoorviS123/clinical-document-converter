@@ -8,11 +8,11 @@ const allowed = ['.pdf', '.docx'];
 // Demo mode has no file input: the server converts its fixed sample document.
 const demoMode = !input;
 function choose(file) {
-  if (!file) { nameLabel.textContent = 'No file selected'; button.disabled = true; return; }
+  if (!file) { nameLabel.textContent = 'Drop a PDF or DOCX here'; button.disabled = true; return; }
   const dot = file.name.lastIndexOf('.');
   const ext = dot >= 0 ? file.name.slice(dot).toLowerCase() : '';
-  if (!allowed.includes(ext)) { input.value=''; nameLabel.textContent='No file selected'; button.disabled=true; status.textContent='Please choose a PDF or DOCX file.'; return; }
-  if (file.size > maxBytes) { input.value=''; nameLabel.textContent='No file selected'; button.disabled=true; status.textContent='File exceeds the 100 MB limit.'; return; }
+  if (!allowed.includes(ext)) { input.value=''; nameLabel.textContent='Drop a PDF or DOCX here'; button.disabled=true; status.textContent='Please choose a PDF or DOCX file.'; return; }
+  if (file.size > maxBytes) { input.value=''; nameLabel.textContent='Drop a PDF or DOCX here'; button.disabled=true; status.textContent='File exceeds the 100 MB limit.'; return; }
   nameLabel.textContent = `${file.name} · ${(file.size / 1024 / 1024).toFixed(2)} MB`;
   button.disabled = false; status.textContent = '';
 }
@@ -28,12 +28,11 @@ button.addEventListener('click', async () => {
   const file=input.files[0]; if(!file) return;
   data.append('file',file);
  }
- button.disabled=true; status.textContent=demoMode ? 'Generating demo outputs…' : 'Uploading and converting… This can take several minutes.';
+ button.disabled=true; status.textContent=demoMode ? 'Starting…' : 'Uploading…';
  try {
   const response=await fetch('/api/convert',{method:'POST',body:data});
   const result=await response.json().catch(()=>({}));
   if(!response.ok) throw new Error(result.error || `Request failed (${response.status}).`);
-  status.textContent='Outputs created. Opening results…';
-  window.location.href=result.results_url;
+  window.location.href=result.progress_url;
  } catch(error) { status.textContent=error.message; button.disabled=false; }
 });

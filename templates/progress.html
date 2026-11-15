@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Converting · ClinicalConverter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head>
+<body class="desk-page">
+<header class="desk-bar">
+ <a class="logo" href="/">Clinical<span>Converter</span></a>
+ <span class="file-chip">{{ job.original_filename }} · CPT v010 → v011</span>
+ {% if job.demo %}<span class="demo-badge">Demo mode</span>{% endif %}
+</header>
+
+<main class="desk-narrow">
+ <p class="run-meta" id="run-meta">Step {{ [status.done_count + 1, status.steps|length]|min }} of {{ status.steps|length }}</p>
+ <h1 class="desk-title" id="run-title">{{ status.steps[status.done_count].label if status.done_count < status.steps|length else 'Finishing' }}</h1>
+ <div class="run-bar" role="progressbar" aria-label="Conversion progress" aria-valuemin="0" aria-valuemax="{{ status.steps|length }}" aria-valuenow="{{ status.done_count }}"><div id="run-bar-fill" style="width: {{ 100 * status.done_count // status.steps|length }}%"></div></div>
+
+ <div class="run-layout">
+  <ol class="run-steps" id="run-steps">
+   {% for step in status.steps %}
+   <li data-state="{{ step.state }}"><span class="run-dot" aria-hidden="true">{{ '✓' if step.state == 'done' else loop.index }}</span><div><b>{{ step.label }}</b><p>{{ step.detail }}</p></div><span class="run-state">{{ step.state if step.state != 'waiting' else '' }}</span></li>
+   {% endfor %}
+  </ol>
+  <aside class="panel run-aside">
+   <p id="run-message" role="status" aria-live="polite">A real conversion takes several minutes. You can leave this page open; the review desk opens when the run finishes.</p>
+   <p class="run-error" id="run-error" hidden></p>
+   <a class="button secondary" id="run-retry" href="/" hidden>Try another file</a>
+  </aside>
+ </div>
+</main>
+
+<script>
+const jobId = {{ job.job_id|tojson }};
+const POLL_INTERVAL_MS = 2000;
+const steps = document.querySelectorAll('#run-steps li');
+const meta = document.getElementById('run-meta');
+const title = document.getElementById('run-title');
+const barFill = document.getElementById('run-bar-fill');
+const bar = barFill.parentElement;
+
+function formatElapsed(seconds) {
+ const minutes = Math.floor(seconds / 60);
+ return `${minutes}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
+}
+
+function render(status) {
+ status.steps.forEach((step, index) => {
+  const item = steps[index];
+  item.dataset.state = step.state;
+  item.querySelector('.run-dot').textContent = step.state === 'done' ? '✓' : index + 1;
+  item.querySelector('.run-state').textContent = step.state === 'waiting' ? '' : step.state;
+ });
+ const total = status.steps.length;
+ const current = Math.min(status.done_count + 1, total);
+ const elapsed = (status.finished_at ?? Date.now() / 1000) - status.started_at;
+ meta.textContent = `Step ${current} of ${total} · ${formatElapsed(elapsed)} elapsed`;
+ title.textContent = status.done_count < total ? status.steps[status.done_count].label : 'Finishing';
+ barFill.style.width = `${100 * status.done_count / total}%`;
+ bar.setAttribute('aria-valuenow', status.done_count);
+}
+
+async function poll() {
+ try {
+  const response = await fetch(`/api/jobs/${jobId}/status`);
+  if (!response.ok) throw new Error();
+  const status = await response.json();
+  render(status);
+  if (status.status === 'done') { window.location.replace(status.results_url); return; }
+  if (status.status === 'failed') {
+   title.textContent = 'Conversion failed';
+   document.getElementById('run-message').hidden = true;
+   const error = document.getElementById('run-error');
+   error.textContent = status.error;
+   error.hidden = false;
+   document.getElementById('run-retry').hidden = false;
+   return;
+  }
+ } catch (error) {
+  document.getElementById('run-message').textContent = 'Lost contact with the server. Still trying…';
+ }
+ setTimeout(poll, POLL_INTERVAL_MS);
+}
+poll();
+</script></body></html>

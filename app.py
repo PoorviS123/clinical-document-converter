@@ -4,12 +4,14 @@ import json
 import zipfile
 import re
 import shutil
+import threading
+import time
 
-from flask import Flask, jsonify, render_template, request, send_file, abort
+from flask import Flask, abort, jsonify, redirect, render_template, request, send_file, url_for
 from pypdf import PdfReader
 from werkzeug.utils import secure_filename
 
-from conversion import DEMO, DEMO_INPUT, RUN_REPORT_FILENAME, convert_document
+from conversion import DEMO, DEMO_INPUT, RUN_REPORT_FILENAME, STEPS, completed_step_count, convert_document
 from review import summarize_review
 from verification import REPORTS, summarize_report, summarize_usdm
 
@@ -20,6 +22,8 @@ UPLOAD_DIR.mkdir(exist_ok=True)
 OUTPUT_DIR.mkdir(exist_ok=True)
 MAX_BYTES = 100 * 1024 * 1024
 ALLOWED = {".pdf", ".docx"}
+BACKEND_INPUT_STEM = "source"
+RUNNING, DONE, FAILED = "running", "done", "failed"
 
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = MAX_BYTES
@@ -92,7 +96,7 @@ def upload_and_convert():
     job_output_dir = OUTPUT_DIR / job_id
     job_upload_dir.mkdir(parents=True, exist_ok=True)
     job_output_dir.mkdir(parents=True, exist_ok=True)
-    input_path = job_upload_dir / f"source{extension}"
+    input_path = job_upload_dir / f"{BACKEND_INPUT_STEM}{extension}"
     if DEMO:
         shutil.copyfile(DEMO_INPUT, input_path)
     else:
@@ -100,6 +104,33 @@ def upload_and_convert():
 
     try:
         validate_content(input_path, extension)
+    except ValueError as exc:
+        shutil.rmtree(job_upload_dir, ignore_errors=True)
+        shutil.rmtree(job_output_dir, ignore_errors=True)
+        return jsonify(error=str(exc)), 400
+
+    manifest = {
+        "job_id": job_id,
+        "original_filename": safe_name,
+        "demo": DEMO,
+        "status": RUNNING,
+        "started_at": time.time(),
+    }
+    write_manifest(job_output_dir, manifest)
+    # Conversion takes minutes, so it runs in the background and the progress page polls its status.
+    threading.Thread(target=run_job, args=(manifest, input_path, job_upload_dir, job_output_dir), daemon=True).start()
+    return jsonify(success=True, job_id=job_id, progress_url=f"/jobs/{job_id}", demo=DEMO), 202
+
+
+def write_manifest(job_output_dir: Path, manifest: dict) -> None:
+    # Written to a temporary file first so a status poll never reads a half-written manifest.
+    temporary = job_output_dir / "manifest.json.tmp"
+    temporary.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    temporary.replace(job_output_dir / "manifest.json")
+
+
+def run_job(manifest: dict, input_path: Path, job_upload_dir: Path, job_output_dir: Path) -> None:
+    try:
         outputs = convert_document(input_path, job_output_dir)
         expected = {
             "fhir": job_output_dir / "output.fhir.json",
@@ -116,34 +147,70 @@ def upload_and_convert():
             with zipfile.ZipFile(expected[key]) as archive:
                 if "word/document.xml" not in archive.namelist() or archive.testzip():
                     raise RuntimeError(f"Converter produced an invalid {key} DOCX.")
-        manifest = {
-            "job_id": job_id,
-            "original_filename": safe_name,
-            "demo": DEMO,
-            "verification": [
-                summarize_report(kind, job_output_dir / Path(outputs[kind]).name) for kind in REPORTS
-            ],
-            "usdm": summarize_usdm(job_output_dir / "output.usdm.json"),
-            "outputs": {key: Path(value).name for key, value in outputs.items()}
-        }
-        (job_output_dir / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-    except ValueError as exc:
-        shutil.rmtree(job_upload_dir, ignore_errors=True)
-        shutil.rmtree(job_output_dir, ignore_errors=True)
-        return jsonify(error=str(exc)), 400
+        manifest.update(
+            status=DONE,
+            verification=[summarize_report(kind, job_output_dir / Path(outputs[kind]).name) for kind in REPORTS],
+            usdm=summarize_usdm(job_output_dir / "output.usdm.json"),
+            outputs={key: Path(value).name for key, value in outputs.items()},
+        )
     except Exception:
-        app.logger.exception("Conversion failed for job %s", job_id)
+        app.logger.exception("Conversion failed for job %s", manifest["job_id"])
+        manifest.update(status=FAILED, error="The conversion failed. Please try another file.")
+    manifest["finished_at"] = time.time()
+    write_manifest(job_output_dir, manifest)
+    if manifest["status"] == FAILED:
         shutil.rmtree(job_upload_dir, ignore_errors=True)
-        shutil.rmtree(job_output_dir, ignore_errors=True)
-        return jsonify(error="The demo conversion failed. Please try another file."), 500
 
-    return jsonify(success=True, job_id=job_id, results_url=f"/results/{job_id}", demo=DEMO), 200
+
+def job_status(manifest: dict, folder: Path) -> dict:
+    """The job's state for the progress page. Manifests from before background jobs have no status and are done."""
+    status = manifest.get("status", DONE)
+    done_count = len(STEPS) if status == DONE else completed_step_count(folder, BACKEND_INPUT_STEM)
+    steps = []
+    for index, step in enumerate(STEPS):
+        if index < done_count:
+            state = "done"
+        elif index == done_count:
+            state = "failed" if status == FAILED else "active"
+        else:
+            state = "waiting"
+        steps.append({"label": step["label"], "detail": step["detail"], "state": state})
+    return {
+        "status": status,
+        "steps": steps,
+        "done_count": done_count,
+        "started_at": manifest.get("started_at"),
+        "finished_at": manifest.get("finished_at"),
+        "error": manifest.get("error"),
+        "results_url": f"/results/{manifest['job_id']}",
+    }
+
+
+@app.route("/jobs/<job_id>")
+def progress(job_id):
+    folder = job_folder(job_id)
+    manifest = read_manifest(folder)
+    if manifest.get("status", DONE) == DONE:
+        return redirect(url_for("results", job_id=job_id))
+    return render_template("progress.html", job=manifest, status=job_status(manifest, folder))
+
+
+@app.route("/api/jobs/<job_id>/status")
+def status(job_id):
+    folder = job_folder(job_id)
+    return jsonify(job_status(read_manifest(folder), folder))
+
+
+def read_manifest(folder: Path) -> dict:
+    return json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
 
 
 @app.route("/results/<job_id>")
 def results(job_id):
     folder = job_folder(job_id)
-    manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
+    manifest = read_manifest(folder)
+    if manifest.get("status", DONE) != DONE:
+        return redirect(url_for("progress", job_id=job_id))
     review = summarize_review(folder / "output.fhir.json", folder / RUN_REPORT_FILENAME)
     return render_template("results.html", job=manifest, review=review)
 
