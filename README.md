@@ -28,6 +28,8 @@ By default the repo is expected at `../protocol-reformatter`. Settings:
 
 Output mapping: AI-assisted V11 is `<name>.docx`, human-review V11 is `<name>.pre-llm.docx`, the FHIR bundle is `<name>.fhir.json`, and the run report `<name>.report.txt` is kept when present. A conversion can take several minutes; the timeout is 30 minutes.
 
+The results page is a review desk. Its outline and queue come from the FHIR bundle: each Provenance marks an AI-drafted section and each Task is a value withheld for human input. Cross-references to review and omitted optional sections come from the run report, so demo jobs (which have no report) don't show them.
+
 The results page also shows the CeSHarP data read back from the AI-assisted V11 document: the backend's M11 importer turns the DOCX into CDISC USDM JSON (`cesharp_extract.py`), and the page shows its main counts and a browsable tree. If the importer fails, the conversion still succeeds and the section says the data is unavailable.
 
 ## Notes

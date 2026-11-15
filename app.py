@@ -9,7 +9,8 @@ from flask import Flask, jsonify, render_template, request, send_file, abort
 from pypdf import PdfReader
 from werkzeug.utils import secure_filename
 
-from conversion import DEMO, DEMO_INPUT, convert_document
+from conversion import DEMO, DEMO_INPUT, RUN_REPORT_FILENAME, convert_document
+from review import summarize_review
 from verification import REPORTS, summarize_report, summarize_usdm
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -143,7 +144,8 @@ def upload_and_convert():
 def results(job_id):
     folder = job_folder(job_id)
     manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
-    return render_template("results.html", job=manifest)
+    review = summarize_review(folder / "output.fhir.json", folder / RUN_REPORT_FILENAME)
+    return render_template("results.html", job=manifest, review=review)
 
 
 @app.route("/files/<job_id>/<kind>")
