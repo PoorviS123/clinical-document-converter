@@ -58,9 +58,9 @@ Findings:      125 (errors=17, warnings=25, info=78)
   [WARNING] CESHARP_IMPORT  
             Frequency 'Q3W, on Day 1 of each 21-day cycle, for up to 35 cycles (approximately 24 months) or until BICR-confirmed progression, unacceptable toxicity, or withdrawal.' not decoded; none recorded
   [WARNING] CESHARP_IMPORT  
-            Frequency 'Once daily per local prescribing information for participants with detectable HBV DNA at screening; start more than 1 week before the first dose of study intervention and continue during study intervention and for at least 12 months after the last dose.' not decoded; none recorded
+            Frequency 'Daily per local prescribing information for participants with detectable HBV DNA at screening; start more than 1 week before the first dose of study intervention and continue during study intervention and for at least 12 months after the last dose.' not decoded; none recorded
   [WARNING] CESHARP_IMPORT  
-            Frequency 'Once daily per local prescribing information for participants with detectable HBV DNA at screening; start more than 1 week before the first dose of study intervention and continue during study intervention and for at least 12 months after the last dose.' not decoded; none recorded
+            Frequency 'Daily per local prescribing information for participants with detectable HBV DNA at screening; start more than 1 week before the first dose of study intervention and continue during study intervention and for at least 12 months after the last dose.' not decoded; none recorded
   [WARNING] CESHARP_IMPORT  
             Intervention model '' not decoded; defaulting to 'Parallel Study'
   [WARNING] CESHARP_IMPORT  
@@ -158,7 +158,9 @@ Findings:      125 (errors=17, warnings=25, info=78)
   [INFO   ] CESHARP_IMPORT  
             Route 'Oral Route of Administration' read as 'ORAL'
   [INFO   ] CESHARP_IMPORT  
-            Committees 'A Safety Review Board and a Steering Committee will support the study' names no committee; not stored
+            Committees 'Other' names no committee; not stored
+  [INFO   ] CESHARP_IMPORT  
+            Committees 'Blinded independent central review (BICR)' names no committee; not stored
   [INFO   ] CESHARP_IMPORT  
             1.1.2 values with no usdm4 assembler input slot (not stored): number of arms: '2'
   [INFO   ] CESHARP_IMPORT  
@@ -218,8 +220,6 @@ Findings:      125 (errors=17, warnings=25, info=78)
   [INFO   ] CESHARP_IMPORT  
             Independent committee 'Independent Data Monitoring Committee' decoded as 'C142578', 'Independent Data Monitoring Committee'
   [INFO   ] CESHARP_IMPORT  
-            Independent committee 'Endpoint Adjudication Committee' decoded as 'C78726', 'Adjudication Committee'
-  [INFO   ] CESHARP_IMPORT  
             Objective level 'PRIMARY' decoded as 'C85826', 'Trial Primary Objective'
   [INFO   ] CESHARP_IMPORT  
             Objective level 'SECONDARY' decoded as 'C85827', 'Trial Secondary Objective'
@@ -242,7 +242,7 @@ Findings:      125 (errors=17, warnings=25, info=78)
   [INFO   ] CESHARP_IMPORT  
             Study name set to 'DEMO01234'
   [DEBUG  ] CESHARP_IMPORT  
-            RawDocx initialisation: full_path='output.ai_assisted.docx', dir='.', image_path='/var/folders/jj/hx5983kd2_z0f12lgrkmk4mh0000gn/T/tmppnnpvhpx/output.ai_assisted/images', filename='output.ai_assisted.docx'
+            RawDocx initialisation: full_path='output.ai_assisted.docx', dir='.', image_path='/var/folders/jj/hx5983kd2_z0f12lgrkmk4mh0000gn/T/tmp2795dj16/output.ai_assisted/images', filename='output.ai_assisted.docx'
   [DEBUG  ] CESHARP_IMPORT  
             Creating address, source data: {'lines': [''], 'city': '', 'district': '', 'state': '', 'postalCode': '', 'country': ''}
   [DEBUG  ] CESHARP_IMPORT  

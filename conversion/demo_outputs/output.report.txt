@@ -72,15 +72,19 @@ Cross-reference to review: p3: 8.4.5 -> 9.3.1, content also belongs elsewhere: â
 Intervention tables moved from 6.1 to 6: 4 blocks
 docx: tracked changes: 0 insertions kept, 0 deletions dropped, 0 moved passages kept at their new position
 interventions: filled 4: interventions[0], interventions[1], interventions[2], interventions[3]; rejected 0: none
-safety_event_reporting: filled 5: safety_event_reporting[0], safety_event_reporting[1], safety_event_reporting[2], safety_event_reporting[3], safety_event_reporting[4]; rejected 0: none
+safety_event_reporting: filled 4: safety_event_reporting[0], safety_event_reporting[1], safety_event_reporting[2], safety_event_reporting[3]; rejected 0: none
 amendment_history: filled 3: amendment_statement, overview_location, original_protocol_approval_date; rejected 0: none
 country_regions: filled 0: none
 objectives: filled 3: primary[1], secondary[6], exploratory[3]
 analyses: filled 1: 10.4[1]
 titled 2 of 2 uncaptioned table(s)
-omitted 4 optional section(s): 4.2.7, 6.9.3, 9.2.1#time_period_for_detecting_medical_device_deficiencies, 9.3.2
+omitted 3 optional section(s): 6.9.3, 9.2.1#time_period_for_detecting_medical_device_deficiencies, 9.3.2
 FHIR: NOT CONFORMANT: originalProtocol has no code (no amendment statement or original-protocol indicator); the profile requires one, so the bundle fails validation until it is entered
 FHIR: approvalDate absent (no sponsor approval date or signature location)
 FHIR: amendment scope absent
-FHIR: 13 Tasks ask for human input on low-confidence items withheld from the export
-FHIR: 59 resources, 39 AI-drafted sections with Provenance
+FHIR: 15 Tasks ask for human input on low-confidence items withheld from the export
+FHIR: 62 resources, 40 AI-drafted sections with Provenance
+m11 validation of Demo-01234_Protocol_CPT-v010-3-1.docx: Findings:      0 (errors=0, warnings=0, info=0); RESULT: VALID
+m11 validation report: Demo-01234_Protocol_CPT-v010-3-1.m11.txt
+cesharp validation of Demo-01234_Protocol_CPT-v010-3-1.docx: Findings:      125 (errors=17, warnings=25, info=78); RESULT: INVALID
+cesharp validation report: Demo-01234_Protocol_CPT-v010-3-1.cesharp.txt

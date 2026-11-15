@@ -2,13 +2,13 @@
  "resourceType": "Bundle",
  "identifier": {
   "system": "urn:ietf:rfc:3986",
-  "value": "urn:uuid:1561b0a4-d15c-5bcb-89c2-5e45975f1de2"
+  "value": "urn:uuid:9370eae7-30c3-596f-9de7-8a71f77ac12a"
  },
  "type": "document",
- "timestamp": "2026-11-15T10:45:02+00:00",
+ "timestamp": "2026-11-15T12:25:31+00:00",
  "entry": [
   {
-   "fullUrl": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+   "fullUrl": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
    "resource": {
     "resourceType": "Composition",
     "meta": {
@@ -32,13 +32,13 @@
     },
     "subject": [
      {
-      "reference": "urn:uuid:19d9a9e4-ee6e-5ec1-aa75-1ef0af1e5b3e"
+      "reference": "urn:uuid:f3e9ff81-11e2-5fb7-b553-79c3dcae8a9b"
      }
     ],
-    "date": "2026-11-15T10:43:59+00:00",
+    "date": "2026-11-15T12:25:26+00:00",
     "author": [
      {
-      "reference": "urn:uuid:83ddce90-1cbb-5271-bdc7-26dee2845bb4"
+      "reference": "urn:uuid:7341caf6-5d4d-5542-9075-de555532024f"
      }
     ],
     "title": "A parallel-group treatment, Phase 3, double-blind, 2-arm superiority study to investigate progression-free survival with Drug A intravenous infusion compared with Drug B intravenous infusion in male and female participants 18 years of age and older with previously untreated, PD-L1-positive, locally advanced or metastatic non-small cell lung cancer",
@@ -83,7 +83,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><colgroup><col style=\"width:154.9pt\" /><col style=\"width:312.6pt\" /></colgroup><tr><th rowspan=\"1\" colspan=\"1\"><p><span>Objectives</span></p></th><th rowspan=\"1\" colspan=\"1\"><p><span>Endpoints</span></p></th></tr><tr><td rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Primary</strong></span></p></td><td rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\" /></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To demonstrate that Drug A is superior to Drug B in prolonging PFS</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>PFS per Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST v1.1) by blinded independent central review (BICR). Estimand: all randomized participants; treatment policy strategy for discontinuation of study intervention; hypothetical strategy for new anticancer therapy; hazard ratio (HR) from a stratified Cox model</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Secondary</strong></span></p></td><td rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\" /></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Key secondary: To demonstrate that Drug A is superior to Drug B in prolonging overall survival (OS)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>OS. Estimand: all randomized participants; treatment policy strategy for all intercurrent events; stratified HR</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To compare antitumor activity</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>ORR and duration of response by BICR; PFS by investigator; PFS on next-line therapy (PFS2)</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To evaluate safety and tolerability</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Adverse events (AEs) graded per National Cancer Institute Common Terminology Criteria for Adverse Events (NCI-CTCAE) v5.0; laboratory abnormalities, including liver events</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To compare patient-reported outcomes</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Time to deterioration in cough, chest pain, and dyspnea; global health status (European Organisation for Research and Treatment of Cancer [EORTC] QLQ-LC13 and QLQ-C30)</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To characterize the pharmacokinetics (PK) of Drug A</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Maximum and trough serum concentrations of Drug A</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To evaluate the immunogenicity of Drug A</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Incidence of antidrug antibodies and neutralizing antibodies</span></p></td></tr></table><p><b>Summary rows 1 objective: </b>To demonstrate that Drug A is superior to Drug B in prolonging PFS in participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC</p><p><b>Summary rows 1 estimand summary: </b>Population: Participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC without actionable genomic alterations, as defined by the eligibility criteria (Section 5.1); analyzed in the full analysis set (FAS)\nTreatment: Drug A 20 mg/kg IV Q3W vs Drug B 200 mg IV Q3W, each for up to 35 cycles\nEndpoint: PFS, defined as the time from randomization to the first documented disease progression per Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST v1.1) as assessed by blinded independent central review (BICR), or death from any cause, whichever occurs first\nSummary: Hazard ratio (HR) for Drug A vs Drug B from a stratified Cox proportional hazards model; median PFS by Kaplan-Meier method\nPopulation: Participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC without actionable genomic alterations, as defined by the eligibility criteria (Section 5.1); analyzed in the full analysis set (FAS)\nTreatment: Drug A 20 mg/kg IV Q3W vs Drug B 200 mg IV Q3W, each for up to 35 cycles\nEndpoint: PFS, defined as the time from randomization to the first documented disease progression per Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST v1.1) as assessed by blinded independent central review (BICR), or death from any cause, whichever occurs first\nSummary: Hazard ratio (HR) for Drug A vs Drug B from a stratified Cox proportional hazards model; median PFS by Kaplan-Meier method</p><p><b>Summary rows 2 objective: </b>Key secondary: To demonstrate that Drug A is superior to Drug B in prolonging OS</p><p><b>Summary rows 2 estimand summary: </b>Population: As for the primary estimand (FAS)\nTreatment: As for the primary estimand, followed by any subsequent therapy\nEndpoint: OS, defined as the time from randomization to death from any cause\nSummary: HR from a stratified Cox proportional hazards model; median OS by Kaplan-Meier method</p><p><b>Summary rows 3 objective: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 3 estimand summary: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 4 objective: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 4 estimand summary: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 5 objective: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 5 estimand summary: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 6 objective: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 6 estimand summary: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 7 objective: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 7 estimand summary: </b>[Needs human input: withheld from this export because its confidence was low]</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><colgroup><col style=\"width:154.9pt\" /><col style=\"width:312.6pt\" /></colgroup><tr><th rowspan=\"1\" colspan=\"1\"><p><span>Objectives</span></p></th><th rowspan=\"1\" colspan=\"1\"><p><span>Endpoints</span></p></th></tr><tr><td rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Primary</strong></span></p></td><td rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\" /></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To demonstrate that Drug A is superior to Drug B in prolonging PFS</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>PFS per Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST v1.1) by blinded independent central review (BICR). Estimand: all randomized participants; treatment policy strategy for discontinuation of study intervention; hypothetical strategy for new anticancer therapy; hazard ratio (HR) from a stratified Cox model</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Secondary</strong></span></p></td><td rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\" /></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Key secondary: To demonstrate that Drug A is superior to Drug B in prolonging overall survival (OS)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>OS. Estimand: all randomized participants; treatment policy strategy for all intercurrent events; stratified HR</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To compare antitumor activity</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>ORR and duration of response by BICR; PFS by investigator; PFS on next-line therapy (PFS2)</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To evaluate safety and tolerability</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Adverse events (AEs) graded per National Cancer Institute Common Terminology Criteria for Adverse Events (NCI-CTCAE) v5.0; laboratory abnormalities, including liver events</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To compare patient-reported outcomes</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Time to deterioration in cough, chest pain, and dyspnea; global health status (European Organisation for Research and Treatment of Cancer [EORTC] QLQ-LC13 and QLQ-C30)</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To characterize the pharmacokinetics (PK) of Drug A</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Maximum and trough serum concentrations of Drug A</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>To evaluate the immunogenicity of Drug A</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Incidence of antidrug antibodies and neutralizing antibodies</span></p></td></tr></table><p><b>Summary rows 1 objective: </b>To demonstrate that Drug A is superior to Drug B in prolonging PFS in participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC</p><p><b>Summary rows 1 estimand summary: </b>Population: Participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC without actionable genomic alterations, as defined by the eligibility criteria (Section 5.1); analyzed in the full analysis set (FAS)\nTreatment: Drug A 20 mg/kg IV Q3W vs Drug B 200 mg IV Q3W, each for up to 35 cycles\nEndpoint: PFS, defined as the time from randomization to the first documented disease progression per Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST v1.1) as assessed by blinded independent central review (BICR), or death from any cause, whichever occurs first\nSummary: Hazard ratio (HR) for Drug A vs Drug B from a stratified Cox proportional hazards model; median PFS by Kaplan-Meier method\nPopulation: Participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC without actionable genomic alterations, as defined by the eligibility criteria (Section 5.1); analyzed in the full analysis set (FAS)\nTreatment: Drug A 20 mg/kg IV Q3W vs Drug B 200 mg IV Q3W, each for up to 35 cycles\nEndpoint: PFS per RECIST v1.1 by BICR, counting progression or death regardless of subsequent therapy\nSummary: Hazard ratio (HR) for Drug A vs Drug B from a stratified Cox proportional hazards model; median PFS by Kaplan-Meier method</p><p><b>Summary rows 2 objective: </b>Key secondary: To demonstrate that Drug A is superior to Drug B in prolonging OS</p><p><b>Summary rows 2 estimand summary: </b>Population: As for the primary estimand (FAS)\nTreatment: As for the primary estimand, followed by any subsequent therapy\nEndpoint: OS, defined as the time from randomization to death from any cause\nSummary: HR from a stratified Cox proportional hazards model; median OS by Kaplan-Meier method</p><p><b>Summary rows 3 objective: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 3 estimand summary: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 4 objective: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 4 estimand summary: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 5 objective: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 5 estimand summary: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 6 objective: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 6 estimand summary: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 7 objective: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Summary rows 7 estimand summary: </b>[Needs human input: withheld from this export because its confidence was low]</p></div>"
           }
          },
          {
@@ -100,7 +100,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"subheading\">Overall Design Synopsis</p><p><span>This is a Phase 3, randomized, double-blind, active-controlled, parallel-group, multicenter, global superiority study.</span></p><ul><li><span><strong>Population:</strong></span><span> Adults with previously untreated Stage IIIB/IIIC NSCLC not amenable to curative therapy, or Stage IV NSCLC; PD-L1 tumor proportion score (TPS) ≥1% by central testing; no actionable genomic alterations; Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1; and measurable disease. Key exclusions are untreated brain metastases, active autoimmune disease, prior pneumonitis, anti-angiogenic class-related bleeding or thrombotic risk, and unstable liver disease or uncontrolled hepatitis B virus (HBV) infection (Section 5.1).</span></li></ul><ul><li><span><strong>Assignment:</strong></span><span> Randomization 1:1 by interactive response technology (IRT) after eligibility is confirmed within the 28-day screening period, stratified by PD-L1 TPS (1% to 49% vs ≥50%) and histology (squamous vs nonsquamous).</span></li></ul><ul><li><span><strong>Blinding and oversight:</strong></span><span> Double-blind; an unblinded pharmacist prepares masked infusions of identical duration. An independent data monitoring committee (IDMC) reviews unblinded safety data and the interim analysis of OS.</span></li></ul><p><span>This study design includes participant, caregiver, investigator, and assessor masking.</span></p><p class=\"subheading\">Brief Summary</p><p><span>The purpose of this study is to measure how long participants live without their cancer getting worse with Drug A intravenous (IV) infusion compared with Drug B IV infusion in participants with advanced non-small cell lung cancer that has not been treated before. Participants will be assigned by chance to Drug A or Drug B, and neither participants nor study doctors will know which medicine is given. Study details include:</span></p><ul><li><span>The study duration will be up to approximately 48 months.</span></li></ul><ul><li><span>The treatment duration will be up to 24 months (35 treatment cycles).</span></li></ul><ul><li><span>The visit frequency will be every 3 weeks during treatment and every 12 weeks during follow-up.</span></li></ul><p class=\"subheading\">Number of Participants</p><p><span>Approximately 1000 participants will be screened to achieve 600 randomized (300 per arm). The primary PFS analysis will occur after approximately 331 events (90% power for HR 0.70; 2-sided α 0.05), and the final OS analysis after approximately 380 deaths (80% power for HR 0.75).</span></p><p class=\"subheading\">Study Arms and Duration</p><ul><li><span><strong>Arm A:</strong></span><span> Drug A 20 mg/kg IV Q3W. </span><span><strong>Arm B:</strong></span><span> Drug B 200 mg IV Q3W. Both are given for up to 35 cycles (approximately 24 months) or until BICR-confirmed progression, unacceptable toxicity, or withdrawal.</span></li></ul><ul><li><span><strong>Periods:</strong></span><span> Screening up to 28 days; treatment; safety follow-up 30 days after the last dose; tumor imaging until progression; survival follow-up every 12 weeks.</span></li></ul><ul><li><span><strong>Dose modification:</strong></span><span> No dose reductions; dose delays up to 12 weeks; discontinuation rules for immune-mediated, anti-angiogenic class, and liver events (Sections 6.4 and 7.1).</span></li></ul><p class=\"subheading\">Data Monitoring/Other Committee</p><p><span>Yes</span></p><p><span>An IDMC, a BICR, a Safety Review Board, and a Steering Committee will support the study (Section 11.4).</span></p><p><b>Intervention codes 1: </b>Drug A</p><p><b>Intervention codes 2: </b>Drug B</p><p><b>Intervention model: </b>Parallel Group</p><p><b>Population type: </b>With Disease</p><p><b>Population diagnosis or condition 1: </b>Lung Non-Small Cell Carcinoma (other C2926)</p><p><b>Control type: </b>Active Comparator</p><p><b>Control description: </b>Drug B</p><p><b>Population age minimum: </b>18</p><p><b>Population age minimum unit: </b>Years</p><p><b>Intervention assignment method: </b>Randomisation</p><p><b>Randomisation type: </b>Randomization 1:1 by interactive response technology (IRT), stratified by PD-L1 TPS (1% to 49% vs ≥50%) and histology (squamous vs nonsquamous).</p><p><b>Stratification: </b>Yes</p><p><b>Site distribution: </b>Multicentre</p><p><b>Site geographic scope: </b>Multiple Countries</p><p><b>Master protocol: </b>No</p><p><b>Drug device combination product: </b>No</p><p><b>Adaptive trial design: </b>No</p><p><b>Number of arms: </b>2</p><p><b>Trial blind schema: </b>Double Blind</p><p><b>Blinded roles 1: </b>Care Provider</p><p><b>Blinded roles 2: </b>Investigator</p><p><b>Blinded roles 3: </b>Outcomes Assessor</p><p><b>Blinded roles 4: </b>Participant</p><p><b>Blinded roles 5: </b>Sponsor</p><p><b>Participant number qualifier: </b>Target</p><p><b>Number of participants: </b>600</p><p><b>Participant number basis: </b>randomly assigned to trial intervention</p><p><b>Intervention duration description: </b>Study intervention will continue until disease progression per RECIST v1.1 by BICR, unacceptable toxicity, withdrawal of consent, or a maximum of 35 cycles (approximately 24 months). Treatment beyond progression is permitted under the conditions in Section 7.1.</p><p><b>Participation duration description: </b>The study duration will be up to approximately 48 months. Screening lasts up to 28 days. After the last dose, participants will have a safety follow-up visit 30 days later, will continue tumor imaging until progression if they stopped treatment for another reason, and will be followed for survival every 12 weeks.</p><p><b>Independent committees 1: </b>Independent Data Monitoring Committee</p><p><b>Independent committees 2: </b>Endpoint Adjudication Committee</p><p><b>Other committees: </b>A Safety Review Board and a Steering Committee will support the study.</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"subheading\">Overall Design Synopsis</p><p><span>This is a Phase 3, randomized, double-blind, active-controlled, parallel-group, multicenter, global superiority study.</span></p><ul><li><span><strong>Population:</strong></span><span> Adults with previously untreated Stage IIIB/IIIC NSCLC not amenable to curative therapy, or Stage IV NSCLC; PD-L1 tumor proportion score (TPS) ≥1% by central testing; no actionable genomic alterations; Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1; and measurable disease. Key exclusions are untreated brain metastases, active autoimmune disease, prior pneumonitis, anti-angiogenic class-related bleeding or thrombotic risk, and unstable liver disease or uncontrolled hepatitis B virus (HBV) infection (Section 5.1).</span></li></ul><ul><li><span><strong>Assignment:</strong></span><span> Randomization 1:1 by interactive response technology (IRT) after eligibility is confirmed within the 28-day screening period, stratified by PD-L1 TPS (1% to 49% vs ≥50%) and histology (squamous vs nonsquamous).</span></li></ul><ul><li><span><strong>Blinding and oversight:</strong></span><span> Double-blind; an unblinded pharmacist prepares masked infusions of identical duration. An independent data monitoring committee (IDMC) reviews unblinded safety data and the interim analysis of OS.</span></li></ul><p><span>This study design includes participant, caregiver, investigator, and assessor masking.</span></p><p class=\"subheading\">Brief Summary</p><p><span>The purpose of this study is to measure how long participants live without their cancer getting worse with Drug A intravenous (IV) infusion compared with Drug B IV infusion in participants with advanced non-small cell lung cancer that has not been treated before. Participants will be assigned by chance to Drug A or Drug B, and neither participants nor study doctors will know which medicine is given. Study details include:</span></p><ul><li><span>The study duration will be up to approximately 48 months.</span></li></ul><ul><li><span>The treatment duration will be up to 24 months (35 treatment cycles).</span></li></ul><ul><li><span>The visit frequency will be every 3 weeks during treatment and every 12 weeks during follow-up.</span></li></ul><p class=\"subheading\">Number of Participants</p><p><span>Approximately 1000 participants will be screened to achieve 600 randomized (300 per arm). The primary PFS analysis will occur after approximately 331 events (90% power for HR 0.70; 2-sided α 0.05), and the final OS analysis after approximately 380 deaths (80% power for HR 0.75).</span></p><p class=\"subheading\">Study Arms and Duration</p><ul><li><span><strong>Arm A:</strong></span><span> Drug A 20 mg/kg IV Q3W. </span><span><strong>Arm B:</strong></span><span> Drug B 200 mg IV Q3W. Both are given for up to 35 cycles (approximately 24 months) or until BICR-confirmed progression, unacceptable toxicity, or withdrawal.</span></li></ul><ul><li><span><strong>Periods:</strong></span><span> Screening up to 28 days; treatment; safety follow-up 30 days after the last dose; tumor imaging until progression; survival follow-up every 12 weeks.</span></li></ul><ul><li><span><strong>Dose modification:</strong></span><span> No dose reductions; dose delays up to 12 weeks; discontinuation rules for immune-mediated, anti-angiogenic class, and liver events (Sections 6.4 and 7.1).</span></li></ul><p class=\"subheading\">Data Monitoring/Other Committee</p><p><span>Yes</span></p><p><span>An IDMC, a BICR, a Safety Review Board, and a Steering Committee will support the study (Section 11.4).</span></p><p><b>Intervention codes 1: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Intervention model: </b>Parallel Group</p><p><b>Population type: </b>With Disease</p><p><b>Population diagnosis or condition 1: </b>Lung Non-Small Cell Carcinoma (other C2926)</p><p><b>Control type: </b>Active Comparator</p><p><b>Control description: </b>Drug B 200 mg IV Q3W.</p><p><b>Population age minimum: </b>18</p><p><b>Population age minimum unit: </b>Years</p><p><b>Intervention assignment method: </b>Randomisation</p><p><b>Randomisation type: </b>Randomization 1:1 by interactive response technology (IRT), stratified by PD-L1 TPS (1% to 49% vs ≥50%) and histology (squamous vs nonsquamous).</p><p><b>Stratification: </b>Yes</p><p><b>Site distribution: </b>Multicentre</p><p><b>Site geographic scope: </b>Multiple Countries</p><p><b>Master protocol: </b>No</p><p><b>Drug device combination product: </b>No</p><p><b>Adaptive trial design: </b>No</p><p><b>Number of arms: </b>2</p><p><b>Trial blind schema: </b>Double Blind</p><p><b>Blinded roles 1: </b>Care Provider</p><p><b>Blinded roles 2: </b>Investigator</p><p><b>Blinded roles 3: </b>Outcomes Assessor</p><p><b>Blinded roles 4: </b>Participant</p><p><b>Blinded roles 5: </b>Sponsor</p><p><b>Participant number qualifier: </b>Target</p><p><b>Number of participants: </b>600</p><p><b>Participant number basis: </b>randomly assigned to trial intervention</p><p><b>Intervention duration description: </b>Both interventions are given for up to 35 cycles (approximately 24 months) or until BICR-confirmed progression, unacceptable toxicity, or withdrawal. Treatment beyond progression is permitted under specified conditions.</p><p><b>Participation duration description: </b>Up to approximately 48 months, including screening up to 28 days, treatment, safety follow-up 30 days after the last dose, tumor imaging until progression, and survival follow-up every 12 weeks.</p><p><b>Independent committees 1: </b>Independent Data Monitoring Committee</p><p><b>Independent committees 2: </b>Other</p><p><b>Other committees: </b>Blinded independent central review (BICR), Safety Review Board, and Steering Committee.</p></div>"
           }
          }
         ]
@@ -194,7 +194,7 @@
         },
         "text": {
          "status": "additional",
-         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">This Phase 3 study addresses the need for improved first-line treatment options for adults with PD-L1-positive advanced NSCLC. The trial rationale and supporting background are provided in Sections 2.1.1 and 2.1.2, respectively.</p></div>"
+         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">This trial addresses the need for improved first-line treatment for adults with PD-L1-positive advanced NSCLC without actionable genomic alterations. The trial rationale and supporting background are presented in Sections 2.1.1 and 2.1.2, respectively.</p></div>"
         },
         "section": [
          {
@@ -361,7 +361,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Category label: </b>Efficacy</p><p><b>Statement: </b>To demonstrate that Drug A is superior to Drug B in prolonging PFS in participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC</p><p><b>Estimands 1 population: </b>Participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC without actionable genomic alterations, as defined by the eligibility criteria (Section 5.1); analyzed in the full analysis set (FAS)</p><p><b>Estimands 1 treatment: </b>Drug A 20 mg/kg IV Q3W vs Drug B 200 mg IV Q3W, each for up to 35 cycles</p><p><b>Estimands 1 endpoint: </b>PFS, defined as the time from randomization to the first documented disease progression per Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST v1.1) as assessed by blinded independent central review (BICR), or death from any cause, whichever occurs first</p><p><b>Estimands 1 population level summary: </b>Hazard ratio (HR) for Drug A vs Drug B from a stratified Cox proportional hazards model; median PFS by Kaplan-Meier method</p><p><b>Estimands 1 intercurrent events 1 description: </b>Discontinuation of study intervention for any reason</p><p><b>Estimands 1 intercurrent events 1 strategy: </b>treatment policy strategy</p><p><b>Estimands 1 intercurrent events 2 description: </b>Start of new anticancer therapy before documented progression</p><p><b>Estimands 1 intercurrent events 2 strategy: </b>hypothetical strategy (PFS censored at the last adequate tumor assessment before new therapy)</p><p><b>Estimands 2 population: </b>Participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC without actionable genomic alterations, as defined by the eligibility criteria (Section 5.1); analyzed in the full analysis set (FAS)</p><p><b>Estimands 2 treatment: </b>Drug A 20 mg/kg IV Q3W vs Drug B 200 mg IV Q3W, each for up to 35 cycles</p><p><b>Estimands 2 endpoint: </b>PFS, defined as the time from randomization to the first documented disease progression per Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST v1.1) as assessed by blinded independent central review (BICR), or death from any cause, whichever occurs first</p><p><b>Estimands 2 population level summary: </b>Hazard ratio (HR) for Drug A vs Drug B from a stratified Cox proportional hazards model; median PFS by Kaplan-Meier method</p><p><b>Estimands 2 intercurrent events 1 description: </b>Discontinuation of study intervention for any reason</p><p><b>Estimands 2 intercurrent events 1 strategy: </b>treatment policy strategy</p><p><b>Estimands 2 intercurrent events 2 description: </b>Start of new anticancer therapy before documented progression</p><p><b>Estimands 2 intercurrent events 2 strategy: </b>treatment policy strategy to new anticancer therapy, counting progression or death regardless of subsequent therapy (Section 10.4)</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Category label: </b>Efficacy</p><p><b>Statement: </b>To demonstrate that Drug A is superior to Drug B in prolonging PFS in participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC</p><p><b>Estimands 1 population: </b>Participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC without actionable genomic alterations, as defined by the eligibility criteria (Section 5.1); analyzed in the full analysis set (FAS)</p><p><b>Estimands 1 treatment: </b>Drug A 20 mg/kg IV Q3W vs Drug B 200 mg IV Q3W, each for up to 35 cycles</p><p><b>Estimands 1 endpoint: </b>PFS, defined as the time from randomization to the first documented disease progression per Response Evaluation Criteria in Solid Tumors version 1.1 (RECIST v1.1) as assessed by blinded independent central review (BICR), or death from any cause, whichever occurs first</p><p><b>Estimands 1 population level summary: </b>Hazard ratio (HR) for Drug A vs Drug B from a stratified Cox proportional hazards model; median PFS by Kaplan-Meier method</p><p><b>Estimands 1 intercurrent events 1 description: </b>Discontinuation of study intervention for any reason</p><p><b>Estimands 1 intercurrent events 1 strategy: </b>Treatment policy strategy</p><p><b>Estimands 1 intercurrent events 2 description: </b>Start of new anticancer therapy before documented progression</p><p><b>Estimands 1 intercurrent events 2 strategy: </b>Hypothetical strategy (PFS censored at the last adequate tumor assessment before new therapy)</p><p><b>Estimands 2 population: </b>Participants with previously untreated, PD-L1-positive (TPS ≥1%), locally advanced or metastatic NSCLC without actionable genomic alterations, as defined by the eligibility criteria (Section 5.1); analyzed in the full analysis set (FAS)</p><p><b>Estimands 2 treatment: </b>Drug A 20 mg/kg IV Q3W vs Drug B 200 mg IV Q3W, each for up to 35 cycles</p><p><b>Estimands 2 endpoint: </b>PFS per RECIST v1.1 by BICR, counting progression or death regardless of subsequent therapy</p><p><b>Estimands 2 population level summary: </b>Hazard ratio (HR) for Drug A vs Drug B from a stratified Cox proportional hazards model; median PFS by Kaplan-Meier method</p><p><b>Estimands 2 intercurrent events 1 description: </b>Discontinuation of study intervention for any reason</p><p><b>Estimands 2 intercurrent events 1 strategy: </b>Treatment policy strategy</p><p><b>Estimands 2 intercurrent events 2 description: </b>Start of new anticancer therapy</p><p><b>Estimands 2 intercurrent events 2 strategy: </b>Treatment policy strategy, counting progression or death regardless of subsequent therapy</p></div>"
           }
          }
         ]
@@ -393,7 +393,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Category label: </b>Efficacy</p><p><b>Statement: </b>Key secondary: To demonstrate that Drug A is superior to Drug B in prolonging OS</p><p><b>Estimands 1 population: </b>As for the primary estimand (FAS)</p><p><b>Estimands 1 treatment: </b>As for the primary estimand, followed by any subsequent therapy</p><p><b>Estimands 1 endpoint: </b>OS, defined as the time from randomization to death from any cause</p><p><b>Estimands 1 population level summary: </b>HR from a stratified Cox proportional hazards model; median OS by Kaplan-Meier method</p><p><b>Estimands 1 intercurrent events 1 description: </b>Discontinuation of study intervention and start of subsequent anticancer therapy</p><p><b>Estimands 1 intercurrent events 1 strategy: </b>treatment policy strategy</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Category label: </b>Efficacy</p><p><b>Statement: </b>Key secondary: To demonstrate that Drug A is superior to Drug B in prolonging OS</p><p><b>Estimands 1 population: </b>As for the primary estimand (FAS)</p><p><b>Estimands 1 treatment: </b>As for the primary estimand, followed by any subsequent therapy</p><p><b>Estimands 1 endpoint: </b>OS, defined as the time from randomization to death from any cause</p><p><b>Estimands 1 population level summary: </b>HR from a stratified Cox proportional hazards model; median OS by Kaplan-Meier method</p><p><b>Estimands 1 intercurrent events 1 description: </b>Discontinuation of study intervention and start of subsequent anticancer therapy</p><p><b>Estimands 1 intercurrent events 1 strategy: </b>Treatment policy strategy</p></div>"
           }
          },
          {
@@ -410,7 +410,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Category label: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Statement: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 population: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 treatment: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 endpoint: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 population level summary: </b>[Needs human input: withheld from this export because its confidence was low]</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Category label: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Statement: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 population: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 treatment: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 endpoint: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 population level summary: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 intercurrent events 1 description: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 intercurrent events 1 strategy: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 intercurrent events 2 description: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 intercurrent events 2 strategy: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 intercurrent events 3 description: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 intercurrent events 3 strategy: </b>[Needs human input: withheld from this export because its confidence was low]</p></div>"
           }
          },
          {
@@ -427,7 +427,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Category label: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Statement: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 population: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 treatment: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 endpoint: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 population level summary: </b>[Needs human input: withheld from this export because its confidence was low]</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Category label: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Statement: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 population: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 treatment: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 endpoint: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 population level summary: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 intercurrent events 1 description: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Estimands 1 intercurrent events 1 strategy: </b>[Needs human input: withheld from this export because its confidence was low]</p></div>"
           }
          },
          {
@@ -648,7 +648,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The randomized parallel-group intervention model described in Section 4.1 provides an unbiased comparison of Drug A with Drug B. A maximum treatment duration of 35 cycles applies to both arms to avoid differential exposure and is consistent with the approved duration of Drug B monotherapy. The rationale for intervention dose and regimen selection is provided in Section 6.2.</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The randomized, parallel-group intervention model described in Section 4.1 provides an unbiased comparison of Drug A with Drug B. The maximum treatment duration of 35 cycles is consistent with the approved duration of Drug B monotherapy and applies to both arms to avoid differential exposure. The rationale for intervention dose and regimen selection is provided in Section 6.2.</p></div>"
           }
          },
          {
@@ -716,7 +716,24 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"needs-human-input\">[Needs human input: withheld from this export because its confidence was low]</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"needs-human-input\">[Needs human input: withheld from this export because its confidence was low]</p><p class=\"needs-human-input\">[Needs human input: withheld from this export because its confidence was low]</p></div>"
+          }
+         },
+         {
+          "id": "sec-4.2.7",
+          "title": "4.2.7 Rationale for Other Trial Design Aspects",
+          "code": {
+           "coding": [
+            {
+             "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+             "code": "C218543",
+             "display": "ICH M11 Protocol Section 4.2.7 Rationale for Other Trial Design Aspects"
+            }
+           ]
+          },
+          "text": {
+           "status": "additional",
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">A maximum treatment duration of 35 cycles is consistent with the approved duration of Drug B monotherapy and applies to both arms to avoid differential exposure.</p></div>"
           }
          },
          {
@@ -1147,7 +1164,7 @@
       },
       "text": {
        "status": "additional",
-       "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><span>Study interventions are all pre-specified, investigational and non-investigational medicinal products, medical devices and other interventions (eg, surgical and behavioral) intended to be administered to the study participants during the study conduct.</span></p><p class=\"caption\"><span><strong>Table 8. Study Intervention(s) Administered</strong></span></p><table><colgroup><col style=\"width:110.0pt\" /><col style=\"width:119.5pt\" /><col style=\"width:119.5pt\" /><col style=\"width:119.0pt\" /></colgroup><tr><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Intervention Label</strong></span></p></th><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Drug A</strong></span></p></th><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Drug B</strong></span></p></th><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>HBV antiviral prophylaxis</strong></span></p></th></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Intervention Name</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug A</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug B</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Entecavir or tenofovir (disoproxil or alafenamide)</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Intervention Description</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Concentrate for solution for infusion, 20 mg/kg on Day 1 of each 21-day cycle</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Concentrate for solution for infusion, 200 mg on Day 1 of each 21-day cycle</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Oral tablet, daily per local prescribing information</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Type</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Biologic</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Biologic</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Dose Formulation</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Single-use vial</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Single-use vial</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Tablet</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Unit Dose Strength(s)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>500 mg/20 mL (25 mg/mL)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>100 mg/4 mL (25 mg/mL)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Per local label</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Dosage Level(s)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>20 mg/kg Q3W, up to 35 cycles</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>200 mg Q3W, up to 35 cycles</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Per local label</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Route of Administration</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>IV infusion</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>IV infusion</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Oral</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Use</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Experimental</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Active comparator</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Background intervention (for participants with detectable HBV DNA)</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>IMP and NIMP/AxMP</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>IMP</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>IMP</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>NIMP/AxMP</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Sourcing</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Provided centrally by the sponsor</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Provided centrally by the sponsor</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Provided locally by the study site</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Packaging and Labeling</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Study intervention will be provided in vials. Each vial will be labeled as required per country requirement.</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Study intervention will be provided in vials. Each vial will be labeled as required per country requirement.</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Commercial supply</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Current/Former Name(s) or Alias(es)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug A</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug B</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Not applicable</span></p></td></tr></table><p class=\"caption\"><span><strong>Table 9. Study Arm(s)</strong></span></p><table><colgroup><col style=\"width:110.0pt\" /><col style=\"width:179.0pt\" /><col style=\"width:179.0pt\" /></colgroup><tr><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Arm Title</strong></span></p></th><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Arm A: Drug A</strong></span></p></th><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Arm B: Drug B</strong></span></p></th></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Arm Type</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Experimental</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Active comparator</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Arm Description</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Participants will receive Drug A 20 mg/kg IV on Day 1 of each 21-day cycle for up to 35 cycles.</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Participants will receive Drug B 200 mg IV on Day 1 of each 21-day cycle for up to 35 cycles.</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Associated Intervention Labels</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug A</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug B</span></p></td></tr></table><p><b>Interventions 1 arm name: </b>Arm A: Drug A</p><p><b>Interventions 1 arm type: </b>Experimental Arm</p><p><b>Interventions 1 intervention name: </b>Drug A</p><p><b>Interventions 1 intervention type: </b>Biologic</p><p><b>Interventions 1 dosage strengths: </b>500 mg/20 mL (25 mg/mL)</p><p><b>Interventions 1 dosage levels: </b>20 mg/kg</p><p><b>Interventions 1 regimen: </b>Q3W, on Day 1 of each 21-day cycle, for up to 35 cycles (approximately 24 months) or until BICR-confirmed progression, unacceptable toxicity, or withdrawal.</p><p><b>Interventions 1 use: </b>Experimental Intervention</p><p><b>Interventions 1 imp or nimp: </b>IMP</p><p><b>Interventions 1 sourcing 1: </b>Centrally Sourced</p><p><b>Interventions 2 arm name: </b>Arm B: Drug B</p><p><b>Interventions 2 arm type: </b>Active Comparator Arm</p><p><b>Interventions 2 intervention name: </b>Drug B</p><p><b>Interventions 2 intervention type: </b>Biologic</p><p><b>Interventions 2 dosage strengths: </b>100 mg/4 mL (25 mg/mL)</p><p><b>Interventions 2 dosage levels: </b>200 mg</p><p><b>Interventions 2 regimen: </b>Q3W, on Day 1 of each 21-day cycle, for up to 35 cycles (approximately 24 months) or until BICR-confirmed progression, unacceptable toxicity, or withdrawal.</p><p><b>Interventions 2 use: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Interventions 2 imp or nimp: </b>IMP</p><p><b>Interventions 2 sourcing 1: </b>Centrally Sourced</p><p><b>Interventions 3 arm name: </b>Arm A: Drug A</p><p><b>Interventions 3 arm type: </b>Experimental Arm</p><p><b>Interventions 3 intervention name: </b>Entecavir or tenofovir (disoproxil or alafenamide)</p><p><b>Interventions 3 intervention type: </b>Drug</p><p><b>Interventions 3 dose form: </b>Tablet Dosage Form (CDISC SDTM C42998)</p><p><b>Interventions 3 dosage strengths: </b>Per local label</p><p><b>Interventions 3 route: </b>Oral Route of Administration (CDISC SDTM C38288)</p><p><b>Interventions 3 regimen: </b>Once daily per local prescribing information for participants with detectable HBV DNA at screening; start more than 1 week before the first dose of study intervention and continue during study intervention and for at least 12 months after the last dose.</p><p><b>Interventions 3 use: </b>Background Treatment</p><p><b>Interventions 3 imp or nimp: </b>NIMP</p><p><b>Interventions 3 sourcing 1: </b>Locally Sourced</p><p><b>Interventions 4 arm name: </b>Arm B: Drug B</p><p><b>Interventions 4 arm type: </b>Active Comparator Arm</p><p><b>Interventions 4 intervention name: </b>Entecavir or tenofovir (disoproxil or alafenamide)</p><p><b>Interventions 4 intervention type: </b>Drug</p><p><b>Interventions 4 dose form: </b>Tablet Dosage Form (CDISC SDTM C42998)</p><p><b>Interventions 4 dosage strengths: </b>Per local label</p><p><b>Interventions 4 route: </b>Oral Route of Administration (CDISC SDTM C38288)</p><p><b>Interventions 4 regimen: </b>Once daily per local prescribing information for participants with detectable HBV DNA at screening; start more than 1 week before the first dose of study intervention and continue during study intervention and for at least 12 months after the last dose.</p><p><b>Interventions 4 use: </b>Background Treatment</p><p><b>Interventions 4 imp or nimp: </b>NIMP</p><p><b>Interventions 4 sourcing 1: </b>Locally Sourced</p></div>"
+       "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><span>Study interventions are all pre-specified, investigational and non-investigational medicinal products, medical devices and other interventions (eg, surgical and behavioral) intended to be administered to the study participants during the study conduct.</span></p><p class=\"caption\"><span><strong>Table 8. Study Intervention(s) Administered</strong></span></p><table><colgroup><col style=\"width:110.0pt\" /><col style=\"width:119.5pt\" /><col style=\"width:119.5pt\" /><col style=\"width:119.0pt\" /></colgroup><tr><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Intervention Label</strong></span></p></th><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Drug A</strong></span></p></th><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Drug B</strong></span></p></th><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>HBV antiviral prophylaxis</strong></span></p></th></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Intervention Name</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug A</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug B</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Entecavir or tenofovir (disoproxil or alafenamide)</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Intervention Description</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Concentrate for solution for infusion, 20 mg/kg on Day 1 of each 21-day cycle</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Concentrate for solution for infusion, 200 mg on Day 1 of each 21-day cycle</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Oral tablet, daily per local prescribing information</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Type</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Biologic</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Biologic</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Dose Formulation</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Single-use vial</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Single-use vial</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Tablet</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Unit Dose Strength(s)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>500 mg/20 mL (25 mg/mL)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>100 mg/4 mL (25 mg/mL)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Per local label</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Dosage Level(s)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>20 mg/kg Q3W, up to 35 cycles</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>200 mg Q3W, up to 35 cycles</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Per local label</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Route of Administration</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>IV infusion</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>IV infusion</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Oral</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Use</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Experimental</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Active comparator</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Background intervention (for participants with detectable HBV DNA)</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>IMP and NIMP/AxMP</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>IMP</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>IMP</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>NIMP/AxMP</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Sourcing</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Provided centrally by the sponsor</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Provided centrally by the sponsor</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Provided locally by the study site</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Packaging and Labeling</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Study intervention will be provided in vials. Each vial will be labeled as required per country requirement.</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Study intervention will be provided in vials. Each vial will be labeled as required per country requirement.</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Commercial supply</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Current/Former Name(s) or Alias(es)</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug A</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug B</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Not applicable</span></p></td></tr></table><p class=\"caption\"><span><strong>Table 9. Study Arm(s)</strong></span></p><table><colgroup><col style=\"width:110.0pt\" /><col style=\"width:179.0pt\" /><col style=\"width:179.0pt\" /></colgroup><tr><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Arm Title</strong></span></p></th><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Arm A: Drug A</strong></span></p></th><th rowspan=\"1\" colspan=\"1\" style=\"background-color:#D9D9D9\"><p><span><strong>Arm B: Drug B</strong></span></p></th></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Arm Type</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Experimental</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Active comparator</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Arm Description</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Participants will receive Drug A 20 mg/kg IV on Day 1 of each 21-day cycle for up to 35 cycles.</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Participants will receive Drug B 200 mg IV on Day 1 of each 21-day cycle for up to 35 cycles.</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>Associated Intervention Labels</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug A</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Drug B</span></p></td></tr></table><p><b>Interventions 1 arm name: </b>Arm A: Drug A</p><p><b>Interventions 1 arm type: </b>Experimental Arm</p><p><b>Interventions 1 intervention name: </b>Drug A</p><p><b>Interventions 1 intervention type: </b>Biologic</p><p><b>Interventions 1 dosage strengths: </b>500 mg/20 mL (25 mg/mL)</p><p><b>Interventions 1 dosage levels: </b>20 mg/kg</p><p><b>Interventions 1 regimen: </b>Q3W, on Day 1 of each 21-day cycle, for up to 35 cycles (approximately 24 months) or until BICR-confirmed progression, unacceptable toxicity, or withdrawal.</p><p><b>Interventions 1 use: </b>Experimental Intervention</p><p><b>Interventions 1 imp or nimp: </b>IMP</p><p><b>Interventions 1 sourcing 1: </b>Centrally Sourced</p><p><b>Interventions 2 arm name: </b>Arm B: Drug B</p><p><b>Interventions 2 arm type: </b>Active Comparator Arm</p><p><b>Interventions 2 intervention name: </b>Drug B</p><p><b>Interventions 2 intervention type: </b>Biologic</p><p><b>Interventions 2 dosage strengths: </b>100 mg/4 mL (25 mg/mL)</p><p><b>Interventions 2 dosage levels: </b>200 mg</p><p><b>Interventions 2 regimen: </b>Q3W, on Day 1 of each 21-day cycle, for up to 35 cycles (approximately 24 months) or until BICR-confirmed progression, unacceptable toxicity, or withdrawal.</p><p><b>Interventions 2 use: </b>Experimental Intervention</p><p><b>Interventions 2 imp or nimp: </b>IMP</p><p><b>Interventions 2 sourcing 1: </b>Centrally Sourced</p><p><b>Interventions 3 arm name: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Interventions 3 arm type: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Interventions 3 intervention name: </b>Entecavir or tenofovir (disoproxil or alafenamide)</p><p><b>Interventions 3 intervention type: </b>Drug</p><p><b>Interventions 3 dose form: </b>Tablet Dosage Form (CDISC SDTM C42998)</p><p><b>Interventions 3 dosage strengths: </b>Per local label</p><p><b>Interventions 3 route: </b>Oral Route of Administration (CDISC SDTM C38288)</p><p><b>Interventions 3 regimen: </b>Daily per local prescribing information for participants with detectable HBV DNA at screening; start more than 1 week before the first dose of study intervention and continue during study intervention and for at least 12 months after the last dose.</p><p><b>Interventions 3 use: </b>Background Treatment</p><p><b>Interventions 3 imp or nimp: </b>NIMP</p><p><b>Interventions 3 sourcing 1: </b>Locally Sourced</p><p><b>Interventions 4 arm name: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Interventions 4 arm type: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Interventions 4 intervention name: </b>Entecavir or tenofovir (disoproxil or alafenamide)</p><p><b>Interventions 4 intervention type: </b>Drug</p><p><b>Interventions 4 dose form: </b>Tablet Dosage Form (CDISC SDTM C42998)</p><p><b>Interventions 4 dosage strengths: </b>Per local label</p><p><b>Interventions 4 route: </b>Oral Route of Administration (CDISC SDTM C38288)</p><p><b>Interventions 4 regimen: </b>Daily per local prescribing information for participants with detectable HBV DNA at screening; start more than 1 week before the first dose of study intervention and continue during study intervention and for at least 12 months after the last dose.</p><p><b>Interventions 4 use: </b>Background Treatment</p><p><b>Interventions 4 imp or nimp: </b>NIMP</p><p><b>Interventions 4 sourcing 1: </b>Locally Sourced</p></div>"
       },
       "section": [
        {
@@ -1246,7 +1263,7 @@
         },
         "text": {
          "status": "additional",
-         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Participants will receive Drug A 20 mg/kg or Drug B 200 mg by IV infusion on Day 1 of each 21-day cycle for up to 35 cycles; an unblinded pharmacist will prepare masked infusions of identical duration. Retreatment following a dose delay will be governed by the criteria in Section 6.3.1.</p></div>"
+         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Participants will receive Drug A 20 mg/kg or Drug B 200 mg by IV infusion on Day 1 of each 21-day cycle for up to 35 cycles (approximately 24 months), with masked infusions of identical duration prepared by an unblinded pharmacist. Retreatment criteria following a dose delay are provided in Section 6.3.1.</p></div>"
         },
         "section": [
          {
@@ -1517,7 +1534,7 @@
         },
         "text": {
          "status": "additional",
-         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">HBV antiviral prophylaxis with entecavir or tenofovir is a noninvestigational background intervention for participants with detectable HBV DNA (see Section 6.1). Rescue therapy is addressed in Section 6.9.2.</p></div>"
+         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">HBV antiviral prophylaxis is a noninvestigational background intervention, as described in Section 6. Rescue therapy is addressed in Section 6.9.2.</p></div>"
         },
         "section": [
          {
@@ -1534,7 +1551,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Participants with detectable HBV DNA at screening will receive HBV antiviral prophylaxis with a nucleos(t)ide analog with a high barrier to resistance: entecavir or tenofovir (disoproxil or alafenamide). Prophylaxis will be administered orally once daily at the dose specified in the locally approved prescribing information, starting more than 1 week before the first dose of study intervention and continuing during study intervention and for at least 12 months after the last dose. HBV DNA and liver chemistries will be monitored monthly (see Section 12.4).</p><p class=\"ai-generated\">HBV antiviral prophylaxis is a background intervention classified as a NIMP/AxMP and will be provided locally by the study site from commercial supply.</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Participants with detectable HBV DNA at screening will receive HBV antiviral prophylaxis with a nucleos(t)ide analog with a high barrier to resistance: entecavir or tenofovir (disoproxil or alafenamide). Prophylaxis will be administered orally once daily at the dose specified in the locally approved prescribing information and will start more than 1 week before the first dose of study intervention.</p><p class=\"ai-generated\">Prophylaxis will continue during study intervention and for at least 12 months after the last dose. HBV DNA and liver chemistries will be monitored monthly (see Section 12.4). Antiviral prophylaxis will be provided locally by the study site as commercial supply.</p></div>"
           }
          },
          {
@@ -1667,7 +1684,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Liver event stopping criteria and QTc stopping criteria are described in Sections 7.1.1.1 and 7.1.1.2, respectively. Participants who permanently discontinue study intervention will complete end-of-treatment and safety follow-up visits and continue efficacy and survival follow-up unless they withdraw consent; see Section 1.3 for assessments at discontinuation and during follow-up.</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Liver event and QTc stopping criteria are provided in Sections 7.1.1.1 and 7.1.1.2, respectively. Participants who permanently discontinue study intervention will complete end-of-treatment and safety follow-up visits and continue efficacy and survival follow-up unless they withdraw consent; see Section 1.3 for assessments at discontinuation and during follow-up.</p></div>"
           },
           "section": [
            {
@@ -1881,7 +1898,7 @@
         },
         "text": {
          "status": "additional",
-         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Efficacy assessments and procedures are described in the following subsections: Tumor Imaging and Assessment per RECIST v1.1, Blinded Independent Central Review, Survival Follow-up, and Patient-reported Outcomes (EORTC QLQ-C30 and QLQ-LC13). Assessment timepoints are provided in the SoA (Section 1.3).</p></div>"
+         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The following subsections describe tumor imaging and assessment per RECIST v1.1, BICR, survival follow-up, and patient-reported outcomes using the EORTC QLQ-C30 and QLQ-LC13. Assessment timepoints are provided in the SoA (Section 1.3).</p></div>"
         },
         "section": [
          {
@@ -2334,7 +2351,7 @@
         },
         "text": {
          "status": "additional",
-         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Timing and procedures for collection and reporting of AEs and SAEs, including AESIs and disease-related events or outcomes not qualifying as AEs or SAEs, are described in Sections 9.2.1 through 9.2.5. Collection, reporting, and follow-up of pregnancy information are described in Section 9.3.1.</p><p><b>Safety event reporting 1 event type: </b>Adverse Event</p><p><b>Safety event reporting 1 situational scope: </b>All AEs.</p><p><b>Safety event reporting 1 reportable period start: </b>Start of study intervention.</p><p><b>Safety event reporting 1 reportable period end: </b>Safety follow-up visit, 30 days after the last dose of study intervention.</p><p><b>Safety event reporting 1 reporting method: </b>AE/SAE eCRF/required form.</p><p><b>Safety event reporting 2 event type: </b>Adverse Event</p><p><b>Safety event reporting 2 situational scope: </b>Immune-mediated AEs.</p><p><b>Safety event reporting 2 reportable period start: </b>Start of study intervention.</p><p><b>Safety event reporting 2 reportable period end: </b>90 days after the last dose of study intervention.</p><p><b>Safety event reporting 2 reporting method: </b>AE/SAE eCRF/required form.</p><p><b>Safety event reporting 3 event type: </b>Serious Adverse Event</p><p><b>Safety event reporting 3 situational scope: </b>All SAEs.</p><p><b>Safety event reporting 3 reportable period start: </b>Signing of the informed consent form.</p><p><b>Safety event reporting 3 reportable period end: </b>90 days after the last dose of study intervention.</p><p><b>Safety event reporting 3 timing for reporting: </b>Immediately, within 24 hours. Updated SAE data must be submitted within 24 hours of becoming available.</p><p><b>Safety event reporting 3 reporting method: </b>Electronic data collection tool.</p><p><b>Safety event reporting 3 backup reporting method: </b>Paper SAE data collection tool transmitted by facsimile. In the absence of facsimile equipment, notification by telephone with a copy sent by overnight mail or courier service. The investigator must complete and sign the SAE data collection tool within the designated reporting timeframes.</p><p><b>Safety event reporting 4 event type: </b>Serious Adverse Event</p><p><b>Safety event reporting 4 situational scope: </b>Any SAE, including death, learned of after discharge from the study and considered reasonably related to study intervention or study participation.</p><p><b>Safety event reporting 4 reportable period start: </b>After the participant has been discharged from the study.</p><p><b>Safety event reporting 4 reportable period end: </b>At any time after discharge from the study.</p><p><b>Safety event reporting 4 timing for reporting: </b>Promptly upon learning of the event.</p><p><b>Safety event reporting 4 reporting method: </b>Electronic data collection tool while available; after the tool is taken offline, a paper SAE form or telephone notification to the SAE coordinator.</p><p><b>Safety event reporting 4 backup reporting method: </b>Paper SAE data collection tool transmitted by facsimile; in the absence of facsimile equipment, telephone notification with a copy sent by overnight mail or courier service.</p><p><b>Safety event reporting 5 event type: </b>Reportable Adverse Event of Special Interest</p><p><b>Safety event reporting 5 situational scope: </b>Regardless of seriousness: immune-mediated AEs of Grade ≥2, including pneumonitis, colitis, hepatitis, nephritis, endocrinopathies, myocarditis, and severe cutaneous reactions; hemorrhage of Grade ≥3 or pulmonary hemorrhage of any grade; gastrointestinal perforation, fistula, or arterial thromboembolic event of any grade; hypertension or proteinuria of Grade ≥3.</p><p><b>Safety event reporting 5 reportable period start: </b>Start of study intervention.</p><p><b>Safety event reporting 5 reportable period end: </b>90 days after the last dose of study intervention.</p><p><b>Safety event reporting 5 timing for reporting: </b>Within 24 hours of awareness.</p><p><b>Safety event reporting 5 reporting method: </b>AE/SAE eCRF/required form.</p></div>"
+         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The timing and procedures for collection and reporting of AEs and SAEs, including AESIs and disease-related events or outcomes not qualifying as AEs or SAEs, are described in Sections 9.2.1 through 9.2.5. Collection, reporting, and follow-up of pregnancy information are described in Section 9.3.1.</p><p><b>Safety event reporting 1 event type: </b>Adverse Event</p><p><b>Safety event reporting 1 situational scope: </b>All AEs.</p><p><b>Safety event reporting 1 reportable period start: </b>Start of study intervention.</p><p><b>Safety event reporting 1 reportable period end: </b>Safety follow-up visit, 30 days after the last dose of study intervention.</p><p><b>Safety event reporting 1 reporting method: </b>AE eCRF/required form.</p><p><b>Safety event reporting 2 event type: </b>Serious Adverse Event</p><p><b>Safety event reporting 2 situational scope: </b>All SAEs, including updated SAE information.</p><p><b>Safety event reporting 2 reportable period start: </b>Signing of the informed consent form.</p><p><b>Safety event reporting 2 reportable period end: </b>90 days after the last dose of study intervention.</p><p><b>Safety event reporting 2 timing for reporting: </b>Immediately, within 24 hours. Updated SAE data must be submitted within 24 hours of becoming available.</p><p><b>Safety event reporting 2 reporting method: </b>Electronic data collection tool.</p><p><b>Safety event reporting 2 backup reporting method: </b>If the electronic system is unavailable, use the paper SAE data collection tool within 24 hours and enter the data electronically when the system becomes available. Transmit the paper tool by facsimile; if facsimile equipment is unavailable, notify by telephone and send the completed tool by overnight mail or courier.</p><p><b>Safety event reporting 3 event type: </b>Serious Adverse Event</p><p><b>Safety event reporting 3 situational scope: </b>SAEs, including deaths, learned of after discharge from the study and considered reasonably related to study intervention or study participation.</p><p><b>Safety event reporting 3 reportable period start: </b>After discharge from the study.</p><p><b>Safety event reporting 3 reportable period end: </b>Any time after discharge from the study.</p><p><b>Safety event reporting 3 timing for reporting: </b>Promptly upon learning of the event.</p><p><b>Safety event reporting 3 reporting method: </b>Electronic data collection tool; after the tool has been taken offline, paper SAE form or telephone notification to the SAE coordinator.</p><p><b>Safety event reporting 3 backup reporting method: </b>Facsimile transmission of the paper SAE data collection tool; if facsimile equipment is unavailable, telephone notification with the tool sent by overnight mail or courier.</p><p><b>Safety event reporting 4 event type: </b>Reportable Adverse Event of Special Interest</p><p><b>Safety event reporting 4 situational scope: </b>Regardless of seriousness: immune-mediated AEs of Grade ≥2, including pneumonitis, colitis, hepatitis, nephritis, endocrinopathies, myocarditis, and severe cutaneous reactions; hemorrhage of Grade ≥3 or pulmonary hemorrhage of any grade; gastrointestinal perforation, fistula, or arterial thromboembolic event of any grade; and hypertension or proteinuria of Grade ≥3.</p><p><b>Safety event reporting 4 reportable period start: </b>[Needs human input: withheld from this export because its confidence was low]</p><p><b>Safety event reporting 4 reportable period end: </b>90 days after the last dose of study intervention.</p><p><b>Safety event reporting 4 timing for reporting: </b>Within 24 hours of awareness.</p></div>"
         },
         "section": [
          {
@@ -2972,7 +2989,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The investigator will oversee study conduct at the site and adherence to the protocol, applicable ICH GCP guidelines, IRB/IEC requirements, and applicable laws and regulations, as described in Section 11.1.</p><p class=\"ai-generated\">The investigator will submit the protocol, protocol amendments, ICF, investigator’s brochure, and other relevant documents to the IRB/IEC for review and approval before implementation. Protocol amendments require IRB/IEC approval before implementation, except for changes necessary to eliminate an immediate hazard to participants. The investigator will provide written study status summaries to the IRB/IEC annually or more frequently as required and notify the IRB/IEC of SAEs or other significant safety findings in accordance with its procedures. The investigator will promptly notify the sponsor of SAEs as described in Section 9.2.3.1.</p><p class=\"ai-generated\">Investigators and sub-investigators will provide sufficient, accurate financial information requested by the sponsor to support regulatory financial certification or disclosure statements. Investigators will provide information on financial interests during the study and for 1 year after study completion.</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The investigator will oversee study conduct at the site and adherence to applicable regulatory, ethical, ICH GCP, and IRB/IEC requirements as described in Section 11.1. The investigator will submit required study documents for IRB/IEC review and approval before implementation, provide written study status summaries annually or more frequently as required by the IRB/IEC, and notify the IRB/IEC of SAEs or other significant safety findings in accordance with its procedures.</p><p class=\"ai-generated\">The investigator will promptly notify the sponsor of SAEs as described in Section 9.2.3.1. Investigators and sub-investigators will provide sufficient, accurate financial information to support the sponsor’s regulatory certification or disclosure statements. Investigators will provide information on financial interests throughout the study and for 1 year after study completion, as described in Section 11.1.</p></div>"
           }
          },
          {
@@ -2989,7 +3006,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The sponsor will notify the local regulatory authority and other regulatory agencies about the safety of the study intervention and will comply with country-specific requirements for safety reporting to regulatory authorities, IRBs/IECs, and investigators.</p><p class=\"ai-generated\">The contract between the sponsor and study sites will specify the parties’ data protection responsibilities, including handling of data security breaches and communication and cooperation between the parties. Clinical Quality Assurance auditors or other authorized personnel appointed by the sponsor may examine participant medical records (see Section 11.8).</p><p class=\"ai-generated\">The Safety Review Board, composed of sponsor physicians independent of the study team, will decide on study intervention restart or rechallenge after liver stopping criteria are met (see Section 7.1.3.1). Committee membership, responsibilities, and procedures will be described in charters (see Section 11.4).</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The sponsor will notify the local regulatory authority and other regulatory agencies about the safety of the study intervention and will comply with country-specific regulatory requirements for safety reporting to regulatory authorities, IRBs/IECs, and investigators.</p><p class=\"ai-generated\">Sponsor physicians independent of the study team will constitute the Safety Review Board, which will decide on study intervention restart or rechallenge after liver stopping criteria are met (see Section 7.1.3.1). Committee responsibilities and procedures will be described in charters (see Section 11.4).</p><p class=\"ai-generated\">The contract between the sponsor and study sites will specify the parties’ data protection responsibilities, including handling of data security breaches and their respective communication and cooperation. Clinical Quality Assurance auditors or other authorized personnel appointed by the sponsor may examine participant medical records (see Section 11.8).</p></div>"
           }
          }
         ]
@@ -3025,7 +3042,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Participants who are rescreened are required to sign a new ICF. Screen failure and rescreening are defined in Section 5.6.</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Participants who are rescreened are required to sign a new ICF. Definitions of screen failure and requirements for rescreening are provided in Section 5.6.</p></div>"
           }
          },
          {
@@ -3042,7 +3059,7 @@
           },
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The ICF will contain a separate section addressing the use of remaining mandatory samples for optional exploratory research. The investigator or authorized designee will explain the objectives of this research to each participant. With participants’ consent, remaining samples may be used by the Sponsor or others, such as universities or other companies, to contribute to the understanding of lung cancer or other diseases, the development of related or new treatments, or research methods.</p><p class=\"ai-generated\">Participants will be informed that they are free to refuse participation in this optional research and may withdraw their consent at any time and for any reason during the storage period. A separate signature will be required to document agreement to allow remaining specimens to be used for exploratory research. Participants who decline participation will not provide this separate signature.</p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The ICF will contain a separate section addressing the use of remaining mandatory samples for optional exploratory research. With participants’ consent, samples may be used by the Sponsor or others, such as universities or other companies, to contribute to the understanding of lung cancer or other diseases, the development of related or new treatments, or research methods.</p><p class=\"ai-generated\">The investigator or authorized designee will explain the objectives of the exploratory research to each participant. Participants will be informed that participation is voluntary, that they may refuse to participate, and that they may withdraw consent at any time and for any reason during the storage period. A separate signature will be required to document agreement to allow remaining specimens to be used for exploratory research. Participants who decline this optional research will not provide this separate signature.</p></div>"
           }
          }
         ]
@@ -3146,7 +3163,7 @@
         },
         "text": {
          "status": "additional",
-         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Source record requirements, including investigator responsibilities for record retention and direct access, are described in Section 11.9.1. Requirements for traceability, investigator and monitor responsibilities for source documentation, and identification of source data and their origin are addressed in Section 11.9.2.</p></div>"
+         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">Requirements for source record integrity and traceability, investigator and monitor responsibilities, identification of source records, and direct access for trial oversight are described in Sections 11.9.1 and 11.9.2.</p></div>"
         },
         "section": [
          {
@@ -3299,7 +3316,7 @@
         "title": "12.4 Liver Safety: Suggestions and Guidelines for Liver Events",
         "text": {
          "status": "additional",
-         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The following subsections provide liver safety guidance to assure participant safety and evaluate liver event etiology, covering suggested actions, monitoring and follow-up to assess causality, increased monitoring with continued study intervention, study intervention restart/rechallenge, and HBV screening and management.</p></div>"
+         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"ai-generated\">The following subsections provide liver safety guidance to assure participant safety and evaluate liver event etiology, including guidance for liver events and HBV screening and management.</p></div>"
         },
         "section": [
          {
@@ -3307,7 +3324,7 @@
           "title": "Liver Safety: Suggested Actions, Monitoring, and Follow-up to Assess Causality of Liver Event",
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><span>Phase 3-4 liver event stopping criteria are designed to assure participant safety and to evaluate liver event etiology.</span></p><p class=\"caption\"><span><strong>Table 14. Phase 3-4 Liver Event Stopping Criteria and Follow-Up Assessments (ALT Only)</strong></span></p><table><colgroup><col style=\"width:82.85pt\" /><col style=\"width:157.75pt\" /><col style=\"width:226.9pt\" /></colgroup><tr><th rowspan=\"1\" colspan=\"3\"><p><span><strong>Liver Event Stopping Criteria</strong></span></p></th></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>ALT-absolute</strong></span></p></td><td rowspan=\"1\" colspan=\"2\"><p><span>ALT  8 x ULN</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>ALT Increase</strong></span></p></td><td rowspan=\"1\" colspan=\"2\"><p><span>g. </span><span><strong>Unable to monitor weekly:</strong></span></p><p><span>ALT ³ 5 x ULN but &lt; 8 x ULN and cannot be monitored weekly for ³ 2 weeks</span></p><p><span>ALT ³ 3 x ULN but &lt; 5 x ULN and cannot be monitored weekly for ³ 4 weeks</span></p><p><span>h. </span><span><strong>Able to monitor weekly:</strong></span></p><p><span>ALT ³ 5 x ULN but &lt; 8 x ULN that persists for ³ 2 weeks</span></p><p><span>ALT ³ 3 x ULN but &lt; 5 x ULN that persists for ³ 4 weeks</span></p><p><span>Note: if values reduce to &lt;3x ULN or return to within baseline or normal limits for 2 consecutive weekly assessment, weekly monitoring may return to regular per protocol schedule</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>Bilirubin</strong></span><span><strong><sup>1, 2</sup></strong></span></p></td><td rowspan=\"1\" colspan=\"2\"><p><span>ALT ³ 3 x ULN </span><span><strong>and</strong></span><span> total bilirubin ³ 2 x ULN (for participants with known Gilbert’s syndrome these criteria only apply if total bilirubin ≥2xULN, and direct bilirubin &gt;2xULN and at least doubled from baseline value)</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>INR</strong></span><span><strong><sup>2</sup></strong></span></p></td><td rowspan=\"1\" colspan=\"2\"><p><span>ALT ³ 3 x ULN </span><span><strong>and</strong></span><span> international normalized ratio (INR) &gt; 1.5, if INR measured</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>Symptomatic</strong></span><span><strong><sup>3</sup></strong></span></p></td><td rowspan=\"1\" colspan=\"2\"><p><span>ALT ³ 3 x ULN associated with symptoms (new or worsening) believed to be related to liver injury or hypersensitivity</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"3\"><p><span><strong>Suggested Actions, Monitoring, and Follow up to Assess Causality of Liver Event</strong></span></p></td></tr><tr><td rowspan=\"1\" colspan=\"2\"><p><span><strong>Actions and Monitoring</strong></span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span><strong>Follow Up to Assess Causality of Liver Event</strong></span></p></td></tr><tr><td rowspan=\"1\" colspan=\"2\"><p><span><strong>Immediately </strong></span><span>discontinue study intervention.</span></p><p><span>Inform the Sponsor within</span><span><strong> 24 hours.</strong></span></p><p><span>Complete the liver event/expedited reporting form and complete a serious adverse event (SAE) data collection tool if the event also met the criteria for an SAE.</span><span><sup>2</sup></span></p><p><span>Perform follow-up to assess liver event causality.</span></p><p><span>Monitor the participant liver chemistry (see </span><span><strong>MONITORING</strong></span><span>).</span></p><p><span><strong>MONITORING:</strong></span></p><p><span><strong>If ALT ³ 3 x ULN AND total bilirubin ³ 2 x ULN or INR &gt; 1.5:</strong></span></p><p><span>Repeat liver chemistry tests (include ALT, aspartate transaminase [AST], alkaline phosphatase, total bilirubin, and INR) and perform liver event follow-up to assess liver event causality within </span><span><strong>24 hours</strong></span><span>.</span></p><p><span>Monitor participant twice weekly until liver chemistry chemistry </span><span>reduce to &lt;3x ULN for ALT, &lt;2xULN for total bilirubin or ≤ 1.5 for INR or return to or remain within baseline or normal limits</span><span><strong>.</strong></span><span>.</span></p><p><span>A specialist or hepatology consultation is recommended.</span></p><p><span><strong>For all other criteria</strong></span></p><p><span>Repeat liver chemistry tests (include ALT, AST, alkaline phosphatase, total bilirubin, and INR) and perform follow-up to assess liver event causality within </span><span><strong>24 to 72 hours.</strong></span></p><p><span>Monitor participants weekly until liver chemistry reduce to &lt;3x ULN for ALT or return to or remain within baseline or normal limits</span></p><p><span><strong>RESTART/RECHALLENGE</strong></span></p><p><span>Restart and/or rechallenge is allowed per protocol but do not resume study intervention unless Sponsor Safety Review Board approval is granted; If restart and/or rechallenge is not granted, permanently discontinue study intervention and continue participant in the study for any protocol specified follow up assessments. Refer to Restart and/or Rechallenge guidelines in Section 12.4</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Viral serology</span><span><sup>4</sup></span></p><p><span>Antinuclear antibody, antismooth muscle antibody, Type 1 antiliver kidney microsomal antibodies, and quantitative total immunoglobulin G (IgG) or gamma globulins.</span></p><p><span>Obtain additional tests such as a serum creatine phosphokinase (CPK),lactate dehydrogenase (LDH), gamma-glutamyltransferase [GGT], glutamate dehydrogenase [GLDH], and serum albumin; complete blood count with differentials</span></p><p><span>Fractionate bilirubin, if total bilirubin ³ 2 x ULN</span></p><p><span>Obtain blood sample for pharmacokinetic (PK) analysis within 7 days after the most recent dose</span><span><sup>5</sup></span></p><p><span>Record the appearance or worsening of clinical symptoms of liver injury, or hypersensitivity liver event/expedited reporting form</span></p><p><span>Record use of concomitant medications (including acetaminophen, herbal remedies, recreational drugs and other over-the-counter medications)</span></p><p><span>Record alcohol use on the liver event alcohol intake form</span></p><p><span>If ALT ³ 3 x ULN AND total bilirubin ³ 2 x ULN or INR &gt; 1.5 obtain the following in addition to the assessments listed above:</span></p><p><span>Serum acetaminophen adduct, when available, assay to assess potential acetaminophen contribution to liver injury in participants with definite or likely acetaminophen use in the preceding week</span></p><p><span>Liver imaging (ultrasound, magnetic resonance, or computed tomography) to evaluate liver disease; complete liver imaging form.</span></p><p><span>Liver biopsy may be discussed with local specialist if available, for instance:</span></p><p><span>In participants when serology raises the possibility of autoimmune hepatitis (AIH)</span></p><p><span>In participants when suspected DILI progresses or fails to resolve on withdrawal of study intervention</span></p><p><span>In participants with acute or chronic atypical presentation: hepatic vascular disorder, chronic hepatitis fibrosis, micro vesicular statosis</span></p><p><span>If liver biopsy conducted complete liver biopsy form</span></p></td></tr></table><p><span>Serum bilirubin fractionation should be performed if testing is available. If serum bilirubin fractionation testing is unavailable, </span><span><strong>record the absence/presence of detectable urinary bilirubin on dipstick</strong></span><span> which is indicative of direct bilirubin elevations suggesting liver injury.</span></p><p><span>All events of ALT  3 x ULN </span><span><strong>and</strong></span><span> total bilirubin  2 x ULN (for participants with known Gilbert’s syndrome these criteria only apply if total bilirubin &gt;2xULN, and direct bilirubin ≥2xULN and at least doubled from baseline value) or ALT  3 x ULN </span><span><strong>and</strong></span><span> INR &gt; 1.5 may indicate severe liver injury </span><span><strong>(possible ‘Hy’s Law’) and</strong></span><span> </span><span><strong>must be reported to sponsor in an expedited manner and as an SAE if SAE criteria met (excluding studies of hepatic impairment or cirrhosis)</strong></span><span>. The INR stated threshold value will not apply to participants receiving anticoagulants.</span></p><p><span>New or worsening symptoms believed to be related to liver injury (such as fatigue, nausea, vomiting, right upper quadrant pain or tenderness, or jaundice) or hypersensitivity (such as fever, rash or eosinophilia).</span></p><p><span>PK sample may not be required for participants known to be receiving noncomparator interventions. Record the date/time of the PK blood sample draw and the date/time of the last dose of study intervention prior to the PK blood sample draw on the CRF. If the date or time of the last dose is unclear, provide the participant’s best approximation. If the date/time of the last dose cannot be approximated OR a PK sample cannot be collected in the time period indicated above, do not obtain a PK sample. Instructions for sample handling and shipping are in the Study Reference Manual.</span></p><p><span>Acetaminophen-protein adduct testing and HDV RNA quantification are described by James 2009 and Le Gal 2005, respectively.</span></p></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><span>Phase 3-4 liver event stopping criteria are designed to assure participant safety and to evaluate liver event etiology.</span></p><p class=\"caption\"><span><strong>Table 14. Phase 3-4 Liver Event Stopping Criteria and Follow-Up Assessments (ALT Only)</strong></span></p><table><colgroup><col style=\"width:82.85pt\" /><col style=\"width:157.75pt\" /><col style=\"width:226.9pt\" /></colgroup><tr><th rowspan=\"1\" colspan=\"3\"><p><span><strong>Liver Event Stopping Criteria</strong></span></p></th></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>ALT-absolute</strong></span></p></td><td rowspan=\"1\" colspan=\"2\"><p><span>ALT ≥ 8 x ULN</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>ALT Increase</strong></span></p></td><td rowspan=\"1\" colspan=\"2\"><p><span>g. </span><span><strong>Unable to monitor weekly:</strong></span></p><p><span>ALT ≥ 5 x ULN but &lt; 8 x ULN and cannot be monitored weekly for ≥ 2 weeks</span></p><p><span>ALT ≥ 3 x ULN but &lt; 5 x ULN and cannot be monitored weekly for ≥ 4 weeks</span></p><p><span>h. </span><span><strong>Able to monitor weekly:</strong></span></p><p><span>ALT ≥ 5 x ULN but &lt; 8 x ULN that persists for ≥ 2 weeks</span></p><p><span>ALT ≥ 3 x ULN but &lt; 5 x ULN that persists for ≥ 4 weeks</span></p><p><span>Note: if values reduce to &lt;3x ULN or return to within baseline or normal limits for 2 consecutive weekly assessment, weekly monitoring may return to regular per protocol schedule</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>Bilirubin</strong></span><span><strong><sup>1, 2</sup></strong></span></p></td><td rowspan=\"1\" colspan=\"2\"><p><span>ALT ≥ 3 x ULN </span><span><strong>and</strong></span><span> total bilirubin ≥ 2 x ULN (for participants with known Gilbert’s syndrome these criteria only apply if total bilirubin ≥2xULN, and direct bilirubin &gt;2xULN and at least doubled from baseline value)</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>INR</strong></span><span><strong><sup>2</sup></strong></span></p></td><td rowspan=\"1\" colspan=\"2\"><p><span>ALT ≥ 3 x ULN </span><span><strong>and</strong></span><span> international normalized ratio (INR) &gt; 1.5, if INR measured</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>Symptomatic</strong></span><span><strong><sup>3</sup></strong></span></p></td><td rowspan=\"1\" colspan=\"2\"><p><span>ALT ≥ 3 x ULN associated with symptoms (new or worsening) believed to be related to liver injury or hypersensitivity</span></p></td></tr><tr><td rowspan=\"1\" colspan=\"3\"><p><span><strong>Suggested Actions, Monitoring, and Follow up to Assess Causality of Liver Event</strong></span></p></td></tr><tr><td rowspan=\"1\" colspan=\"2\"><p><span><strong>Actions and Monitoring</strong></span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span><strong>Follow Up to Assess Causality of Liver Event</strong></span></p></td></tr><tr><td rowspan=\"1\" colspan=\"2\"><p><span><strong>Immediately </strong></span><span>discontinue study intervention.</span></p><p><span>Inform the Sponsor within</span><span><strong> 24 hours.</strong></span></p><p><span>Complete the liver event/expedited reporting form and complete a serious adverse event (SAE) data collection tool if the event also met the criteria for an SAE.</span><span><sup>2</sup></span></p><p><span>Perform follow-up to assess liver event causality.</span></p><p><span>Monitor the participant liver chemistry (see </span><span><strong>MONITORING</strong></span><span>).</span></p><p><span><strong>MONITORING:</strong></span></p><p><span><strong>If ALT ≥ 3 x ULN AND total bilirubin ≥ 2 x ULN or INR &gt; 1.5:</strong></span></p><p><span>Repeat liver chemistry tests (include ALT, aspartate transaminase [AST], alkaline phosphatase, total bilirubin, and INR) and perform liver event follow-up to assess liver event causality within </span><span><strong>24 hours</strong></span><span>.</span></p><p><span>Monitor participant twice weekly until liver chemistry chemistry </span><span>reduce to &lt;3x ULN for ALT, &lt;2xULN for total bilirubin or ≤ 1.5 for INR or return to or remain within baseline or normal limits</span><span><strong>.</strong></span><span>.</span></p><p><span>A specialist or hepatology consultation is recommended.</span></p><p><span><strong>For all other criteria</strong></span></p><p><span>Repeat liver chemistry tests (include ALT, AST, alkaline phosphatase, total bilirubin, and INR) and perform follow-up to assess liver event causality within </span><span><strong>24 to 72 hours.</strong></span></p><p><span>Monitor participants weekly until liver chemistry reduce to &lt;3x ULN for ALT or return to or remain within baseline or normal limits</span></p><p><span><strong>RESTART/RECHALLENGE</strong></span></p><p><span>Restart and/or rechallenge is allowed per protocol but do not resume study intervention unless Sponsor Safety Review Board approval is granted; If restart and/or rechallenge is not granted, permanently discontinue study intervention and continue participant in the study for any protocol specified follow up assessments. Refer to Restart and/or Rechallenge guidelines in Section 12.4</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Viral serology</span><span><sup>4</sup></span></p><p><span>Antinuclear antibody, antismooth muscle antibody, Type 1 antiliver kidney microsomal antibodies, and quantitative total immunoglobulin G (IgG) or gamma globulins.</span></p><p><span>Obtain additional tests such as a serum creatine phosphokinase (CPK),lactate dehydrogenase (LDH), gamma-glutamyltransferase [GGT], glutamate dehydrogenase [GLDH], and serum albumin; complete blood count with differentials</span></p><p><span>Fractionate bilirubin, if total bilirubin ≥ 2 x ULN</span></p><p><span>Obtain blood sample for pharmacokinetic (PK) analysis within 7 days after the most recent dose</span><span><sup>5</sup></span></p><p><span>Record the appearance or worsening of clinical symptoms of liver injury, or hypersensitivity liver event/expedited reporting form</span></p><p><span>Record use of concomitant medications (including acetaminophen, herbal remedies, recreational drugs and other over-the-counter medications)</span></p><p><span>Record alcohol use on the liver event alcohol intake form</span></p><p><span>If ALT ≥ 3 x ULN AND total bilirubin ≥ 2 x ULN or INR &gt; 1.5 obtain the following in addition to the assessments listed above:</span></p><p><span>Serum acetaminophen adduct, when available, assay to assess potential acetaminophen contribution to liver injury in participants with definite or likely acetaminophen use in the preceding week</span></p><p><span>Liver imaging (ultrasound, magnetic resonance, or computed tomography) to evaluate liver disease; complete liver imaging form.</span></p><p><span>Liver biopsy may be discussed with local specialist if available, for instance:</span></p><p><span>In participants when serology raises the possibility of autoimmune hepatitis (AIH)</span></p><p><span>In participants when suspected DILI progresses or fails to resolve on withdrawal of study intervention</span></p><p><span>In participants with acute or chronic atypical presentation: hepatic vascular disorder, chronic hepatitis fibrosis, micro vesicular statosis</span></p><p><span>If liver biopsy conducted complete liver biopsy form</span></p></td></tr></table><p><span>Serum bilirubin fractionation should be performed if testing is available. If serum bilirubin fractionation testing is unavailable, </span><span><strong>record the absence/presence of detectable urinary bilirubin on dipstick</strong></span><span> which is indicative of direct bilirubin elevations suggesting liver injury.</span></p><p><span>All events of ALT ≥ 3 x ULN </span><span><strong>and</strong></span><span> total bilirubin ≥ 2 x ULN (for participants with known Gilbert’s syndrome these criteria only apply if total bilirubin &gt;2xULN, and direct bilirubin ≥2xULN and at least doubled from baseline value) or ALT ≥ 3 x ULN </span><span><strong>and</strong></span><span> INR &gt; 1.5 may indicate severe liver injury </span><span><strong>(possible ‘Hy’s Law’) and</strong></span><span> </span><span><strong>must be reported to sponsor in an expedited manner and as an SAE if SAE criteria met (excluding studies of hepatic impairment or cirrhosis)</strong></span><span>. The INR stated threshold value will not apply to participants receiving anticoagulants.</span></p><p><span>New or worsening symptoms believed to be related to liver injury (such as fatigue, nausea, vomiting, right upper quadrant pain or tenderness, or jaundice) or hypersensitivity (such as fever, rash or eosinophilia).</span></p><p><span>PK sample may not be required for participants known to be receiving noncomparator interventions. Record the date/time of the PK blood sample draw and the date/time of the last dose of study intervention prior to the PK blood sample draw on the CRF. If the date or time of the last dose is unclear, provide the participant’s best approximation. If the date/time of the last dose cannot be approximated OR a PK sample cannot be collected in the time period indicated above, do not obtain a PK sample. Instructions for sample handling and shipping are in the Study Reference Manual.</span></p><p><span>Acetaminophen-protein adduct testing and HDV RNA quantification are described by James 2009 and Le Gal 2005, respectively.</span></p></div>"
           }
          },
          {
@@ -3315,7 +3332,7 @@
           "title": "Liver Safety: Liver Event Increased Monitoring Criteria With Continued Study Intervention",
           "text": {
            "status": "additional",
-           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"caption\"><span><strong>Table 15. Phase 3-4 Liver Event Increased Monitoring Criteria with Continued Study Intervention (ALT Only)</strong></span></p><table><colgroup><col style=\"width:197.1pt\" /><col style=\"width:270.4pt\" /></colgroup><tr><th rowspan=\"1\" colspan=\"2\"><p><span><strong>Liver Event Increased Monitoring Criteria and Actions with Continued Study Intervention</strong></span></p></th></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>Criteria</strong></span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span><strong>Actions</strong></span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>ALT ³ 5 x ULN and</span><span><strong> </strong></span><span>&lt; 8 x ULN </span><span><strong>and</strong></span><span> total bilirubin &lt; 2 x ULN or INR &lt; 1.5 </span><span><strong>without</strong></span><span> symptoms believed to be related to liver injury or hypersensitivity, </span><span><strong>and</strong></span><span> who can be monitored weekly for 2 weeks.</span></p><p><span>OR</span></p><p><span>ALT ³ 3 x ULN and &lt; 5 x ULN </span><span><strong>and</strong></span><span> total bilirubin &lt; 2 x ULN </span><span><strong>without</strong></span><span> symptoms believed to be related to liver injury or hypersensitivity, </span><span><strong>and</strong></span><span> who can be monitored weekly for 4 weeks.</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Notify the Sponsor </span><span><strong>within 24 hours</strong></span><span> of learning of the abnormality to discuss participant safety.</span></p><p><span>Participant can continue study intervention.</span></p><p><span>Participant must return weekly for repeat liver chemistry tests (ALT, AST, alkaline phosphatase, total bilirubin) until they stabilize (i.e., ALT or AST &lt;3xULN, and no increases in total bilirubin and INR) or return to or remain within baseline or normal limits.</span></p><p><span>If at any time, the participant meets liver event stopping criteria, proceed as described in Section 7.1.1.1 and Section 12.4.</span></p><p><span>If ALT decreases from ALT ≥5xULN and &lt;8xULN to ≥3xULN but &lt;5xULN (total bilirubin &lt;2xULN and INR ≤1.5), continue to monitor liver chemistries weekly.</span></p><p><span>If, after 4 weeks of monitoring, stopping criteria have not been met but any of the monitored liver chemistry (ALT, AST, alkaline phosphatase, total bilirubin and INR) remains abnormal /above baseline, monitor participants twice monthly until they stabilize or return to within baseline or normal limits. Alternatively, the monitoring can return to standard as per protocol when the values are stable or no longer significantly abnormal (this may require local investigation of potential causes for liver chemistry abnormality)</span></p></td></tr></table></div>"
+           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"caption\"><span><strong>Table 15. Phase 3-4 Liver Event Increased Monitoring Criteria with Continued Study Intervention (ALT Only)</strong></span></p><table><colgroup><col style=\"width:197.1pt\" /><col style=\"width:270.4pt\" /></colgroup><tr><th rowspan=\"1\" colspan=\"2\"><p><span><strong>Liver Event Increased Monitoring Criteria and Actions with Continued Study Intervention</strong></span></p></th></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span><strong>Criteria</strong></span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span><strong>Actions</strong></span></p></td></tr><tr><td rowspan=\"1\" colspan=\"1\"><p><span>ALT ≥ 5 x ULN and</span><span><strong> </strong></span><span>&lt; 8 x ULN </span><span><strong>and</strong></span><span> total bilirubin &lt; 2 x ULN or INR &lt; 1.5 </span><span><strong>without</strong></span><span> symptoms believed to be related to liver injury or hypersensitivity, </span><span><strong>and</strong></span><span> who can be monitored weekly for 2 weeks.</span></p><p><span>OR</span></p><p><span>ALT ≥ 3 x ULN and &lt; 5 x ULN </span><span><strong>and</strong></span><span> total bilirubin &lt; 2 x ULN </span><span><strong>without</strong></span><span> symptoms believed to be related to liver injury or hypersensitivity, </span><span><strong>and</strong></span><span> who can be monitored weekly for 4 weeks.</span></p></td><td rowspan=\"1\" colspan=\"1\"><p><span>Notify the Sponsor </span><span><strong>within 24 hours</strong></span><span> of learning of the abnormality to discuss participant safety.</span></p><p><span>Participant can continue study intervention.</span></p><p><span>Participant must return weekly for repeat liver chemistry tests (ALT, AST, alkaline phosphatase, total bilirubin) until they stabilize (i.e., ALT or AST &lt;3xULN, and no increases in total bilirubin and INR) or return to or remain within baseline or normal limits.</span></p><p><span>If at any time, the participant meets liver event stopping criteria, proceed as described in Section 7.1.1.1 and Section 12.4.</span></p><p><span>If ALT decreases from ALT ≥5xULN and &lt;8xULN to ≥3xULN but &lt;5xULN (total bilirubin &lt;2xULN and INR ≤1.5), continue to monitor liver chemistries weekly.</span></p><p><span>If, after 4 weeks of monitoring, stopping criteria have not been met but any of the monitored liver chemistry (ALT, AST, alkaline phosphatase, total bilirubin and INR) remains abnormal /above baseline, monitor participants twice monthly until they stabilize or return to within baseline or normal limits. Alternatively, the monitoring can return to standard as per protocol when the values are stable or no longer significantly abnormal (this may require local investigation of potential causes for liver chemistry abnormality)</span></p></td></tr></table></div>"
           }
          },
          {
@@ -3400,7 +3417,7 @@
    }
   },
   {
-   "fullUrl": "urn:uuid:19d9a9e4-ee6e-5ec1-aa75-1ef0af1e5b3e",
+   "fullUrl": "urn:uuid:f3e9ff81-11e2-5fb7-b553-79c3dcae8a9b",
    "resource": {
     "resourceType": "ResearchStudy",
     "meta": {
@@ -3432,7 +3449,7 @@
      {
       "url": "http://hl7.org/fhir/uv/clinical-study-protocol/StructureDefinition/narrative-elements",
       "valueReference": {
-       "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a"
+       "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d"
       }
      },
      {
@@ -3457,7 +3474,7 @@
         "url": "signature",
         "valueSignature": {
          "who": {
-          "reference": "urn:uuid:5f86cf93-d3d3-581b-a04e-ee39bba21699"
+          "reference": "urn:uuid:6506a6b3-5f67-57f3-8d7d-251371f49dfd"
          }
         }
        }
@@ -3561,7 +3578,7 @@
     "focus": [
      {
       "reference": {
-       "reference": "urn:uuid:ef12a096-aca1-5945-b2c5-59b263916f26"
+       "reference": "urn:uuid:6b839b92-7921-58ee-acd5-83b2ed1c666d"
       }
      }
     ],
@@ -3577,7 +3594,7 @@
        ]
       },
       "party": {
-       "reference": "urn:uuid:83ddce90-1cbb-5271-bdc7-26dee2845bb4"
+       "reference": "urn:uuid:7341caf6-5d4d-5542-9075-de555532024f"
       }
      },
      {
@@ -3591,14 +3608,14 @@
        ]
       },
       "party": {
-       "reference": "urn:uuid:85267c5b-8dbc-5684-9bca-bfc175ef32b3"
+       "reference": "urn:uuid:e5e9a14f-ec7f-504c-b616-4ad81d03ee16"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:5f86cf93-d3d3-581b-a04e-ee39bba21699",
+   "fullUrl": "urn:uuid:6506a6b3-5f67-57f3-8d7d-251371f49dfd",
    "resource": {
     "resourceType": "Practitioner",
     "name": [
@@ -3609,7 +3626,7 @@
    }
   },
   {
-   "fullUrl": "urn:uuid:ef12a096-aca1-5945-b2c5-59b263916f26",
+   "fullUrl": "urn:uuid:6b839b92-7921-58ee-acd5-83b2ed1c666d",
    "resource": {
     "resourceType": "MedicinalProductDefinition",
     "identifier": [
@@ -3641,14 +3658,14 @@
    }
   },
   {
-   "fullUrl": "urn:uuid:83ddce90-1cbb-5271-bdc7-26dee2845bb4",
+   "fullUrl": "urn:uuid:7341caf6-5d4d-5542-9075-de555532024f",
    "resource": {
     "resourceType": "Organization",
     "name": "Hackathon Demo Company, 100 Demo Way, Suite 400, Princeton, NJ 08544, United States."
    }
   },
   {
-   "fullUrl": "urn:uuid:85267c5b-8dbc-5684-9bca-bfc175ef32b3",
+   "fullUrl": "urn:uuid:e5e9a14f-ec7f-504c-b616-4ad81d03ee16",
    "resource": {
     "resourceType": "Practitioner",
     "text": {
@@ -3658,7 +3675,7 @@
    }
   },
   {
-   "fullUrl": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c",
+   "fullUrl": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3",
    "resource": {
     "resourceType": "Device",
     "text": {
@@ -3681,7 +3698,7 @@
    }
   },
   {
-   "fullUrl": "urn:uuid:ae61962b-30d9-564c-a0ec-6fd0b61303c3",
+   "fullUrl": "urn:uuid:a0c8a205-e31f-5cc3-9b9f-5a75acb601d6",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -3690,7 +3707,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -3699,7 +3716,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -3719,14 +3736,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:807a8c82-1ae7-5009-8b70-a525eaa8e042",
+   "fullUrl": "urn:uuid:97100c51-9748-55ba-886f-9b0253d3a7c9",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -3735,7 +3752,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -3744,7 +3761,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -3764,14 +3781,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:c84e5e91-e52c-5f0f-9784-bcc645e7a710",
+   "fullUrl": "urn:uuid:fb0c32f3-3919-5641-bb15-3daccb08084f",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -3780,7 +3797,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -3789,7 +3806,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -3809,14 +3826,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:a3df0254-3adf-5421-bc7f-045937dd7008",
+   "fullUrl": "urn:uuid:35f8473d-a461-543a-90b7-9d7f5eae8bc1",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -3825,7 +3842,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -3834,7 +3851,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -3854,14 +3871,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:902dcfa7-f0cc-5a64-b2a4-8f2489051585",
+   "fullUrl": "urn:uuid:addf9511-8009-5558-a753-d48cca72a4b5",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -3870,7 +3887,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -3879,7 +3896,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -3899,14 +3916,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:cd3e288c-cfa2-5790-8dd4-7892962ee1e1",
+   "fullUrl": "urn:uuid:0ac1b85e-071b-5cdc-9698-09d23a174fb1",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -3915,7 +3932,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -3924,7 +3941,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -3944,14 +3961,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:6bac0c7a-bf47-5398-9f4c-eb26efac3e91",
+   "fullUrl": "urn:uuid:c6a46ca3-6f2d-5167-81f4-3a3df44e6c24",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -3960,7 +3977,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -3969,7 +3986,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -3989,14 +4006,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:0bf794d3-1bdb-5dc9-a4a9-4cc90f9db007",
+   "fullUrl": "urn:uuid:804bd0b6-9025-5af4-831e-66c380792357",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4005,7 +4022,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4014,7 +4031,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4034,14 +4051,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:effeb490-55e9-5d44-b860-df6539383aef",
+   "fullUrl": "urn:uuid:84be9319-b819-542b-8d64-4204bf702a23",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4050,7 +4067,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4059,7 +4076,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4079,14 +4096,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:32311f1f-530a-5269-9566-5430b00ff92d",
+   "fullUrl": "urn:uuid:01c1f739-66fb-5dfd-913c-f24927cf37a0",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4095,7 +4112,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4104,7 +4121,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4124,14 +4141,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:f15936e9-8e8a-52bb-9603-9416f67d2ea0",
+   "fullUrl": "urn:uuid:e9e8e426-23a7-512f-8b3f-96f4d0ef10a1",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4140,7 +4157,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4149,7 +4166,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4169,14 +4186,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:30ae3db7-9ecf-5c81-88e4-c65dc6df88a3",
+   "fullUrl": "urn:uuid:0336c7ad-5818-5db5-bd10-26ddb67de6b8",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4185,7 +4202,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4194,7 +4211,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4214,14 +4231,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:85842573-e0f6-5325-a756-84231b16c052",
+   "fullUrl": "urn:uuid:ccf9b52e-02fe-5e8a-8512-10f71c94c9cd",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4230,7 +4247,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4239,7 +4256,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4259,14 +4276,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:4e76b57c-393d-5604-a812-9f168e15ef18",
+   "fullUrl": "urn:uuid:762256eb-f77b-53b3-be0f-80b94658069d",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4275,7 +4292,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4284,7 +4301,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4304,14 +4321,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:f4c27f19-d72c-5ecb-8a0f-d325b144f350",
+   "fullUrl": "urn:uuid:cfa7f75f-df78-5288-9f88-d25bd425a106",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4320,7 +4337,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4329,7 +4346,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4349,14 +4366,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:f5de2848-2416-5456-828c-8a06aebb4fae",
+   "fullUrl": "urn:uuid:03abbb26-271c-5011-88aa-34109295ee55",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4365,7 +4382,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4374,7 +4391,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4394,14 +4411,59 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:981d9937-1a2f-59c7-8e29-4590fb221265",
+   "fullUrl": "urn:uuid:256cabe8-09a0-5a42-8dfa-a5ec4018e9d4",
+   "resource": {
+    "resourceType": "Provenance",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Section 4.2.7 Rationale for Other Trial Design Aspects: drafted by codex-default.</p></div>"
+    },
+    "target": [
+     {
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
+      "extension": [
+       {
+        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
+        "valueUri": "sec-4.2.7"
+       }
+      ]
+     }
+    ],
+    "recorded": "2026-11-15T12:25:26+00:00",
+    "activity": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+       "code": "CREATE"
+      }
+     ]
+    },
+    "agent": [
+     {
+      "type": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+         "code": "author"
+        }
+       ]
+      },
+      "who": {
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:523af891-f4eb-52b0-9cc2-10afa22b9112",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4410,7 +4472,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4419,7 +4481,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4439,14 +4501,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:4ae9afd3-825f-56f3-8877-f9fa00eb633f",
+   "fullUrl": "urn:uuid:35122180-867e-5808-8270-bc0c6ced685d",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4455,7 +4517,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4464,7 +4526,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4484,14 +4546,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:a322901f-2b1d-57de-ac26-9d9c8ed39e5d",
+   "fullUrl": "urn:uuid:6f5fe6fe-6227-59ca-bb57-7a65a32ee6ab",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4500,7 +4562,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4509,7 +4571,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4529,14 +4591,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:418cb637-469f-5ead-b996-a94d5648efef",
+   "fullUrl": "urn:uuid:f0b1b5e7-f357-5b38-aede-edc80432d990",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4545,7 +4607,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4554,7 +4616,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4574,14 +4636,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:b268a470-fac8-558c-b2ad-727302ba8910",
+   "fullUrl": "urn:uuid:d3740271-8ff8-532a-8e50-7d202f4a6404",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4590,7 +4652,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4599,7 +4661,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4619,14 +4681,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:1dec63f3-d9dc-57af-83f3-86050d0a8c9d",
+   "fullUrl": "urn:uuid:36a1a7a9-a773-52e9-b1bd-2a6aa9f2c3d2",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4635,7 +4697,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4644,7 +4706,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4664,14 +4726,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:12dbeb7a-2f26-5120-95a9-cce1041457e3",
+   "fullUrl": "urn:uuid:b3386f5d-9a90-5bb7-a00a-8df9c25bb490",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4680,7 +4742,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4689,7 +4751,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4709,14 +4771,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:ed27643c-a7f5-56d5-a41a-362ac90790f8",
+   "fullUrl": "urn:uuid:75517498-0971-5036-9e6b-1fd06d9627cb",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4725,7 +4787,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4734,7 +4796,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4754,14 +4816,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:b4b7e721-ecd7-5bcc-bb19-0154d4e9cfd3",
+   "fullUrl": "urn:uuid:e52797a9-7780-55ce-8433-fc88810480dd",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4770,7 +4832,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4779,7 +4841,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4799,14 +4861,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:708c4f1c-d8cf-57aa-86bf-850e5ae1c9df",
+   "fullUrl": "urn:uuid:9dbfc6b1-2ede-54e3-8c26-901ecf01b8cb",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4815,7 +4877,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4824,7 +4886,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4844,14 +4906,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:bd3c11d6-2c0b-59e0-8a9e-ffeb21758491",
+   "fullUrl": "urn:uuid:f690938a-f864-5e50-93fd-fd0d2e2473fa",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4860,7 +4922,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4869,7 +4931,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4889,14 +4951,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:b6bf9b47-c4de-5270-bb9e-5335f622b51d",
+   "fullUrl": "urn:uuid:a2cb5902-aed2-5800-9582-549db727145f",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4905,7 +4967,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4914,7 +4976,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4934,14 +4996,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:d4b2053b-9ac2-5d03-aacc-599213f6085f",
+   "fullUrl": "urn:uuid:20be611f-fc5f-5f07-895b-da0fd154a60e",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4950,7 +5012,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -4959,7 +5021,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -4979,14 +5041,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:2fc70c02-2eaa-5dff-909a-a013451750bf",
+   "fullUrl": "urn:uuid:fe934505-2313-58a9-82ab-ac930cf0d865",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -4995,7 +5057,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5004,7 +5066,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -5024,14 +5086,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:a1a486c5-239c-5026-84ef-1ef65ffaf918",
+   "fullUrl": "urn:uuid:a0ff185f-c8a4-5a03-ae8e-8a6ee54d9d89",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -5040,7 +5102,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5049,7 +5111,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -5069,14 +5131,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:78b53b72-1fc6-5d6d-825a-8a8f25b6fb56",
+   "fullUrl": "urn:uuid:bd533887-0ffe-56b0-8c1d-ee1bc34e73d9",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -5085,7 +5147,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5094,7 +5156,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -5114,14 +5176,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:05d48ba1-cef3-5a96-b05d-fe74997547ed",
+   "fullUrl": "urn:uuid:5139da6c-6d31-5052-bec4-0c4e7f93c32a",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -5130,7 +5192,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5139,7 +5201,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -5159,14 +5221,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:2e9d2fb1-7256-57ac-b306-ca8912ab93ea",
+   "fullUrl": "urn:uuid:d8e6d660-71fc-5741-a663-3f3db53248b1",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -5175,7 +5237,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5184,7 +5246,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -5204,14 +5266,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:a9fbb348-32f3-541a-af1b-21e577ebf69e",
+   "fullUrl": "urn:uuid:eeb702c1-7079-54f1-babb-e0570499f2ea",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -5220,7 +5282,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5229,7 +5291,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -5249,14 +5311,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:18539453-8669-53ae-be0a-44e630fa7dea",
+   "fullUrl": "urn:uuid:5a192a43-cb5c-528f-9e3f-101ba50a968e",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -5265,7 +5327,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5274,7 +5336,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -5294,14 +5356,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:dc6460a1-679b-567f-8587-9f767a83de67",
+   "fullUrl": "urn:uuid:e4347c36-e428-53a9-bc95-9b4752ad5307",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -5310,7 +5372,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5319,7 +5381,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -5339,14 +5401,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:f2b0bc40-9977-59fa-88ca-dcf50751f8fc",
+   "fullUrl": "urn:uuid:071fd1bb-4517-5c9e-af04-afc65ee1a8df",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -5355,7 +5417,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5364,7 +5426,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -5384,14 +5446,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:35a917bf-c365-5c27-ac32-3bd1851c8589",
+   "fullUrl": "urn:uuid:69fd8386-d507-5991-9620-6d42556e6620",
    "resource": {
     "resourceType": "Provenance",
     "text": {
@@ -5400,7 +5462,7 @@
     },
     "target": [
      {
-      "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+      "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
       "extension": [
        {
         "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5409,7 +5471,7 @@
       ]
      }
     ],
-    "recorded": "2026-11-15T10:43:59+00:00",
+    "recorded": "2026-11-15T12:25:26+00:00",
     "activity": {
      "coding": [
       {
@@ -5429,14 +5491,14 @@
        ]
       },
       "who": {
-       "reference": "urn:uuid:c62fd73d-0719-55a3-a945-37d456c4da0c"
+       "reference": "urn:uuid:7d56ebd3-c428-5c32-8fc3-9b0d2ec3ebf3"
       }
      }
     ]
    }
   },
   {
-   "fullUrl": "urn:uuid:c6f81b49-49fe-5db6-a223-1d71877c167d",
+   "fullUrl": "urn:uuid:44e97654-decd-5075-8b6d-148c34652ae3",
    "resource": {
     "resourceType": "Task",
     "text": {
@@ -5456,7 +5518,7 @@
     },
     "description": "Section 1.1.1 Primary and Secondary Objectives and Estimands: enter Fields summary rows 3 estimand summary, Fields summary rows 3 objective, Fields summary rows 4 estimand summary, Fields summary rows 4 objective, Fields summary rows 5 estimand summary, Fields summary rows 5 objective, Fields summary rows 6 estimand summary, Fields summary rows 6 objective, Fields summary rows 7 estimand summary, Fields summary rows 7 objective. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5464,16 +5526,16 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:ab9c106d-5062-5305-b264-63dd2634df27",
+   "fullUrl": "urn:uuid:e556612b-0597-5854-913c-cc78197f3039",
    "resource": {
     "resourceType": "Task",
     "text": {
      "status": "generated",
-     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Section 3.2.2 Secondary Objective 2: enter Category label, Estimands 1 endpoint, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.</p></div>"
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Section 1.1.2 Overall Design: enter Fields intervention codes 1. The drafted value had low confidence and was left out of this export.</p></div>"
     },
     "status": "requested",
     "intent": "order",
@@ -5486,9 +5548,41 @@
      ],
      "text": "Enter content withheld for low confidence"
     },
-    "description": "Section 3.2.2 Secondary Objective 2: enter Category label, Estimands 1 endpoint, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.",
+    "description": "Section 1.1.2 Overall Design: enter Fields intervention codes 1. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
+     "extension": [
+      {
+       "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
+       "valueUri": "sec-1.1.2"
+      }
+     ]
+    },
+    "authoredOn": "2026-11-15T12:25:31+00:00"
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:8dc9af19-c5b5-5489-95d2-37e728beb5b2",
+   "resource": {
+    "resourceType": "Task",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Section 3.2.2 Secondary Objective 2: enter Category label, Estimands 1 endpoint, Estimands 1 intercurrent events 1 description, Estimands 1 intercurrent events 1 strategy, Estimands 1 intercurrent events 2 description, Estimands 1 intercurrent events 2 strategy, Estimands 1 intercurrent events 3 description, Estimands 1 intercurrent events 3 strategy, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.</p></div>"
+    },
+    "status": "requested",
+    "intent": "order",
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/CodeSystem/task-code",
+       "code": "change"
+      }
+     ],
+     "text": "Enter content withheld for low confidence"
+    },
+    "description": "Section 3.2.2 Secondary Objective 2: enter Category label, Estimands 1 endpoint, Estimands 1 intercurrent events 1 description, Estimands 1 intercurrent events 1 strategy, Estimands 1 intercurrent events 2 description, Estimands 1 intercurrent events 2 strategy, Estimands 1 intercurrent events 3 description, Estimands 1 intercurrent events 3 strategy, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.",
+    "focus": {
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5496,16 +5590,16 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:9f84ab27-a8b4-5201-a00a-7578a5bff1b8",
+   "fullUrl": "urn:uuid:f4805d8d-12be-5973-ab07-871d8db3d2bb",
    "resource": {
     "resourceType": "Task",
     "text": {
      "status": "generated",
-     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Section 3.2.3 Secondary Objective 3: enter Category label, Estimands 1 endpoint, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.</p></div>"
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Section 3.2.3 Secondary Objective 3: enter Category label, Estimands 1 endpoint, Estimands 1 intercurrent events 1 description, Estimands 1 intercurrent events 1 strategy, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.</p></div>"
     },
     "status": "requested",
     "intent": "order",
@@ -5518,9 +5612,9 @@
      ],
      "text": "Enter content withheld for low confidence"
     },
-    "description": "Section 3.2.3 Secondary Objective 3: enter Category label, Estimands 1 endpoint, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.",
+    "description": "Section 3.2.3 Secondary Objective 3: enter Category label, Estimands 1 endpoint, Estimands 1 intercurrent events 1 description, Estimands 1 intercurrent events 1 strategy, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5528,11 +5622,11 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:31bcfbbf-0816-584b-9628-a634333e2ac8",
+   "fullUrl": "urn:uuid:0ca7ca56-1977-5f8e-b3f8-6bcb644f0d51",
    "resource": {
     "resourceType": "Task",
     "text": {
@@ -5552,7 +5646,7 @@
     },
     "description": "Section 3.2.4 Secondary Objective 4: enter Category label, Estimands 1 endpoint, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5560,11 +5654,11 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:33977d88-152f-5b30-88ab-0070c1cdd32f",
+   "fullUrl": "urn:uuid:ea5e8fe8-4a6c-5f0d-9c4c-bfbe9024754b",
    "resource": {
     "resourceType": "Task",
     "text": {
@@ -5584,7 +5678,7 @@
     },
     "description": "Section 3.2.5 Secondary Objective 5: enter Category label, Estimands 1 endpoint, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5592,11 +5686,11 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:67158047-de41-5a2b-9fe3-927e8ab2cc7b",
+   "fullUrl": "urn:uuid:2869e083-0a9e-5151-8537-c83e23556fba",
    "resource": {
     "resourceType": "Task",
     "text": {
@@ -5616,7 +5710,7 @@
     },
     "description": "Section 3.2.6 Secondary Objective 6: enter Category label, Estimands 1 endpoint, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5624,11 +5718,11 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:2b905bee-927f-519f-a7dd-be06e7c4d253",
+   "fullUrl": "urn:uuid:85e98548-ef73-5fb8-9257-b458646645ca",
    "resource": {
     "resourceType": "Task",
     "text": {
@@ -5648,7 +5742,7 @@
     },
     "description": "Section 3.3.1 Exploratory Objective 1: enter Category label, Estimands 1 endpoint, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5656,11 +5750,11 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:4f4dcf90-2a66-59f5-9c92-8acca1e82579",
+   "fullUrl": "urn:uuid:1d1a74f7-789f-511e-a04a-c1f29f1111c4",
    "resource": {
     "resourceType": "Task",
     "text": {
@@ -5680,7 +5774,7 @@
     },
     "description": "Section 3.3.2 Exploratory Objective 2: enter Category label, Estimands 1 endpoint, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5688,11 +5782,11 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:7b5acbb4-41a7-56c5-88f9-1e29a4611d9a",
+   "fullUrl": "urn:uuid:cb28487d-bb1f-5f40-a388-b7a4ac5b302d",
    "resource": {
     "resourceType": "Task",
     "text": {
@@ -5712,7 +5806,7 @@
     },
     "description": "Section 3.3.3 Exploratory Objective 3: enter Category label, Estimands 1 endpoint, Estimands 1 population, Estimands 1 population level summary, Estimands 1 treatment, Statement. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5720,11 +5814,11 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:8b0480d9-8adb-539a-83fd-1a2b96be052f",
+   "fullUrl": "urn:uuid:2d3c2607-815a-510d-8296-7de604e7b844",
    "resource": {
     "resourceType": "Task",
     "text": {
@@ -5744,7 +5838,7 @@
     },
     "description": "Section 4.2.1 Rationale for Estimand(s): enter section text. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5752,11 +5846,11 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:53e750f7-b63a-515b-9eb6-7d9db1c88048",
+   "fullUrl": "urn:uuid:85c67b02-87e2-5003-813b-9ff5f9c847b7",
    "resource": {
     "resourceType": "Task",
     "text": {
@@ -5776,7 +5870,7 @@
     },
     "description": "Section 4.2.4 Rationale for Trial Duration: enter section text. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5784,11 +5878,11 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:637308af-b51d-5b4e-8712-3023ef36df4e",
+   "fullUrl": "urn:uuid:f37378f0-b361-5c0c-9837-202f29906079",
    "resource": {
     "resourceType": "Task",
     "text": {
@@ -5808,7 +5902,7 @@
     },
     "description": "Section 4.2.6 Rationale for Interim Analysis: enter section text. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5816,16 +5910,16 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   },
   {
-   "fullUrl": "urn:uuid:39b3da1c-8a4b-524b-81d5-3c7ed53b4b6d",
+   "fullUrl": "urn:uuid:24f04ea4-bef2-5f4e-9a0a-a194047aa64a",
    "resource": {
     "resourceType": "Task",
     "text": {
      "status": "generated",
-     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Section 6 Trial Intervention And Concomitant Therapy: enter Fields interventions 2 use. The drafted value had low confidence and was left out of this export.</p></div>"
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Section 6 Trial Intervention And Concomitant Therapy: enter Fields interventions 3 arm name, Fields interventions 3 arm type, Fields interventions 4 arm name, Fields interventions 4 arm type. The drafted value had low confidence and was left out of this export.</p></div>"
     },
     "status": "requested",
     "intent": "order",
@@ -5838,9 +5932,9 @@
      ],
      "text": "Enter content withheld for low confidence"
     },
-    "description": "Section 6 Trial Intervention And Concomitant Therapy: enter Fields interventions 2 use. The drafted value had low confidence and was left out of this export.",
+    "description": "Section 6 Trial Intervention And Concomitant Therapy: enter Fields interventions 3 arm name, Fields interventions 3 arm type, Fields interventions 4 arm name, Fields interventions 4 arm type. The drafted value had low confidence and was left out of this export.",
     "focus": {
-     "reference": "urn:uuid:600602a6-425e-50c4-921d-39a72c89356a",
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
      "extension": [
       {
        "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
@@ -5848,7 +5942,39 @@
       }
      ]
     },
-    "authoredOn": "2026-11-15T10:45:02+00:00"
+    "authoredOn": "2026-11-15T12:25:31+00:00"
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:8a77656e-ab57-52e0-ab74-9070cb580e8a",
+   "resource": {
+    "resourceType": "Task",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Section 9.2 Timing and Procedures for Collection and Reporting: enter Fields safety event reporting 4 reportable period start. The drafted value had low confidence and was left out of this export.</p></div>"
+    },
+    "status": "requested",
+    "intent": "order",
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/CodeSystem/task-code",
+       "code": "change"
+      }
+     ],
+     "text": "Enter content withheld for low confidence"
+    },
+    "description": "Section 9.2 Timing and Procedures for Collection and Reporting: enter Fields safety event reporting 4 reportable period start. The drafted value had low confidence and was left out of this export.",
+    "focus": {
+     "reference": "urn:uuid:17ce0ae6-c8d9-5e38-9ed5-58cb8f957c5d",
+     "extension": [
+      {
+       "url": "http://hl7.org/fhir/StructureDefinition/targetElement",
+       "valueUri": "sec-9.2"
+      }
+     ]
+    },
+    "authoredOn": "2026-11-15T12:25:31+00:00"
    }
   }
  ]
