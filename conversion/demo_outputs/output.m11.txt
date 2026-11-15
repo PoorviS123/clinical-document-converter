@@ -1,0 +1,5 @@
+File:          output.ai_assisted.docx
+Rules:         21 (1 did not run)
+Findings:      0 (errors=0, warnings=0, info=0)
+  [NOT RUN] M11_002 Exception: M11_002 requires ctx.ct to be populated; M11Validator must construct the CT Library before calling Runner.run(ctx) (known: crashes in usdm4_protocol 0.11.0; M11_GRP_TP_CT covers its checks)
+RESULT: VALID

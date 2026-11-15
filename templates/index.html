@@ -2,34 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClinicalConverter</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <title>ADAPT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
-<nav class="navbar"><a class="logo" href="/">Clinical<span>Converter</span></a><div class="nav-links"><a href="#how">How it works</a><a href="#outputs">Outputs</a></div></nav>
-<main>
-<section class="hero">
-  <p class="eyebrow">CLINICAL DOCUMENT TRANSFORMATION</p>
-  <h1>From legacy documents to structured clinical data.</h1>
-  <p class="hero-copy">Transform V10 clinical documents into FHIR JSON and V11 documents designed for AI-assisted completion and human review.</p>
-  <div class="upload-box" id="drop-zone">
-    <div class="upload-icon">↑</div><h2>Upload your V10 document</h2>
-    <p>Drop a PDF or DOCX here, or browse your files.</p>
-    <label for="file-upload" class="button secondary">Browse files</label>
-    <input type="file" id="file-upload" accept=".pdf,.docx">
-    <p id="file-name" class="file-name">No file selected</p>
-    <button id="upload-button" class="button primary" disabled>Upload &amp; generate demo outputs</button>
-    <p class="fine-print">PDF or DOCX · Maximum 100 MB · Demo outputs only</p>
-    <p id="upload-status" class="status" role="status" aria-live="polite"></p>
+<body class="desk-page">
+<header class="desk-bar">
+ {% include "_logo.html" %}
+ {% if demo_file %}<span class="demo-badge">Demo mode</span>{% endif %}
+</header>
+
+<main class="desk-narrow">
+<section class="upload-main">
+ <h1 class="desk-title">Convert a CPT v010 protocol to v011</h1>
+ <p class="upload-lead">You'll land in a review desk with the v011 draft, every AI-drafted section marked, and a queue of what needs a person.</p>
+
+ <div class="panel upload-panel">
+  {% if demo_file %}
+  <div class="file-card">
+   <span class="file-icon" aria-hidden="true">DOCX</span>
+   <div><b>{{ demo_file.name }}</b><p>{{ '%.2f'|format(demo_file.size_mb) }} MB · sample protocol. Uploads are off in demo mode.</p></div>
   </div>
+  {% else %}
+  <div class="file-card drop-zone" id="drop-zone">
+   <span class="file-icon" aria-hidden="true">↑</span>
+   <div><b id="file-name">Drop a PDF or DOCX here</b><p>Up to 100 MB</p></div>
+   <label for="file-upload" class="button secondary">Browse files</label>
+   <input type="file" id="file-upload" accept=".pdf,.docx">
+  </div>
+  {% endif %}
+  <div class="upload-actions">
+   <button id="upload-button" class="button primary" {% if not demo_file %}disabled{% endif %}>Start conversion</button>
+   <p id="upload-status" class="status" role="status" aria-live="polite"></p>
+  </div>
+ </div>
+ <p class="fine-print">Local demo, not for protected health information. AI-drafted content must be reviewed before any clinical use.</p>
 </section>
-<section id="outputs" class="section"><p class="eyebrow">THREE OUTPUTS</p><h2>One source document. Three review-ready files.</h2>
-<div class="cards">
- <article class="card"><span class="number">01</span><h3>FHIR JSON</h3><p>Structured, machine-readable output for downstream systems.</p></article>
- <article class="card"><span class="number">02</span><h3>AI-assisted V11</h3><p>V11 document with demo-generated placeholder text highlighted for review.</p></article>
- <article class="card"><span class="number">03</span><h3>Human-review V11</h3><p>Matching document structure with the example gap left open for a human.</p></article>
-</div></section>
-<section id="how" class="section process"><p class="eyebrow">HOW IT WORKS</p><h2>Upload. Transform. Review.</h2><div class="steps"><div><b>01</b><h3>Upload</h3><p>Provide a V10 PDF or DOCX.</p></div><div><b>02</b><h3>Transform</h3><p>Generate three demo output files.</p></div><div><b>03</b><h3>Review</h3><p>Compare the AI-assisted and human-review documents.</p></div></div></section>
-<section class="notice"><strong>Demo mode:</strong> The current converter creates clearly labeled placeholder files. It does not perform clinical conversion or generate clinically valid data. Real conversion will be connected separately.</section>
-</main><footer>ClinicalConverter · Hack Princeton 2026</footer>
+
+<section class="flow" aria-labelledby="flow-heading">
+ <h2 id="flow-heading">How a run works</h2>
+ <p class="flow-lead">Only step 2 uses AI. Everything else follows rules, and every value keeps track of where it came from.</p>
+ <ol class="flow-stages">
+  <li class="stage stage-input">
+   <h3>Input</h3>
+   <div class="node">TransCelerate v010 protocol<small>PDF or Word .docx</small></div>
+  </li>
+  <li class="stage stage-rules stage-sequence">
+   <h3>Step 1 · Deterministic <em>No AI</em></h3>
+   <div class="node">Extract<small>text · tables · figures</small></div>
+   <div class="node">Place into the v011 structure</div>
+   <div class="node node-data">Protocol JSON<small>each value tracks its source</small></div>
+   <div class="node">v011 draft .docx<small>gaps stay placeholders</small></div>
+  </li>
+  <li class="stage stage-ai stage-sequence">
+   <h3>Step 2 · AI drafting <em>AI</em></h3>
+   <div class="node">Section prompts<small>with ICH M11 guidance</small></div>
+   <div class="node">LLM<small>codex · claude · api</small></div>
+   <div class="node node-data">Updated JSON<small>drafts marked ai_generated</small></div>
+  </li>
+  <li class="stage stage-out">
+   <h3>Step 3 · Outputs</h3>
+   <div class="node">v011 protocol .docx<small>AI text highlighted</small></div>
+   <div class="node">FHIR bundle<small>rule-based, no AI</small></div>
+   <div class="node">Report<small>mapped · drafted · left out</small></div>
+  </li>
+  <li class="stage stage-check">
+   <h3>Checks</h3>
+   <div class="node">JSON Schema</div>
+   <div class="node">ICH M11 validator</div>
+   <div class="node">CeSHarP structure</div>
+   <div class="node node-person">Human review<small>on the review desk</small></div>
+  </li>
+ </ol>
+ <div class="flow-refs"><b>Reference material</b><span>Crosswalk mapping</span><span>ICH M11 template and spec</span><span>Terminology: NCIt · CDISC</span><span>HL7 FHIR IG: M11 → FHIR</span></div>
+</section>
+</main>
 <script src="{{ url_for('static', filename='js/upload.js') }}"></script>
 </body></html>

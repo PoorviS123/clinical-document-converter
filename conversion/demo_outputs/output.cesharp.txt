@@ -1,0 +1,254 @@
+File:          output.ai_assisted.docx
+Rules:         214 (0 did not run)
+Findings:      125 (errors=17, warnings=25, info=78)
+  [ERROR  ] CESHARP_IMPORT  
+            SoA not read: the SoA reader needs an AI provider and none is available
+  [ERROR  ] CESHARP_IMPORT  
+            Failed to find a list, numbered paragraphs, or table criteria in section 5.2 in M11 document
+  [ERROR  ] CESHARP_IMPORT  
+            Failed to find a list, numbered paragraphs, or table criteria in section 5.3 in M11 document
+  [ERROR  ] CESHARP_IMPORT  
+            Failed to find any tables in section 1.1.2 in M11 document
+  [ERROR  ] DDF00012  $.Study.StudyVersion[0].InterventionalStudyDesign[0] / InterventionalStudyDesign.scheduleTimelines
+            Expected exactly one main ScheduleTimeline in study design, found 0
+  [ERROR  ] DDF00033  $.Study.StudyVersion[0].StudyIntervention[0].Administration[0].Duration / Duration.text, quantity
+            Duration has neither text nor quantity specified
+  [ERROR  ] DDF00033  $.Study.StudyVersion[0].StudyIntervention[1].Administration[0].Duration / Duration.text, quantity
+            Duration has neither text nor quantity specified
+  [ERROR  ] DDF00033  $.Study.StudyVersion[0].StudyIntervention[2].Administration[0].Duration / Duration.text, quantity
+            Duration has neither text nor quantity specified
+  [ERROR  ] DDF00033  $.Study.StudyVersion[0].StudyIntervention[2].Administration[1].Duration / Duration.text, quantity
+            Duration has neither text nor quantity specified
+  [ERROR  ] DDF00041  $.Study.StudyVersion[0].InterventionalStudyDesign[0] / InterventionalStudyDesign.objectives.endpoints.level
+            Expected at least one Primary Endpoint in study design, found 0
+  [ERROR  ] DDF00097  $.Study.StudyVersion[0].InterventionalStudyDesign[0].StudyDesignPopulation / StudyDesignPopulation.plannedAge
+            plannedAge is not specified on the study population and not specified on any of the 0 cohort(s); specify it on the study population or on all cohorts
+  [ERROR  ] DDF00178  $.Study.StudyVersion[0].StudyIntervention[0].Administration[0] / Administration.dose, frequency
+            dose is set but required frequency is missing
+  [ERROR  ] DDF00178  $.Study.StudyVersion[0].StudyIntervention[1].Administration[0] / Administration.dose, frequency
+            dose is set but required frequency is missing
+  [ERROR  ] DDF00179  $.Study.StudyVersion[0].AdministrableProduct[0] / AdministrableProduct.administrableDoseForm
+            Invalid code 'C17998', the code is not in the codelist
+  [ERROR  ] DDF00179  $.Study.StudyVersion[0].AdministrableProduct[1] / AdministrableProduct.administrableDoseForm
+            Invalid code 'C17998', the code is not in the codelist
+  [ERROR  ] DDF00185  $.Study.StudyVersion[0].StudyIntervention[2].Administration[0] / Administration.dose, administrableProductId, medicalDeviceId
+            Administration: administrable product specified but no dose
+  [ERROR  ] DDF00185  $.Study.StudyVersion[0].StudyIntervention[2].Administration[1] / Administration.dose, administrableProductId, medicalDeviceId
+            Administration: administrable product specified but no dose
+  [WARNING] CESHARP_IMPORT  
+            Ignoring eTree element '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sectPr'
+  [WARNING] CESHARP_IMPORT  
+            Required M11 title page field 'Amendment Identifier' (looked up as 'Amendment Identifier') was not found in the document
+  [WARNING] CESHARP_IMPORT  
+            1.1.2 Overall Design has no design table
+  [WARNING] CESHARP_IMPORT  
+            Failed to find amendments table in section
+  [WARNING] CESHARP_IMPORT  
+            Title '' of type 'public' is not valid, ignored.
+  [WARNING] CESHARP_IMPORT  
+            Title '' of type 'scientific' is not valid, ignored.
+  [WARNING] CESHARP_IMPORT  
+            Dose form 'Single-use vial' for product 'Drug A' not decoded; defaulting to 'Unknown'.
+  [WARNING] CESHARP_IMPORT  
+            Dose form 'Single-use vial' for product 'Drug B' not decoded; defaulting to 'Unknown'.
+  [WARNING] CESHARP_IMPORT  
+            Could not parse strength 'Per local label' for substance 'Entecavir or tenofovir (disoproxil or alafenamide)'; dropping.
+  [WARNING] CESHARP_IMPORT  
+            Frequency 'Q3W, on Day 1 of each 21-day cycle, for up to 35 cycles (approximately 24 months) or until BICR-confirmed progression, unacceptable toxicity, or withdrawal.' not decoded; none recorded
+  [WARNING] CESHARP_IMPORT  
+            Frequency 'Q3W, on Day 1 of each 21-day cycle, for up to 35 cycles (approximately 24 months) or until BICR-confirmed progression, unacceptable toxicity, or withdrawal.' not decoded; none recorded
+  [WARNING] CESHARP_IMPORT  
+            Frequency 'Daily per local prescribing information for participants with detectable HBV DNA at screening; start more than 1 week before the first dose of study intervention and continue during study intervention and for at least 12 months after the last dose.' not decoded; none recorded
+  [WARNING] CESHARP_IMPORT  
+            Frequency 'Daily per local prescribing information for participants with detectable HBV DNA at screening; start more than 1 week before the first dose of study intervention and continue during study intervention and for at least 12 months after the last dose.' not decoded; none recorded
+  [WARNING] CESHARP_IMPORT  
+            Intervention model '' not decoded; defaulting to 'Parallel Study'
+  [WARNING] CESHARP_IMPORT  
+            Planned duration of trial participation supplied but there is no main timeline to hold it; not recorded
+  [WARNING] DDF00039  $.Study.StudyVersion[0].StudyIntervention[0].Administration[0].Duration / Duration.durationWillVary, quantity
+            quantity is set but durationWillVary is missing
+  [WARNING] DDF00039  $.Study.StudyVersion[0].StudyIntervention[1].Administration[0].Duration / Duration.durationWillVary, quantity
+            quantity is set but durationWillVary is missing
+  [WARNING] DDF00039  $.Study.StudyVersion[0].StudyIntervention[2].Administration[0].Duration / Duration.durationWillVary, quantity
+            quantity is set but durationWillVary is missing
+  [WARNING] DDF00039  $.Study.StudyVersion[0].StudyIntervention[2].Administration[1].Duration / Duration.durationWillVary, quantity
+            quantity is set but durationWillVary is missing
+  [WARNING] DDF00045  $.Study.StudyVersion[0].Organization[0].Address / Address
+            No attributes specified for address
+  [WARNING] DDF00099  $.Study.StudyVersion[0].InterventionalStudyDesign[0].StudyEpoch[0] / StudyEpoch.epochId
+            StudyEpoch is not referenced from any ScheduledActivityInstance
+  [WARNING] DDF00101  $.Study.StudyVersion[0].InterventionalStudyDesign[0] / Procedure.studyInterventionId
+            Interventional StudyDesign has no Procedure referencing a StudyIntervention
+  [WARNING] DDF00177  $.Study.StudyVersion[0].StudyIntervention[2].Administration[0] / Administration.dose, route
+            route is set but dose is missing
+  [WARNING] DDF00177  $.Study.StudyVersion[0].StudyIntervention[2].Administration[1] / Administration.dose, route
+            route is set but dose is missing
+  [WARNING] DDF00192  $.Study.StudyVersion[0].InterventionalStudyDesign[0] / StudyRole.masking
+            Double-blind StudyDesign has 0 masked applicable StudyRoles (expected at least 2)
+  [INFO   ] CESHARP_IMPORT  
+            Found M11 title page paragraph
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'None' -> 'Hackathon Demo Company, 100 Demo Way, Suite 400, Princeton, NJ 08544, United States.'
+  [INFO   ] CESHARP_IMPORT  
+            Names and addresses text: Hackathon Demo Company, 100 Demo Way, Suite 400, Princeton, NJ 08544, United States.
+  [INFO   ] CESHARP_IMPORT  
+            Parsing names and address, key sponsor: interim raw result={'sponsor': 'Hackathon Demo Company, 100 Demo Way, Suite 400, Princeton, NJ 08544, United States.\n', 'co_sponsor': None, 'local_sponsor': None, 'device': None}, remaining=
+  [INFO   ] CESHARP_IMPORT  
+            Parsing names and address, key co_sponsor: interim raw result={'sponsor': 'Hackathon Demo Company, 100 Demo Way, Suite 400, Princeton, NJ 08544, United States.\n', 'co_sponsor': None, 'local_sponsor': None, 'device': None}, remaining=
+  [INFO   ] CESHARP_IMPORT  
+            Parsing names and address, key local_sponsor: interim raw result={'sponsor': 'Hackathon Demo Company, 100 Demo Way, Suite 400, Princeton, NJ 08544, United States.\n', 'co_sponsor': None, 'local_sponsor': None, 'device': None}, remaining=
+  [INFO   ] CESHARP_IMPORT  
+            Parsing names and address, key device: interim raw result={'sponsor': 'Hackathon Demo Company, 100 Demo Way, Suite 400, Princeton, NJ 08544, United States.\n', 'co_sponsor': None, 'local_sponsor': None, 'device': None}, remaining=
+  [INFO   ] CESHARP_IMPORT  
+            Parsing names and address: raw result={'sponsor': 'Hackathon Demo Company, 100 Demo Way, Suite 400, Princeton, NJ 08544, United States.\n', 'co_sponsor': None, 'local_sponsor': None, 'device': None}
+  [INFO   ] CESHARP_IMPORT  
+            Organization name set to 'Hackathon Demo Company'
+  [INFO   ] CESHARP_IMPORT  
+            Address result '{'lines': [''], 'city': '', 'district': '', 'state': '', 'postalCode': '', 'country': ''}'
+  [INFO   ] CESHARP_IMPORT  
+            Organization address set to '{'lines': [''], 'city': '', 'district': '', 'state': '', 'postalCode': '', 'country': ''}'
+  [INFO   ] CESHARP_IMPORT  
+            Extracted organisation names and adddress: result={'sponsor': {'name': 'Hackathon Demo Company', 'address': {'lines': [''], 'city': '', 'district': '', 'state': '', 'postalCode': '', 'country': ''}}, 'co_sponsor': None, 'local_sponsor': None, 'device': None}
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Acronym' -> 'DEMO-PROTOCOL'
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Sponsor Protocol Identifier' -> 'Demo-01234'
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Investigational Product Code' -> 'Drug A'
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'None' -> '[Not found in source protocol]'
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'None' -> 'Will be provided separately'
+  [INFO   ] CESHARP_IMPORT  
+            Medical expert name and addresse text: Will be provided separately
+  [INFO   ] CESHARP_IMPORT  
+            Extracted medical expert {'name': None, 'reference': ['Will be provided separately']}
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Original Protocol' -> 'Yes'
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Version Number' -> ''
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Full Title' -> 'A parallel-group treatment, Phase 3, double-blind, 2-arm superiority study to investigate progression-free survival with Drug A intravenous infusion compared with Drug B intravenous infusion in male and female participants 18 years of age and older with previously untreated, PD-L1-positive, locally advanced or metastatic non-small cell lung cancer'
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Short Title' -> 'A study to learn if Drug A given into a vein keeps lung cancer from getting worse for longer than Drug B given into a vein in adults 18 years and older with advanced non-small cell lung cancer that has not been treated before'
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Sponsor Signatory' -> 'Will be provided separately'
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Investigational Product Name' -> ''
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Amendment Identifier' -> ''
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Amendment Scope' -> 'Not applicable'
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Trial Phase' -> 'Phase 3'
+  [INFO   ] CESHARP_IMPORT  
+            Extracting title page field 'Sponsor Confidentiality Statement' -> 'This is a simulated protocol generated using artificial intelligence (AI) for demonstration purposes only and is not intended for use in any clinical study, regulatory submission, or medical decision. It was written in response to a user request for a Phase 3 superiority study in lung cancer. The user provided the TransCelerate BioPharma Common Protocol Template (CPT) Core Basic Word Edition version 010, the CPT Patient Library version 010, and the CPT Liver Safety in Oncology Library version 002, and template and library text was reused verbatim where applicable. Other content, including the study design, scientific rationale, medical and regulatory knowledge, and the literature and health authority guidance cited in the References, was selected and written by the AI and was not specified or verified by the user. All study data, identifiers, and names are simulated, and the content has not been reviewed by qualified clinical, statistical, or regulatory personnel.'
+  [INFO   ] CESHARP_IMPORT  
+            No regulatory identifiers found
+  [INFO   ] CESHARP_IMPORT  
+            Amendment info: {'identifier': '', 'scope': 'Not applicable'}
+  [INFO   ] CESHARP_IMPORT  
+            Section 6 holds the M11 intervention table; stored as structured data, no narrative
+  [INFO   ] CESHARP_IMPORT  
+            Route 'IV infusion' read as 'INTRAVENOUS'
+  [INFO   ] CESHARP_IMPORT  
+            Route 'IV infusion' read as 'INTRAVENOUS'
+  [INFO   ] CESHARP_IMPORT  
+            Route 'Oral Route of Administration' read as 'ORAL'
+  [INFO   ] CESHARP_IMPORT  
+            Route 'Oral Route of Administration' read as 'ORAL'
+  [INFO   ] CESHARP_IMPORT  
+            Committees 'Other' names no committee; not stored
+  [INFO   ] CESHARP_IMPORT  
+            Committees 'Blinded independent central review (BICR)' names no committee; not stored
+  [INFO   ] CESHARP_IMPORT  
+            1.1.2 values with no usdm4 assembler input slot (not stored): number of arms: '2'
+  [INFO   ] CESHARP_IMPORT  
+            No named endpoints available; skipping estimand extraction
+  [INFO   ] CESHARP_IMPORT  
+            Found amendment section at index 2
+  [INFO   ] CESHARP_IMPORT  
+            No amendment table after 'Amendment Details' (protocol may not have been amended)
+  [INFO   ] CESHARP_IMPORT  
+            Amendment information None
+  [INFO   ] CESHARP_IMPORT  
+            Version Number not found on title page; document is an original protocol, defaulting version to '1'
+  [INFO   ] CESHARP_IMPORT  
+            Address set to 
+  [INFO   ] CESHARP_IMPORT  
+            Document status 'FINAL' decoded as 'C25508', 'Final'
+  [INFO   ] CESHARP_IMPORT  
+            Sex 'FEMALE' decoded as 'C16576', 'Female'
+  [INFO   ] CESHARP_IMPORT  
+            Sex 'MALE' decoded as 'C20197', 'Male'
+  [INFO   ] CESHARP_IMPORT  
+            Sourcing 'Centrally Sourced' decoded from C215483 as 'C215659', 'Centrally Sourced Indicator'
+  [INFO   ] CESHARP_IMPORT  
+            Sourcing 'Centrally Sourced' decoded from C215483 as 'C215659', 'Centrally Sourced Indicator'
+  [INFO   ] CESHARP_IMPORT  
+            Sourcing 'Locally Sourced' decoded from C215483 as 'C215660', 'Locally Sourced Indicator'
+  [INFO   ] CESHARP_IMPORT  
+            Route of administration 'INTRAVENOUS' decoded as 'C38276', 'Intravenous Route of Administration'
+  [INFO   ] CESHARP_IMPORT  
+            Intervention role 'EXPERIMENTAL INTERVENTION' decoded as 'C41161', 'Protocol Agent'
+  [INFO   ] CESHARP_IMPORT  
+            Intervention type 'BIOLOGIC' decoded as 'C307', 'Biological Agent'
+  [INFO   ] CESHARP_IMPORT  
+            Route of administration 'INTRAVENOUS' decoded as 'C38276', 'Intravenous Route of Administration'
+  [INFO   ] CESHARP_IMPORT  
+            Intervention role 'EXPERIMENTAL INTERVENTION' decoded as 'C41161', 'Protocol Agent'
+  [INFO   ] CESHARP_IMPORT  
+            Intervention type 'BIOLOGIC' decoded as 'C307', 'Biological Agent'
+  [INFO   ] CESHARP_IMPORT  
+            Route of administration 'ORAL' decoded as 'C38288', 'Oral Route of Administration'
+  [INFO   ] CESHARP_IMPORT  
+            Route of administration 'ORAL' decoded as 'C38288', 'Oral Route of Administration'
+  [INFO   ] CESHARP_IMPORT  
+            Intervention role 'BACKGROUND TREATMENT' decoded as 'C165822', 'Background Treatment'
+  [INFO   ] CESHARP_IMPORT  
+            Intervention type 'DRUG' decoded as 'C1909', 'Pharmacologic Substance'
+  [INFO   ] CESHARP_IMPORT  
+            Arm type 'EXPERIMENTAL ARM' decoded as 'C174266', 'Investigational Arm'
+  [INFO   ] CESHARP_IMPORT  
+            Arm type 'ACTIVE COMPARATOR ARM' decoded as 'C174267', 'Active Comparator Arm'
+  [INFO   ] CESHARP_IMPORT  
+            No epochs supplied; synthesised one Treatment Epoch to hold the arm to intervention link
+  [INFO   ] CESHARP_IMPORT  
+            Trial phase '3' decoded as 'C15602', 'Phase 3', using M11 decode
+  [INFO   ] CESHARP_IMPORT  
+            Blinding schema 'Double Blind' decoded as 'C15228', 'Double Blind Study'
+  [INFO   ] CESHARP_IMPORT  
+            Independent committee 'Independent Data Monitoring Committee' decoded as 'C142578', 'Independent Data Monitoring Committee'
+  [INFO   ] CESHARP_IMPORT  
+            Objective level 'PRIMARY' decoded as 'C85826', 'Trial Primary Objective'
+  [INFO   ] CESHARP_IMPORT  
+            Objective level 'SECONDARY' decoded as 'C85827', 'Trial Secondary Objective'
+  [INFO   ] CESHARP_IMPORT  
+            Objective level 'SECONDARY' decoded as 'C85827', 'Trial Secondary Objective'
+  [INFO   ] CESHARP_IMPORT  
+            Objective level 'SECONDARY' decoded as 'C85827', 'Trial Secondary Objective'
+  [INFO   ] CESHARP_IMPORT  
+            Objective level 'SECONDARY' decoded as 'C85827', 'Trial Secondary Objective'
+  [INFO   ] CESHARP_IMPORT  
+            Objective level 'SECONDARY' decoded as 'C85827', 'Trial Secondary Objective'
+  [INFO   ] CESHARP_IMPORT  
+            Objective level 'SECONDARY' decoded as 'C85827', 'Trial Secondary Objective'
+  [INFO   ] CESHARP_IMPORT  
+            Objective level 'EXPLORATORY' decoded as 'C163559', 'Trial Exploratory Objective'
+  [INFO   ] CESHARP_IMPORT  
+            Objective level 'EXPLORATORY' decoded as 'C163559', 'Trial Exploratory Objective'
+  [INFO   ] CESHARP_IMPORT  
+            Objective level 'EXPLORATORY' decoded as 'C163559', 'Trial Exploratory Objective'
+  [INFO   ] CESHARP_IMPORT  
+            Study name set to 'DEMO01234'
+  [DEBUG  ] CESHARP_IMPORT  
+            RawDocx initialisation: full_path='output.ai_assisted.docx', dir='.', image_path='/var/folders/jj/hx5983kd2_z0f12lgrkmk4mh0000gn/T/tmp2795dj16/output.ai_assisted/images', filename='output.ai_assisted.docx'
+  [DEBUG  ] CESHARP_IMPORT  
+            Creating address, source data: {'lines': [''], 'city': '', 'district': '', 'state': '', 'postalCode': '', 'country': ''}
+  [DEBUG  ] CESHARP_IMPORT  
+            Processing co_sponsor, None
+  [DEBUG  ] CESHARP_IMPORT  
+            Processing local_sponsor, None
+  [DEBUG  ] CESHARP_IMPORT  
+            Processing device_manufacturer, None
+RESULT: INVALID

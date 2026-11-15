@@ -1,25 +1,264 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Results · ClinicalConverter</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head>
-<body><nav class="navbar"><a class="logo" href="/">Clinical<span>Converter</span></a><a class="text-link" href="/">Start another conversion</a></nav>
-<main class="results-main"><div class="results-heading"><p class="eyebrow">CONVERSION COMPLETE · DEMO MODE</p><h1>Your outputs are ready.</h1><p>These are placeholder files for testing the workflow, not converted clinical data.</p></div>
-<section class="download-grid">
- <article class="download-card"><span class="number">01</span><h2>FHIR JSON</h2><p>Structured JSON placeholder.</p><a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='fhir') }}">Download JSON</a><details><summary>Preview JSON</summary><pre id="json-preview">Loading…</pre></details></article>
- <article class="download-card"><span class="number">02</span><h2>AI-assisted V11</h2><p>Demo placeholder text is highlighted yellow.</p><a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">Download DOCX</a></article>
- <article class="download-card"><span class="number">03</span><h2>Human-review V11</h2><p>Matching structure with the example gap left blank.</p><a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='human_review') }}">Download DOCX</a></article>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Review · ADAPT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head>
+<body class="desk-page desk-fit">
+<header class="desk-bar">
+ {% include "_logo.html" %}
+ <span class="file-chip">{{ job.original_filename }} · CPT v010 → v011</span>
+ {% if job.demo %}<span class="demo-badge">Demo mode</span>{% endif %}
+ <span class="desk-bar-gap"></span>
+ <a class="text-link" href="/">New conversion</a>
+ <a class="button secondary" href="{{ url_for('download_output', job_id=job.job_id, kind='fhir') }}">FHIR JSON</a>
+ <a class="button primary" href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">V11 DOCX</a>
+</header>
+
+<section class="desk-stats" aria-label="Run summary">
+ {% if review %}
+ <div><span>AI-drafted sections</span><b class="tone-draft">{{ review.drafted_count }}</b></div>
+ <div><span>Needs human input</span><b class="{{ 'tone-bad' if review.tasks else '' }}">{{ review.tasks|length }}</b><small>{{ 'FHIR bundle is ' ~ review.status if review.status }}</small></div>
+ {% if review.cross_refs_rewritten is not none %}<div><span>Cross-refs rewritten</span><b>{{ review.cross_refs_rewritten }}</b><small>{{ review.cross_refs|length }} to review</small></div>{% endif %}
+ {% endif %}
+ {% for check in job.verification %}
+ <div><span>{{ check.label }}</span><b class="{{ 'tone-good' if check.result == 'VALID' else 'tone-bad' if check.result == 'INVALID' else '' }}">{{ check.result|capitalize }}</b>{% if check.errors is defined %}<small>{{ check.errors }} errors</small>{% endif %}</div>
+ {% endfor %}
 </section>
-<section class="compare"><div><p class="eyebrow">DOCUMENT COMPARISON</p><h2>Compare both V11 versions</h2><p>Each preview scrolls independently. Yellow highlighting marks the demo-generated text.</p></div><div class="compare-grid"><article class="preview-card"><div class="preview-title"><h3>AI-assisted V11</h3><a href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">Download</a></div><div class="docx-scroll" id="ai-preview">Loading preview…</div></article><article class="preview-card"><div class="preview-title"><h3>Human-review V11</h3><a href="{{ url_for('download_output', job_id=job.job_id, kind='human_review') }}">Download</a></div><div class="docx-scroll" id="human-preview">Loading preview…</div></article></div></section>
-</main><footer>ClinicalConverter · Demo output</footer>
+
+<div class="desk">
+<nav class="desk-outline" aria-label="V11 outline">
+ <div class="desk-heading"><h2>V11 outline</h2></div>
+ {% if review %}
+ <div class="chips" role="group" aria-label="Filter outline">
+  <button class="chip" data-filter="all" aria-pressed="true">All</button>
+  <button class="chip" data-filter="drafted" aria-pressed="false">AI-drafted</button>
+  <button class="chip" data-filter="input" aria-pressed="false">Needs input</button>
+ </div>
+ <ol class="outline">
+ {% for section in review.outline %}
+  <li data-drafted="{{ 1 if section.drafted else 0 }}" data-input="{{ 1 if section.needs_input else 0 }}">
+  {% if section.drafted or section.needs_input %}
+   <details>
+    <summary><span class="num">{{ section.number }}</span><span class="name">{{ section.name }}</span>
+     {% if section.needs_input %}<span class="tag tag-input">{{ section.needs_input|length }}</span>{% endif %}
+     {% if section.drafted %}<span class="tag tag-draft">{{ section.drafted|length }} AI</span>{% endif %}</summary>
+    <ul>
+     {% for task in section.needs_input %}<li><button class="jump flag-input" data-section="{{ task.where }}">{{ task.where }}</button></li>{% endfor %}
+     {% for title in section.drafted %}<li><button class="jump flag-draft" data-section="{{ title }}">{{ title }}</button></li>{% endfor %}
+    </ul>
+   </details>
+  {% else %}
+   <button class="jump outline-row" data-section="{{ section.number }} {{ section.name }}"><span class="num">{{ section.number }}</span><span class="name">{{ section.name }}</span></button>
+  {% endif %}
+  </li>
+ {% endfor %}
+ </ol>
+ {% else %}
+ <p class="muted">Outline unavailable: this job has no FHIR bundle.</p>
+ {% endif %}
+</nav>
+
+<main class="desk-doc">
+ <div class="doc-toolbar">
+  <div class="tabs" role="tablist" aria-label="Document version">
+   <button role="tab" id="tab-ai" aria-selected="true" aria-controls="ai-preview">AI-assisted</button>
+   <button role="tab" id="tab-human" aria-selected="false" aria-controls="human-preview">Pre-LLM</button>
+  </div>
+  <div class="legend"><span><i class="swatch-draft"></i>AI-drafted</span><span><i class="swatch-note"></i>Review note</span></div>
+ </div>
+ <div class="docx-scroll" id="ai-preview" role="tabpanel" aria-labelledby="tab-ai">Loading preview…</div>
+ <div class="docx-scroll" id="human-preview" role="tabpanel" aria-labelledby="tab-human" hidden>Loading preview…</div>
+</main>
+
+<aside class="desk-queue" aria-label="Review queue">
+ {% if review %}
+ <section class="panel">
+  <div class="panel-head"><h2>Needs human input</h2><span class="count">{{ review.tasks|length }}</span></div>
+  {% if review.tasks %}
+  <p class="panel-note">Low-confidence values held out of the FHIR bundle. It stays {{ review.status }} until they're entered.</p>
+  <ul class="queue">
+   {% for task in review.tasks %}<li><button class="jump" data-section="{{ task.where }}">{{ task.where }}</button><p>{{ task.what }}</p></li>{% endfor %}
+  </ul>
+  {% else %}<p class="panel-note">Nothing withheld.</p>{% endif %}
+ </section>
+ {% if review.cross_refs %}
+ <section class="panel">
+  <div class="panel-head"><h2>Cross-references to review</h2><span class="count">{{ review.cross_refs|length }}</span></div>
+  <p class="panel-note">Rewritten to the new section, but the content also belongs elsewhere.</p>
+  <ul class="queue">
+   {% for ref in review.cross_refs %}<li><span class="mono">{{ ref.source }} → {{ ref.target }}</span><p>{{ ref.excerpt }}</p></li>{% endfor %}
+  </ul>
+ </section>
+ {% endif %}
+ {% if review.omitted %}
+ <section class="panel">
+  <div class="panel-head"><h2>Optional sections omitted</h2><span class="count">{{ review.omitted|length }}</span></div>
+  <p class="panel-note">Empty after drafting, so left out: <span class="mono">{{ review.omitted|join(', ') }}</span></p>
+ </section>
+ {% endif %}
+ {% endif %}
+
+ <section class="panel">
+  <div class="panel-head"><h2>Validation</h2></div>
+  {% for check in job.verification %}
+  <div class="check" data-result="{{ check.result|lower|replace(' ', '-') }}">
+   <div class="check-head"><b>{{ check.label }}</b><span class="verdict">{{ check.result }}</span></div>
+   {% if check.errors is defined %}<p>{{ check.errors }} errors · {{ check.warnings }} warnings · {{ check.info }} info</p>{% else %}<p>The validator did not produce a result.</p>{% endif %}
+   <details data-kind="{{ check.kind }}"><summary>Full report</summary><pre>Loading…</pre></details>
+  </div>
+  {% endfor %}
+ </section>
+
+ <section class="panel">
+  <div class="panel-head"><h2>Study data (USDM)</h2></div>
+  {% if job.usdm %}<p class="panel-note">Study {{ job.usdm.study_name }} · {{ job.usdm.interventions }} interventions · {{ job.usdm.arms }} arms · {{ job.usdm.objectives }} objectives · {{ job.usdm.sections }} narrative sections</p>
+  <details id="usdm-details"><summary>Browse the USDM JSON</summary><div class="json-tree" id="usdm-tree">Loading…</div></details>
+  {% else %}<p class="panel-note">Unavailable: the M11 importer could not read structured data from this document.</p>{% endif %}
+ </section>
+
+ <section class="panel">
+  <div class="panel-head"><h2>Files</h2></div>
+  <ul class="files">
+   <li><a href="{{ url_for('download_output', job_id=job.job_id, kind='ai_assisted') }}">V11, AI-assisted</a><span>DOCX</span></li>
+   <li><a href="{{ url_for('download_output', job_id=job.job_id, kind='human_review') }}">V11, pre-LLM</a><span>DOCX</span></li>
+   <li><a href="{{ url_for('download_output', job_id=job.job_id, kind='fhir') }}">FHIR bundle</a><span>JSON</span></li>
+   {% if has_protocol_json %}<li><a href="{{ url_for('download_output', job_id=job.job_id, kind='protocol') }}">Protocol JSON, after AI drafting</a><span>JSON</span></li>{% endif %}
+  </ul>
+  <details><summary>Preview FHIR JSON</summary><pre id="json-preview">Loading…</pre></details>
+ </section>
+</aside>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docx-preview@0.4.1/dist/docx-preview.min.js"></script>
 <script>
 const jobId = {{ job.job_id|tojson }};
+const previews = {ai: document.getElementById('ai-preview'), human: document.getElementById('human-preview')};
+const tabs = {ai: document.getElementById('tab-ai'), human: document.getElementById('tab-human')};
+let activeView = 'ai';
+
 fetch(`/api/jobs/${jobId}/fhir`).then(r=>r.json()).then(data=>document.getElementById('json-preview').textContent=JSON.stringify(data,null,2)).catch(()=>document.getElementById('json-preview').textContent='Preview unavailable.');
-async function renderDocx(kind, targetId) {
- const target=document.getElementById(targetId);
+async function renderDocx(kind, target) {
  try {
-  const response=await fetch(`/preview/${jobId}/${kind}`);
+  const response=await fetch(`/files/${jobId}/${kind}`);
   if(!response.ok) throw new Error('Preview unavailable');
-  const html=await response.text();
-  if(!html.trim()) throw new Error('Empty preview response');
-  target.innerHTML=html;
+  target.textContent='';
+  await docx.renderAsync(await response.blob(), target, null, {ignoreLastRenderedPageBreak:false});
+  removeLeadingBlankPage(target);
+  replaceSymbolFontBullets(target);
+  fitPagesToPanel(target);
  } catch(e) { target.textContent='Could not render this document. Please use the download button.'; }
 }
-renderDocx('ai_assisted','ai-preview'); renderDocx('human_review','human-preview');
+// Word list bullets are private-use characters (U+F0B7 and so on) that Word draws through its Symbol and
+// Wingdings fonts. Browsers have no such mapping and draw an empty box, so swap in the Unicode equivalent.
+// The same code means a different glyph in each font, hence one table per font.
+const SYMBOL_FONT_GLYPHS = {
+ Symbol: {0xB7: '•', 0xA8: '♦', 0x2D: '−', 0xB0: '°', 0xB3: '≥', 0xA3: '≤'},
+ Wingdings: {0xA7: '▪', 0x77: '◆', 0xD8: '➢', 0xFC: '✓', 0x6E: '■', 0x71: '❑', 0x76: '❖', 0xA8: '◻'},
+};
+const PRIVATE_USE_SYMBOL = /[-]/g;
+const SYMBOL_FONT_RULE = /content:\s*"([^"]*)";([^}]*?)font-family:\s*(Symbol|Wingdings);/g;
+function replaceSymbolFontBullets(target) {
+ for (const style of target.querySelectorAll('style')) {
+  style.textContent = style.textContent.replace(SYMBOL_FONT_RULE, (rule, content, between, font) => {
+   const glyphs = SYMBOL_FONT_GLYPHS[font];
+   const mapped = content.replace(PRIVATE_USE_SYMBOL, char => glyphs[char.charCodeAt(0) - 0xF000] ?? '•');
+   return `content: "${mapped}";${between}`;
+  });
+ }
+}
+// The v011 template's first heading style has "page break before". Word ignores that on the document's
+// first paragraph; docx-preview starts a new page anyway, leaving a page with only the header and footer.
+function removeLeadingBlankPage(target) {
+ const firstPage=target.querySelector('section.docx');
+ if(firstPage?.querySelector('article')?.childElementCount===0) firstPage.remove();
+}
+// Word pages are 8.5in wide, wider than the document panel, so scale them down instead of scrolling sideways.
+function fitPagesToPanel(target) {
+ const wrapper=target.querySelector('.docx-wrapper');
+ const page=wrapper?.querySelector('section.docx');
+ if(!page || target.hidden) return;
+ const panelWidth=target.clientWidth-parseFloat(getComputedStyle(target).paddingLeft)*2;
+ wrapper.style.zoom=Math.min(1, panelWidth/page.offsetWidth);
+}
+
+function showView(view) {
+ activeView = view;
+ for (const [name, panel] of Object.entries(previews)) {
+  panel.hidden = name !== view;
+  tabs[name].setAttribute('aria-selected', String(name === view));
+ }
+ fitPagesToPanel(previews[view]);
+}
+tabs.ai.addEventListener('click', () => showView('ai'));
+tabs.human.addEventListener('click', () => showView('human'));
+
+document.querySelectorAll('.chip').forEach(chip => chip.addEventListener('click', () => {
+ const filter = chip.dataset.filter;
+ document.querySelectorAll('.chip').forEach(other => other.setAttribute('aria-pressed', String(other === chip)));
+ document.querySelectorAll('.outline > li').forEach(item => {
+  item.hidden = (filter === 'drafted' && item.dataset.drafted === '0') || (filter === 'input' && item.dataset.input === '0');
+ });
+}));
+
+// Headings in the rendered DOCX carry their number as Word list numbering rather than text, so match on the title alone.
+// docx-preview classes paragraphs by Word style; the table of contents (docx_toc*) repeats every title, so skip it.
+const SECTION_NUMBER = /^\d+(\.\d+)*\s+/;
+const normalize = text => text.replace(/\s+/g, ' ').trim().toLowerCase();
+function findHeading(container, sectionTitle) {
+ const title = normalize(sectionTitle.replace(SECTION_NUMBER, ''));
+ const candidates = container.querySelectorAll('h1, h2, h3, h4, h5, h6, p:not([class*="docx_toc"])');
+ for (const element of candidates) {
+  const text = normalize(element.textContent).replace(SECTION_NUMBER, '');
+  if (text === title) return element;
+ }
+ return null;
+}
+function jumpTo(sectionTitle) {
+ const container = previews[activeView];
+ const heading = findHeading(container, sectionTitle);
+ if (!heading) return;
+ container.scrollTop += heading.getBoundingClientRect().top - container.getBoundingClientRect().top - 16;
+ heading.classList.remove('jump-flash');
+ void heading.offsetWidth;
+ heading.classList.add('jump-flash');
+}
+document.querySelectorAll('.jump').forEach(button => button.addEventListener('click', () => jumpTo(button.dataset.section)));
+
+document.querySelectorAll('.check details').forEach(details=>details.addEventListener('toggle',()=>{
+ const pre=details.querySelector('pre');
+ if(!details.open||pre.dataset.loaded) return;
+ fetch(`/api/jobs/${jobId}/verification/${details.dataset.kind}`).then(r=>r.text()).then(text=>{pre.textContent=text;pre.dataset.loaded='1';}).catch(()=>pre.textContent='Report unavailable.');
+}));
+const MAX_TREE_DEPTH = 12;
+function jsonTree(value, key, depth) {
+ const label = key === null ? '' : `${key}: `;
+ if (value === null || typeof value !== 'object') {
+  const leaf = document.createElement('div');
+  leaf.textContent = label + JSON.stringify(value);
+  return leaf;
+ }
+ const entries = Object.entries(value);
+ const node = document.createElement('details');
+ const summary = document.createElement('summary');
+ summary.textContent = label + (Array.isArray(value) ? `[${entries.length}]` : `{${entries.length}}`);
+ node.append(summary);
+ // Children render on first open, so the 700 KB document isn't turned into DOM all at once.
+ node.addEventListener('toggle', () => {
+  if (!node.open || node.dataset.loaded) return;
+  node.dataset.loaded = '1';
+  if (depth >= MAX_TREE_DEPTH) { node.append(jsonTree(JSON.stringify(value), null, depth)); return; }
+  for (const [childKey, child] of entries) node.append(jsonTree(child, childKey, depth + 1));
+ });
+ return node;
+}
+document.getElementById('usdm-details')?.addEventListener('toggle', event => {
+ const tree = document.getElementById('usdm-tree');
+ if (!event.target.open || tree.dataset.loaded) return;
+ fetch(`/api/jobs/${jobId}/usdm`).then(r => { if (!r.ok) throw new Error(); return r.json(); }).then(data => {
+  const root = jsonTree(data, null, 0);
+  root.open = true;
+  tree.replaceChildren(root);
+  tree.dataset.loaded = '1';
+ }).catch(() => tree.textContent = 'USDM data unavailable.');
+});
+renderDocx('ai_assisted', previews.ai); renderDocx('human_review', previews.human);
 </script></body></html>
