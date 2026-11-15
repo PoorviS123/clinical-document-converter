@@ -1,7 +1,7 @@
 """Read the CeSHarP (ICH M11) structure of a protocol .docx into USDM JSON.
 
-Runs under the protocol-reformatter venv, which has usdm4_protocol installed. Same import step as
-protocol-reformatter/tools/validate_cesharp.py, but the USDM is kept instead of validated.
+Runs under the ADAPT venv, which has usdm4_protocol installed. Same import step as
+ADAPT/tools/validate_cesharp.py, but the USDM is kept instead of validated.
 
 Usage: python -X utf8 cesharp_extract.py <file.docx> <out.json>
 """

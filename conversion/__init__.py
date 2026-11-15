@@ -1,13 +1,13 @@
-"""Runs the protocol-reformatter backend (a separate repo) on an uploaded protocol."""
+"""Runs the ADAPT backend (a separate repo) on an uploaded protocol."""
 from pathlib import Path
 import os
 import shutil
 import subprocess
 
-DEFAULT_BACKEND_DIR = Path(__file__).resolve().parents[2] / "protocol-reformatter"
-BACKEND_DIR = Path(os.environ.get("PROTOCOL_REFORMATTER_DIR", DEFAULT_BACKEND_DIR)).resolve()
+DEFAULT_BACKEND_DIR = Path(__file__).resolve().parents[2] / "ADAPT"
+BACKEND_DIR = Path(os.environ.get("ADAPT_DIR", DEFAULT_BACKEND_DIR)).resolve()
 BACKEND_PYTHON = BACKEND_DIR / ".venv" / "bin" / "python"
-LLM_BACKEND = os.environ.get("PROTOCOL_REFORMATTER_LLM")  # cli, codex or api; unset uses the backend default
+LLM_BACKEND = os.environ.get("ADAPT_LLM")  # cli, codex or api; unset uses the backend default
 CONVERSION_TIMEOUT_SECONDS = 30 * 60
 ERROR_TAIL_CHARS = 2000
 DEMO = os.environ.get("DEMO", "1").lower() not in ("0", "false", "no")
@@ -73,11 +73,11 @@ def copy_demo_outputs(output_dir: Path) -> dict[str, str]:
 
 
 def run_backend(input_path: Path, output_dir: Path) -> dict[str, str]:
-    """Convert a v010 protocol with protocol-reformatter."""
+    """Convert a v010 protocol with ADAPT."""
     input_path = input_path.resolve()
     output_dir = output_dir.resolve()
     if not BACKEND_PYTHON.is_file():
-        raise RuntimeError(f"protocol-reformatter venv not found at {BACKEND_PYTHON}. See its README to install.")
+        raise RuntimeError(f"ADAPT venv not found at {BACKEND_PYTHON}. See its README to install.")
 
     # The backend names every file after the input's stem, so the stem is "source" here.
     stem = input_path.stem
@@ -90,7 +90,7 @@ def run_backend(input_path: Path, output_dir: Path) -> dict[str, str]:
         encoding="utf-8", timeout=CONVERSION_TIMEOUT_SECONDS,
     )
     if completed.returncode != 0:
-        raise RuntimeError(f"protocol-reformatter failed:\n{completed.stderr[-ERROR_TAIL_CHARS:]}")
+        raise RuntimeError(f"ADAPT failed:\n{completed.stderr[-ERROR_TAIL_CHARS:]}")
 
     outputs = {
         "fhir": (output_dir / f"{stem}.fhir.json", output_dir / OUTPUT_FILENAMES["fhir"]),
@@ -101,7 +101,7 @@ def run_backend(input_path: Path, output_dir: Path) -> dict[str, str]:
     }
     for produced, expected in outputs.values():
         if not produced.is_file():
-            raise RuntimeError(f"protocol-reformatter did not produce {produced.name}.")
+            raise RuntimeError(f"ADAPT did not produce {produced.name}.")
         shutil.copyfile(produced, expected)
     result = {key: str(expected) for key, (_, expected) in outputs.items()}
     optional = {f"{stem}.report.txt": RUN_REPORT_FILENAME, f"{stem}.generated.json": PROTOCOL_JSON_FILENAME}
