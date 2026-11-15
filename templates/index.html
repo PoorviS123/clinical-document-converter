@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClinicalConverter</title>
+  <title>ADAPT</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body class="desk-page">
 <header class="desk-bar">
- <a class="logo" href="/">Clinical<span>Converter</span></a>
+ {% include "_logo.html" %}
  {% if demo_file %}<span class="demo-badge">Demo mode</span>{% endif %}
 </header>
 
