@@ -26,7 +26,7 @@ By default the repo is expected at `../protocol-reformatter`. Settings:
 - `PROTOCOL_REFORMATTER_DIR`: path to the backend repo.
 - `PROTOCOL_REFORMATTER_LLM`: `cli`, `codex` or `api`. Unset uses the backend default.
 
-Output mapping: AI-assisted V11 is `<name>.docx`, human-review V11 is `<name>.pre-llm.docx`, and the "FHIR JSON" slot holds `<name>.generated.json` (the backend's protocol JSON, not FHIR). A conversion can take several minutes; the timeout is 30 minutes.
+Output mapping: AI-assisted V11 is `<name>.docx`, human-review V11 is `<name>.pre-llm.docx`, the FHIR bundle is `<name>.fhir.json`, and the run report `<name>.report.txt` is kept when present. A conversion can take several minutes; the timeout is 30 minutes.
 
 The results page also shows the CeSHarP data read back from the AI-assisted V11 document: the backend's M11 importer turns the DOCX into CDISC USDM JSON (`cesharp_extract.py`), and the page shows its main counts and a browsable tree. If the importer fails, the conversion still succeeds and the section says the data is unavailable.
 

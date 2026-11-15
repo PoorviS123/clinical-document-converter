@@ -21,6 +21,8 @@ OUTPUT_FILENAMES = {
     "cesharp": "output.cesharp.txt",
     "usdm": "output.usdm.json",
 }
+# Optional: only real runs have it. The review desk reads cross-references and omitted sections from it.
+RUN_REPORT_FILENAME = "output.report.txt"
 EXTRACT_SCRIPT = Path(__file__).resolve().parents[1] / "cesharp_extract.py"
 EXTRACT_TIMEOUT_SECONDS = 10 * 60
 
@@ -62,9 +64,8 @@ def run_backend(input_path: Path, output_dir: Path) -> dict[str, str]:
     if completed.returncode != 0:
         raise RuntimeError(f"protocol-reformatter failed:\n{completed.stderr[-ERROR_TAIL_CHARS:]}")
 
-    # The backend writes protocol JSON, not FHIR. It fills the "fhir" slot until a FHIR export exists.
     outputs = {
-        "fhir": (output_dir / f"{stem}.generated.json", output_dir / OUTPUT_FILENAMES["fhir"]),
+        "fhir": (output_dir / f"{stem}.fhir.json", output_dir / OUTPUT_FILENAMES["fhir"]),
         "ai_assisted": (output_dir / f"{stem}.docx", output_dir / OUTPUT_FILENAMES["ai_assisted"]),
         "human_review": (output_dir / f"{stem}.pre-llm.docx", output_dir / OUTPUT_FILENAMES["human_review"]),
         "m11": (output_dir / f"{stem}.m11.txt", output_dir / OUTPUT_FILENAMES["m11"]),
@@ -75,6 +76,9 @@ def run_backend(input_path: Path, output_dir: Path) -> dict[str, str]:
             raise RuntimeError(f"protocol-reformatter did not produce {produced.name}.")
         shutil.copyfile(produced, expected)
     result = {key: str(expected) for key, (_, expected) in outputs.items()}
+    run_report = output_dir / f"{stem}.report.txt"
+    if run_report.is_file():
+        shutil.copyfile(run_report, output_dir / RUN_REPORT_FILENAME)
     usdm_path = extract_usdm(output_dir / OUTPUT_FILENAMES["ai_assisted"], output_dir / OUTPUT_FILENAMES["usdm"])
     if usdm_path:
         result["usdm"] = str(usdm_path)
